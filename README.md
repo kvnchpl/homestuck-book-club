@@ -8,19 +8,9 @@ background, lighter gray outer column, 650px reading area, Courier text, colored
 navigation, and blue underlined content links. All internal URLs remain relative
 so the site works under the GitHub Pages project path.
 
-The full schedule contains 13 meetings and 32 suggested readings. Its editable
-source is `assets/book-club-schedule.md`, imported from the supplied schedule with
-meeting #13 corrected to **July 5, 2027**. To update the published HTML after editing
-the Markdown’s table, run:
-
-```sh
-python3 scripts/build-schedule.py
-```
-
-The generator checks meeting order, first-Monday dates, session page totals, and
-continuous reading ranges before writing `schedule/index.html`. Commit both the
-source and generated HTML when changing the schedule; hosting needs no build step
-or JavaScript to display it. Keep dates in the source’s `Month D, YYYY` format.
+The full schedule contains 13 meetings and 32 suggested readings, with meeting #13
+on **July 5, 2027**. Edit `schedule/index.html` directly to update meeting dates,
+readings, and page counts. Hosting needs no build step or JavaScript to display it.
 Use the shared page classes and relative navigation when adding future wiki pages.
 
 ## Recaps
