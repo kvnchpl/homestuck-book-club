@@ -1,5 +1,30 @@
 # Homestuck Book Club
 
+## Club wiki
+
+The homepage, `schedule/index.html`, and recap viewer share `styles.css` and
+`script.js`. The visual frame follows classic MS Paint Adventures: a dark-gray
+background, lighter gray outer column, 650px reading area, Courier text, colored
+navigation, and blue underlined content links. All internal URLs remain relative
+so the site works under the GitHub Pages project path.
+
+The full schedule contains 13 meetings and 32 suggested readings. Its editable
+source is `assets/book-club-schedule.md`, imported from the supplied schedule with
+meeting #13 corrected to **July 5, 2027**. To update the published HTML after editing
+the Markdown’s table, run:
+
+```sh
+python3 scripts/build-schedule.py
+```
+
+The generator checks meeting order, first-Monday dates, session page totals, and
+continuous reading ranges before writing `schedule/index.html`. Commit both the
+source and generated HTML when changing the schedule; hosting needs no build step
+or JavaScript to display it. Keep dates in the source’s `Month D, YYYY` format.
+Use the shared page classes and relative navigation when adding future wiki pages.
+
+## Recaps
+
 The canonical recap layout is `/recaps/01/index.html`. It preserves the 30-slide
 sequence and text of Recap #1, using the original GIFs in place of the prototype’s
 PDF extracts. Recaps #2 and #3 have not been migrated.
