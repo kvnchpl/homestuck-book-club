@@ -12,16 +12,24 @@
   const previousButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
   const startOver = document.getElementById('start-over');
+  // An unfinished template should remain readable as a normal document.
+  if (![controls, counter, sourceLink, previousButton, nextButton, startOver].every(Boolean)) return;
   const sources = new Map();
   // Accept the existing hyphen separator and intermission filenames, too.
   const panelPattern = /^A(\d+(?:\.I\d+)?)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
 
   deck.querySelectorAll('.media img').forEach(img => {
-    const filename = decodeURIComponent(new URL(img.src).pathname.split('/').pop());
+    let filename;
+    try {
+      filename = decodeURIComponent(new URL(img.src).pathname.split('/').pop());
+    } catch {
+      return; // Unrecognized asset URLs do not prevent reading the recap.
+    }
     const match = filename.match(panelPattern);
     if (!match) return;
     const [, act, , paddedPage] = match;
     const page = Number(paddedPage);
+    if (!Number.isSafeInteger(page) || page < 1) return;
     if (!img.hasAttribute('alt')) img.alt = `Homestuck Act ${act}, page ${page}`;
     sources.set(img.closest('.slide'), page);
   });
@@ -45,9 +53,8 @@
     (slides[index].querySelector('.media') || slides[index]).append(counter);
     const isCover = slides[index].classList.contains('cover');
     counter.hidden = isCover;
-    if (isCover && document.activeElement === startOver) deck.focus({ preventScroll: true });
     startOver.disabled = isCover;
-    const page = sources.get(slides[index]);
+    const page = isCover ? undefined : sources.get(slides[index]);
     sourceLink.hidden = page === undefined;
     if (page !== undefined) {
       sourceLink.href = `https://homestuck.com/story/${page}`;
@@ -61,6 +68,9 @@
     }
     previousButton.disabled = index === 0;
     nextButton.disabled = index === slides.length - 1;
+    if ([previousButton, nextButton, startOver].some(button => button.disabled && document.activeElement === button)) {
+      deck.focus({ preventScroll: true });
+    }
     if (updateHash) history.replaceState(null, '', `#${index + 1}`);
     // After reading a long caption, start the next slide at its panel on small screens.
     if (index !== previousIndex && window.matchMedia('(max-width: 600px), (max-height: 600px)').matches) {
