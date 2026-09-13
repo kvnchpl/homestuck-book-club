@@ -33,6 +33,15 @@ button { font: inherit; }
 .home-panel { display: block; width: 100%; height: auto; }
 .wiki-copy { padding: 24px 28px 0; font-size: 1rem; line-height: 1.5; }
 .wiki-copy p { margin: 0 0 24px; }
+.pesterlog { margin-bottom: 24px; padding: 2px; border: 1px dashed #808080; background: var(--paper); }
+.pesterlog summary { display: table; margin: 0 auto; padding: 5px 10px; border: 1px solid #767676; border-radius: 4px; background: linear-gradient(#f9f9f9 40%, #e6e6e6); color: var(--ink); font: 400 12px/1.5 Verdana, Arial, sans-serif; list-style: none; cursor: pointer; }
+.pesterlog summary::-webkit-details-marker { display: none; }
+.pesterlog summary:hover { background: #e2e2e2; }
+.pesterlog[open] .pesterlog-show, .pesterlog:not([open]) .pesterlog-hide { display: none; }
+.pesterlog-content { margin: 12px 30px; font: 700 14px/1.5 "Courier New", Courier, monospace; text-align: left; overflow-wrap: anywhere; }
+.pesterlog-content p { margin: 0; }
+.pesterlog-content .pesterlog-heading { margin-bottom: 8px; }
+.pesterlog-speaker, .pesterlog-message { color: #0715cd; }
 .wiki-page a { color: var(--link); }
 .wiki-page a:visited { color: #551a8b; }
 .command-links { margin: 0; padding: 0; list-style: none; font-size: 1.4rem; font-weight: 400; line-height: 1.4; }
@@ -108,19 +117,6 @@ button { font: inherit; }
   font-variant-numeric: tabular-nums;
   pointer-events: none;
 }
-.panel-info {
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  bottom: 48px;
-  padding: 8px 10px;
-  background: var(--paper);
-  border: 1px dashed #999;
-  color: var(--ink);
-  font-size: 12px;
-  line-height: 1.5;
-  overflow-wrap: anywhere;
-}
 .controls {
   width: min(100%, 940px);
   margin: 0 auto;
@@ -148,6 +144,8 @@ button { font: inherit; }
   .site-nav .nav-home { grid-column: 1 / -1; }
   .site-frame { padding: 8px 0 16px; }
   .wiki-copy { padding: 24px 18px 0; }
+  .pesterlog summary { min-height: 44px; padding-block: 12px; }
+  .pesterlog-content { margin: 12px; font-size: 1rem; }
   .command-links { font-size: 1.25rem; line-height: 1.5; }
   .schedule-intro { padding-inline: 18px; }
   .schedule-jump ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(44px, 1fr)); gap: 8px; }
@@ -176,13 +174,13 @@ button { font: inherit; }
   .cover h1 { overflow-wrap: anywhere; }
 }
 @media (pointer: coarse) {
+  .pesterlog summary { min-height: 44px; padding-block: 12px; }
   .site-nav a, .schedule-jump a, .meeting td a { min-height: 44px; }
 }
 @media screen and (max-height: 600px) and (orientation: landscape) {
   .site-header { padding-block: 4px; }
   .deck { padding-top: 12px; }
 }
-:fullscreen .recap .site-header { display: none; }
 @media print {
   @page recap { size: 7.5in 7.5in; margin: 0; }
   html, body.recap { background: white; }
@@ -203,7 +201,7 @@ button { font: inherit; }
   .slide.cover { display: grid !important; }
   .caption { padding: 4.1% 4.35% 5%; }
   .caption p { font-size: 18px; line-height: 1.2; text-align: left; }
-  .controls, #counter, .panel-info, #viewer-status { display: none !important; }
+  .controls, #counter { display: none !important; }
   .site-header, .page-footer, .skip-link, .schedule-jump, .schedule-end { display: none !important; }
   .site-frame, .wiki-page { width: auto; padding: 0; background: white; }
   .meeting { break-inside: avoid; margin-inline: 0; }

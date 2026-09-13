@@ -14,6 +14,9 @@ readings, and page counts. Hosting needs no build step or JavaScript to display 
 Use the shared page classes and relative navigation when adding future wiki pages.
 On narrow screens, each reading uses the full width, with labeled starting-page
 and page-count details beneath it. Links and navigation have larger touch targets.
+The homepage introduction uses a pesterlog: a dashed border, blue Book Club
+messages, and a native Show/Hide disclosure. It starts open and works without
+JavaScript. Edit the message paragraphs directly in `index.html`.
 
 ## Recaps
 
@@ -53,7 +56,7 @@ The viewer derives slide numbers and counts from document order. Panels are
 centered without cropping; narrow or short screens can scroll to accommodate
 readable text. Without JavaScript, all slides remain readable in sequence.
 
-## Assets and source metadata
+## Assets and source links
 
 Keep **every asset directly under the repository’s `/assets/` directory**, without
 recap or act subfolders. Recap pages reference these files with `../../assets/`;
@@ -73,8 +76,7 @@ GIF, PNG, JPG/JPEG, and WebP are supported. Existing variants such as
 a story suffix remain visible without a guessed source link.
 
 Supply descriptive alt text. If the alt attribute is missing, the script provides
-an act/page fallback. The optional metadata overlay shows the act, image number,
-story page, and complete filename.
+an act/page fallback.
 
 ## Viewer controls
 
@@ -83,22 +85,19 @@ story page, and complete filename.
 | ← / →, Page Up / Page Down | Previous / next slide |
 | Space | Next slide (focused buttons retain native activation) |
 | Home / End | First / last slide |
-| F | Toggle browser fullscreen, when supported |
-| I | Toggle panel metadata |
 | Click a slide with a mouse | Previous in its left 35%; next elsewhere |
 
 The recap uses a 650px reading column, centered Courier captions, and blue
 underlined controls beneath the slide, following the Homestuck story reader.
 The Next Slide and Go Back buttons support touch and keyboard focus. Start Over
 returns to the recap’s first slide. The cover’s act subtitles link to their
-starting comic pages in new tabs, as do the panel source links. Metadata (I) and
-fullscreen (F) remain keyboard shortcuts without visible reader tools.
+starting comic pages in new tabs, as do the panel source links.
 On touch screens, use Next Slide and Go Back;
 tapping the panel or caption does not advance. On small screens, changing slides
 returns to the new panel so a previous caption’s scroll position is not retained.
 A numeric hash such as `recaps/01/#28` reopens that slide;
 navigation updates the hash without filling browser history. Print styles reveal
-all slides, hide controls and overlays, and request one square page per slide.
+all slides, hide controls and the counter, and request one square page per slide.
 
 The ignored `reference/` directory is the original design/content archive; its
 standalone prototype files are not part of the site’s shared implementation.

@@ -12,8 +12,6 @@
   const previousButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
   const startOver = document.getElementById('start-over');
-  const status = document.getElementById('viewer-status');
-  const metadata = [];
   const sources = new Map();
   // Accept the existing hyphen separator and intermission filenames, too.
   const panelPattern = /^A(\d+(?:\.I\d+)?)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
@@ -22,22 +20,13 @@
     const filename = decodeURIComponent(new URL(img.src).pathname.split('/').pop());
     const match = filename.match(panelPattern);
     if (!match) return;
-    const [, act, imageNumber, paddedPage] = match;
+    const [, act, , paddedPage] = match;
     const page = Number(paddedPage);
     if (!img.hasAttribute('alt')) img.alt = `Homestuck Act ${act}, page ${page}`;
-    const media = img.closest('.media');
     sources.set(img.closest('.slide'), page);
-
-    const info = document.createElement('div');
-    info.className = 'panel-info';
-    info.hidden = true;
-    info.textContent = `Act ${act} · image ${Number(imageNumber)} · p. ${page} · ${filename}`;
-    media.append(info);
-    metadata.push(info);
   });
 
   let index = 0;
-  let showInfo = false;
   function indexFromHash() {
     const match = location.hash.match(/^#(\d+)$/);
     return match ? Math.max(0, Math.min(slides.length - 1, Number(match[1]) - 1)) : 0;
@@ -75,20 +64,6 @@
       deck.scrollIntoView({ block: 'start', behavior: 'auto' });
     }
   }
-  function toggleInfo() {
-    showInfo = !showInfo;
-    metadata.forEach(info => { info.hidden = !showInfo; });
-    status.textContent = showInfo ? 'Panel metadata shown.' : 'Panel metadata hidden.';
-  }
-  async function toggleFullscreen() {
-    try {
-      if (document.fullscreenElement) await document.exitFullscreen();
-      else if (document.fullscreenEnabled) await document.documentElement.requestFullscreen();
-      else status.textContent = 'Fullscreen is not available in this browser.';
-    } catch {
-      status.textContent = 'Fullscreen could not open. Try the F key again or your browser’s fullscreen control.';
-    }
-  }
   previousButton.addEventListener('click', () => show(index - 1));
   nextButton.addEventListener('click', () => show(index + 1));
   startOver.addEventListener('click', event => {
@@ -108,8 +83,6 @@
       case 'arrowleft': case 'pageup': show(index - 1); break;
       case 'home': show(0); break;
       case 'end': show(slides.length - 1); break;
-      case 'i': if (!event.repeat) toggleInfo(); break;
-      case 'f': if (!event.repeat) toggleFullscreen(); break;
       default: return;
     }
     event.preventDefault();
