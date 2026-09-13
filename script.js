@@ -43,7 +43,10 @@
     });
     counter.textContent = `${index + 1} / ${slides.length}`;
     (slides[index].querySelector('.media') || slides[index]).append(counter);
-    counter.hidden = false;
+    const isCover = slides[index].classList.contains('cover');
+    counter.hidden = isCover;
+    if (isCover && document.activeElement === startOver) deck.focus({ preventScroll: true });
+    startOver.disabled = isCover;
     const page = sources.get(slides[index]);
     sourceLink.hidden = page === undefined;
     if (page !== undefined) {
@@ -66,9 +69,8 @@
   }
   previousButton.addEventListener('click', () => show(index - 1));
   nextButton.addEventListener('click', () => show(index + 1));
-  startOver.addEventListener('click', event => {
-    if (event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
-    event.preventDefault();
+  startOver.addEventListener('click', () => {
+    if (startOver.disabled) return;
     show(0);
     deck.focus({ preventScroll: true });
     deck.scrollIntoView({ block: 'start', behavior: 'auto' });

@@ -75,7 +75,7 @@ The shared script reads filenames such as `A2_15_story-0665.gif` and generates
 `p. 665 ↗` in the reader tools, linking to `https://homestuck.com/story/665`.
 The link updates for the current slide and is hidden on the cover or a slide
 without a recognized source. The slide counter sits at the panel’s lower-right
-corner (or the cover’s lower-right corner). Leading zeroes are removed
+corner and is hidden on cover slides. Leading zeroes are removed
 from the link. The filename is the source of truth; URLs are not repeated in HTML.
 GIF, PNG, JPG/JPEG, and WebP are supported. Existing variants such as
 `A2_09-story-0419.gif` and `A3.I1_02_story-0833.gif` are also recognized. Files without
@@ -96,8 +96,8 @@ an act/page fallback.
 The recap uses a 650px reading column, centered Courier captions, and blue
 underlined controls beneath the slide, following the Homestuck story reader.
 The Next Slide and Go Back buttons support touch and keyboard focus. Start Over
-returns to the recap’s first slide. The cover’s act subtitles link to their
-starting comic pages in new tabs, as do the panel source links.
+returns to the recap’s first slide and is disabled on cover slides. The cover’s
+act subtitles are plain text. Panel source links open the comic in new tabs.
 On touch screens, use Next Slide and Go Back;
 tapping the panel or caption does not advance. On small screens, changing slides
 returns to the new panel so a previous caption’s scroll position is not retained.
