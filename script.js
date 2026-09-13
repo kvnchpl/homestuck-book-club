@@ -49,6 +49,7 @@
     return match ? Math.max(0, Math.min(slides.length - 1, Number(match[1]) - 1)) : 0;
   }
   function show(nextIndex, updateHash = true) {
+    const previousIndex = index;
     index = Math.max(0, Math.min(slides.length - 1, nextIndex));
     const focusedSlide = document.activeElement.closest('.slide');
     if (focusedSlide && focusedSlide !== slides[index]) deck.focus({ preventScroll: true });
@@ -61,6 +62,10 @@
     previousButton.disabled = index === 0;
     nextButton.disabled = index === slides.length - 1;
     if (updateHash) history.replaceState(null, '', `#${index + 1}`);
+    // After reading a long caption, start the next slide at its panel on small screens.
+    if (index !== previousIndex && window.matchMedia('(max-width: 600px), (max-height: 600px)').matches) {
+      deck.scrollIntoView({ block: 'start', behavior: 'auto' });
+    }
   }
   function toggleInfo() {
     showInfo = !showInfo;
@@ -102,6 +107,8 @@
   });
   deck.addEventListener('click', event => {
     if (event.target.closest('button, a') || window.getSelection().toString()) return;
+    // Touch readers use the visible arrows, so taps while reading do not skip slides.
+    if (event.pointerType === 'touch' || window.matchMedia('(pointer: coarse)').matches) return;
     const bounds = slides[index].getBoundingClientRect();
     if (event.clientX < bounds.left || event.clientX > bounds.right ||
         event.clientY < bounds.top || event.clientY > bounds.bottom) return;

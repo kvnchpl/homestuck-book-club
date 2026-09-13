@@ -11,8 +11,8 @@
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; }
-a { color: inherit; }
+body { margin: 0; padding-inline: env(safe-area-inset-left) env(safe-area-inset-right); }
+a { color: inherit; font-weight: 700; }
 button { font: inherit; }
 [hidden] { display: none !important; }
 :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
@@ -35,7 +35,8 @@ button { font: inherit; }
 .wiki-copy p { margin: 0 0 24px; }
 .wiki-page a { color: var(--link); }
 .wiki-page a:visited { color: #551a8b; }
-.command-links { margin: 0; padding: 0; list-style: none; font-size: 1.4rem; font-weight: 400; line-height: 1.4; }
+.command-links { margin: 0; padding: 0; list-style: none; font-size: 1.4rem; font-weight: 700; line-height: 1.4; }
+.command-links a { display: inline-block; min-height: 44px; }
 .command-links li { margin: 12px 0; padding-left: 1.2em; position: relative; }
 .command-links li::before { content: ">"; position: absolute; left: 0; }
 .page-footer { width: min(100%, 940px); margin: 0 auto; padding: 16px; color: white; text-align: center; font: 12px/1.6 Verdana, Arial, sans-serif; }
@@ -58,6 +59,7 @@ button { font: inherit; }
 .meeting td:last-child, .meeting th:last-child { padding-right: 0; text-align: right; }
 .meeting td:nth-child(2), .meeting td:nth-child(3) { font-variant-numeric: tabular-nums; }
 .meeting td a { display: inline-block; min-height: 24px; }
+.mobile-label { display: none; }
 .meeting-recap { margin: 16px 0 0; font-size: 1rem; }
 .schedule-end { margin: 12px 28px 0; font-size: 1rem; }
 
@@ -145,21 +147,48 @@ button { font: inherit; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 @media (max-width: 800px) { .hint { display: none; } }
-@media (max-width: 600px) {
-  .site-header { padding: 12px 10px; }
-  .site-nav { gap: 8px 14px; font-size: 12px; }
-  .site-nav .nav-home { flex-basis: 100%; text-align: center; }
+@media screen and (max-width: 600px) {
+  .site-header { width: 100%; padding: 8px 12px; }
+  .site-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; font-size: 14px; }
+  .site-nav a { display: flex; align-items: center; justify-content: center; min-height: 44px; text-align: center; }
+  .site-nav .nav-home { grid-column: 1 / -1; }
   .site-frame { padding: 8px 0 16px; }
   .wiki-copy { padding: 24px 18px 0; }
+  .command-links { font-size: 1.25rem; line-height: 1.5; }
   .schedule-intro { padding-inline: 18px; }
+  .schedule-jump ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(44px, 1fr)); gap: 8px; }
+  .schedule-jump a { display: grid; place-items: center; min-height: 44px; padding: 0; }
   .meeting { margin-inline: 18px; }
-  .meeting .page-column { width: 62px; }
-  .meeting .count-column { width: 48px; }
+  .meeting h2 { line-height: 1.5; }
+  .meeting h2 time { display: block; }
+  .meeting table, .meeting tbody { display: block; }
+  .meeting colgroup { display: none; }
+  .meeting thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .meeting tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 12px; padding: 16px 0; border-top: 1px solid #bbb; }
+  .meeting td { padding: 0; border: 0; line-height: 1.5; }
+  .meeting td:first-child { grid-column: 1 / -1; padding-bottom: 4px; }
+  .meeting td:nth-child(2), .meeting td:last-child { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; text-align: left; }
+  .mobile-label { display: inline; font: 400 12px/1.5 Verdana, Arial, sans-serif; }
+  .meeting td a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 6px; }
+  .meeting-recap a, .schedule-end a { display: inline-block; min-height: 44px; padding-block: 10px; }
   .schedule-end { margin-inline: 18px; }
   .deck { padding: 16px 12px; }
   .is-presenting .slide { width: 100%; min-width: 0; }
   .caption { padding: 6% 5% 9%; }
+  .caption p { line-height: 1.5; }
   .controls { gap: 0; padding-inline: 8px; }
+  .club-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding-inline: 4px; font-size: 14px; }
+  #counter { min-width: 64px; }
+  .cover h1 { overflow-wrap: anywhere; }
+}
+@media (pointer: coarse) {
+  .source-link { min-height: 44px; min-width: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+  .panel-info { bottom: 64px; }
+  .site-nav a, .schedule-jump a, .meeting td a { min-height: 44px; }
+}
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .site-header { padding-block: 4px; }
+  .deck { padding-top: 12px; }
 }
 @media print {
   @page recap { size: 7.5in 7.5in; margin: 0; }

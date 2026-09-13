@@ -12,6 +12,8 @@ The full schedule contains 13 meetings and 32 suggested readings, with meeting #
 on **July 5, 2027**. Edit `schedule/index.html` directly to update meeting dates,
 readings, and page counts. Hosting needs no build step or JavaScript to display it.
 Use the shared page classes and relative navigation when adding future wiki pages.
+On narrow screens, each reading uses the full width, with labeled starting-page
+and page-count details beneath it. Links and navigation have larger touch targets.
 
 ## Recaps
 
@@ -80,10 +82,13 @@ story page, and complete filename.
 | Home / End | First / last slide |
 | F | Toggle browser fullscreen, when supported |
 | I | Toggle panel metadata |
-| Click a slide | Previous in its left 35%; next elsewhere |
+| Click a slide with a mouse | Previous in its left 35%; next elsewhere |
 
 Visible arrow, I, and F buttons support touch and keyboard focus. Source links
-open in a new tab. A numeric hash such as `recaps/01/#28` reopens that slide;
+open in a new tab. On touch screens, use the arrow buttons to change slides;
+tapping the panel or caption does not advance. On small screens, changing slides
+returns to the new panel so a previous caption’s scroll position is not retained.
+A numeric hash such as `recaps/01/#28` reopens that slide;
 navigation updates the hash without filling browser history. Print styles reveal
 all slides, hide controls and overlays, and request one square page per slide.
 
