@@ -89,6 +89,11 @@ for name, page in pages.items():
                     assert Path(target).parent == Path('assets'), f'{name}: image outside assets/'
                     assert element.get('alt', '').strip(), f'{name}: missing image description'
                     assert int(element.get('width', 0)) > 0 and int(element.get('height', 0)) > 0
+                    if Path(target).suffix.lower() == '.gif':
+                        header = (ROOT / target).read_bytes()[:10]
+                        assert header[:6] in (b'GIF87a', b'GIF89a'), f'{target}: not a GIF image'
+                        assert int.from_bytes(header[6:8], 'little') > 0
+                        assert int.from_bytes(header[8:10], 'little') > 0
         assert 'styles.css' in targets and 'script.js' in targets, f'{name}: missing shared resources'
         recap_nav = by_class(tree, 'nav-recaps')
         assert len(recap_nav) == 1

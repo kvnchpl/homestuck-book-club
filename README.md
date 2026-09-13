@@ -26,9 +26,9 @@ dates and readings. Recap #1 links to the viewer; unpublished recaps are marked
 a reading link, using the first entry as the example. Edit this HTML directly;
 there is no generation step.
 
-The canonical recap layout is `/recaps/01/index.html`. It preserves the 30-slide
-sequence and text of Recap #1, using the original GIFs in place of the prototype’s
-PDF extracts. Recaps #2 and #3 have not been migrated.
+The canonical recap layout is `/recaps/01/index.html`. Recap #1 currently contains
+25 slides, using original GIF panels and a still from the Act 2 closing animation.
+Recaps #2 and #3 have not been migrated.
 
 Serve this directory with any static web server, for example
 `python3 -m http.server 8000`, and open `http://localhost:8000/recaps/01/`.
@@ -39,7 +39,7 @@ under `/homestuck-book-club/` on the deployed site. The deployed recap URL is
 ## Shared layout
 
 Every page loads the shared `styles.css` and `script.js` at the repository root
-(`./` from the homepage, `../../` from a recap). Recap HTML contains the content
+(`./` from the homepage, `../` from the indexes, `../../` from a recap). Recap HTML contains the content
 and semantic viewer controls; styling and behavior live in those shared files.
 The script safely does nothing on pages without a `.deck`.
 
@@ -48,8 +48,8 @@ Use Recap #1 as the template for future recaps. Each panel is an ordinary image:
 ```html
 <section class="slide beat">
   <div class="media">
-    <img src="../../assets/A2_15_story-0665.gif"
-         alt="Bro’s note challenges Dave to meet him on the roof."
+    <img src="../../assets/A2_12_story-0665.gif"
+         alt="Dave ascends toward the roof of his apartment building."
          width="1300" height="900">
   </div>
   <div class="caption"><p>Recap text goes beneath the panel.</p></div>
@@ -71,14 +71,14 @@ Do not convert animated files into static images: native `<img>` elements play
 GIF animation without a player, canvas, or animation library. Some supplied GIFs
 contain only one frame and are intentionally still.
 
-The shared script reads filenames such as `A2_15_story-0665.gif` and generates
+The shared script reads filenames such as `A2_12_story-0665.gif` and generates
 `p. 665 ↗` in the reader tools, linking to `https://homestuck.com/story/665`.
 The link updates for the current slide and is hidden on the cover or a slide
 without a recognized source. The slide counter sits at the panel’s lower-right
 corner and is hidden on cover slides. Leading zeroes are removed
 from the link. The filename is the source of truth; URLs are not repeated in HTML.
 GIF, PNG, JPG/JPEG, and WebP are supported. Existing variants such as
-`A2_09-story-0419.gif` and `A3.I1_02_story-0833.gif` are also recognized. Files without
+`A2_06-story-0419.gif` and `A3.I1_02_story-0833.gif` are also recognized. Files without
 a story suffix remain visible without a guessed source link.
 
 Supply descriptive alt text. If the alt attribute is missing, the script provides
@@ -107,3 +107,49 @@ all slides, hide controls and the counter, and request one square page per slide
 
 The ignored `reference/` directory is the original design/content archive; its
 standalone prototype files are not part of the site’s shared implementation.
+
+
+## Adding a recap
+
+1. Copy `recaps/01/index.html` to `recaps/NN/index.html` (two-digit numbering).
+2. Update the document title, description, deck label, cover, and slide content.
+   Keep the shared resource paths, navigation, and complete controls block.
+   Start with a `.slide.cover`; the reader calculates counts from document order.
+   The existing `data-slide` and slide `aria-label` attributes can be omitted when
+   authoring new slides; the reader supplies accessible labels on initialization.
+3. Put each image directly in `assets/`, with descriptive alt text and its natural
+   width and height. The `story-` suffix must identify the actual source page.
+   An image with no recognized suffix is allowed and has no source link.
+4. Replace the corresponding availability paragraph in `recaps/index.html` with
+   a reading link. Add a link in that meeting’s section of `schedule/index.html`.
+5. Run the checks below, then preview the cover, a long caption, an animated GIF,
+   and the last slide on a desktop and a narrow screen before publishing.
+
+## Checks
+
+No package installation or build step is required. From the repository root:
+
+```sh
+python3 tests/check_site.py
+node --test tests/reader.test.cjs
+```
+
+The Python check validates local links and fragments at both hosting paths,
+shared resources, image references, required reader controls, recap availability,
+and agreement between the schedule and recap index. It also checks that the
+reading ranges are continuous and their page counts add up. The Node tests cover
+reader state and interactions with a minimal DOM fixture; they do not replace
+browser layout or assistive-technology testing.
+
+Incomplete reader templates fall back to showing all slides. Unknown image
+filenames do not stop navigation. Focus moves to the deck when a slide disappears
+or the focused navigation button becomes disabled.
+
+### Recap #1 panel sources
+
+The restored panels use the original image bytes:
+
+- `A2_10_story-0637.gif`: [Pogo Hammer panel](https://storage.homestuck.com/story/homestuck/media/images/panels/act-2/00637.gif).
+- `A2_11_story-0654.gif`: [Ogre climbing panel](https://storage.homestuck.com/story/homestuck/media/images/panels/act-2/00654_1.gif).
+- `A2_14_story-0749.gif`: [Serenity panel](https://storage.homestuck.com/story/homestuck/media/images/panels/act-2/00749.gif).
+- `A2_15_story-0757.gif`: the existing Act 2 closing still, restored from the repository’s original `A2_17_story-0757.gif` (commit `e15a8d5`).
