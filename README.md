@@ -71,9 +71,10 @@ Do not convert animated files into static images: native `<img>` elements play
 GIF animation without a player, canvas, or animation library. Some supplied GIFs
 contain only one frame and are intentionally still.
 
-Recap GIFs use a **650 × 450 pixel canvas** and indexed GIF color. Fit artwork
-proportionally inside that canvas, with white padding for square or tall panels;
-never crop or stretch it. Animated GIFs loop continuously while preserving their
+For future standardization, resize recap GIFs to **650 pixels wide** and preserve
+their natural aspect ratio. Do not add white margins, crop, stretch, or force a
+450px height. Square panels remain 650 × 650; taller panels retain their height
+in proportion. The reader follows each image’s natural dimensions. Animated GIFs loop continuously while preserving their
 original frame count and frame durations. Static GIFs remain static. Palette and
 transparency/disposal details may differ between files to preserve native GIF
 playback; they do not need to be identical. The homepage WebP is separate from
@@ -155,7 +156,7 @@ or the focused navigation button becomes disabled.
 
 ### Recap #1 panel sources
 
-Panel provenance (images are normalized to the shared canvas described above):
+Panel provenance (follow the resizing guidance above for future normalization):
 
 - `A1_09_story-0246.gif`: user-supplied still from the Act 1 ending, converted from PNG.
 - `A2_03_story-0705.gif`: user-selected command terminal panel from story page 705.

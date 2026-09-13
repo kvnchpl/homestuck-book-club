@@ -350,15 +350,13 @@ button {
 
 .media {
   position: relative;
-  aspect-ratio: 13 / 9;
   background: white;
 }
 
 .media img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
 }
 
 .caption {
