@@ -58,6 +58,9 @@ Use Recap #1 as the template for future recaps. Each panel is an ordinary image:
 
 Use `.caption` for recap text. Use `.slide.cover` for the opening
 title and `.slide.act-divider` with an `.act-title` heading for an act divider.
+Split longer captions into `<p>` elements at natural changes of subject or action;
+the shared CSS adds paragraph spacing. Put an act’s closing label in its own
+`<p class="act-ending">END OF ACT 2.</p>` to keep it centered and on one line.
 The viewer derives slide numbers and counts from document order. Panels are
 centered without cropping; narrow or short screens can scroll to accommodate
 readable text. Without JavaScript, all slides remain readable in sequence.
