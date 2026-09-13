@@ -70,6 +70,7 @@ button {
 .site-nav a {
   color: white;
   text-underline-offset: 2px;
+  text-transform: uppercase;
 }
 
 .site-nav .nav-schedule {
