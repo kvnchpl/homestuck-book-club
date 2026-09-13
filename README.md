@@ -89,8 +89,11 @@ story page, and complete filename.
 
 The recap uses a 650px reading column, centered Courier captions, and blue
 underlined controls beneath the slide, following the Homestuck story reader.
-The Next slide, Go back, Info, and Fullscreen buttons support touch and keyboard
-focus. Source links open in a new tab. On touch screens, use Next slide and Go back;
+The Next Slide and Go Back buttons support touch and keyboard focus. Start Over
+returns to the recap’s first slide. The cover’s act subtitles link to their
+starting comic pages in new tabs, as do the panel source links. Metadata (I) and
+fullscreen (F) remain keyboard shortcuts without visible reader tools.
+On touch screens, use Next Slide and Go Back;
 tapping the panel or caption does not advance. On small screens, changing slides
 returns to the new panel so a previous caption’s scroll position is not retained.
 A numeric hash such as `recaps/01/#28` reopens that slide;

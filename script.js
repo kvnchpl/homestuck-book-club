@@ -11,8 +11,7 @@
   const sourceLink = document.getElementById('source-link');
   const previousButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
-  const infoButton = document.getElementById('info');
-  const fullscreenButton = document.getElementById('fullscreen');
+  const startOver = document.getElementById('start-over');
   const status = document.getElementById('viewer-status');
   const metadata = [];
   const sources = new Map();
@@ -79,7 +78,7 @@
   function toggleInfo() {
     showInfo = !showInfo;
     metadata.forEach(info => { info.hidden = !showInfo; });
-    infoButton.setAttribute('aria-pressed', String(showInfo));
+    status.textContent = showInfo ? 'Panel metadata shown.' : 'Panel metadata hidden.';
   }
   async function toggleFullscreen() {
     try {
@@ -87,16 +86,17 @@
       else if (document.fullscreenEnabled) await document.documentElement.requestFullscreen();
       else status.textContent = 'Fullscreen is not available in this browser.';
     } catch {
-      status.textContent = 'Fullscreen could not open. Try the F button or your browser’s fullscreen control.';
+      status.textContent = 'Fullscreen could not open. Try the F key again or your browser’s fullscreen control.';
     }
   }
   previousButton.addEventListener('click', () => show(index - 1));
   nextButton.addEventListener('click', () => show(index + 1));
-  infoButton.addEventListener('click', toggleInfo);
-  fullscreenButton.addEventListener('click', toggleFullscreen);
-  fullscreenButton.hidden = !document.fullscreenEnabled;
-  document.addEventListener('fullscreenchange', () => {
-    fullscreenButton.setAttribute('aria-pressed', String(Boolean(document.fullscreenElement)));
+  startOver.addEventListener('click', event => {
+    if (event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    event.preventDefault();
+    show(0);
+    deck.focus({ preventScroll: true });
+    deck.scrollIntoView({ block: 'start', behavior: 'auto' });
   });
   document.addEventListener('keydown', event => {
     if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
