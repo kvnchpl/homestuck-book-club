@@ -34,7 +34,7 @@ button { font: inherit; }
 .wiki-copy { padding: 24px 28px 0; font-size: 1rem; line-height: 1.5; }
 .wiki-copy p { margin: 0 0 24px; }
 .pesterlog { margin-bottom: 24px; padding: 2px; border: 1px dashed #808080; background: var(--paper); }
-.pesterlog summary { display: table; margin: 0 auto; padding: 5px 10px; border: 1px solid #767676; border-radius: 4px; background: linear-gradient(#f9f9f9 40%, #e6e6e6); color: var(--ink); font: 400 12px/1.5 Verdana, Arial, sans-serif; list-style: none; cursor: pointer; }
+.pesterlog summary { display: table; margin: 0 auto; padding: 2px 8px; border: 1px solid #767676; border-radius: 4px; background: linear-gradient(#f9f9f9 40%, #e6e6e6); color: var(--ink); font: 400 12px/16px Verdana, Arial, sans-serif; list-style: none; cursor: pointer; }
 .pesterlog summary::-webkit-details-marker { display: none; }
 .pesterlog summary:hover { background: #e2e2e2; }
 .pesterlog[open] .pesterlog-show, .pesterlog:not([open]) .pesterlog-hide { display: none; }
@@ -44,10 +44,9 @@ button { font: inherit; }
 .pesterlog-speaker, .pesterlog-message { color: #0715cd; }
 .wiki-page a { color: var(--link); }
 .wiki-page a:visited { color: #551a8b; }
-.command-links { margin: 0; padding: 0; list-style: none; font-size: 1.4rem; font-weight: 400; line-height: 1.4; }
-.command-links a { display: inline-block; min-height: 44px; font-weight: 400; }
-.command-links li { margin: 12px 0; padding-left: 1.2em; position: relative; }
-.command-links li::before { content: ">"; position: absolute; left: 0; }
+.command-links { margin: 0; padding: 0; list-style: none; }
+.command-links li { margin: 12px 0; }
+.command-links li::before { content: ">"; flex: none; }
 .page-footer { width: min(100%, 940px); margin: 0 auto; padding: 16px; color: white; text-align: center; font: 12px/1.6 Verdana, Arial, sans-serif; }
 .page-footer p { margin: 0; }
 .schedule-intro { padding: 0 28px; font-size: 1rem; line-height: 1.5; }
@@ -127,11 +126,11 @@ button { font: inherit; }
 }
 .reader-controls { width: min(100%, 650px); margin: 0 auto; padding: 0 24px 24px; background: var(--paper); }
 .reader-next { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 16px; }
-.next-command { display: flex; align-items: baseline; gap: 8px; font-size: 1.5rem; }
-.controls button, .controls a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: 4px 0; border: 0; border-radius: 0; background: transparent; color: var(--link); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
-.controls .next-command button { font-weight: 400; }
+.command-links li, .next-command { display: flex; align-items: baseline; gap: 8px; font: 400 1.5rem/1.5 Verdana, Arial, sans-serif; }
+.command-links a, .controls button, .controls a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: 4px 0; border: 0; border-radius: 0; background: transparent; color: var(--link); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.command-links a, .controls .next-command button { font-weight: 400; }
 .controls a:visited { color: #551a8b; }
-.controls button:hover, .controls a:hover { text-decoration-thickness: 2px; }
+.command-links a:hover, .controls button:hover, .controls a:hover { text-decoration-thickness: 2px; }
 .controls button:disabled { color: #777; text-decoration: none; cursor: default; }
 .reader-tools, .reader-history, .reader-options { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 12px; }
 .reader-tools { justify-content: space-between; }
@@ -144,9 +143,7 @@ button { font: inherit; }
   .site-nav .nav-home { grid-column: 1 / -1; }
   .site-frame { padding: 8px 0 16px; }
   .wiki-copy { padding: 24px 18px 0; }
-  .pesterlog summary { min-height: 44px; padding-block: 12px; }
   .pesterlog-content { margin: 12px; font-size: 1rem; }
-  .command-links { font-size: 1.25rem; line-height: 1.5; }
   .schedule-intro { padding-inline: 18px; }
   .schedule-jump ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(44px, 1fr)); gap: 8px; }
   .schedule-jump a { display: grid; place-items: center; min-height: 44px; padding: 0; }
@@ -169,12 +166,11 @@ button { font: inherit; }
   .caption { padding: 24px 18px 32px; }
   .caption p { line-height: 1.5; }
   .reader-controls { padding: 0 18px 20px; }
-  .next-command { font-size: 1.25rem; }
+  .command-links li, .next-command { font-size: 1.25rem; }
   .reader-tools { gap: 4px 20px; }
   .cover h1 { overflow-wrap: anywhere; }
 }
 @media (pointer: coarse) {
-  .pesterlog summary { min-height: 44px; padding-block: 12px; }
   .site-nav a, .schedule-jump a, .meeting td a { min-height: 44px; }
 }
 @media screen and (max-height: 600px) and (orientation: landscape) {
