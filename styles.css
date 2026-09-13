@@ -49,12 +49,6 @@ button { font: inherit; }
 .command-links li::before { content: ">"; flex: none; }
 .page-footer { width: min(100%, 940px); margin: 0 auto; padding: 16px; color: white; text-align: center; font: 12px/1.6 Verdana, Arial, sans-serif; }
 .page-footer p { margin: 0; }
-.schedule-intro { padding: 0 28px; font-size: 1rem; line-height: 1.5; }
-.schedule-intro p { margin: 0 0 20px; }
-.schedule-jump { margin: 24px 0 32px; padding: 16px 0; border-block: 1px solid #aaa; }
-.schedule-jump p { margin-bottom: 8px; }
-.schedule-jump ol { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; padding: 0; list-style: none; }
-.schedule-jump a { display: inline-block; padding: 6px 0; }
 .meeting { margin: 0 28px; padding: 24px 0 28px; border-top: 1px solid #aaa; scroll-margin-top: 16px; }
 .meeting h2 { margin: 0 0 8px; font-size: 1.25rem; line-height: 1.35; }
 .meeting-total { margin: 0 0 20px; font-size: 14px; font-weight: 400; }
@@ -63,7 +57,7 @@ button { font: inherit; }
 .meeting th, .meeting td { padding: 10px 8px 10px 0; vertical-align: top; overflow-wrap: anywhere; }
 .meeting td { border-top: 1px solid #ccc; }
 .meeting .page-column { width: 82px; }
-.meeting .count-column { width: 60px; }
+.meeting .count-column { width: 86px; }
 .meeting td:last-child, .meeting th:last-child { padding-right: 0; text-align: right; }
 .meeting td:nth-child(2), .meeting td:nth-child(3) { font-variant-numeric: tabular-nums; }
 .meeting td a { display: inline-block; min-height: 24px; }
@@ -148,9 +142,6 @@ button { font: inherit; }
   .site-frame { padding: 8px 0 16px; }
   .wiki-copy { padding: 24px 18px 0; }
   .pesterlog-content { margin: 12px; font-size: 1rem; }
-  .schedule-intro { padding-inline: 18px; }
-  .schedule-jump ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(44px, 1fr)); gap: 8px; }
-  .schedule-jump a { display: grid; place-items: center; min-height: 44px; padding: 0; }
   .meeting { margin-inline: 18px; }
   .meeting h2 { line-height: 1.5; }
   .meeting h2 time { display: block; }
@@ -175,7 +166,7 @@ button { font: inherit; }
   .cover h1 { overflow-wrap: anywhere; }
 }
 @media (pointer: coarse) {
-  .site-nav a, .schedule-jump a, .meeting td a { min-height: 44px; }
+  .site-nav a, .meeting td a { min-height: 44px; }
 }
 @media screen and (max-height: 600px) and (orientation: landscape) {
   .site-header { padding-block: 4px; }
@@ -202,7 +193,7 @@ button { font: inherit; }
   .caption { padding: 4.1% 4.35% 5%; }
   .caption p { font-size: 18px; line-height: 1.2; text-align: left; }
   .controls, #counter { display: none !important; }
-  .site-header, .page-footer, .skip-link, .schedule-jump, .schedule-end { display: none !important; }
+  .site-header, .page-footer, .skip-link, .schedule-end { display: none !important; }
   .site-frame, .wiki-page { width: auto; padding: 0; background: white; }
   .meeting { break-inside: avoid; margin-inline: 0; }
   .wiki-page a, .wiki-page a:visited { color: black; }
