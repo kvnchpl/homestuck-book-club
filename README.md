@@ -14,8 +14,8 @@ readings, and page counts. Hosting needs no build step or JavaScript to display 
 Use the shared page classes and relative navigation when adding future wiki pages.
 On narrow screens, each reading uses the full width, with labeled starting-page
 and page-count details beneath it. Links and navigation have larger touch targets.
-The homepage introduction uses a pesterlog: a dashed border, blue Book Club
-messages, and a native Show/Hide disclosure. It starts open and works without
+The homepage introduction uses a pesterlog: a dashed border, Japanese Laurel
+(`#3a762b`) messages from kvnchpl [KC], and a native Show/Hide disclosure. It starts open and works without
 JavaScript. Edit the message paragraphs directly in `index.html`.
 
 ## Recaps

@@ -41,7 +41,7 @@ button { font: inherit; }
 .pesterlog-content { margin: 12px 30px; font: 700 14px/1.5 "Courier New", Courier, monospace; text-align: left; overflow-wrap: anywhere; }
 .pesterlog-content p { margin: 0; }
 .pesterlog-content .pesterlog-heading { margin-bottom: 8px; }
-.pesterlog-speaker, .pesterlog-message { color: #0715cd; }
+.pesterlog-speaker, .pesterlog-message { color: #3a762b; }
 .wiki-page a { color: var(--link); }
 .wiki-page a:visited { color: #551a8b; }
 .command-links { margin: 0; padding: 0; list-style: none; }
