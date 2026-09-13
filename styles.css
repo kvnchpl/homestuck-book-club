@@ -70,6 +70,10 @@ button { font: inherit; }
 .mobile-label { display: none; }
 .meeting-recap { margin: 16px 0 0; font-size: 1rem; }
 .schedule-end { margin: 12px 28px 0; font-size: 1rem; }
+.recap-list { margin: 0; padding: 0; list-style: none; }
+.recap-readings { margin: 0; padding-left: 1.2em; font-size: 1rem; line-height: 1.5; overflow-wrap: anywhere; }
+.recap-readings li + li { margin-top: 8px; }
+.recap-status { margin: 16px 0 0; font-size: 14px; font-weight: 400; }
 
 .recap { background: var(--surround); }
 .recap.is-presenting { min-height: 100svh; }

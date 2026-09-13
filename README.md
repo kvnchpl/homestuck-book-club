@@ -2,7 +2,7 @@
 
 ## Club wiki
 
-The homepage, `schedule/index.html`, and recap viewer share `styles.css` and
+The homepage, `schedule/index.html`, `recaps/index.html`, and recap viewer share `styles.css` and
 `script.js`. The visual frame follows classic MS Paint Adventures: a dark-gray
 background, lighter gray outer column, 650px reading area, Courier text, colored
 navigation, and blue underlined content links. All internal URLs remain relative
@@ -19,6 +19,12 @@ messages, and a native Show/Hide disclosure. It starts open and works without
 JavaScript. Edit the message paragraphs directly in `index.html`.
 
 ## Recaps
+
+The recap index at `recaps/index.html` lists all 13 recaps alongside their meeting
+dates and readings. Recap #1 links to the viewer; unpublished recaps are marked
+“Not yet available.” When publishing a recap, replace its status paragraph with
+a reading link, using the first entry as the example. Edit this HTML directly;
+there is no generation step.
 
 The canonical recap layout is `/recaps/01/index.html`. It preserves the 30-slide
 sequence and text of Recap #1, using the original GIFs in place of the prototype’s
