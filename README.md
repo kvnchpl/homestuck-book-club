@@ -47,7 +47,7 @@ Use Recap #1 as the template for future recaps. Each panel is an ordinary image:
 </section>
 ```
 
-Use `caption caption-long` for longer text. Use `.slide.cover` for the opening
+Use `.caption` for recap text. Use `.slide.cover` for the opening
 title and `.slide.act-divider` with an `.act-title` heading for an act divider.
 The viewer derives slide numbers and counts from document order. Panels are
 centered without cropping; narrow or short screens can scroll to accommodate
@@ -84,8 +84,10 @@ story page, and complete filename.
 | I | Toggle panel metadata |
 | Click a slide with a mouse | Previous in its left 35%; next elsewhere |
 
-Visible arrow, I, and F buttons support touch and keyboard focus. Source links
-open in a new tab. On touch screens, use the arrow buttons to change slides;
+The recap uses a 650px reading column, centered Courier captions, and blue
+underlined controls beneath the slide, following the Homestuck story reader.
+The Next slide, Go back, Info, and Fullscreen buttons support touch and keyboard
+focus. Source links open in a new tab. On touch screens, use Next slide and Go back;
 tapping the panel or caption does not advance. On small screens, changing slides
 returns to the new panel so a previous caption’s scroll position is not retained.
 A numeric hash such as `recaps/01/#28` reopens that slide;

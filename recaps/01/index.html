@@ -172,13 +172,24 @@
     </section>
 </main>
   <nav class="controls" aria-label="Presentation controls" hidden>
-    <a class="club-link" href="../../" aria-label="Homestuck Book Club home">Home</a>
-    <button id="prev" type="button" aria-label="Previous slide" title="Previous slide (← / Page Up)">←</button>
-    <span id="counter" role="status" aria-live="polite" aria-atomic="true"></span>
-    <button id="next" type="button" aria-label="Next slide" title="Next slide (→ / Page Down / Space)">→</button>
-    <button id="info" type="button" aria-label="Panel metadata" aria-pressed="false" aria-keyshortcuts="i" title="Panel metadata (I)">I</button>
-    <button id="fullscreen" type="button" aria-label="Fullscreen" aria-pressed="false" aria-keyshortcuts="f" title="Fullscreen (F)">F</button>
-    <span class="hint">← → / space · F fullscreen · I info</span>
+    <div class="reader-controls">
+      <div class="reader-next">
+        <div class="next-command"><span aria-hidden="true">&gt;</span><button id="next" type="button" aria-label="Next slide" title="Next slide (→ / Page Down / Space)">Next slide.</button></div>
+        <span id="counter" role="status" aria-live="polite" aria-atomic="true"></span>
+      </div>
+      <div class="reader-tools">
+        <div class="reader-history">
+          <a class="club-link" href="../../" aria-label="Homestuck Book Club home">Book club</a>
+          <span aria-hidden="true">|</span>
+          <button id="prev" type="button" aria-label="Previous slide" title="Previous slide (← / Page Up)">Go back</button>
+        </div>
+        <div class="reader-options">
+          <button id="info" type="button" aria-label="Panel metadata" aria-pressed="false" aria-keyshortcuts="i" title="Panel metadata (I)">Info</button>
+          <button id="fullscreen" type="button" aria-label="Fullscreen" aria-pressed="false" aria-keyshortcuts="f" title="Fullscreen (F)">Fullscreen</button>
+        </div>
+      </div>
+      <p class="hint">← → / space · F fullscreen · I info</p>
+    </div>
   </nav>
   <p id="viewer-status" class="sr-only" role="status"></p>
 </body>
