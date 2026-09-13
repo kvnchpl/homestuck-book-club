@@ -20,6 +20,7 @@
   </header>
 <main class="deck" id="deck" aria-label="Homestuck Recap 1" tabindex="-1">
 <section class="slide cover" data-slide="1" aria-label="Slide 1 of 30">
+      <span id="counter" role="status" aria-live="polite" aria-atomic="true" hidden></span>
       <div class="cover-copy">
           <h1>HOMESTUCK RECAP #1</h1>
           <div class="cover-subtitles"><p>Act 1: The Note Desolation Plays</p><p>Act 2: Raise of the Conductor’s Baton</p></div>
@@ -175,7 +176,6 @@
     <div class="reader-controls">
       <div class="reader-next">
         <div class="next-command"><span aria-hidden="true">&gt;</span><button id="next" type="button" aria-label="Next slide" title="Next slide (→ / Page Down / Space)">Next slide.</button></div>
-        <span id="counter" role="status" aria-live="polite" aria-atomic="true"></span>
       </div>
       <div class="reader-tools">
         <div class="reader-history">
@@ -184,11 +184,11 @@
           <button id="prev" type="button" aria-label="Previous slide" title="Previous slide (← / Page Up)">Go back</button>
         </div>
         <div class="reader-options">
+          <a id="source-link" class="source-link" target="_blank" rel="noopener noreferrer" hidden></a>
           <button id="info" type="button" aria-label="Panel metadata" aria-pressed="false" aria-keyshortcuts="i" title="Panel metadata (I)">Info</button>
           <button id="fullscreen" type="button" aria-label="Fullscreen" aria-pressed="false" aria-keyshortcuts="f" title="Fullscreen (F)">Fullscreen</button>
         </div>
       </div>
-      <p class="hint">← → / space · F fullscreen · I info</p>
     </div>
   </nav>
   <p id="viewer-status" class="sr-only" role="status"></p>

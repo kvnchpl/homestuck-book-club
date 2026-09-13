@@ -8,12 +8,14 @@
 
   const controls = document.querySelector('.controls');
   const counter = document.getElementById('counter');
+  const sourceLink = document.getElementById('source-link');
   const previousButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
   const infoButton = document.getElementById('info');
   const fullscreenButton = document.getElementById('fullscreen');
   const status = document.getElementById('viewer-status');
   const metadata = [];
+  const sources = new Map();
   // Accept the existing hyphen separator and intermission filenames, too.
   const panelPattern = /^A(\d+(?:\.I\d+)?)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
 
@@ -25,14 +27,7 @@
     const page = Number(paddedPage);
     if (!img.hasAttribute('alt')) img.alt = `Homestuck Act ${act}, page ${page}`;
     const media = img.closest('.media');
-    const link = document.createElement('a');
-    link.className = 'source-link';
-    link.href = `https://homestuck.com/story/${page}`;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent = `p. ${page} ↗`;
-    link.setAttribute('aria-label', `Open Homestuck page ${page} (new tab)`);
-    media.append(link);
+    sources.set(img.closest('.slide'), page);
 
     const info = document.createElement('div');
     info.className = 'panel-info';
@@ -59,6 +54,20 @@
       slide.setAttribute('aria-label', `Slide ${n + 1} of ${slides.length}`);
     });
     counter.textContent = `${index + 1} / ${slides.length}`;
+    (slides[index].querySelector('.media') || slides[index]).append(counter);
+    counter.hidden = false;
+    const page = sources.get(slides[index]);
+    sourceLink.hidden = page === undefined;
+    if (page !== undefined) {
+      sourceLink.href = `https://homestuck.com/story/${page}`;
+      sourceLink.textContent = `p. ${page} ↗`;
+      sourceLink.setAttribute('aria-label', `Open Homestuck page ${page} (new tab)`);
+    } else {
+      if (document.activeElement === sourceLink) deck.focus({ preventScroll: true });
+      sourceLink.removeAttribute('href');
+      sourceLink.removeAttribute('aria-label');
+      sourceLink.textContent = '';
+    }
     previousButton.disabled = index === 0;
     nextButton.disabled = index === slides.length - 1;
     if (updateHash) history.replaceState(null, '', `#${index + 1}`);

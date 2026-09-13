@@ -63,7 +63,10 @@ GIF animation without a player, canvas, or animation library. Some supplied GIFs
 contain only one frame and are intentionally still.
 
 The shared script reads filenames such as `A2_15_story-0665.gif` and generates
-`p. 665 ↗` linking to `https://homestuck.com/story/665`. Leading zeroes are removed
+`p. 665 ↗` in the reader tools, linking to `https://homestuck.com/story/665`.
+The link updates for the current slide and is hidden on the cover or a slide
+without a recognized source. The slide counter sits at the panel’s lower-right
+corner (or the cover’s lower-right corner). Leading zeroes are removed
 from the link. The filename is the source of truth; URLs are not repeated in HTML.
 GIF, PNG, JPG/JPEG, and WebP are supported. Existing variants such as
 `A2_09-story-0419.gif` and `A3.I1_02_story-0833.gif` are also recognized. Files without
