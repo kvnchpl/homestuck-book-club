@@ -49,8 +49,8 @@ Use Recap #1 as the template for future recaps. Each panel is an ordinary image:
 <section class="slide beat">
   <div class="media">
     <img src="../../assets/A2_12_story-0665.gif"
-         alt="Dave ascends toward the roof of his apartment building."
-         width="1300" height="900">
+         alt="Bro’s note summons Dave to the roof."
+         width="650" height="450">
   </div>
   <div class="caption"><p>Recap text goes beneath the panel.</p></div>
 </section>
@@ -70,6 +70,14 @@ do not use domain-root URLs such as `src="/assets/…"`.
 Do not convert animated files into static images: native `<img>` elements play
 GIF animation without a player, canvas, or animation library. Some supplied GIFs
 contain only one frame and are intentionally still.
+
+Recap GIFs use a **650 × 450 pixel canvas** and indexed GIF color. Fit artwork
+proportionally inside that canvas, with white padding for square or tall panels;
+never crop or stretch it. Animated GIFs loop continuously while preserving their
+original frame count and frame durations. Static GIFs remain static. Palette and
+transparency/disposal details may differ between files to preserve native GIF
+playback; they do not need to be identical. The homepage WebP is separate from
+this recap-panel convention.
 
 The shared script reads filenames such as `A2_12_story-0665.gif` and generates
 `p. 665 ↗` in the reader tools, linking to `https://homestuck.com/story/665`.
@@ -147,9 +155,12 @@ or the focused navigation button becomes disabled.
 
 ### Recap #1 panel sources
 
-The restored panels use the original image bytes:
+Panel provenance (images are normalized to the shared canvas described above):
 
-- `A2_10_story-0637.gif`: [Pogo Hammer panel](https://storage.homestuck.com/story/homestuck/media/images/panels/act-2/00637.gif).
+- `A1_09_story-0246.gif`: user-supplied still from the Act 1 ending, converted from PNG.
+- `A2_03_story-0705.gif`: user-selected command terminal panel from story page 705.
+- `A2_10_story-0634.gif`: user-selected Pogo Hammer creation panel from story page 634.
+- `A2_13_story-0711.gif`: user-selected Can Town panel from story page 711.
 - `A2_11_story-0654.gif`: [Ogre climbing panel](https://storage.homestuck.com/story/homestuck/media/images/panels/act-2/00654_1.gif).
 - `A2_14_story-0749.gif`: [Serenity panel](https://storage.homestuck.com/story/homestuck/media/images/panels/act-2/00749.gif).
 - `A2_15_story-0757.gif`: the existing Act 2 closing still, restored from the repository’s original `A2_17_story-0757.gif` (commit `e15a8d5`).

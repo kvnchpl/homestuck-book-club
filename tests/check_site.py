@@ -53,6 +53,11 @@ def text(node):
 paths = [ROOT / 'index.html', ROOT / 'schedule/index.html', *sorted((ROOT / 'recaps').rglob('index.html'))]
 pages = {p.relative_to(ROOT).as_posix(): Page(p) for p in paths}
 assert all(p.is_file() for p in (ROOT / 'assets').iterdir()), 'Keep assets directly under assets/'
+for asset in (ROOT / 'assets').glob('*.gif'):
+    header = asset.read_bytes()[:10]
+    assert header[:6] in (b'GIF87a', b'GIF89a'), f'{asset.name}: not a GIF image'
+    dimensions = (int.from_bytes(header[6:8], 'little'), int.from_bytes(header[8:10], 'little'))
+    assert dimensions == (650, 450), f'{asset.name}: expected a 650 × 450 canvas, got {dimensions}'
 
 for name, page in pages.items():
     tree = page.root
@@ -94,6 +99,7 @@ for name, page in pages.items():
                         assert header[:6] in (b'GIF87a', b'GIF89a'), f'{target}: not a GIF image'
                         assert int.from_bytes(header[6:8], 'little') > 0
                         assert int.from_bytes(header[8:10], 'little') > 0
+                        assert (element.get('width'), element.get('height')) == ('650', '450'), f'{name}: incorrect GIF dimensions'
         assert 'styles.css' in targets and 'script.js' in targets, f'{name}: missing shared resources'
         recap_nav = by_class(tree, 'nav-recaps')
         assert len(recap_nav) == 1
