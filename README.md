@@ -21,14 +21,15 @@ JavaScript. Edit the message paragraphs directly in `index.html`.
 ## Recaps
 
 The recap index at `recaps/index.html` lists all 13 recaps alongside their meeting
-dates and readings. Recap #1 links to the viewer; unpublished recaps are marked
+dates and readings. Recaps #1 and #2 link to their viewers; unpublished recaps are marked
 “Not yet available.” When publishing a recap, replace its status paragraph with
 a reading link, using the first entry as the example. Edit this HTML directly;
 there is no generation step.
 
 The canonical recap layout is `/recaps/01/index.html`. Recap #1 currently contains
 25 slides, using original GIF panels and a still from the Act 2 closing animation.
-Recaps #2 and #3 have not been migrated.
+Recap #2 contains 23 slides covering Act 3 and the Intermission. Recaps #3–13
+are not yet available.
 
 Serve this directory with any static web server, for example
 `python3 -m http.server 8000`, and open `http://localhost:8000/recaps/01/`.
@@ -89,7 +90,8 @@ The link updates for the current slide and is hidden on the cover or a slide
 without a recognized source. The slide counter sits at the panel’s lower-right
 corner and is hidden on cover slides. Leading zeroes are removed
 from the link. The filename is the source of truth; URLs are not repeated in HTML.
-GIF, PNG, JPG/JPEG, and WebP are supported. Existing variants such as
+GIF, PNG, JPG/JPEG, and WebP are supported, including Intermission filenames
+such as `I1_07_story-1353.gif`. Existing variants such as
 `A2_06-story-0419.gif` and `A3.I1_02_story-0833.gif` are also recognized. Files without
 a story suffix remain visible without a guessed source link.
 

@@ -140,6 +140,8 @@ for number, (meeting, recap) in enumerate(zip(schedule, recaps), 1):
     reading_links = [a.get('href') for a in recap.iter('a') if re.fullmatch(r'\./\d{2}/', a.get('href', ''))]
     assert reading_links == ([f'./{number:02}/'] if published else []), f'Recap {number}: index publication link mismatch'
     assert bool(by_class(recap, 'recap-status')) != published, f'Recap {number}: incorrect availability'
+    schedule_links = [a.get('href') for a in meeting.iter('a') if re.fullmatch(r'\.\./recaps/\d{2}/', a.get('href', ''))]
+    assert schedule_links == ([f'../recaps/{number:02}/'] if published else []), f'Recap {number}: schedule publication link mismatch'
 
 assert reading_count == 32 and expected_start == 8130
 print(f'PASS: {len(pages)} pages, 13 recap entries, 32 readings / 8129 pages; local links and assets at both hosting paths.')

@@ -16,7 +16,7 @@
   if (![controls, counter, sourceLink, previousButton, nextButton, startOver].every(Boolean)) return;
   const sources = new Map();
   // Accept the existing hyphen separator and intermission filenames, too.
-  const panelPattern = /^A(\d+(?:\.I\d+)?)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
+  const panelPattern = /^(A\d+(?:\.I\d+)?|I\d+)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
 
   deck.querySelectorAll('.media img').forEach(img => {
     let filename;
@@ -27,10 +27,11 @@
     }
     const match = filename.match(panelPattern);
     if (!match) return;
-    const [, act, , paddedPage] = match;
+    const [, section, , paddedPage] = match;
     const page = Number(paddedPage);
     if (!Number.isSafeInteger(page) || page < 1) return;
-    if (!img.hasAttribute('alt')) img.alt = `Homestuck Act ${act}, page ${page}`;
+    const sectionLabel = /^I/i.test(section) ? `Intermission ${section.slice(1)}` : `Act ${section.slice(1)}`;
+    if (!img.hasAttribute('alt')) img.alt = `Homestuck ${sectionLabel}, page ${page}`;
     sources.set(img.closest('.slide'), page);
   });
 

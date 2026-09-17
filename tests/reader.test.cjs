@@ -48,7 +48,7 @@ function reader({ hash = '', missing, small = false, coarse = false, filename = 
     document.listeners.keydown(event);
     return event;
   };
-  return { ids, slides, deck, controls, document, location, jump, key, element };
+  return { ids, slides, images, deck, controls, document, location, jump, key, element };
 }
 
 test('covers hide counter/source and disable Start Over, including covers with images', () => {
@@ -68,9 +68,11 @@ test('covers hide counter/source and disable Start Over, including covers with i
 });
 
 test('source filenames resolve automatically and unknown/invalid URLs remain readable', () => {
-  for (const [filename, page] of [['A2_15_story-0665.gif', 665], ['A2_09-story-0419.gif', 419], ['A3.I1_02_story-0833.gif', 833]]) {
+  for (const [filename, page] of [['A2_15_story-0665.gif', 665], ['A2_09-story-0419.gif', 419], ['A3.I1_02_story-0833.gif', 833], ['I1_01_story-1155.gif', 1155], ['I1_07_story-1353.gif', 1353]]) {
     const r = reader({ hash: '#2', filename });
     assert.equal(r.ids['source-link'].href, `https://homestuck.com/story/${page}`);
+    assert.equal(r.ids['source-link'].hidden, false);
+    if (filename.startsWith('I1_')) assert.equal(r.images[1].alt, `Homestuck Intermission 1, page ${page}`);
     r.jump('#3');
     assert.equal(r.ids['source-link'].hidden, true);
     assert.equal(r.ids['source-link'].attrs['aria-label'], undefined);
