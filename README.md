@@ -29,7 +29,7 @@ there is no generation step.
 The canonical recap layout is `/recaps/01/index.html`. Recap #1 currently contains
 25 slides, using original GIF panels and a still from the Act 2 closing animation.
 Recap #2 contains 23 slides covering Act 3 and the Intermission. Recap #3 contains
-67 slides covering Act 4, preserving the supplied PDF’s full sequence. Recaps #4–13
+39 slides covering Act 4, consolidating the supplied PDF into shorter narrative beats. Recaps #4–13
 are not yet available.
 
 Serve this directory with any static web server, for example
@@ -175,21 +175,28 @@ Panel provenance (follow the resizing guidance above for future normalization):
 
 ### Recap #3 panel sources
 
-Recap #3 follows the supplied *HOMESTUCK RECAP #3* PDF, with paragraph breaks
-and minor typo corrections. Existing Act 4 GIFs are reused without recompression.
-Twelve black placeholder panels have been replaced with original comic artwork:
+Recap #3 adapts the supplied *HOMESTUCK RECAP #3* PDF into 39 slides, with
+short paragraphs covering the kids’ progress, ectobiology, the carapacian coup,
+the Reckoning, and the Exiles. Existing asset names remain stable when slides
+are reordered or consolidated; their numeric prefixes are not slide numbers.
+Unused source panels remain in `assets/` for future editorial choices.
 
-- `A4_25_story-1732.gif`, `A4_26_story-1758.gif`, and `A4_57_story-1946.gif`
-  come from official comic pages [1732](https://homestuck.com/story/1732),
-  [1758](https://homestuck.com/story/1758), and [1946](https://homestuck.com/story/1946), respectively.
-- `A4_37_story-1801.gif` and `A4_48_story-1801.gif` are artwork extracted from
-  the official [WV?: Rise up. animation](https://homestuck.com/story/1801).
-- `A4_24_story-1940.gif`, `A4_36_story-1940.gif`, `A4_46_story-1940.gif`,
-  `A4_47_story-1940.gif`, `A4_49_story-1940.gif`, `A4_50_story-1940.gif`, and
-  `A4_56_story-1940.gif` are artwork extracted from the official
-  [Descend animation](https://homestuck.com/story/1940). These are static images;
-  their original proportions and transparency are retained without added padding.
+The four replacement pairings use original artwork:
 
-The scene order was checked against [Acts & Pages: Act 4](https://actspages.net/act-4)
-and the [Act 4 synopsis](https://mspaintadventures.fandom.com/wiki/Homestuck:_Act_4).
-The source-less Derse image (`A4_06.gif`) intentionally has no guessed page link.
+- `A4_02_story-1507.gif`: [Crowsprite guarding the egg](https://homestuck.com/story/1507).
+- `A4_40_story-1553.gif`: [Jack’s demand for the white crowns](https://homestuck.com/story/1553).
+- `A4_54_story-1940.gif`: Becquerel’s birth, extracted from the official
+  [Descend animation](https://homestuck.com/story/1940).
+- `A4_59_story-1961.gif`: [Jade’s armed robot bunny](https://homestuck.com/story/1961).
+
+The other imported comic panels come from official pages
+[1732](https://homestuck.com/story/1732), [1758](https://homestuck.com/story/1758),
+and [1946](https://homestuck.com/story/1946). Additional static illustrations
+were extracted from [WV?: Rise up.](https://homestuck.com/story/1801) and
+[Descend](https://homestuck.com/story/1940). Their proportions and any native
+transparency are preserved without added padding. Animated comic GIFs retain
+their original frames and timing.
+
+Story details were checked against the comic,
+[Acts & Pages: Act 4](https://actspages.net/act-4), and the
+[Act 4 synopsis](https://mspaintadventures.fandom.com/wiki/Homestuck:_Act_4).
