@@ -177,17 +177,19 @@ Panel provenance (follow the resizing guidance above for future normalization):
 
 Recap #3 adapts the supplied *HOMESTUCK RECAP #3* PDF into 39 slides, with
 short paragraphs covering the kids’ progress, ectobiology, the carapacian coup,
-the Reckoning, and the Exiles. Existing asset names remain stable when slides
-are reordered or consolidated; their numeric prefixes are not slide numbers.
-Unused source panels remain in `assets/` for future editorial choices.
+the Reckoning, and the Exiles. The 38 images used in the deck are numbered `A4_01` through `A4_38` in reading
+order, including the act divider. The text-only cover has no asset number. Keep
+the `story-` suffix tied to the original comic page when changing an image’s
+sequence number, and update its HTML reference at the same time. Unused source
+panels retain their existing names in `assets/` for future editorial choices.
 
 The four replacement pairings use original artwork:
 
-- `A4_02_story-1507.gif`: [Crowsprite guarding the egg](https://homestuck.com/story/1507).
-- `A4_40_story-1553.gif`: [Jack’s demand for the white crowns](https://homestuck.com/story/1553).
-- `A4_54_story-1940.gif`: Becquerel’s birth, extracted from the official
+- `A4_05_story-1507.gif`: [Crowsprite guarding the egg](https://homestuck.com/story/1507).
+- `A4_21_story-1553.gif`: [Jack’s demand for the white crowns](https://homestuck.com/story/1553).
+- `A4_29_story-1940.gif`: Becquerel’s birth, extracted from the official
   [Descend animation](https://homestuck.com/story/1940).
-- `A4_59_story-1961.gif`: [Jade’s armed robot bunny](https://homestuck.com/story/1961).
+- `A4_34_story-1961.gif`: [Jade’s armed robot bunny](https://homestuck.com/story/1961).
 
 The other imported comic panels come from official pages
 [1732](https://homestuck.com/story/1732), [1758](https://homestuck.com/story/1758),
