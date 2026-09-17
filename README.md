@@ -183,9 +183,13 @@ the `story-` suffix tied to the original comic page when changing an image’s
 sequence number, and update its HTML reference at the same time. Unused source
 panels retain their existing names in `assets/` for future editorial choices.
 
-The four replacement pairings use original artwork:
+The replacement pairings use original artwork:
 
+- `A4_03_story-1471.gif`: [Grandpa leaving after rescuing John](https://homestuck.com/story/1471), second panel.
+- `A4_04_story-1626.gif`: [Rose and Jaspersprite on LOLAR’s shore](https://homestuck.com/story/1626), first panel.
 - `A4_05_story-1507.gif`: [Crowsprite guarding the egg](https://homestuck.com/story/1507).
+- `A4_08_story-1644.gif`: [Future Dave reversing time](https://homestuck.com/story/1644).
+- `A4_11_story-1709.gif`: [John holding Rose’s patched bunny](https://homestuck.com/story/1709).
 - `A4_21_story-1553.gif`: [Jack’s demand for the white crowns](https://homestuck.com/story/1553).
 - `A4_29_story-1940.gif`: Becquerel’s birth, extracted from the official
   [Descend animation](https://homestuck.com/story/1940).
