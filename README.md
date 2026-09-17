@@ -69,6 +69,13 @@ readable text. Without JavaScript, all slides remain readable in sequence.
 
 ## Assets and source links
 
+Use a main panel displayed on a Homestuck story page or a complete frame from
+that page’s Flash animation, preferably within the act being recapped. Do not
+substitute externally linked diagrams or individual artwork layers extracted
+from a Flash file. Record the actual source page and chosen panel or scene.
+See [the image-source audit](ASSET_SOURCES.md) for verification details and
+existing exceptions that still need replacement or full-frame confirmation.
+
 Keep **every asset directly under the repository’s `/assets/` directory**, without
 recap or act subfolders. Recap pages reference these files with `../../assets/`;
 do not use domain-root URLs such as `src="/assets/…"`.
@@ -199,9 +206,10 @@ The other imported comic panels come from official pages
 [1732](https://homestuck.com/story/1732), [1758](https://homestuck.com/story/1758),
 and [1946](https://homestuck.com/story/1946). Additional static illustrations
 were extracted from [WV?: Rise up.](https://homestuck.com/story/1801) and
-[Descend](https://homestuck.com/story/1940). Their proportions and any native
-transparency are preserved without added padding. Animated comic GIFs retain
-their original frames and timing.
+[Descend](https://homestuck.com/story/1940). Seven extracted illustrations still
+used in Recap #3 are source-audit exceptions: embedded artwork is not proof of
+a complete displayed frame. See [the audit](ASSET_SOURCES.md) before reusing
+these files. Animated comic GIFs retain their original frames and timing.
 
 Story details were checked against the comic,
 [Acts & Pages: Act 4](https://actspages.net/act-4), and the
