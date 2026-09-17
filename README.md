@@ -73,8 +73,7 @@ Use a main panel displayed on a Homestuck story page or a complete frame from
 that page’s Flash animation, preferably within the act being recapped. Do not
 substitute externally linked diagrams or individual artwork layers extracted
 from a Flash file. Record the actual source page and chosen panel or scene.
-See [the image-source audit](ASSET_SOURCES.md) for verification details and
-existing exceptions that still need replacement or full-frame confirmation.
+See [the image-source audit](ASSET_SOURCES.md) for verified panel/frame provenance and the documented earlier-act choice.
 
 Keep **every asset directly under the repository’s `/assets/` directory**, without
 recap or act subfolders. Recap pages reference these files with `../../assets/`;
@@ -190,7 +189,7 @@ the `story-` suffix tied to the original comic page when changing an image’s
 sequence number, and update its HTML reference at the same time. Unused source
 panels retain their existing names in `assets/` for future editorial choices.
 
-The replacement pairings use original artwork:
+The replacement pairings use main comic panels or complete Flash frames:
 
 - `A4_03_story-1471.gif`: [Grandpa leaving after rescuing John](https://homestuck.com/story/1471), second panel.
 - `A4_04_story-1626.gif`: [Rose and Jaspersprite on LOLAR’s shore](https://homestuck.com/story/1626), first panel.
@@ -198,18 +197,20 @@ The replacement pairings use original artwork:
 - `A4_08_story-1644.gif`: [Future Dave reversing time](https://homestuck.com/story/1644).
 - `A4_11_story-1709.gif`: [John holding Rose’s patched bunny](https://homestuck.com/story/1709).
 - `A4_21_story-1553.gif`: [Jack’s demand for the white crowns](https://homestuck.com/story/1553).
-- `A4_29_story-1940.gif`: Becquerel’s birth, extracted from the official
+- `A4_29_story-1940.gif`: Becquerel’s birth, a complete frame from the official
   [Descend animation](https://homestuck.com/story/1940).
 - `A4_34_story-1961.gif`: [Jade’s armed robot bunny](https://homestuck.com/story/1961).
 
 The other imported comic panels come from official pages
 [1732](https://homestuck.com/story/1732), [1758](https://homestuck.com/story/1758),
-and [1946](https://homestuck.com/story/1946). Additional static illustrations
-were extracted from [WV?: Rise up.](https://homestuck.com/story/1801) and
-[Descend](https://homestuck.com/story/1940). Seven extracted illustrations still
-used in Recap #3 are source-audit exceptions: embedded artwork is not proof of
-a complete displayed frame. See [the audit](ASSET_SOURCES.md) before reusing
-these files. Animated comic GIFs retain their original frames and timing.
+and [1946](https://homestuck.com/story/1946). Full-stage frames from
+[Descend](https://homestuck.com/story/1940) now supply the Skaia view, Rose’s
+gate blast, Battlefield scenes, defense portals, Becquerel’s birth, and Prospit’s
+destruction. The Jack sword image is a full-stage frame from
+[Jack: Ascend.](https://homestuck.com/story/1668). See [the audit](ASSET_SOURCES.md)
+for exact frame references and verification of every active recap image.
+Unused assets are not automatically approved for reuse. Animated comic GIFs
+retain their original frames and timing.
 
 Story details were checked against the comic,
 [Acts & Pages: Act 4](https://actspages.net/act-4), and the
