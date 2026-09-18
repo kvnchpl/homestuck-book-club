@@ -546,6 +546,12 @@ button {
   text-underline-offset: auto;
 }
 
+.reader-tools button,
+.reader-tools a {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 .next-command {
   line-height: 32px;
 }
