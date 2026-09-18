@@ -3,80 +3,39 @@
   'use strict';
 
   const referencePage = document.querySelector('.reference-page');
-  const select = document.querySelector('.character-select');
+  if (!referencePage) return;
+
+  const data = window.HOMESTUCK_REFERENCE;
+  const select = document.getElementById('character-select');
+  const roster = document.getElementById('character-roster');
+  const groupsContainer = document.getElementById('character-groups');
+  const cheatsContainer = document.getElementById('reference-cheats');
   const progress = document.getElementById('reading-progress');
   const progressScale = document.getElementById('reading-progress-scale');
   const progressOutput = document.getElementById('reading-progress-output');
   const progressStatus = document.getElementById('reading-progress-status');
   const boundaryLabel = document.getElementById('reference-boundary-label');
+  const loadingMessage = document.getElementById('reference-loading');
 
-  if (!referencePage || !select || !progress || !progressScale || !progressOutput || !progressStatus) return;
+  if (!data || !select || !roster || !groupsContainer || !cheatsContainer ||
+      !progress || !progressScale || !progressOutput || !progressStatus) {
+    if (loadingMessage) {
+      loadingMessage.textContent = 'The spoiler-safe reference could not be loaded.';
+    }
+    return;
+  }
 
-  // Add future acts here as the book club advances. The slider max, labels,
-  // story-page gating, and saved progress all derive from this one array.
-  const readingStages = [
-    { value: 1, key: 'act-1', label: 'Act 1', shortLabel: 'Act 1', endPage: 247 },
-    { value: 2, key: 'act-2', label: 'Act 2', shortLabel: 'Act 2', endPage: 758 },
-    { value: 3, key: 'act-3', label: 'Act 3', shortLabel: 'Act 3', endPage: 1152 },
-    { value: 4, key: 'intermission', label: 'Intermission', shortLabel: 'Inter.', endPage: 1356 },
-    { value: 5, key: 'act-4', label: 'Act 4', shortLabel: 'Act 4', endPage: 1988 },
-    { value: 6, key: 'act-5-act-1', label: 'Act 5 Act 1', shortLabel: 'A5A1', endPage: 2625 }
-  ];
+  const { stages, groups, characters, cheatSections } = data;
+  if (!Array.isArray(stages) || !stages.length) return;
 
   const storageKey = 'homestuck-reference-progress';
-
-  progress.min = String(readingStages[0].value);
-  progress.max = String(readingStages.at(-1).value);
-  progress.step = '1';
-
-  function stageForValue(value) {
-    return readingStages.find(stage => stage.value === Number(value)) || readingStages[0];
-  }
-
-  function revealLevelForStoryPage(page) {
-    const stage = readingStages.find(item => page <= item.endPage);
-    return stage ? stage.value : readingStages.at(-1).value + 1;
-  }
-
-  function storedProgress() {
-    try {
-      const value = Number(localStorage.getItem(storageKey));
-      return readingStages.some(stage => stage.value === value) ? value : readingStages[0].value;
-    } catch {
-      return readingStages[0].value;
-    }
-  }
-
-  function saveProgress(value) {
-    try {
-      localStorage.setItem(storageKey, String(value));
-    } catch {
-      // The reference still works when storage is blocked.
-    }
-  }
-
-  // Character intro links already point to story pages, so they also serve as
-  // the default reveal point for each card. A manual data-reveal overrides it.
-  select.querySelectorAll('.character-card').forEach(card => {
-    if (card.hasAttribute('data-reveal')) return;
-
-    const link = card.querySelector('.character-intro-link');
-    const match = link?.href.match(/\/story\/(\d+)/);
-
-    if (!match) {
-      card.dataset.reveal = String(readingStages[0].value);
-      return;
-    }
-
-    card.dataset.reveal = String(revealLevelForStoryPage(Number(match[1])));
-  });
+  const stageIndex = new Map(stages.map((stage, index) => [stage.key, index]));
 
   const characterColors = {
     john:   { accent: '#0715cd', text: '#0715cd' },
     rose:   { accent: '#b536da', text: '#8f1dac' },
     dave:   { accent: '#e00707', text: '#b80606' },
     jade:   { accent: '#4ac925', text: '#2f7f1b' },
-
     aradia: { accent: '#a10000', text: '#a10000' },
     tavros: { accent: '#a15000', text: '#8a4500' },
     sollux: { accent: '#a1a100', text: '#686800' },
@@ -91,231 +50,382 @@
     feferi: { accent: '#77003c', text: '#77003c' }
   };
 
-  const cards = [...select.querySelectorAll('.character-card')];
-  if (!cards.length) return;
+  let currentStage = stages[0];
+  let selectedCharacterId = null;
+  let currentTabs = [];
+  let currentCards = [];
 
-  const roster = document.createElement('div');
-  roster.className = 'character-roster';
-  roster.setAttribute('role', 'tablist');
-  roster.setAttribute('aria-label', 'Choose a character');
+  function stageFor(valueOrKey) {
+    return stages.find(stage =>
+      stage.key === String(valueOrKey) || stage.value === Number(valueOrKey)
+    ) || stages[0];
+  }
 
-  const tabs = [];
-  const rosterGroups = [];
-  let group = null;
-  let selectedIndex = 0;
+  function reached(requiredKey, atKey = currentStage.key) {
+    if (!requiredKey) return true;
+    const required = stageIndex.get(requiredKey);
+    const current = stageIndex.get(atKey);
+    return required !== undefined && current !== undefined && required <= current;
+  }
 
-  cards.forEach((card, index) => {
-    const section = card.closest('.character-group');
+  function resolveVariant(variants, stageKey = currentStage.key) {
+    if (!Array.isArray(variants)) return null;
+    let match = null;
+    for (const variant of variants) {
+      if (reached(variant.from, stageKey)) match = variant;
+    }
+    return match;
+  }
 
-    if (section !== group) {
-      group = section;
+  function resolvedValue(variants, stageKey = currentStage.key) {
+    return resolveVariant(variants, stageKey)?.value ?? null;
+  }
 
-      const label = document.createElement('div');
-      label.className = 'roster-group-label';
-      label.textContent = section.querySelector('h2').textContent;
-      label.setAttribute('role', 'presentation');
+  function resolvedGroupId(character, stageKey = currentStage.key) {
+    if (Array.isArray(character.group)) return resolvedValue(character.group, stageKey);
+    return character.group;
+  }
 
-      roster.append(label);
-      rosterGroups.push({ section, label });
+  function storedStage() {
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (!saved) return stages[0];
+      const byKey = stages.find(stage => stage.key === saved);
+      if (byKey) return byKey;
+      const byOldNumericValue = stages.find(stage => stage.value === Number(saved));
+      return byOldNumericValue || stages[0];
+    } catch {
+      return stages[0];
+    }
+  }
+
+  function saveStage(stage) {
+    try {
+      localStorage.setItem(storageKey, stage.key);
+    } catch {
+      // The reference still works when storage is blocked.
+    }
+  }
+
+  function characterFromHash() {
+    const match = location.hash.match(/^#character-(.+)$/);
+    return match ? match[1] : null;
+  }
+
+  function setCharacterPalette(element, id) {
+    const palette = characterColors[id];
+    if (!palette) return;
+    element.style.setProperty('--character-color', palette.accent);
+    element.style.setProperty('--character-text-color', palette.text);
+  }
+
+  function createPortrait(portrait, className, loading = 'lazy') {
+    if (!portrait?.src) return null;
+    const img = document.createElement('img');
+    img.className = className;
+    img.src = portrait.src;
+    img.alt = portrait.alt || '';
+    img.loading = loading;
+    return img;
+  }
+
+  function showCharacter(id, { updateHash = true, focus = false } = {}) {
+    const tab = currentTabs.find(item => item.dataset.characterId === id);
+    const card = currentCards.find(item => item.dataset.characterId === id);
+    if (!tab || !card) return false;
+
+    selectedCharacterId = id;
+    currentTabs.forEach(item => {
+      const selected = item.dataset.characterId === id;
+      item.setAttribute('aria-selected', String(selected));
+      item.tabIndex = selected ? 0 : -1;
+    });
+    currentCards.forEach(item => {
+      item.hidden = item.dataset.characterId !== id;
+    });
+
+    if (updateHash) history.replaceState(null, '', `#character-${id}`);
+    if (focus) tab.focus();
+    return true;
+  }
+
+  function makeCharacterCard(character, groupId) {
+    const nameVariant = resolveVariant(character.name);
+    if (!nameVariant) return null;
+
+    const card = document.createElement('article');
+    card.id = `character-${character.id}`;
+    card.className = `character-card${groupId === 'trolls' ? ' troll-card' : ''}`;
+    card.dataset.characterId = character.id;
+    card.setAttribute('role', 'tabpanel');
+    card.tabIndex = 0;
+    setCharacterPalette(card, character.id);
+
+    const portrait = resolvedValue(character.portrait);
+    const portraitElement = createPortrait(portrait, 'character-portrait');
+    if (portraitElement) card.append(portraitElement);
+
+    const copy = document.createElement('div');
+    copy.className = 'character-copy';
+
+    const heading = document.createElement('h3');
+    const link = document.createElement('a');
+    link.className = 'character-intro-link';
+    link.href = `https://homestuck.com/story/${nameVariant.sourcePage || character.introPage}`;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = nameVariant.value;
+    heading.append(link);
+    copy.append(heading);
+
+    const stats = document.createElement('dl');
+    stats.className = 'character-stats';
+    let statCount = 0;
+
+    for (const stat of character.stats || []) {
+      const variant = resolveVariant(stat.variants);
+      if (!variant) continue;
+      const row = document.createElement('div');
+      const dt = document.createElement('dt');
+      const dd = document.createElement('dd');
+      dt.textContent = variant.label;
+      dd.textContent = variant.value;
+      row.append(dt, dd);
+      stats.append(row);
+      statCount += 1;
     }
 
-    const portrait = card.querySelector('.character-portrait');
+    if (statCount) copy.append(stats);
 
+    const note = resolvedValue(character.note);
+    if (note) {
+      const paragraph = document.createElement('p');
+      paragraph.className = 'character-note';
+      paragraph.textContent = note;
+      copy.append(paragraph);
+    }
+
+    card.append(copy);
+    return card;
+  }
+
+  function makeRosterTab(character, card, groupId) {
     const tab = document.createElement('button');
     tab.type = 'button';
     tab.className = 'character-option';
     tab.id = `${card.id}-tab`;
-    tab.dataset.reveal = card.dataset.reveal || '1';
+    tab.dataset.characterId = character.id;
     tab.setAttribute('role', 'tab');
-    tab.setAttribute('aria-label', portrait.alt);
     tab.setAttribute('aria-controls', card.id);
+    tab.setAttribute('aria-selected', 'false');
+    tab.tabIndex = -1;
+    setCharacterPalette(tab, character.id);
 
-    const slug = card.id.replace(/^character-/, '');
-    const palette = characterColors[slug];
-
-    if (palette) {
-      tab.style.setProperty('--character-color', palette.accent);
-      tab.style.setProperty('--character-text-color', palette.text);
-      card.style.setProperty('--character-color', palette.accent);
-      card.style.setProperty('--character-text-color', palette.text);
+    const portrait = resolvedValue(character.portrait);
+    const thumbnail = createPortrait(portrait, 'roster-portrait', 'eager');
+    if (thumbnail) {
+      thumbnail.alt = '';
+      tab.append(thumbnail);
     }
-
-    const thumbnail = portrait.cloneNode();
-    thumbnail.className = 'roster-portrait';
-    thumbnail.alt = '';
-    thumbnail.loading = 'eager';
 
     const name = document.createElement('span');
     name.className = 'roster-name';
-    name.textContent = card.getAttribute('data-roster-label') || portrait.alt.split(' ')[0];
+    name.textContent = resolvedValue(character.rosterLabel) || resolvedValue(character.name) || character.id;
+    tab.append(name);
+    tab.setAttribute('aria-label', name.textContent);
 
-    tab.append(thumbnail, name);
-    tab.addEventListener('click', () => show(index));
-
+    tab.addEventListener('click', () => showCharacter(character.id));
     tab.addEventListener('keydown', event => {
-      const visibleIndexes = cards
-        .map((cardItem, cardIndex) => cardItem.hasAttribute('data-progress-hidden') ? -1 : cardIndex)
-        .filter(cardIndex => cardIndex >= 0);
-
-      const position = visibleIndexes.indexOf(index);
-      if (position < 0) return;
-
-      let nextPosition;
-
-      if (event.key === 'ArrowRight') nextPosition = (position + 1) % visibleIndexes.length;
-      if (event.key === 'ArrowLeft') nextPosition = (position + visibleIndexes.length - 1) % visibleIndexes.length;
-      if (event.key === 'ArrowDown') nextPosition = Math.min(position + 4, visibleIndexes.length - 1);
-      if (event.key === 'ArrowUp') nextPosition = Math.max(position - 4, 0);
-      if (event.key === 'Home') nextPosition = 0;
-      if (event.key === 'End') nextPosition = visibleIndexes.length - 1;
-
-      if (nextPosition === undefined || event.altKey || event.ctrlKey || event.metaKey) return;
-
+      if (event.altKey || event.ctrlKey || event.metaKey) return;
+      const index = currentTabs.indexOf(tab);
+      if (index < 0) return;
+      let nextIndex;
+      if (event.key === 'ArrowRight') nextIndex = (index + 1) % currentTabs.length;
+      if (event.key === 'ArrowLeft') nextIndex = (index + currentTabs.length - 1) % currentTabs.length;
+      if (event.key === 'ArrowDown') nextIndex = Math.min(index + 4, currentTabs.length - 1);
+      if (event.key === 'ArrowUp') nextIndex = Math.max(index - 4, 0);
+      if (event.key === 'Home') nextIndex = 0;
+      if (event.key === 'End') nextIndex = currentTabs.length - 1;
+      if (nextIndex === undefined) return;
       event.preventDefault();
-
-      const nextIndex = visibleIndexes[nextPosition];
-      show(nextIndex);
-      tabs[nextIndex].focus();
+      showCharacter(currentTabs[nextIndex].dataset.characterId, { focus: true });
     });
 
-    card.setAttribute('role', 'tabpanel');
     card.setAttribute('aria-labelledby', tab.id);
-    card.tabIndex = 0;
-
-    tabs.push(tab);
-    roster.append(tab);
-  });
-
-  function isAvailable(index) {
-    return index >= 0 &&
-      index < cards.length &&
-      !cards[index].hasAttribute('data-progress-hidden');
+    return tab;
   }
 
-  function nearestAvailableIndex(preferredIndex = 0) {
-    if (isAvailable(preferredIndex)) return preferredIndex;
+  function renderCharacters() {
+    roster.replaceChildren();
+    groupsContainer.replaceChildren();
+    currentTabs = [];
+    currentCards = [];
 
-    for (let distance = 1; distance < cards.length; distance += 1) {
-      const before = preferredIndex - distance;
-      const after = preferredIndex + distance;
-
-      if (isAvailable(before)) return before;
-      if (isAvailable(after)) return after;
+    const available = characters.filter(character => reached(character.reveal));
+    const requested = characterFromHash();
+    const availableIds = new Set(available.map(character => character.id));
+    if (requested && availableIds.has(requested)) selectedCharacterId = requested;
+    if (!selectedCharacterId || !availableIds.has(selectedCharacterId)) {
+      selectedCharacterId = available[0]?.id || null;
     }
 
-    return cards.findIndex((_, index) => isAvailable(index));
+    for (const group of groups) {
+      const groupTitle = resolvedValue(group.title);
+      if (!groupTitle) continue;
+      const groupCharacters = available.filter(character => resolvedGroupId(character) === group.id);
+      if (!groupCharacters.length) continue;
+
+      const rosterLabel = document.createElement('div');
+      rosterLabel.className = 'roster-group-label';
+      rosterLabel.textContent = groupTitle;
+      rosterLabel.setAttribute('role', 'presentation');
+      roster.append(rosterLabel);
+
+      const section = document.createElement('section');
+      section.className = 'reference-section character-group';
+      section.id = group.id;
+      const heading = document.createElement('h2');
+      heading.textContent = groupTitle;
+      section.append(heading);
+      const grid = document.createElement('div');
+      grid.className = `character-grid ${group.id === 'trolls' ? 'troll-grid' : group.id === 'guardians-sprites' ? 'guardian-grid' : group.id === 'carapacians' ? 'carapacian-grid' : group.id === 'others' ? 'other-grid' : 'kid-grid'}`;
+      section.append(grid);
+
+      for (const character of groupCharacters) {
+        const card = makeCharacterCard(character, group.id);
+        if (!card) continue;
+        const tab = makeRosterTab(character, card, group.id);
+        roster.append(tab);
+        grid.append(card);
+        currentTabs.push(tab);
+        currentCards.push(card);
+      }
+      groupsContainer.append(section);
+    }
+
+    if (!currentCards.length) {
+      select.hidden = true;
+      return;
+    }
+
+    select.hidden = false;
+    select.classList.add('is-ready');
+    showCharacter(selectedCharacterId || currentCards[0].dataset.characterId, { updateHash: false });
   }
 
-  function show(index, updateHash = true) {
-    const safeIndex = nearestAvailableIndex(index);
-    if (safeIndex < 0) return;
+  function renderCheats() {
+    cheatsContainer.replaceChildren();
 
-    selectedIndex = safeIndex;
+    for (const sectionData of cheatSections || []) {
+      if (!reached(sectionData.reveal)) continue;
+      const title = resolvedValue(sectionData.title);
+      if (!title) continue;
 
-    cards.forEach((card, i) => {
-      const selected = i === safeIndex;
+      const visibleCards = (sectionData.cards || []).map(card => ({
+        data: card,
+        title: resolvedValue(card.title),
+        body: resolvedValue(card.body)
+      })).filter(card => card.title && card.body);
 
-      card.hidden = !selected;
-      tabs[i].setAttribute('aria-selected', String(selected));
-      tabs[i].tabIndex = selected ? 0 : -1;
-    });
+      if (!visibleCards.length && !sectionData.quadrants?.length) continue;
 
-    if (updateHash) {
-      history.replaceState(null, '', `#${cards[safeIndex].id}`);
+      const section = document.createElement('section');
+      section.className = 'reference-section';
+      section.id = sectionData.id;
+      const heading = document.createElement('h2');
+      heading.textContent = title;
+      section.append(heading);
+
+      if (visibleCards.length) {
+        const grid = document.createElement('div');
+        grid.className = 'quick-grid';
+        for (const card of visibleCards) {
+          const article = document.createElement('article');
+          article.className = 'quick-card';
+          const cardHeading = document.createElement('h3');
+          cardHeading.textContent = card.title;
+          const paragraph = document.createElement('p');
+          paragraph.textContent = card.body;
+          article.append(cardHeading, paragraph);
+          grid.append(article);
+        }
+        section.append(grid);
+      }
+
+      if (sectionData.quadrants?.length) {
+        const strip = document.createElement('div');
+        strip.className = 'quadrant-strip';
+        strip.setAttribute('aria-label', 'The four troll romance quadrants');
+        for (const quadrant of sectionData.quadrants) {
+          const item = document.createElement('div');
+          const symbol = document.createElement('span');
+          symbol.className = 'quadrant-symbol';
+          symbol.textContent = quadrant.symbol;
+          const strong = document.createElement('strong');
+          strong.textContent = quadrant.name;
+          const small = document.createElement('small');
+          small.textContent = quadrant.caption;
+          item.append(symbol, strong, small);
+          strip.append(item);
+        }
+        section.append(strip);
+      }
+
+      cheatsContainer.append(section);
     }
   }
 
-  function readHash() {
-    const requestedIndex = cards.findIndex(card => `#${card.id}` === location.hash);
-    show(requestedIndex < 0 ? selectedIndex : requestedIndex, requestedIndex >= 0);
-  }
-
-  function syncRosterGroups() {
-    rosterGroups.forEach(({ section, label }) => {
-      const hasVisibleCard = cards.some(card =>
-        card.closest('.character-group') === section &&
-        !card.hasAttribute('data-progress-hidden')
-      );
-
-      label.hidden = !hasVisibleCard;
-    });
-  }
-
-  function applyProgress(value, { persist = true, syncSelection = true } = {}) {
-    const stage = stageForValue(value);
-    const level = stage.value;
-
-    document.documentElement.dataset.referenceProgress = String(level);
-    progress.value = String(level);
-
-    const percent = readingStages.length === 1
-      ? 0
-      : ((level - readingStages[0].value) /
-        (readingStages.at(-1).value - readingStages[0].value)) * 100;
-
+  function updateStageUI(stage) {
+    progress.value = String(stage.value);
+    const first = stages[0].value;
+    const last = stages.at(-1).value;
+    const percent = stages.length === 1 ? 0 : ((stage.value - first) / (last - first)) * 100;
     progress.style.setProperty('--reading-progress-percent', `${percent}%`);
-
     progressOutput.value = stage.label;
     progressOutput.textContent = stage.label;
     progressStatus.textContent = `Showing only information revealed through ${stage.label}.`;
-
-    if (boundaryLabel) {
-      boundaryLabel.textContent = `SPOILER BOUNDARY: THROUGH ${stage.label.toUpperCase()}.`;
-    }
-
-    document.querySelectorAll('[data-reveal]').forEach(element => {
-      const revealAt = Number(element.dataset.reveal);
-      element.toggleAttribute(
-        'data-progress-hidden',
-        Number.isFinite(revealAt) && revealAt > level
-      );
-    });
+    if (boundaryLabel) boundaryLabel.textContent = `SPOILER BOUNDARY: THROUGH ${stage.label.toUpperCase()}.`;
+    document.documentElement.dataset.referenceProgress = stage.key;
 
     progressScale.querySelectorAll('.reading-progress-tick').forEach(button => {
-      const active = Number(button.dataset.progressValue) === level;
-      button.setAttribute('aria-pressed', String(active));
+      button.setAttribute('aria-pressed', String(button.dataset.stageKey === stage.key));
     });
-
-    syncRosterGroups();
-
-    if (syncSelection) {
-      const nextIndex = nearestAvailableIndex(selectedIndex);
-      if (nextIndex >= 0) {
-        show(nextIndex, nextIndex !== selectedIndex);
-      }
-    }
-
-    if (persist) saveProgress(level);
   }
 
-  readingStages.forEach(stage => {
+  function applyProgress(valueOrKey, { persist = true } = {}) {
+    currentStage = stageFor(valueOrKey);
+    updateStageUI(currentStage);
+    renderCharacters();
+    renderCheats();
+    if (loadingMessage) loadingMessage.hidden = true;
+    if (persist) saveStage(currentStage);
+  }
+
+  progress.min = String(stages[0].value);
+  progress.max = String(stages.at(-1).value);
+  progress.step = '1';
+  progressScale.style.setProperty('--reading-stage-count', String(stages.length));
+
+  for (const stage of stages) {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'reading-progress-tick';
-    button.dataset.progressValue = String(stage.value);
+    button.dataset.stageKey = stage.key;
     button.textContent = stage.shortLabel;
     button.setAttribute('aria-label', `Show reference through ${stage.label}`);
     button.setAttribute('aria-pressed', 'false');
-
-    button.addEventListener('click', () => applyProgress(stage.value));
+    button.addEventListener('click', () => applyProgress(stage.key));
     progressScale.append(button);
+  }
+
+  progress.addEventListener('input', () => applyProgress(progress.value));
+  window.addEventListener('hashchange', () => {
+    const id = characterFromHash();
+    if (id) showCharacter(id, { updateHash: false });
   });
 
-  progress.addEventListener('input', () => {
-    applyProgress(Number(progress.value));
-  });
-
-  select.prepend(roster);
-
-  const initialProgress = storedProgress();
-  applyProgress(initialProgress, { persist: false, syncSelection: false });
-
-  readHash();
-  select.classList.add('is-ready');
-
-  window.addEventListener('hashchange', readHash);
+  applyProgress(storedStage().key, { persist: false });
 })();
-
 
 (() => {
   'use strict';

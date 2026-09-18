@@ -681,7 +681,7 @@ button {
 
 .reading-progress-scale {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--reading-stage-count, 6), minmax(0, 1fr));
   gap: 4px;
   margin-top: 2px;
 }
@@ -713,6 +713,19 @@ button {
 .reading-progress-status {
   min-height: 1.5em;
   color: #535353;
+}
+
+.reference-loading,
+.reference-noscript {
+  margin: 0 0 2rem;
+  padding: 12px 14px;
+  border: 1px dashed #777;
+  background: #e6e6e6;
+  font: 400 12px/1.5 Verdana, Arial, sans-serif;
+}
+
+.reference-noscript {
+  border-style: solid;
 }
 
 .reference-section {
