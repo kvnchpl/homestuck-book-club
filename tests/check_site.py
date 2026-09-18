@@ -124,11 +124,14 @@ for name, page in pages.items():
         assert page.ids['start-over'].tag == 'button'
 
 reference = pages['reference/index.html']
-assert reference.ids['reference-search'].get('type') == 'search'
-assert reference.ids['reference-results'].get('role') == 'status'
-assert reference.ids['reference-clear'].tag == 'button'
-assert 'hidden' in by_class(reference.root, 'reference-search-tools')[0].attrib
-assert all('hidden' not in entry.attrib for entry in by_class(reference.root, 'reference-card'))
+portraits = by_class(reference.root, 'character-portrait')
+assert len(portraits) == 16, 'Reference must show the four kids and twelve trolls'
+for portrait in portraits:
+    data = (ROOT / 'reference' / portrait.get('src')).read_bytes()
+    assert data[:8] == b'\x89PNG\r\n\x1a\n', f"{portrait.get('src')}: expected a real PNG"
+    dimensions = (int.from_bytes(data[16:20], 'big'), int.from_bytes(data[20:24], 'big'))
+    assert dimensions == (int(portrait.get('width')), int(portrait.get('height')))
+    assert all(0 < side <= 512 for side in dimensions), 'Use individual portraits, not sprite sheets'
 assert all('hidden' not in section.attrib for section in by_class(reference.root, 'reference-section'))
 
 schedule = by_class(pages['schedule/index.html'].root, 'meeting')

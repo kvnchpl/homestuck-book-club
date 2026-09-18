@@ -15,28 +15,29 @@ fi
 
 mkdir -p "$ASSETS_DIR"
 
+# Stage and validate each portrait before replacing the installed image.
+WORK_DIR="$(mktemp -d)"
+trap 'rm -rf "$WORK_DIR"' EXIT
+
 fetch_png () {
   local url="$1"
   local out="$2"
-  local tmp
+  local width height
 
-  tmp="$(mktemp)"
   echo "Fetching $(basename "$out")"
+  curl --fail --location --silent --show-error --retry 3 --retry-delay 1 \
+    --connect-timeout 15 --max-time 60 "$url" --output "$WORK_DIR/source"
 
-  curl \
-    --fail \
-    --location \
-    --silent \
-    --show-error \
-    --retry 3 \
-    --retry-delay 1 \
-    "$url" \
-    --output "$tmp"
-
-  # Normalize whatever the server returned into a real PNG.
-  sips -s format png "$tmp" --out "$out" >/dev/null
-
-  rm -f "$tmp"
+  # Some image hosts return WebP despite a PNG URL; keep the installed format honest.
+  sips -s format png "$WORK_DIR/source" --out "$WORK_DIR/portrait.png" >/dev/null
+  width="$(sips -g pixelWidth "$WORK_DIR/portrait.png" | awk '/pixelWidth:/ {print $2}')"
+  height="$(sips -g pixelHeight "$WORK_DIR/portrait.png" | awk '/pixelHeight:/ {print $2}')"
+  if [[ ! "$width" =~ ^[0-9]+$ || ! "$height" =~ ^[0-9]+$ ]] ||
+     (( width < 1 || height < 1 || width > 512 || height > 512 )); then
+    echo "Rejected $(basename "$out"): expected an individual portrait, got ${width}x${height}." >&2
+    return 1
+  fi
+  mv "$WORK_DIR/portrait.png" "$out"
 }
 
 # Kids
@@ -45,7 +46,7 @@ fetch_png \
   "$ASSETS_DIR/ref-john.png"
 
 fetch_png \
-  'https://homestuck.net/img/resources/assets/uncategorized-assets/Characters/Humans/Rose/rose.png' \
+  'https://static.wikia.nocookie.net/mspaintadventures/images/7/7e/Rose_Lalonde.png/revision/latest?cb=20100710062733' \
   "$ASSETS_DIR/ref-rose.png"
 
 fetch_png \
@@ -53,7 +54,7 @@ fetch_png \
   "$ASSETS_DIR/ref-dave.png"
 
 fetch_png \
-  'https://homestuck.net/img/resources/assets/uncategorized-assets/Characters/Humans/Jade/jade.png' \
+  'https://homestuck.net/img/resources/assets/uncategorized-assets/Jade%20Harley%20-%20Normal.gif' \
   "$ASSETS_DIR/ref-jade.png"
 
 # Trolls

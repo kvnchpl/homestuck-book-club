@@ -129,12 +129,19 @@ all slides, hide controls and the counter, and request one square page per slide
 
 The reference at `reference/index.html` is a published club page, linked from every
 page’s navigation and the homepage. It uses the shared wiki frame, CSS, and JS.
-Its stated spoiler boundary is Meeting #4 / Act 5 Act 1. Keep visible descriptions,
-fact tables, and `data-search` keywords within that boundary when editing it.
-Search matches all entered words across each entry’s text and keywords, hides
-empty sections, and announces result counts. Clear Search restores every entry.
-Without JavaScript, all entries and section links remain readable; search controls
-are shown only when their behavior is available.
+Its stated spoiler boundary is Meeting #4 / Act 5 Act 1. Keep character portraits
+and descriptions within that boundary when editing it. The visual character cards
+and section links work without JavaScript. Portraits retain their native proportions
+and live directly in `assets/`, alongside the recap panels. These small PNG
+portraits are separate from the 650px-wide recap GIF convention.
+
+`download-reference-assets-fixed.sh` records the portrait source URLs and validates
+the downloaded images before installing them. Rose uses the wiki’s individual
+default portrait; Jade uses the archive’s “Jade Harley - Normal.gif,” converted to
+PNG. Both previously pointed at full sprite sheets. The older download script
+forwards to this verified version. Run `python3 tests/check_site.py` after replacing
+portraits; it checks PNG signatures, dimensions, and the 16 character image links.
+
 
 
 ## Adding a recap
@@ -176,7 +183,7 @@ The Python check validates local links and fragments at both hosting paths,
 shared resources, image references, required reader controls, recap availability,
 and agreement between the schedule and recap index. It also checks that the
 reading ranges are continuous and their page counts add up. The Node tests cover
-reader state and reference filtering with minimal DOM fixtures; they do not replace
+reader state with minimal DOM fixtures; they do not replace
 browser layout or assistive-technology testing.
 
 Incomplete reader templates fall back to showing all slides. Unknown image
