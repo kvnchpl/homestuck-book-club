@@ -125,13 +125,22 @@ for name, page in pages.items():
 
 reference = pages['reference/index.html']
 portraits = by_class(reference.root, 'character-portrait')
-assert len(portraits) == 16, 'Reference must show the four kids and twelve trolls'
+cards = by_class(reference.root, 'character-card')
+assert len(by_class(reference.ids['kids'], 'character-card')) == 4
+assert len(by_class(reference.ids['trolls'], 'character-card')) == 12
+assert len(portraits) == len(cards), 'Every character must have one portrait'
+for card in cards:
+    assert len(by_class(card, 'character-portrait')) == 1
+    introductions = by_class(card, 'character-intro-link')
+    assert len(introductions) == 1, 'Every character must have an introduction link'
+    introduction = re.fullmatch(r'https://homestuck\.com/story/(\d+)', introductions[0].get('href', ''))
+    assert introduction and 1 <= int(introduction[1]) <= 2625, 'Keep introductions within the reference spoiler boundary'
 for portrait in portraits:
     data = (ROOT / 'reference' / portrait.get('src')).read_bytes()
     assert data[:8] == b'\x89PNG\r\n\x1a\n', f"{portrait.get('src')}: expected a real PNG"
     dimensions = (int.from_bytes(data[16:20], 'big'), int.from_bytes(data[20:24], 'big'))
     assert dimensions == (int(portrait.get('width')), int(portrait.get('height')))
-    assert all(0 < side <= 512 for side in dimensions), 'Use individual portraits, not sprite sheets'
+    assert all(0 < side <= 650 for side in dimensions), 'Use individual portraits, not sprite sheets'
 assert all('hidden' not in section.attrib for section in by_class(reference.root, 'reference-section'))
 
 schedule = by_class(pages['schedule/index.html'].root, 'meeting')

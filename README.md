@@ -140,12 +140,22 @@ remains readable. Portraits retain their native proportions
 and live directly in `assets/`, alongside the recap panels. These small PNG
 portraits are separate from the 650px-wide recap GIF convention.
 
+Use short noun phrases with consistent initial capitals for character interests,
+paraphrased from the comic rather than copied as uppercase sentence fragments.
+Keep powers and personality traits out of these lists. Aradia's list describes her
+former interests. Some introductions span several pages: Jade's interests continue
+on story page 789; Eridan's and Feferi's biographies continue on 2439 and 2441.
+Character-name links should open a formal introduction or an early scene clearly
+showing the named character, within the spoiler boundary. For an unseen character
+such as Lord English, use an early contextual mention rather than a later reveal.
+
 `download-reference-assets-fixed.sh` records the portrait source URLs and validates
 the downloaded images before installing them. Rose uses the wiki’s individual
 default portrait; Jade uses the archive’s “Jade Harley - Normal.gif,” converted to
 PNG. Both previously pointed at full sprite sheets. The older download script
 forwards to this verified version. Run `python3 tests/check_site.py` after replacing
-portraits; it checks PNG signatures, dimensions, and the 16 character image links.
+portraits; it checks PNG signatures, dimensions, all character image links, and
+introduction-link page numbers against the stated spoiler boundary.
 
 
 
