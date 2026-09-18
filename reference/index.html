@@ -31,6 +31,37 @@
         <h1 class="page-title">Reference</h1>
       </header>
 
+      <section class="reading-progress" aria-labelledby="reading-progress-heading">
+        <h2 id="reading-progress-heading">How much have you read?</h2>
+        <p class="reading-progress-copy" id="reading-progress-copy">
+          Choose the latest section you've finished. Anything introduced later stays hidden.
+        </p>
+
+        <div class="reading-progress-control">
+          <div class="reading-progress-selected">
+            <span>Showing through</span>
+            <output id="reading-progress-output" for="reading-progress">Act 1</output>
+          </div>
+
+          <input
+            id="reading-progress"
+            type="range"
+            min="1"
+            max="6"
+            step="1"
+            value="1"
+            aria-labelledby="reading-progress-heading"
+            aria-describedby="reading-progress-copy reading-progress-status"
+          >
+
+          <div class="reading-progress-scale" id="reading-progress-scale" aria-label="Reading milestones"></div>
+        </div>
+
+        <p class="reading-progress-status" id="reading-progress-status" aria-live="polite">
+          Showing only information revealed through Act 1.
+        </p>
+      </section>
+
       <!-- Interests use concise noun phrases paraphrased from the introduction sequences.
            Name links lead to a formal introduction or an early scene showing the named character;
            Lord English links to his early mention while he remains unseen. -->
@@ -46,8 +77,8 @@
               <h3><a class="character-intro-link" href="https://homestuck.com/story/4" target="_blank" rel="noopener noreferrer">JOHN EGBERT</a></h3>
               <dl class="character-stats">
                 <div><dt>Handle</dt><dd>ectoBiologist [EB]</dd></div>
-                <div><dt>Land</dt><dd>Land of Wind and Shade</dd></div>
-                <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
+                <div data-reveal="5"><dt>Land</dt><dd>Land of Wind and Shade</dd></div>
+                <div data-reveal="5"><dt>Dream Moon</dt><dd>Prospit</dd></div>
                 <div><dt>Interests</dt><dd>Bad movies · Programming · Paranormal lore · Stage magic · Video games</dd></div>
               </dl>
             </div>
@@ -59,8 +90,8 @@
               <h3><a class="character-intro-link" href="https://homestuck.com/story/217" target="_blank" rel="noopener noreferrer">ROSE LALONDE</a></h3>
               <dl class="character-stats">
                 <div><dt>Handle</dt><dd>tentacleTherapist [TT]</dd></div>
-                <div><dt>Land</dt><dd>Land of Light and Rain</dd></div>
-                <div><dt>Dream Moon</dt><dd>Derse</dd></div>
+                <div data-reveal="5"><dt>Land</dt><dd>Land of Light and Rain</dd></div>
+                <div data-reveal="5"><dt>Dream Moon</dt><dd>Derse</dd></div>
                 <div><dt>Interests</dt><dd>Obscure literature · Creative writing · Occult lore · Psychoanalysis · Knitting · Video games</dd></div>
               </dl>
             </div>
@@ -72,8 +103,8 @@
               <h3><a class="character-intro-link" href="https://homestuck.com/story/312" target="_blank" rel="noopener noreferrer">DAVE STRIDER</a></h3>
               <dl class="character-stats">
                 <div><dt>Handle</dt><dd>turntechGodhead [TG]</dd></div>
-                <div><dt>Land</dt><dd>Land of Heat and Clockwork</dd></div>
-                <div><dt>Dream Moon</dt><dd>Derse</dd></div>
+                <div data-reveal="5"><dt>Land</dt><dd>Land of Heat and Clockwork</dd></div>
+                <div data-reveal="5"><dt>Dream Moon</dt><dd>Derse</dd></div>
                 <div><dt>Interests</dt><dd>DJing · Obscure bands · Preserved animals · Photography</dd></div>
               </dl>
             </div>
@@ -86,7 +117,7 @@
               <dl class="character-stats">
                 <div><dt>Handle</dt><dd>gardenGnostic [GG]</dd></div>
                 <div><dt>Land</dt><dd>Not yet revealed</dd></div>
-                <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
+                <div data-reveal="3"><dt>Dream Moon</dt><dd>Prospit</dd></div>
                 <div><dt>Interests</dt><dd>Gardening · Nostalgic cartoons · Anthropomorphic animals · Nuclear physics · Gadgetry</dd></div>
               </dl>
             </div>
@@ -338,7 +369,7 @@
               <dl class="character-stats">
                 <div><dt>Role</dt><dd>Jade's guardian</dd></div>
               </dl>
-              <p class="character-note">Jade's dog, best friend, and Earth's FIRST GUARDIAN, with overwhelming space-warping power.</p>
+              <p class="character-note" data-reveal="5">Jade's dog, best friend, and Earth's FIRST GUARDIAN, with overwhelming space-warping power.</p>
             </div>
           </article>
 
@@ -354,10 +385,10 @@
             <div class="character-copy">
               <h3><a class="character-intro-link" href="https://homestuck.com/story/666" target="_blank" rel="noopener noreferrer">WAYWARD VAGABOND</a></h3>
               <dl class="character-stats">
-                <div><dt>Formerly</dt><dd>WARWEARY VILLEIN</dd></div>
+                <div data-reveal="5"><dt>Formerly</dt><dd>WARWEARY VILLEIN</dd></div>
                 <div><dt>Abbreviation</dt><dd>WV</dd></div>
               </dl>
-              <p class="character-note">A Dersite farmer turned exile who sends commands to John from future Earth and builds Can Town.</p>
+              <p class="character-note" data-reveal="5">A Dersite farmer turned exile who sends commands to John from future Earth and builds Can Town.</p>
             </div>
           </article>
 
@@ -366,10 +397,10 @@
             <div class="character-copy">
               <h3><a class="character-intro-link" href="https://homestuck.com/story/892" target="_blank" rel="noopener noreferrer">PEREGRINE MENDICANT</a></h3>
               <dl class="character-stats">
-                <div><dt>Formerly</dt><dd>PARCEL MISTRESS</dd></div>
+                <div data-reveal="5"><dt>Formerly</dt><dd>PARCEL MISTRESS</dd></div>
                 <div><dt>Abbreviation</dt><dd>PM</dd></div>
               </dl>
-              <p class="character-note">A Prospitian mail carrier turned exile, determined to complete the delivery of Jade&#x27;s package.</p>
+              <p class="character-note" data-reveal="5">A Prospitian mail carrier turned exile, determined to complete the delivery of Jade&#x27;s package.</p>
             </div>
           </article>
 
@@ -378,10 +409,10 @@
             <div class="character-copy">
               <h3><a class="character-intro-link" href="https://homestuck.com/story/1100" target="_blank" rel="noopener noreferrer">AIMLESS RENEGADE</a></h3>
               <dl class="character-stats">
-                <div><dt>Formerly</dt><dd>AUTHORITY REGULATOR</dd></div>
+                <div data-reveal="5"><dt>Formerly</dt><dd>AUTHORITY REGULATOR</dd></div>
                 <div><dt>Abbreviation</dt><dd>AR</dd></div>
               </dl>
-              <p class="character-note">A Dersite officer turned exile who guards the frog ruins and sends commands to Dave.</p>
+              <p class="character-note" data-reveal="5">A Dersite officer turned exile who guards the frog ruins and sends commands to Dave.</p>
             </div>
           </article>
 
@@ -403,9 +434,9 @@
               <h3><a class="character-intro-link" href="https://homestuck.com/story/955" target="_blank" rel="noopener noreferrer">JACK NOIR</a></h3>
               <dl class="character-stats">
                 <div><dt>Role</dt><dd>Human-session Dersite archagent</dd></div>
-                <div><dt>Counterpart</dt><dd>SPADES SLICK, troll session</dd></div>
+                <div data-reveal="5"><dt>Counterpart</dt><dd>SPADES SLICK, troll session</dd></div>
               </dl>
-              <p class="character-note">The kids' session archagent. His troll-session counterpart is exiled and becomes Spades Slick of the Midnight Crew.</p>
+              <p class="character-note" data-reveal="5">The kids' session archagent. His troll-session counterpart is exiled and becomes Spades Slick of the Midnight Crew.</p>
             </div>
           </article>
 
@@ -439,13 +470,13 @@
               <h3><a class="character-intro-link" href="https://homestuck.com/story/957" target="_blank" rel="noopener noreferrer">HEGEMONIC BRUTE</a></h3>
               <dl class="character-stats">
                 <div><dt>Role</dt><dd>Human-session Dersite agent</dd></div>
-                <div><dt>Counterpart</dt><dd>HEARTS BOXCARS, troll session</dd></div>
+                <div data-reveal="5"><dt>Counterpart</dt><dd>HEARTS BOXCARS, troll session</dd></div>
               </dl>
-              <p class="character-note">A very large Dersite agent. His troll-session counterpart becomes Hearts Boxcars.</p>
+              <p class="character-note" data-reveal="5">A very large Dersite agent. His troll-session counterpart becomes Hearts Boxcars.</p>
             </div>
           </article>
 
-          <article id="character-snowman" class="character-card" data-roster-label="Snowman">
+          <article id="character-snowman" data-reveal="6" class="character-card" data-roster-label="Snowman">
             <img class="character-portrait" src="../assets/ref-snowman.png" alt="Snowman in her earlier Black Queen form" width="243" height="477" loading="lazy">
             <div class="character-copy">
               <h3><a class="character-intro-link" href="https://homestuck.com/story/1268" target="_blank" rel="noopener noreferrer">SNOWMAN</a></h3>
@@ -482,7 +513,7 @@
               <dl class="character-stats">
                 <div><dt>Role</dt><dd>The Felt's unseen boss</dd></div>
               </dl>
-              <p class="character-note">The Felt's unseen master, whose arrival Doc Scratch is working to bring about.</p>
+              <p class="character-note" data-reveal="6">The Felt's unseen master, whose arrival Doc Scratch is working to bring about.</p>
             </div>
           </article>
 
@@ -492,7 +523,7 @@
         </div>
       </div>
 
-      <section class="reference-section" id="troll-cheats">
+      <section class="reference-section" id="troll-cheats" data-reveal="6">
         <h2>TROLL CHEAT SHEET</h2>
 
         <div class="quick-grid">
@@ -533,32 +564,38 @@
 
         <div class="quick-grid">
           <article class="quick-card">
-            <h3>SBURB / SGRUB</h3>
-            <p>The human and troll versions of the same reality-altering game.</p>
+            <h3>SBURB <span data-reveal="6">/ SGRUB</span></h3>
+            <p>
+              The reality-altering game played by the kids.
+              <span data-reveal="6">The trolls' version is called SGRUB.</span>
+            </p>
           </article>
 
-          <article class="quick-card">
+          <article class="quick-card" data-reveal="5">
             <h3>INCIPISPHERE</h3>
             <p>The game cosmos: Skaia, Prospit, the player lands, the Veil, and Derse.</p>
           </article>
 
-          <article class="quick-card">
+          <article class="quick-card" data-reveal="2">
             <h3>PROTOTYPING</h3>
             <p>Prototyping a kernelsprite before a player enters also changes the session's enemies and royalty.</p>
           </article>
 
-          <article class="quick-card">
+          <article class="quick-card" data-reveal="5">
             <h3>ECTOBIOLOGY</h3>
-            <p>Paradox cloning across time. Both sessions involve players helping cause their own births.</p>
+            <p>
+              Paradox cloning across time.
+              <span data-reveal="6">The troll session also involves players helping cause their own births.</span>
+            </p>
           </article>
 
-          <article class="quick-card">
+          <article class="quick-card" data-reveal="5">
             <h3>RECKONING</h3>
             <p>The meteor assault from the Veil. Skaia redirects the meteors through portals into the players' home
               world's history.</p>
           </article>
 
-          <article class="quick-card">
+          <article class="quick-card" data-reveal="5">
             <h3>DOOMED TIMELINE</h3>
             <p>An alternate branch that cannot sustain the main causal loop, even though its players can still act
               before it collapses.</p>
@@ -567,7 +604,7 @@
       </section>
 
       <footer class="reference-footer">
-        <p>SPOILER BOUNDARY: ACTS 1 THROUGH 4, THE INTERMISSION, AND ACT 5 ACT 1.</p>
+        <p id="reference-boundary-label">SPOILER BOUNDARY: THROUGH ACT 1.</p>
       </footer>
 
     </article>
