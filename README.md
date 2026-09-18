@@ -21,7 +21,7 @@ JavaScript. Edit the message paragraphs directly in `index.html`.
 ## Recaps
 
 The recap index at `recaps/index.html` lists all 13 recaps alongside their meeting
-dates and readings. Recaps #1–3 link to their viewers; unpublished recaps are marked
+dates and readings. Recaps #1–4 link to their viewers; unpublished recaps are marked
 “Not yet available.” When publishing a recap, replace its status paragraph with
 a reading link, using the first entry as the example. Edit this HTML directly;
 there is no generation step.
@@ -29,7 +29,8 @@ there is no generation step.
 The canonical recap layout is `/recaps/01/index.html`. Recap #1 currently contains
 25 slides, using original GIF panels and a still from the Act 2 closing animation.
 Recap #2 contains 23 slides covering Act 3 and the Intermission. Recap #3 contains
-39 slides covering Act 4, consolidating the supplied PDF into shorter narrative beats. Recaps #4–13
+39 slides covering Act 4, consolidating the supplied PDF into shorter narrative beats.
+Recap #4 contains 39 slides covering Act 5 Act 1, drafted from the comic without a PDF. Recaps #5–13
 are not yet available.
 
 Serve this directory with any static web server, for example
@@ -218,3 +219,21 @@ retain their original frames and timing.
 Story details were checked against the comic,
 [Acts & Pages: Act 4](https://actspages.net/act-4), and the
 [Act 4 synopsis](https://mspaintadventures.fandom.com/wiki/Homestuck:_Act_4).
+
+
+### Recap #4 sources and scope
+
+Recap #4 covers Act 5 Act 1, story pages **1989–2625**, in 39 slides. It was
+drafted directly from the comic; no PDF reference is required. The
+[Acts & Pages guide](https://actspages.net/a5a1) supplied a reading roadmap, while
+the original Homestuck pages supplied the story details and all images.
+The recap introduces the twelve trolls, their relationships, the Sgrub session,
+and its outcome without importing explanations from later readings.
+
+Its 38 images run from `A5_01` through `A5_38` in reading order, including the
+act divider and excluding the text-only cover. Thirty-five are native main-panel
+GIFs; three are full-stage stills from [Make her pay](https://homestuck.com/story/2578).
+Exact panel URLs and animation frame numbers are in `ASSET_SOURCES.md`.
+Future Act 5 recaps should continue the `A5_` asset sequence after the highest
+existing number, keeping every existing filename intact and preserving each
+image’s actual `story-` source suffix.
