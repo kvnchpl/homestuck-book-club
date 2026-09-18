@@ -130,8 +130,13 @@ all slides, hide controls and the counter, and request one square page per slide
 The reference at `reference/index.html` is a published club page, linked from every
 page’s navigation and the homepage. It uses the shared wiki frame, CSS, and JS.
 Its stated spoiler boundary is Meeting #4 / Act 5 Act 1. Keep character portraits
-and descriptions within that boundary when editing it. The visual character cards
-work without JavaScript. Portraits retain their native proportions
+and descriptions within that boundary when editing it. The character selector builds its roster from the authored `.character-card`
+entries inside `.character-group` sections. Add new revealed characters there,
+with a unique `character-name` ID, portrait, heading, facts, and description; do
+not add unrevealed names or placeholder silhouettes. The shared script keeps one
+profile selected and supports arrow keys, Home/End, and links such as
+`reference/#character-jade`. Without JavaScript or when printing, every profile
+remains readable. Portraits retain their native proportions
 and live directly in `assets/`, alongside the recap panels. These small PNG
 portraits are separate from the 650px-wide recap GIF convention.
 

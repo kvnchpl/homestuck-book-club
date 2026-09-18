@@ -1,3 +1,81 @@
+// Keep the authored character cards readable until the roster is ready.
+(() => {
+  'use strict';
+  const select = document.querySelector('.character-select');
+  if (!select) return;
+  const cards = [...select.querySelectorAll('.character-card')];
+  if (!cards.length) return;
+
+  const roster = document.createElement('div');
+  roster.className = 'character-roster';
+  roster.setAttribute('role', 'tablist');
+  roster.setAttribute('aria-label', 'Choose a character');
+  const tabs = [];
+  let group = null;
+  cards.forEach((card, index) => {
+    const section = card.closest('.character-group');
+    if (section !== group) {
+      group = section;
+      const label = document.createElement('div');
+      label.className = 'roster-group-label';
+      label.textContent = section.querySelector('h2').textContent;
+      label.setAttribute('role', 'presentation');
+      roster.append(label);
+    }
+    const portrait = card.querySelector('.character-portrait');
+    const tab = document.createElement('button');
+    tab.type = 'button';
+    tab.className = 'character-option';
+    tab.id = `${card.id}-tab`;
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-label', portrait.alt);
+    tab.setAttribute('aria-controls', card.id);
+    const thumbnail = portrait.cloneNode();
+    thumbnail.className = 'roster-portrait';
+    thumbnail.alt = '';
+    thumbnail.loading = 'eager';
+    const name = document.createElement('span');
+    name.textContent = portrait.alt.split(' ')[0];
+    tab.append(thumbnail, name);
+    tab.addEventListener('click', () => show(index));
+    tab.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowRight') next = (index + 1) % cards.length;
+      if (event.key === 'ArrowLeft') next = (index + cards.length - 1) % cards.length;
+      if (event.key === 'ArrowDown') next = (index + 4) % cards.length;
+      if (event.key === 'ArrowUp') next = (index + cards.length - 4) % cards.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = cards.length - 1;
+      if (next === undefined || event.altKey || event.ctrlKey || event.metaKey) return;
+      event.preventDefault();
+      show(next);
+      tabs[next].focus();
+    });
+    card.setAttribute('role', 'tabpanel');
+    card.setAttribute('aria-labelledby', tab.id);
+    card.tabIndex = 0;
+    tabs.push(tab);
+    roster.append(tab);
+  });
+
+  function show(index, updateHash = true) {
+    cards.forEach((card, i) => {
+      card.hidden = i !== index;
+      tabs[i].setAttribute('aria-selected', String(i === index));
+      tabs[i].tabIndex = i === index ? 0 : -1;
+    });
+    if (updateHash) history.replaceState(null, '', `#${cards[index].id}`);
+  }
+  function readHash() {
+    const index = cards.findIndex(card => `#${card.id}` === location.hash);
+    show(index < 0 ? 0 : index, false);
+  }
+  select.prepend(roster);
+  readHash();
+  select.classList.add('is-ready');
+  window.addEventListener('hashchange', readHash);
+})();
+
 (() => {
   'use strict';
 

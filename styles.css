@@ -584,7 +584,7 @@ button {
   scroll-margin-top: 2rem;
 }
 
-.reference-hero + .reference-section {
+.character-group:first-child {
   margin-top: 0;
 }
 
@@ -625,22 +625,122 @@ button {
   font-size: 1rem;
 }
 
-.reference-handle,
-.character-meta,
 .character-note {
   margin: 0.3rem 0 0;
 }
 
-.reference-handle {
-  opacity: 0.8;
+.character-stats {
+  margin: 16px 0;
+  font-size: 14px;
 }
 
-.character-meta {
-  font-weight: 700;
+.character-stats > div {
+  padding: 6px 0;
+  border-top: 1px dotted #aaa;
+}
+
+.character-stats dt {
+  font: 400 10px/1.5 Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #535353;
+}
+
+.character-stats dd {
+  margin: 0;
 }
 
 .character-note {
   line-height: 1.4;
+}
+
+/* The roster enhances the same cards used for no-JS reading and printing. */
+.character-select.is-ready {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.character-roster {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.roster-group-label {
+  grid-column: 1 / -1;
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.character-option + .roster-group-label {
+  margin-top: 18px;
+}
+
+.character-option {
+  min-width: 0;
+  min-height: 88px;
+  padding: 6px 2px;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  background: #ddd;
+  color: #000;
+  cursor: pointer;
+  font: 700 10px/1.4 Verdana, Arial, sans-serif;
+}
+
+.character-option:hover {
+  background: #fff;
+  border-color: #000;
+}
+
+.character-option[aria-selected="true"] {
+  border-color: var(--link);
+  box-shadow: inset 0 0 0 2px var(--link);
+  background: #fff;
+  color: var(--link);
+}
+
+.roster-portrait {
+  display: block;
+  width: 100%;
+  height: 64px;
+  margin-bottom: 6px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.is-ready .character-group {
+  margin: 0;
+}
+
+.is-ready .character-group > h2 {
+  display: none;
+}
+
+.is-ready .character-grid {
+  display: block;
+  margin: 0;
+}
+
+.is-ready .character-card {
+  display: block;
+  padding: 18px;
+  border-color: #000;
+  background: #fff;
+  font-size: 14px;
+}
+
+.is-ready .character-portrait {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto 20px;
+}
+
+@media (max-width: 600px) {
+  .character-select.is-ready {
+    grid-template-columns: 1fr;
+  }
 }
 
 .quick-grid {
@@ -1007,6 +1107,23 @@ button {
   .quick-card,
   .mapping-card {
     break-inside: avoid;
+  }
+
+  .character-roster {
+    display: none;
+  }
+
+  .character-select.is-ready {
+    display: block;
+  }
+
+  .is-ready .character-group > h2,
+  .is-ready .character-card[hidden] {
+    display: block !important;
+  }
+
+  .is-ready .character-card {
+    margin-bottom: 16px;
   }
 
   .site-frame,

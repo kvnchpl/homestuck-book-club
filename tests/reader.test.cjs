@@ -33,7 +33,7 @@ function reader({ hash = '', missing, small = false, coarse = false, filename = 
   const deck = element(); deck.querySelectorAll = s => s === '.slide' ? slides : images;
   const controls = element(); controls.hidden = true;
   const ids = Object.fromEntries(['counter', 'source-link', 'prev', 'next', 'start-over'].map(id => [id, element()]));
-  document = { querySelector: s => s === '.deck' ? (missing === 'deck' ? null : deck) : controls,
+  document = { querySelector: s => s === '.deck' ? (missing === 'deck' ? null : deck) : s === '.controls' ? controls : null,
     getElementById: id => missing === id ? null : ids[id], body: element(), activeElement: element(),
     listeners: {}, addEventListener(k, f) { this.listeners[k] = f; } };
   const location = { hash };
