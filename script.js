@@ -1,28 +1,108 @@
 // Keep the authored character cards readable until the roster is ready.
 (() => {
   'use strict';
+
   const select = document.querySelector('.character-select');
   if (!select) return;
+
   const cards = [...select.querySelectorAll('.character-card')];
   if (!cards.length) return;
+
+  // Character-specific selection colors.
+  // Kids use their familiar Pesterchum colors.
+  // Trolls use their familiar blood/chat colors.
+  const characterColors = {
+    john: {
+      accent: '#0715cd',
+      text: '#0715cd'
+    },
+    rose: {
+      accent: '#b536da',
+      text: '#8f1dac'
+    },
+    dave: {
+      accent: '#e00707',
+      text: '#b80606'
+    },
+    jade: {
+      accent: '#4ac925',
+      text: '#2f7f1b'
+    },
+
+    aradia: {
+      accent: '#a10000',
+      text: '#a10000'
+    },
+    tavros: {
+      accent: '#a15000',
+      text: '#8a4500'
+    },
+    sollux: {
+      accent: '#a1a100',
+      text: '#686800'
+    },
+    karkat: {
+      accent: '#626262',
+      text: '#4f4f4f'
+    },
+    nepeta: {
+      accent: '#416600',
+      text: '#416600'
+    },
+    kanaya: {
+      accent: '#008141',
+      text: '#007239'
+    },
+    terezi: {
+      accent: '#008282',
+      text: '#006f6f'
+    },
+    vriska: {
+      accent: '#005682',
+      text: '#005682'
+    },
+    equius: {
+      accent: '#000056',
+      text: '#000056'
+    },
+    gamzee: {
+      accent: '#2b0057',
+      text: '#2b0057'
+    },
+    eridan: {
+      accent: '#6a006a',
+      text: '#6a006a'
+    },
+    feferi: {
+      accent: '#77003c',
+      text: '#77003c'
+    }
+  };
 
   const roster = document.createElement('div');
   roster.className = 'character-roster';
   roster.setAttribute('role', 'tablist');
   roster.setAttribute('aria-label', 'Choose a character');
+
   const tabs = [];
   let group = null;
+
   cards.forEach((card, index) => {
     const section = card.closest('.character-group');
+
     if (section !== group) {
       group = section;
+
       const label = document.createElement('div');
       label.className = 'roster-group-label';
       label.textContent = section.querySelector('h2').textContent;
       label.setAttribute('role', 'presentation');
+
       roster.append(label);
     }
+
     const portrait = card.querySelector('.character-portrait');
+
     const tab = document.createElement('button');
     tab.type = 'button';
     tab.className = 'character-option';
@@ -30,49 +110,114 @@
     tab.setAttribute('role', 'tab');
     tab.setAttribute('aria-label', portrait.alt);
     tab.setAttribute('aria-controls', card.id);
+
+    // Get the character slug from IDs like "character-rose".
+    const slug = card.id.replace(/^character-/, '');
+    const palette = characterColors[slug];
+
+    // Pass this character's colors into the CSS.
+    if (palette) {
+      tab.style.setProperty('--character-color', palette.accent);
+      tab.style.setProperty('--character-text-color', palette.text);
+
+      card.style.setProperty('--character-color', palette.accent);
+      card.style.setProperty('--character-text-color', palette.text);
+    }
+
     const thumbnail = portrait.cloneNode();
     thumbnail.className = 'roster-portrait';
     thumbnail.alt = '';
     thumbnail.loading = 'eager';
+
     const name = document.createElement('span');
     name.textContent = portrait.alt.split(' ')[0];
+
     tab.append(thumbnail, name);
-    tab.addEventListener('click', () => show(index));
+
+    tab.addEventListener('click', () => {
+      show(index);
+    });
+
     tab.addEventListener('keydown', event => {
       let next;
-      if (event.key === 'ArrowRight') next = (index + 1) % cards.length;
-      if (event.key === 'ArrowLeft') next = (index + cards.length - 1) % cards.length;
-      if (event.key === 'ArrowDown') next = (index + 4) % cards.length;
-      if (event.key === 'ArrowUp') next = (index + cards.length - 4) % cards.length;
-      if (event.key === 'Home') next = 0;
-      if (event.key === 'End') next = cards.length - 1;
-      if (next === undefined || event.altKey || event.ctrlKey || event.metaKey) return;
+
+      if (event.key === 'ArrowRight') {
+        next = (index + 1) % cards.length;
+      }
+
+      if (event.key === 'ArrowLeft') {
+        next = (index + cards.length - 1) % cards.length;
+      }
+
+      if (event.key === 'ArrowDown') {
+        next = (index + 4) % cards.length;
+      }
+
+      if (event.key === 'ArrowUp') {
+        next = (index + cards.length - 4) % cards.length;
+      }
+
+      if (event.key === 'Home') {
+        next = 0;
+      }
+
+      if (event.key === 'End') {
+        next = cards.length - 1;
+      }
+
+      if (
+        next === undefined ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey
+      ) {
+        return;
+      }
+
       event.preventDefault();
+
       show(next);
       tabs[next].focus();
     });
+
     card.setAttribute('role', 'tabpanel');
     card.setAttribute('aria-labelledby', tab.id);
     card.tabIndex = 0;
+
     tabs.push(tab);
     roster.append(tab);
   });
 
   function show(index, updateHash = true) {
     cards.forEach((card, i) => {
-      card.hidden = i !== index;
-      tabs[i].setAttribute('aria-selected', String(i === index));
-      tabs[i].tabIndex = i === index ? 0 : -1;
+      const selected = i === index;
+
+      card.hidden = !selected;
+      tabs[i].setAttribute('aria-selected', String(selected));
+      tabs[i].tabIndex = selected ? 0 : -1;
     });
-    if (updateHash) history.replaceState(null, '', `#${cards[index].id}`);
+
+    if (updateHash) {
+      history.replaceState(
+        null,
+        '',
+        `#${cards[index].id}`
+      );
+    }
   }
+
   function readHash() {
-    const index = cards.findIndex(card => `#${card.id}` === location.hash);
+    const index = cards.findIndex(
+      card => `#${card.id}` === location.hash
+    );
+
     show(index < 0 ? 0 : index, false);
   }
+
   select.prepend(roster);
   readHash();
   select.classList.add('is-ready');
+
   window.addEventListener('hashchange', readHash);
 })();
 
