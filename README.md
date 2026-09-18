@@ -36,6 +36,29 @@ This works for:
 
 A stat whose existence is itself a spoiler simply has no earlier variant.
 
+## Source-page metadata
+
+Every user-facing reference record also carries a `sourcePage` for manual fact-checking. This includes stage labels, group headings, character names, roster labels, portraits/alt-text states, every stat variant, character notes, cheat-sheet copy, and quadrant terminology. The source metadata is not rendered on the public page.
+
+```js
+{
+  from: 'act-4',
+  label: 'Formerly',
+  value: 'WARWEARY VILLEIN',
+  sourcePage: 1988,
+  sourceKind: 'direct'
+}
+```
+
+`sourceKind` describes how strong/precise the current page reference is:
+
+- `intro` — the character's introduction page is the working source.
+- `direct` — the page was selected as direct support for the displayed wording.
+- `editorial` — the text is an organizational label used by this reference page; `sourcePage`/`sourcePages` point to the relevant story material behind that grouping.
+- `boundary` — a conservative end-of-stage checkpoint. The wording is safe by this point, but the exact first/supporting page should ideally be tightened during a manual audit.
+
+Some composite claims also carry `sourcePages: [...]` for additional supporting pages. `sourcePage` remains the required primary field. The renderer runs a maintenance check on load and warns in the browser console if any future user-facing record is added without a valid `sourcePage`.
+
 ## Adding a future reading stage
 
 Add the new stage to `stages` near the top of `reference-data.js`:

@@ -28,6 +28,45 @@
   const { stages, groups, characters, cheatSections } = data;
   if (!Array.isArray(stages) || !stages.length) return;
 
+  // Maintenance guard: source metadata is intentionally not displayed, but every
+  // user-facing content record should retain a page reference for manual auditing.
+  function validateSourceMetadata() {
+    const missing = [];
+    const check = (item, path) => {
+      if (!item || !Number.isInteger(item.sourcePage) || item.sourcePage < 1) {
+        missing.push(path);
+      }
+    };
+
+    stages.forEach((stage, i) => check(stage, `stages[${i}]`));
+    groups.forEach((group, gi) => {
+      (group.title || []).forEach((variant, vi) => check(variant, `groups[${gi}].title[${vi}]`));
+    });
+    characters.forEach((character, ci) => {
+      (character.name || []).forEach((variant, vi) => check(variant, `characters[${ci}].name[${vi}]`));
+      (character.rosterLabel || []).forEach((variant, vi) => check(variant, `characters[${ci}].rosterLabel[${vi}]`));
+      (character.portrait || []).forEach((variant, vi) => check(variant, `characters[${ci}].portrait[${vi}]`));
+      (character.stats || []).forEach((stat, si) => {
+        (stat.variants || []).forEach((variant, vi) => check(variant, `characters[${ci}].stats[${si}].variants[${vi}]`));
+      });
+      (character.note || []).forEach((variant, vi) => check(variant, `characters[${ci}].note[${vi}]`));
+    });
+    (cheatSections || []).forEach((section, si) => {
+      (section.title || []).forEach((variant, vi) => check(variant, `cheatSections[${si}].title[${vi}]`));
+      (section.cards || []).forEach((card, ci) => {
+        (card.title || []).forEach((variant, vi) => check(variant, `cheatSections[${si}].cards[${ci}].title[${vi}]`));
+        (card.body || []).forEach((variant, vi) => check(variant, `cheatSections[${si}].cards[${ci}].body[${vi}]`));
+      });
+      (section.quadrants || []).forEach((quadrant, qi) => check(quadrant, `cheatSections[${si}].quadrants[${qi}]`));
+    });
+
+    if (missing.length) {
+      console.warn('Homestuck reference entries missing sourcePage:', missing);
+    }
+  }
+
+  validateSourceMetadata();
+
   const storageKey = 'homestuck-reference-progress';
   const stageIndex = new Map(stages.map((stage, index) => [stage.key, index]));
 
