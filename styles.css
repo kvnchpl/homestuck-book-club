@@ -526,6 +526,187 @@ button {
   white-space: nowrap;
 }
 
+/* Reference page */
+
+.reference-page {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 5rem;
+}
+
+.reference-hero {
+  max-width: 860px;
+  margin-bottom: 3rem;
+}
+
+.reference-hero h1 {
+  margin: 0.25rem 0 1rem;
+}
+
+.reference-kicker,
+.reference-scope,
+.reference-handle,
+.reference-footer {
+  letter-spacing: 0.04em;
+}
+
+.reference-scope {
+  border: 1px solid currentColor;
+  padding: 0.9rem 1rem;
+}
+
+.reference-search-label {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.reference-search {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid currentColor;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.reference-search::placeholder {
+  color: inherit;
+  opacity: 0.6;
+}
+
+.reference-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  margin-top: 1rem;
+}
+
+.reference-section {
+  margin: 4rem 0;
+  scroll-margin-top: 2rem;
+}
+
+.reference-section > h2 {
+  margin-bottom: 0.5rem;
+}
+
+.reference-section-intro {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+
+.reference-section-empty {
+  display: none;
+}
+
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.reference-grid-wide {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.reference-card {
+  box-sizing: border-box;
+  border: 1px solid currentColor;
+  padding: 1rem;
+  min-width: 0;
+}
+
+.reference-card[hidden] {
+  display: none;
+}
+
+.reference-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.reference-card p:last-child {
+  margin-bottom: 0;
+}
+
+.reference-card-wide {
+  grid-column: 1 / -1;
+}
+
+.reference-handle {
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+.reference-facts,
+.reference-map {
+  margin: 1rem 0;
+}
+
+.reference-facts > div,
+.reference-map > div {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.85fr) minmax(0, 1.65fr);
+  gap: 0.75rem;
+  padding: 0.25rem 0;
+  border-top: 1px dotted currentColor;
+}
+
+.reference-facts > div:last-child,
+.reference-map > div:last-child {
+  border-bottom: 1px dotted currentColor;
+}
+
+.reference-facts dt,
+.reference-map dt {
+  font-weight: 700;
+}
+
+.reference-facts dd,
+.reference-map dd {
+  margin: 0;
+}
+
+.quadrant-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.quadrant-grid > div {
+  border-top: 1px dotted currentColor;
+  padding-top: 0.75rem;
+}
+
+.reference-footer {
+  margin-top: 5rem;
+  border-top: 1px solid currentColor;
+  padding-top: 1rem;
+}
+
+@media (max-width: 760px) {
+  .reference-grid,
+  .reference-grid-wide,
+  .quadrant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reference-card-wide {
+    grid-column: auto;
+  }
+
+  .reference-facts > div,
+  .reference-map > div {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .site-header {
     width: 100%;
