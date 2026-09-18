@@ -130,7 +130,8 @@
     thumbnail.loading = 'eager';
 
     const name = document.createElement('span');
-    name.textContent = portrait.alt.split(' ')[0];
+    name.className = 'roster-name';
+    name.textContent = card.getAttribute('data-roster-label') || portrait.alt.split(' ')[0];
 
     tab.append(thumbnail, name);
 
