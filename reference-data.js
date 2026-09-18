@@ -1,10 +1,13 @@
 // Spoiler-aware reference data.
 // Each user-facing variant includes sourcePage metadata for manual fact-checking.
-// sourceKind is informational only: "intro" points to the character introduction,
-// "direct" points to a page chosen as direct support, "editorial" identifies a
-// reference-page organizational label, and "boundary" is a conservative stage-end
-// checkpoint that should be refined if a more exact page is identified during
-// manual auditing. sourcePages may list additional support.
+// sourceKind is informational only: "intro" identifies a formal character intro,
+// "direct" means the cited page directly/textually supports the displayed claim,
+// "visual" means the claim is established by the page's image/animation rather than
+// its indexed prose, "composite" means the displayed wording combines claims from
+// sourcePage plus sourcePages, "editorial" identifies a reference-page organizational
+// label, and "boundary" is only a conservative stage-end checkpoint, not direct evidence.
+// sourcePages lists additional support; sourceNote records special audit context.
+// A source field is only treated as verified when its section is listed in sourceAudit.
 //
 // Each variant becomes available at `from` and remains in effect until a later
 // variant for the same property supersedes it. If no variant is available yet,
@@ -73,12 +76,30 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "value": "THE KIDS",
-          "sourcePage": 4,
+          "sourcePage": 3,
           "sourcePages": [
-            4,
-            217,
-            312,
-            768
+            216
+          ],
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "act-2",
+          "value": "THE KIDS",
+          "sourcePage": 3,
+          "sourcePages": [
+            216,
+            311
+          ],
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "act-3",
+          "value": "THE KIDS",
+          "sourcePage": 3,
+          "sourcePages": [
+            216,
+            311,
+            766
           ],
           "sourceKind": "editorial"
         }
@@ -92,7 +113,6 @@ window.HOMESTUCK_REFERENCE = {
           "value": "THE TWELVE TROLLS",
           "sourcePage": 1994,
           "sourcePages": [
-            1994,
             2012,
             2031,
             2076,
@@ -116,15 +136,44 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-1",
           "value": "GUARDIANS & SPRITES",
           "sourcePage": 88,
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "act-2",
+          "value": "GUARDIANS & SPRITES",
+          "sourcePage": 88,
           "sourcePages": [
-            88,
             388,
+            420,
+            757
+          ],
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "act-3",
+          "value": "GUARDIANS & SPRITES",
+          "sourcePage": 88,
+          "sourcePages": [
+            388,
+            420,
             757,
             919,
-            420,
-            1626,
-            1651,
             943
+          ],
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "act-4",
+          "value": "GUARDIANS & SPRITES",
+          "sourcePage": 88,
+          "sourcePages": [
+            388,
+            420,
+            757,
+            919,
+            943,
+            1626,
+            1651
           ],
           "sourceKind": "editorial"
         }
@@ -137,8 +186,38 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-2",
           "value": "THE GAME WORLD",
           "sourcePage": 666,
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "act-3",
+          "value": "THE GAME WORLD",
+          "sourcePage": 666,
           "sourcePages": [
-            666,
+            892,
+            1100,
+            955,
+            957
+          ],
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "intermission",
+          "value": "THE GAME WORLD",
+          "sourcePage": 666,
+          "sourcePages": [
+            892,
+            1100,
+            955,
+            957,
+            1268
+          ],
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "act-4",
+          "value": "THE GAME WORLD",
+          "sourcePage": 666,
+          "sourcePages": [
             892,
             1100,
             1543,
@@ -159,8 +238,13 @@ window.HOMESTUCK_REFERENCE = {
           "from": "intermission",
           "value": "OTHERS",
           "sourcePage": 1155,
+          "sourceKind": "editorial"
+        },
+        {
+          "from": "act-5-act-1",
+          "value": "OTHERS",
+          "sourcePage": 1155,
           "sourcePages": [
-            1155,
             2253
           ],
           "sourceKind": "editorial"
@@ -178,8 +262,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "value": "JOHN EGBERT",
-          "sourcePage": 4,
-          "sourceKind": "intro"
+          "sourcePage": 3,
+          "sourceKind": "visual"
         }
       ],
       "rosterLabel": [
@@ -187,7 +271,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-1",
           "value": "John",
           "sourcePage": 4,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -197,8 +281,8 @@ window.HOMESTUCK_REFERENCE = {
             "src": "../assets/ref-john.png",
             "alt": "John Egbert"
           },
-          "sourcePage": 4,
-          "sourceKind": "intro"
+          "sourcePage": 3,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -209,8 +293,8 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-1",
               "label": "Handle",
               "value": "ectoBiologist [EB]",
-              "sourcePage": 4,
-              "sourceKind": "intro"
+              "sourcePage": 26,
+              "sourceKind": "direct"
             }
           ]
         },
@@ -221,7 +305,7 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Land",
               "value": "Land of Wind and Shade",
-              "sourcePage": 1988,
+              "sourcePage": 1674,
               "sourceKind": "direct"
             }
           ]
@@ -233,7 +317,7 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Dream Moon",
               "value": "Prospit",
-              "sourcePage": 1988,
+              "sourcePage": 1674,
               "sourceKind": "direct"
             }
           ]
@@ -244,9 +328,9 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-1",
               "label": "Interests",
-              "value": "Bad movies · Programming · Paranormal lore · Stage magic · Video games",
+              "value": "Bad movies · Programming · Paranormal lore · Amateur magic · Video games",
               "sourcePage": 4,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -263,8 +347,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "value": "ROSE LALONDE",
-          "sourcePage": 217,
-          "sourceKind": "intro"
+          "sourcePage": 216,
+          "sourceKind": "visual"
         }
       ],
       "rosterLabel": [
@@ -272,7 +356,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-1",
           "value": "Rose",
           "sourcePage": 217,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -282,8 +366,8 @@ window.HOMESTUCK_REFERENCE = {
             "src": "../assets/ref-rose.png",
             "alt": "Rose Lalonde"
           },
-          "sourcePage": 217,
-          "sourceKind": "intro"
+          "sourcePage": 216,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -294,8 +378,8 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-1",
               "label": "Handle",
               "value": "tentacleTherapist [TT]",
-              "sourcePage": 217,
-              "sourceKind": "intro"
+              "sourcePage": 135,
+              "sourceKind": "direct"
             }
           ]
         },
@@ -306,7 +390,7 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Land",
               "value": "Land of Light and Rain",
-              "sourcePage": 1988,
+              "sourcePage": 1674,
               "sourceKind": "direct"
             }
           ]
@@ -318,7 +402,7 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Dream Moon",
               "value": "Derse",
-              "sourcePage": 1988,
+              "sourcePage": 1674,
               "sourceKind": "direct"
             }
           ]
@@ -329,9 +413,9 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-1",
               "label": "Interests",
-              "value": "Obscure literature · Creative writing · Occult lore · Psychoanalysis · Knitting · Video games",
+              "value": "Obscure literature · Creative writing · Strange fiction · Psychoanalysis · Knitting · Video games",
               "sourcePage": 217,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -348,8 +432,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": "DAVE STRIDER",
-          "sourcePage": 312,
-          "sourceKind": "intro"
+          "sourcePage": 311,
+          "sourceKind": "visual"
         }
       ],
       "rosterLabel": [
@@ -357,7 +441,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-2",
           "value": "Dave",
           "sourcePage": 312,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -367,8 +451,8 @@ window.HOMESTUCK_REFERENCE = {
             "src": "../assets/ref-dave.png",
             "alt": "Dave Strider"
           },
-          "sourcePage": 312,
-          "sourceKind": "intro"
+          "sourcePage": 311,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -379,8 +463,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-2",
               "label": "Handle",
               "value": "turntechGodhead [TG]",
-              "sourcePage": 312,
-              "sourceKind": "intro"
+              "sourcePage": 382,
+              "sourceKind": "direct",
+              "sourceNote": "The pesterlog on this Dave page labels him turntechGodhead [TG] and is addressed to him by name."
             }
           ]
         },
@@ -391,7 +476,7 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Land",
               "value": "Land of Heat and Clockwork",
-              "sourcePage": 1988,
+              "sourcePage": 1674,
               "sourceKind": "direct"
             }
           ]
@@ -403,7 +488,7 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Dream Moon",
               "value": "Derse",
-              "sourcePage": 1988,
+              "sourcePage": 1674,
               "sourceKind": "direct"
             }
           ]
@@ -416,7 +501,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "DJing · Obscure bands · Preserved animals · Photography",
               "sourcePage": 312,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -433,8 +518,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": "JADE HARLEY",
-          "sourcePage": 768,
-          "sourceKind": "intro"
+          "sourcePage": 766,
+          "sourceKind": "visual"
         }
       ],
       "rosterLabel": [
@@ -442,7 +527,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "Jade",
           "sourcePage": 768,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -452,8 +537,8 @@ window.HOMESTUCK_REFERENCE = {
             "src": "../assets/ref-jade.png",
             "alt": "Jade Harley"
           },
-          "sourcePage": 768,
-          "sourceKind": "intro"
+          "sourcePage": 766,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -464,8 +549,12 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-3",
               "label": "Handle",
               "value": "gardenGnostic [GG]",
-              "sourcePage": 768,
-              "sourceKind": "intro"
+              "sourcePage": 382,
+              "sourceKind": "composite",
+              "sourcePages": [
+                827
+              ],
+              "sourceNote": "Page 382 shows gardenGnostic [GG] in the kids' Pesterchum network; page 827 is Jade's own Pesterchum page, tying that account to Jade."
             }
           ]
         },
@@ -476,7 +565,7 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Land",
               "value": "Not yet revealed",
-              "sourcePage": 1988,
+              "sourcePage": 1674,
               "sourceKind": "direct"
             }
           ]
@@ -488,8 +577,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-3",
               "label": "Dream Moon",
               "value": "Prospit",
-              "sourcePage": 768,
-              "sourceKind": "direct"
+              "sourcePage": 1026,
+              "sourceKind": "visual",
+              "sourceNote": "The Act 3 [S] dream sequence visually establishes Jade on Prospit; the first-year recap later states this explicitly on page 1674."
             }
           ]
         },
@@ -499,9 +589,9 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-3",
               "label": "Interests",
-              "value": "Gardening · Nostalgic cartoons · Anthropomorphic animals · Nuclear physics · Gadgetry",
-              "sourcePage": 768,
-              "sourceKind": "intro"
+              "value": "Gardening · Nostalgic cartoons · Anthropomorphic animals · Nuclear physics · Advanced gadgetry",
+              "sourcePage": 789,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -519,7 +609,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♈ ARADIA MEGIDO",
           "sourcePage": 2134,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -527,7 +617,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Aradia",
           "sourcePage": 2134,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -538,7 +628,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Aradia Megido"
           },
           "sourcePage": 2134,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -550,19 +640,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "apocalypseArisen [AA]",
               "sourcePage": 2134,
-              "sourceKind": "intro"
-            }
-          ]
-        },
-        {
-          "id": "blood",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Blood",
-              "value": "Rust",
-              "sourcePage": 2134,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -572,9 +650,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Former Interests",
-              "value": "Archaeology · Ancient ruins · Extreme roleplaying",
+              "value": "Archaeology · Roleplaying",
               "sourcePage": 2134,
-              "sourceKind": "intro"
+              "sourceKind": "direct",
+              "sourceNote": "The introduction recalls archaeology as a former interest and says a certain kind of role playing might also have been one."
             }
           ]
         }
@@ -592,7 +671,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♉ TAVROS NITRAM",
           "sourcePage": 2101,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -600,7 +679,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Tavros",
           "sourcePage": 2101,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -611,7 +690,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Tavros Nitram"
           },
           "sourcePage": 2101,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -623,19 +702,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "adiosToreador [AT]",
               "sourcePage": 2101,
-              "sourceKind": "intro"
-            }
-          ]
-        },
-        {
-          "id": "blood",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Blood",
-              "value": "Bronze",
-              "sourcePage": 2101,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -647,7 +714,8 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Fantasy stories · Creature training · Card games · Roleplaying · Slam poetry · Flight lore",
               "sourcePage": 2101,
-              "sourceKind": "intro"
+              "sourceKind": "direct",
+              "sourceNote": "The introduction directly establishes fantasy stories, creature communion/training, card and role-playing games, slam poetry, and flight lore."
             }
           ]
         }
@@ -665,7 +733,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♊ SOLLUX CAPTOR",
           "sourcePage": 2076,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -673,7 +741,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Sollux",
           "sourcePage": 2076,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -684,7 +752,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Sollux Captor"
           },
           "sourcePage": 2076,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -696,7 +764,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "twinArmageddons [TA]",
               "sourcePage": 2076,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -706,9 +774,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Blood",
-              "value": "Gold",
-              "sourcePage": 2076,
-              "sourceKind": "intro"
+              "value": "Yellow",
+              "sourcePage": 2146,
+              "sourceKind": "direct",
+              "sourceNote": "Sollux compares lower castes to his own and asks, “what’s worse than yellow?”"
             }
           ]
         },
@@ -718,9 +787,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Interests",
-              "value": "Programming · Hacking · Apiculture networking · Video games",
+              "value": "Programming · Hacking · Apiculture networking",
               "sourcePage": 2076,
-              "sourceKind": "intro"
+              "sourceKind": "direct",
+              "sourceNote": "The introduction establishes his computer/code expertise, hacking, and apiculture networking; “video games” was removed as an unsupported generalization."
             }
           ]
         }
@@ -738,7 +808,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♋ KARKAT VANTAS",
           "sourcePage": 1994,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -746,7 +816,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Karkat",
           "sourcePage": 1994,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -757,7 +827,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Karkat Vantas"
           },
           "sourcePage": 1994,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -769,7 +839,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "carcinoGeneticist [CG]",
               "sourcePage": 1994,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -780,8 +850,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-5-act-1",
               "label": "Blood",
               "value": "Mutant candy-red",
-              "sourcePage": 1994,
-              "sourceKind": "intro"
+              "sourcePage": 2301,
+              "sourceKind": "direct",
+              "sourceNote": "Narration explicitly calls his blood “mutant candy-red.”"
             }
           ]
         },
@@ -793,7 +864,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Romantic comedies · Programming · Sickle practice",
               "sourcePage": 1994,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -811,7 +882,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♌ NEPETA LEIJON",
           "sourcePage": 2156,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -819,7 +890,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Nepeta",
           "sourcePage": 2156,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -830,7 +901,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Nepeta Leijon"
           },
           "sourcePage": 2156,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -842,7 +913,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "arsenicCatnip [AC]",
               "sourcePage": 2156,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -852,9 +923,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Blood",
-              "value": "Olive",
-              "sourcePage": 2156,
-              "sourceKind": "intro"
+              "value": "Green",
+              "sourcePage": 2162,
+              "sourceKind": "direct",
+              "sourceNote": "Nepeta asks what “green blood” means and Equius answers using the same term."
             }
           ]
         },
@@ -866,7 +938,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Friendly roleplaying · Hunting · Wall comics",
               "sourcePage": 2156,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -884,7 +956,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♍ KANAYA MARYAM",
           "sourcePage": 2323,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -892,7 +964,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Kanaya",
           "sourcePage": 2323,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -903,7 +975,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Kanaya Maryam"
           },
           "sourcePage": 2323,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -915,7 +987,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "grimAuxiliatrix [GA]",
               "sourcePage": 2323,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -925,9 +997,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Blood",
-              "value": "Jade",
+              "value": "Jade green",
               "sourcePage": 2323,
-              "sourceKind": "intro"
+              "sourceKind": "direct",
+              "sourceNote": "Her introduction explicitly states that she has JADE GREEN BLOOD."
             }
           ]
         },
@@ -939,7 +1012,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Landscaping · Topiary · Supernatural romance novels · Fashion · Sewing",
               "sourcePage": 2323,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -957,7 +1030,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♎ TEREZI PYROPE",
           "sourcePage": 2031,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -965,7 +1038,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Terezi",
           "sourcePage": 2031,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -976,7 +1049,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Terezi Pyrope"
           },
           "sourcePage": 2031,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -988,7 +1061,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "gallowsCalibrator [GC]",
               "sourcePage": 2031,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -999,8 +1072,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-5-act-1",
               "label": "Blood",
               "value": "Teal",
-              "sourcePage": 2031,
-              "sourceKind": "intro"
+              "sourcePage": 2238,
+              "sourceKind": "direct",
+              "sourceNote": "Terezi describes herself as “a little too teal for their tastes.”"
             }
           ]
         },
@@ -1012,7 +1086,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Dragons · Scalemates · Live-action roleplaying · Alternian law",
               "sourcePage": 2031,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1030,7 +1104,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♏ VRISKA SERKET",
           "sourcePage": 2195,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1038,7 +1112,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Vriska",
           "sourcePage": 2195,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1049,7 +1123,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Vriska Serket"
           },
           "sourcePage": 2195,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1061,7 +1135,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "arachnidsGrip [AG]",
               "sourcePage": 2195,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -1072,8 +1146,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-5-act-1",
               "label": "Blood",
               "value": "Cerulean",
-              "sourcePage": 2195,
-              "sourceKind": "intro"
+              "sourcePage": 2276,
+              "sourceKind": "direct",
+              "sourceNote": "Vriska calls the blue blood covering her “cerulean swill.”"
             }
           ]
         },
@@ -1085,7 +1160,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Extreme roleplaying · Games of chance · Doomsday devices · Fortune-telling",
               "sourcePage": 2195,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1103,7 +1178,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♐ EQUIUS ZAHHAK",
           "sourcePage": 2211,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1111,7 +1186,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Equius",
           "sourcePage": 2211,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1122,7 +1197,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Equius Zahhak"
           },
           "sourcePage": 2211,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1134,19 +1209,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "centaursTesticle [CT]",
               "sourcePage": 2211,
-              "sourceKind": "intro"
-            }
-          ]
-        },
-        {
-          "id": "blood",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Blood",
-              "value": "Indigo",
-              "sourcePage": 2211,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -1156,9 +1219,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Interests",
-              "value": "Archery · Musclebeast art · Robotics · Strength training",
+              "value": "Archery · Musclebeast art · Robotics · Strength",
               "sourcePage": 2211,
-              "sourceKind": "intro"
+              "sourceKind": "direct",
+              "sourceNote": "“Strength training” was changed to “Strength”: the introduction says he loves being strong, alongside archery, musclebeast art, and robot-building/brawling."
             }
           ]
         }
@@ -1176,7 +1240,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♑ GAMZEE MAKARA",
           "sourcePage": 2012,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1184,7 +1248,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Gamzee",
           "sourcePage": 2012,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1195,7 +1259,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Gamzee Makara"
           },
           "sourcePage": 2012,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1207,19 +1271,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Handle",
               "value": "terminallyCapricious [TC]",
               "sourcePage": 2012,
-              "sourceKind": "intro"
-            }
-          ]
-        },
-        {
-          "id": "blood",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Blood",
-              "value": "Purple",
-              "sourcePage": 2012,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         },
@@ -1231,7 +1283,11 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Clowns · Unicycling · Faygo · Baking · Horns",
               "sourcePage": 2012,
-              "sourceKind": "intro"
+              "sourceKind": "composite",
+              "sourcePages": [
+                2013
+              ],
+              "sourceNote": "The introduction supports clowns, the one-wheel device, baking, and horns; the immediately following page identifies his “fine beverage” as Faygo."
             }
           ]
         }
@@ -1249,7 +1305,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♒ ERIDAN AMPORA",
           "sourcePage": 2408,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1257,7 +1313,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Eridan",
           "sourcePage": 2408,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1268,7 +1324,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Eridan Ampora"
           },
           "sourcePage": 2408,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1279,8 +1335,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-5-act-1",
               "label": "Handle",
               "value": "caligulasAquarium [CA]",
-              "sourcePage": 2408,
-              "sourceKind": "intro"
+              "sourcePage": 2439,
+              "sourceKind": "direct",
+              "sourceNote": "The detailed introduction gives his trolltag."
             }
           ]
         },
@@ -1290,9 +1347,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Blood",
-              "value": "Violet",
-              "sourcePage": 2408,
-              "sourceKind": "intro"
+              "value": "Penultimate on the hemospectrum",
+              "sourcePage": 2439,
+              "sourceKind": "direct",
+              "sourceNote": "The narration says his blood is nearly the richest the hemospectrum offers and “penultimate on the scale”; the later standardized color name is intentionally not used."
             }
           ]
         },
@@ -1303,8 +1361,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-5-act-1",
               "label": "Interests",
               "value": "Extreme roleplaying · Doomsday devices · Military history · Legendary conquerors · Magic",
-              "sourcePage": 2408,
-              "sourceKind": "intro"
+              "sourcePage": 2439,
+              "sourceKind": "direct",
+              "sourceNote": "The detailed introduction directly establishes extreme roleplaying, doomsday devices, military history, legendary conquerors, and magic."
             }
           ]
         }
@@ -1322,7 +1381,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "♓ FEFERI PEIXES",
           "sourcePage": 2422,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1330,7 +1389,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Feferi",
           "sourcePage": 2422,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1341,7 +1400,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Feferi Peixes"
           },
           "sourcePage": 2422,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1352,8 +1411,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-5-act-1",
               "label": "Handle",
               "value": "cuttlefishCuller [CC]",
-              "sourcePage": 2422,
-              "sourceKind": "intro"
+              "sourcePage": 2441,
+              "sourceKind": "direct",
+              "sourceNote": "The detailed introduction gives her trolltag."
             }
           ]
         },
@@ -1363,9 +1423,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Blood",
-              "value": "Fuchsia",
-              "sourcePage": 2422,
-              "sourceKind": "intro"
+              "value": "Most noble blood possible",
+              "sourcePage": 2441,
+              "sourceKind": "direct",
+              "sourceNote": "The narration calls it “the most noble blood possible” and says she is the only troll of her kind known to possess it; the later standardized color name is intentionally not used."
             }
           ]
         },
@@ -1376,8 +1437,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-5-act-1",
               "label": "Interests",
               "value": "Marine wildlife care · Aquatic hoofbeasts · Cuttlefish",
-              "sourcePage": 2422,
-              "sourceKind": "intro"
+              "sourcePage": 2441,
+              "sourceKind": "direct",
+              "sourceNote": "The detailed introduction establishes care for deep-sea fauna, aquatic hoofbeasts, and cuttlefish."
             }
           ]
         }
@@ -1389,21 +1451,21 @@ window.HOMESTUCK_REFERENCE = {
       "id": "dad",
       "group": "guardians-sprites",
       "reveal": "act-1",
-      "introPage": 88,
+      "introPage": 89,
       "name": [
         {
           "from": "act-1",
           "value": "DAD",
-          "sourcePage": 88,
-          "sourceKind": "intro"
+          "sourcePage": 70,
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
         {
           "from": "act-1",
           "value": "Dad",
-          "sourcePage": 88,
-          "sourceKind": "intro"
+          "sourcePage": 70,
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1413,8 +1475,9 @@ window.HOMESTUCK_REFERENCE = {
             "src": "../assets/ref-dad.png",
             "alt": "Dad"
           },
-          "sourcePage": 88,
-          "sourceKind": "intro"
+          "sourcePage": 89,
+          "sourceKind": "visual",
+          "sourceNote": "Dad is visibly presented in the early confrontation sequence; page 70 already identifies him as DAD."
         }
       ],
       "stats": [
@@ -1424,9 +1487,9 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-1",
               "label": "Role",
-              "value": "John's guardian",
-              "sourcePage": 88,
-              "sourceKind": "intro"
+              "value": "John's father",
+              "sourcePage": 70,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1434,12 +1497,16 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-1",
-          "value": "John's father, with a fondness for baking and stage performers.",
-          "sourcePage": 88,
-          "sourceKind": "intro"
+          "value": "John's father, associated with constant baking and—John suspects—the performing arts.",
+          "sourcePage": 70,
+          "sourcePages": [
+            158
+          ],
+          "sourceKind": "composite",
+          "sourceNote": "Page 70 establishes the baking; page 158 has John infer from Dad's Serious Business contacts that the performing arts may be involved."
         }
       ],
-      "sourcePage": 88,
+      "sourcePage": 89,
       "sourceKind": "intro"
     },
     {
@@ -1451,16 +1518,16 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": "MOM",
-          "sourcePage": 388,
-          "sourceKind": "intro"
+          "sourcePage": 365,
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
         {
           "from": "act-2",
           "value": "Mom",
-          "sourcePage": 388,
-          "sourceKind": "intro"
+          "sourcePage": 365,
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1471,7 +1538,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Mom"
           },
           "sourcePage": 388,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1481,9 +1548,9 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-2",
               "label": "Role",
-              "value": "Rose's guardian",
-              "sourcePage": 388,
-              "sourceKind": "intro"
+              "value": "Rose's mother",
+              "sourcePage": 365,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1491,9 +1558,9 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-2",
-          "value": "Rose's mother, whose home contains wizard statues and a hidden laboratory.",
-          "sourcePage": 388,
-          "sourceKind": "intro"
+          "value": "Rose's mother, whose home is crowded with wizard statues and liquor bottles.",
+          "sourcePage": 365,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 388,
@@ -1508,16 +1575,16 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": "BRO",
-          "sourcePage": 757,
-          "sourceKind": "intro"
+          "sourcePage": 419,
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
         {
           "from": "act-2",
           "value": "Bro",
-          "sourcePage": 757,
-          "sourceKind": "intro"
+          "sourcePage": 419,
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1528,7 +1595,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Bro"
           },
           "sourcePage": 757,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1538,9 +1605,17 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-2",
               "label": "Role",
-              "value": "Dave's guardian",
-              "sourcePage": 757,
-              "sourceKind": "intro"
+              "value": "Dave's brother",
+              "sourcePage": 419,
+              "sourceKind": "direct"
+            },
+            {
+              "from": "act-4",
+              "label": "Role",
+              "value": "Dave's brother and guardian",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap explicitly groups Bro with the kids' guardians."
             }
           ]
         }
@@ -1548,9 +1623,20 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-2",
-          "value": "Dave's older brother and guardian, a swordsman and puppeteer who trains him through rooftop strifes.",
-          "sourcePage": 757,
-          "sourceKind": "intro"
+          "value": "Dave's brother, whose interests include elaborate puppet projects and expensive ninja swords.",
+          "sourcePage": 419,
+          "sourcePages": [
+            562
+          ],
+          "sourceKind": "composite",
+          "sourceNote": "Page 419 discusses Bro's puppet collection and websites; page 562 identifies his expensive ninja swords."
+        },
+        {
+          "from": "act-3",
+          "value": "Dave's brother, a formidable swordsman who defeats him in a rooftop strife.",
+          "sourcePage": 836,
+          "sourceKind": "visual",
+          "sourceNote": "[S] Dave: STRIFE directly depicts their rooftop fight and Dave's defeat."
         }
       ],
       "sourcePage": 757,
@@ -1566,7 +1652,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "GRANDPA",
           "sourcePage": 919,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "rosterLabel": [
@@ -1574,7 +1660,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "Grandpa",
           "sourcePage": 919,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "portrait": [
@@ -1585,7 +1671,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Grandpa Harley"
           },
           "sourcePage": 919,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1595,9 +1681,13 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-3",
               "label": "Role",
-              "value": "Jade's former guardian",
-              "sourcePage": 919,
-              "sourceKind": "intro"
+              "value": "Jade's late grandfather",
+              "sourcePage": 790,
+              "sourcePages": [
+                920
+              ],
+              "sourceKind": "composite",
+              "sourceNote": "Page 790 identifies him as Jade's grandfather; page 920 explicitly says he is no longer alive."
             }
           ]
         }
@@ -1605,9 +1695,14 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-3",
-          "value": "Jade's late grandfather, an explorer and hunter whose taxidermied body remains in her home.",
-          "sourcePage": 919,
-          "sourceKind": "intro"
+          "value": "A world-renowned explorer, naturalist, scientist, adventurer, and big-game hunter; his taxidermied body remains in Jade's home.",
+          "sourcePage": 790,
+          "sourcePages": [
+            919,
+            920
+          ],
+          "sourceKind": "composite",
+          "sourceNote": "Page 790 supplies his occupations; pages 919–920 visually/textually establish that his preserved body remains in the house."
         }
       ],
       "sourcePage": 919,
@@ -1623,7 +1718,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-2",
           "value": "NANNASPRITE",
           "sourcePage": 420,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1631,7 +1726,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-2",
           "value": "Nannasprite",
           "sourcePage": 420,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1642,7 +1737,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Nannasprite"
           },
           "sourcePage": 420,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1652,9 +1747,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-2",
               "label": "Role",
-              "value": "John's sprite",
-              "sourcePage": 420,
-              "sourceKind": "intro"
+              "value": "John's sprite guide",
+              "sourcePage": 425,
+              "sourceKind": "direct",
+              "sourceNote": "Nannasprite instructs John on his objective and progression through the gates."
             }
           ]
         },
@@ -1664,9 +1760,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-2",
               "label": "Components",
-              "value": "Nanna + Harlequinsprite",
-              "sourcePage": 420,
-              "sourceKind": "intro"
+              "value": "Nanna's ashes + Harlequinsprite",
+              "sourcePage": 281,
+              "sourceKind": "visual",
+              "sourceNote": "The page shows Nanna's ashes spilling directly onto the already-prototyped sprite."
             }
           ]
         }
@@ -1674,9 +1771,13 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-2",
-          "value": "John's deceased nanna, prototyped into his sprite to become his game guide.",
+          "value": "John's deceased nanna, resurrected through his sprite and guiding him through the Medium.",
           "sourcePage": 420,
-          "sourceKind": "intro"
+          "sourcePages": [
+            425
+          ],
+          "sourceKind": "composite",
+          "sourceNote": "Page 420 establishes Nannasprite's identity; page 425 demonstrates her role as John's game guide."
         }
       ],
       "sourcePage": 420,
@@ -1692,7 +1793,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-4",
           "value": "JASPERSPRITE",
           "sourcePage": 1626,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1700,7 +1801,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-4",
           "value": "Jaspersprite",
           "sourcePage": 1626,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1711,7 +1812,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Jaspersprite"
           },
           "sourcePage": 1626,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1721,9 +1822,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-4",
               "label": "Role",
-              "value": "Rose's sprite",
+              "value": "Rose's sprite guide",
               "sourcePage": 1626,
-              "sourceKind": "intro"
+              "sourceKind": "direct",
+              "sourceNote": "Rose explicitly treats Jaspersprite as her resurrected Kernelsprite/guide in this sequence."
             }
           ]
         },
@@ -1734,8 +1836,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Components",
               "value": "Jaspers + Eldritch princess doll",
-              "sourcePage": 1626,
-              "sourceKind": "intro"
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap explicitly summarizes both prototypings."
             }
           ]
         }
@@ -1744,8 +1847,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": "Rose's deceased cat, prototyped into her sprite along with an eldritch princess doll.",
-          "sourcePage": 1626,
-          "sourceKind": "intro"
+          "sourcePage": 1674,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 1626,
@@ -1761,7 +1864,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-4",
           "value": "DAVESPRITE",
           "sourcePage": 1651,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1769,7 +1872,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-4",
           "value": "Davesprite",
           "sourcePage": 1651,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1780,7 +1883,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Davesprite"
           },
           "sourcePage": 1651,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1790,9 +1893,9 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-4",
               "label": "Role",
-              "value": "Dave's sprite",
-              "sourcePage": 1651,
-              "sourceKind": "intro"
+              "value": "Dave's sprite guide",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
             }
           ]
         },
@@ -1803,8 +1906,8 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Components",
               "value": "Doomed-timeline Dave + Crowsprite",
-              "sourcePage": 1651,
-              "sourceKind": "intro"
+              "sourcePage": 1674,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1812,9 +1915,9 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-4",
-          "value": "A Dave from a doomed timeline who travels back to warn John, then prototypes himself into Crowsprite.",
-          "sourcePage": 1651,
-          "sourceKind": "intro"
+          "value": "A Dave from a doomed timeline who travels back to change events, then prototypes himself into Crowsprite and becomes Davesprite.",
+          "sourcePage": 1674,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 1651,
@@ -1824,21 +1927,21 @@ window.HOMESTUCK_REFERENCE = {
       "id": "bec",
       "group": "guardians-sprites",
       "reveal": "act-3",
-      "introPage": 943,
+      "introPage": 942,
       "name": [
         {
           "from": "act-3",
           "value": "BECQUEREL",
-          "sourcePage": 943,
-          "sourceKind": "intro"
+          "sourcePage": 942,
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
         {
           "from": "act-3",
           "value": "Becquerel",
-          "sourcePage": 943,
-          "sourceKind": "intro"
+          "sourcePage": 942,
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1849,7 +1952,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Becquerel"
           },
           "sourcePage": 943,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1859,9 +1962,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-3",
               "label": "Role",
-              "value": "Jade's guardian",
-              "sourcePage": 943,
-              "sourceKind": "intro"
+              "value": "Jade's dog, guardian, and best friend",
+              "sourcePage": 1075,
+              "sourceKind": "direct",
+              "sourceNote": "By late Act 3 Jade explicitly calls Bec her dog/guardian and one of her best friends."
             }
           ]
         }
@@ -1869,12 +1973,19 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-3",
-          "value": "Jade's dog and guardian, with extraordinary teleportation and space-warping abilities.",
-          "sourcePage": 943,
-          "sourceKind": "intro"
+          "value": "Bec is almost completely invisible to Jade's precognition and is difficult to find unless he wants to be found.",
+          "sourcePage": 942,
+          "sourceKind": "direct"
+        },
+        {
+          "from": "act-4",
+          "value": "Jade's radioactive, enormously powerful, space-warping dog and guardian.",
+          "sourcePage": 1674,
+          "sourceKind": "direct",
+          "sourceNote": "The first-year recap explicitly describes Bec as radioactive, omnipotent, and space-warping, and says he looked after Jade."
         }
       ],
-      "sourcePage": 943,
+      "sourcePage": 942,
       "sourceKind": "intro"
     },
     {
@@ -1887,7 +1998,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-2",
           "value": "WAYWARD VAGABOND",
           "sourcePage": 666,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1895,7 +2006,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-2",
           "value": "WV",
           "sourcePage": 666,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1906,7 +2017,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Wayward Vagabond"
           },
           "sourcePage": 666,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1918,7 +2029,8 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Formerly",
               "value": "WARWEARY VILLEIN",
               "sourcePage": 1988,
-              "sourceKind": "direct"
+              "sourceKind": "direct",
+              "sourceNote": "Recap 2 explicitly identifies WV's earlier Battlefield identity as the Warweary Villein."
             }
           ]
         },
@@ -1930,7 +2042,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Abbreviation",
               "value": "WV",
               "sourcePage": 666,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1938,15 +2050,23 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-2",
-          "value": "A mysterious wanderer living in a ruined landscape who communicates with John through a terminal.",
-          "sourcePage": 666,
-          "sourceKind": "intro"
+          "value": "A wanderer in the desert who has been sending commands to John through a terminal.",
+          "sourcePage": 439,
+          "sourceKind": "composite",
+          "sourcePages": [
+            666
+          ],
+          "sourceNote": "Story 439 shows the future terminal operator issuing John's commands; story 666 identifies him as the Wayward Vagabond."
         },
         {
           "from": "act-4",
-          "value": "A Dark Kingdom farmer turned exile who sends commands to John from future Earth and builds Can Town.",
-          "sourcePage": 1988,
-          "sourceKind": "direct"
+          "value": "An exile on post-apocalyptic Earth who commands John from a terminal; formerly a Warweary Villein, a simple farmer on the Battlefield.",
+          "sourcePage": 1674,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1988
+          ],
+          "sourceNote": "The first-year recap establishes WV as an exile on future Earth commanding John; Recap 2 identifies the Warweary Villein as a simple farmer and WV's former identity."
         }
       ],
       "sourcePage": 666,
@@ -1962,7 +2082,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "PEREGRINE MENDICANT",
           "sourcePage": 892,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -1970,7 +2090,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "PM",
           "sourcePage": 892,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -1981,7 +2101,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Peregrine Mendicant"
           },
           "sourcePage": 892,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1992,8 +2112,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Formerly",
               "value": "PARCEL MISTRESS",
-              "sourcePage": 1988,
-              "sourceKind": "direct"
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap explicitly says PM worked as a Parcel Mistress."
             }
           ]
         },
@@ -2005,7 +2126,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Abbreviation",
               "value": "PM",
               "sourcePage": 892,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -2013,15 +2134,20 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-3",
-          "value": "A mail carrier pursuing a package delivery across the ruined landscape.",
+          "value": "A wanderer traveling in a mobile station piled with mailboxes, carrying a package she is determined to deliver.",
           "sourcePage": 892,
-          "sourceKind": "intro"
+          "sourceKind": "composite",
+          "sourcePages": [
+            1039
+          ],
+          "sourceNote": "Story 892 introduces PM in her mobile station amid mailboxes; the later Act 3 sequence around story 1039 shows her involvement with the package and its delivery instructions."
         },
         {
           "from": "act-4",
-          "value": "A Prospitian mail carrier turned exile, determined to complete the delivery of Jade's package.",
-          "sourcePage": 1988,
-          "sourceKind": "direct"
+          "value": "A former Parcel Mistress who becomes an exile and continues her mission to deliver Jade's package to John.",
+          "sourcePage": 1674,
+          "sourceKind": "direct",
+          "sourceNote": "The first-year recap explicitly connects PM's Parcel Mistress role, exile status, and delivery mission."
         }
       ],
       "sourcePage": 892,
@@ -2037,7 +2163,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "AIMLESS RENEGADE",
           "sourcePage": 1100,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -2045,7 +2171,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "AR",
           "sourcePage": 1100,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -2056,7 +2182,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Aimless Renegade"
           },
           "sourcePage": 1100,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2067,8 +2193,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Formerly",
               "value": "AUTHORITY REGULATOR",
-              "sourcePage": 1988,
-              "sourceKind": "direct"
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap explicitly identifies AR's earlier role as an Authority Regulator."
             }
           ]
         },
@@ -2080,7 +2207,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Abbreviation",
               "value": "AR",
               "sourcePage": 1100,
-              "sourceKind": "intro"
+              "sourceKind": "direct"
             }
           ]
         }
@@ -2088,15 +2215,17 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-3",
-          "value": "An armed exile who guards the frog ruins and issues commands to Dave.",
+          "value": "An armed figure defending his stronghold against WV and PM.",
           "sourcePage": 1100,
-          "sourceKind": "intro"
+          "sourceKind": "direct",
+          "sourceNote": "AR's introduction describes WV and PM as unwelcome rogues outside his stronghold and notes that he has emptied his ammunition at them."
         },
         {
           "from": "act-4",
-          "value": "A Dark Kingdom officer turned exile who guards the frog ruins and sends commands to Dave.",
-          "sourcePage": 1988,
-          "sourceKind": "direct"
+          "value": "A former Authority Regulator who becomes one of the exiles on post-apocalyptic Earth.",
+          "sourcePage": 1674,
+          "sourceKind": "direct",
+          "sourceNote": "The first-year recap explicitly establishes AR as a former Authority Regulator and one of the exiles."
         }
       ],
       "sourcePage": 1100,
@@ -2112,7 +2241,8 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-4",
           "value": "WINDSWEPT QUESTANT",
           "sourcePage": 1543,
-          "sourceKind": "intro"
+          "sourceKind": "visual",
+          "sourceNote": "The page introduces the Windswept Questant visually; the first-year recap later confirms the identity."
         }
       ],
       "rosterLabel": [
@@ -2120,7 +2250,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-4",
           "value": "WQ",
           "sourcePage": 1543,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "portrait": [
@@ -2131,7 +2261,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Windswept Questant"
           },
           "sourcePage": 1543,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2142,8 +2272,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Formerly",
               "value": "WHITE QUEEN",
-              "sourcePage": 1543,
-              "sourceKind": "intro"
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap explicitly says the Windswept Questant was formerly the White Queen."
             }
           ]
         },
@@ -2155,7 +2286,7 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Abbreviation",
               "value": "WQ",
               "sourcePage": 1543,
-              "sourceKind": "intro"
+              "sourceKind": "visual"
             }
           ]
         }
@@ -2163,9 +2294,10 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-4",
-          "value": "Former ruler of Prospit. She abdicates, becomes an exile, and serves as Rose's future command voice.",
-          "sourcePage": 1543,
-          "sourceKind": "intro"
+          "value": "The former White Queen, who abdicates, eventually exiles herself to post-apocalyptic Earth, and commands Rose from the egg-shaped station.",
+          "sourcePage": 1674,
+          "sourceKind": "direct",
+          "sourceNote": "The first-year recap explicitly covers her abdication, later exile as WQ, and her role issuing commands to Rose."
         }
       ],
       "sourcePage": 1543,
@@ -2181,7 +2313,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "JACK NOIR",
           "sourcePage": 955,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -2189,7 +2321,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "Jack Noir",
           "sourcePage": 955,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -2200,7 +2332,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Jack Noir"
           },
           "sourcePage": 955,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2210,16 +2342,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-3",
               "label": "Role",
-              "value": "Dark Kingdom archagent",
+              "value": "Archagent of the Dark Kingdom",
               "sourcePage": 955,
-              "sourceKind": "intro"
-            },
-            {
-              "from": "act-4",
-              "label": "Role",
-              "value": "The kids' session archagent",
-              "sourcePage": 1988,
-              "sourceKind": "direct"
+              "sourceKind": "direct",
+              "sourceNote": "Story 955 explicitly states: 'You are ARCHAGENT JACK NOIR' and that he oversees affairs of a Dark Kingdom."
             }
           ]
         },
@@ -2230,8 +2356,9 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Counterpart",
               "value": "SPADES SLICK, troll session",
-              "sourcePage": 1988,
-              "sourceKind": "direct"
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap explicitly states that the troll session's version of Jack Noir was exiled and took the name Spades Slick."
             }
           ]
         }
@@ -2239,15 +2366,16 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-3",
-          "value": "The Dark Kingdom's archagent.",
+          "value": "The Dark Kingdom's archagent, overseeing its affairs from his office.",
           "sourcePage": 955,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         },
         {
           "from": "act-4",
-          "value": "The kids' session archagent. His troll-session counterpart is exiled and becomes Spades Slick of the Midnight Crew.",
-          "sourcePage": 1988,
-          "sourceKind": "direct"
+          "value": "The kids' session Jack Noir; the corresponding Jack in the trolls' session is exiled and becomes Spades Slick of the Midnight Crew.",
+          "sourcePage": 1674,
+          "sourceKind": "direct",
+          "sourceNote": "The first-year recap explicitly distinguishes the sessions, identifies the troll-session Jack as Spades Slick, and says he and three other exiled agents formed the Midnight Crew."
         }
       ],
       "sourcePage": 955,
@@ -2262,16 +2390,17 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": "DRACONIAN DIGNITARY",
-          "sourcePage": 1532,
-          "sourceKind": "intro"
+          "sourcePage": 1988,
+          "sourceKind": "direct",
+          "sourceNote": "Recap 2 explicitly names Jack's henchman the Draconian Dignitary."
         }
       ],
       "rosterLabel": [
         {
           "from": "act-4",
           "value": "DD",
-          "sourcePage": 1532,
-          "sourceKind": "intro"
+          "sourcePage": 1988,
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -2282,7 +2411,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Draconian Dignitary"
           },
           "sourcePage": 1532,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2292,21 +2421,9 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-4",
               "label": "Role",
-              "value": "Dark Kingdom agent",
-              "sourcePage": 1532,
-              "sourceKind": "intro"
-            }
-          ]
-        },
-        {
-          "id": "counterpart",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Counterpart",
-              "value": "DIAMONDS DROOG, troll session",
-              "sourcePage": 2625,
-              "sourceKind": "boundary"
+              "value": "Jack Noir's henchman",
+              "sourcePage": 1988,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -2314,15 +2431,10 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-4",
-          "value": "A Dark Kingdom agent.",
-          "sourcePage": 1532,
-          "sourceKind": "intro"
-        },
-        {
-          "from": "act-5-act-1",
-          "value": "A Dark Kingdom agent. His troll-session counterpart is exiled and becomes Diamonds Droog of the Midnight Crew.",
-          "sourcePage": 2625,
-          "sourceKind": "boundary"
+          "value": "Jack Noir's henchman, carrying Rose's stolen journal copies and Dave's beta through the meteor lab.",
+          "sourcePage": 1988,
+          "sourceKind": "direct",
+          "sourceNote": "Recap 2 explicitly identifies DD as Jack's henchman and describes him carrying the duplicated journals and beta."
         }
       ],
       "sourcePage": 1532,
@@ -2338,7 +2450,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-4",
           "value": "COURTYARD DROLL",
           "sourcePage": 1784,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -2346,7 +2458,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-4",
           "value": "CD",
           "sourcePage": 1784,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -2357,7 +2469,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Courtyard Droll"
           },
           "sourcePage": 1784,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2367,21 +2479,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-4",
               "label": "Role",
-              "value": "Dark Kingdom agent",
-              "sourcePage": 1784,
-              "sourceKind": "intro"
-            }
-          ]
-        },
-        {
-          "id": "counterpart",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Counterpart",
-              "value": "CLUBS DEUCE, troll session",
-              "sourcePage": 2625,
-              "sourceKind": "boundary"
+              "value": "Jack Noir's lackey",
+              "sourcePage": 1988,
+              "sourceKind": "direct",
+              "sourceNote": "Recap 2 calls Courtyard Droll another of Noir's lackeys."
             }
           ]
         }
@@ -2389,15 +2490,10 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-4",
-          "value": "A Dark Kingdom agent who steals the White Queen's ring.",
-          "sourcePage": 1784,
-          "sourceKind": "intro"
-        },
-        {
-          "from": "act-5-act-1",
-          "value": "A Dark Kingdom agent who steals the White Queen's ring. His troll-session counterpart becomes Clubs Deuce.",
-          "sourcePage": 2625,
-          "sourceKind": "boundary"
+          "value": "A lackey of Jack Noir who steals the White Queen's ring from PM.",
+          "sourcePage": 1988,
+          "sourceKind": "direct",
+          "sourceNote": "Recap 2 explicitly states that CD picked PM's pocket and stole the ring."
         }
       ],
       "sourcePage": 1784,
@@ -2413,7 +2509,8 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "HEGEMONIC BRUTE",
           "sourcePage": 957,
-          "sourceKind": "intro"
+          "sourceKind": "visual",
+          "sourceNote": "The Act 3 page introduces the Hegemonic Brute visually; Recap 2 later names him explicitly."
         }
       ],
       "rosterLabel": [
@@ -2421,7 +2518,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-3",
           "value": "HB",
           "sourcePage": 957,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "portrait": [
@@ -2432,7 +2529,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Hegemonic Brute"
           },
           "sourcePage": 957,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2440,39 +2537,23 @@ window.HOMESTUCK_REFERENCE = {
           "id": "role",
           "variants": [
             {
-              "from": "act-3",
+              "from": "act-4",
               "label": "Role",
-              "value": "Dark Kingdom agent",
-              "sourcePage": 957,
-              "sourceKind": "intro"
-            }
-          ]
-        },
-        {
-          "id": "counterpart",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Counterpart",
-              "value": "HEARTS BOXCARS, troll session",
-              "sourcePage": 2625,
-              "sourceKind": "boundary"
+              "value": "Jack Noir's muscle",
+              "sourcePage": 1988,
+              "sourceKind": "direct",
+              "sourceNote": "Recap 2 explicitly calls HB 'Jack's muscle'."
             }
           ]
         }
       ],
       "note": [
         {
-          "from": "act-3",
-          "value": "A very large Dark Kingdom agent.",
-          "sourcePage": 957,
-          "sourceKind": "intro"
-        },
-        {
-          "from": "act-5-act-1",
-          "value": "A very large Dark Kingdom agent. His troll-session counterpart becomes Hearts Boxcars.",
-          "sourcePage": 2625,
-          "sourceKind": "boundary"
+          "from": "act-4",
+          "value": "Jack Noir's muscle, who follows PM on the Battlefield and attacks her before she later beheads him.",
+          "sourcePage": 1988,
+          "sourceKind": "direct",
+          "sourceNote": "Recap 2 explicitly describes HB tailing and attacking PM, and PM later beheading him."
         }
       ],
       "sourcePage": 957,
@@ -2488,7 +2569,8 @@ window.HOMESTUCK_REFERENCE = {
           "from": "intermission",
           "value": "SNOWMAN",
           "sourcePage": 1268,
-          "sourceKind": "intro"
+          "sourceKind": "direct",
+          "sourceNote": "The Intermission text explicitly refers to her as Snowman and states the consequence of killing her."
         }
       ],
       "rosterLabel": [
@@ -2496,7 +2578,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "intermission",
           "value": "Snowman",
           "sourcePage": 1268,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -2506,8 +2588,9 @@ window.HOMESTUCK_REFERENCE = {
             "src": "../assets/ref-snowman.png",
             "alt": "Snowman in her earlier Black Queen form"
           },
-          "sourcePage": 1268,
-          "sourceKind": "intro"
+          "sourcePage": 1674,
+          "sourceKind": "direct",
+          "sourceNote": "The first-year recap directly establishes that the troll-session Black Queen was exiled and became Snowman; the portrait is held until this identity is safe."
         }
       ],
       "stats": [
@@ -2518,7 +2601,7 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-4",
               "label": "Formerly",
               "value": "Troll-session BLACK QUEEN",
-              "sourcePage": 1988,
+              "sourcePage": 1674,
               "sourceKind": "direct"
             }
           ]
@@ -2527,11 +2610,12 @@ window.HOMESTUCK_REFERENCE = {
           "id": "affiliation",
           "variants": [
             {
-              "from": "intermission",
+              "from": "act-4",
               "label": "Affiliation",
-              "value": "The Felt, number 8",
-              "sourcePage": 1268,
-              "sourceKind": "intro"
+              "value": "The Felt",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap explicitly states that the troll-session Black Queen was exiled and later joined the Felt, becoming Snowman."
             }
           ]
         }
@@ -2539,15 +2623,16 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "intermission",
-          "value": "A mysterious member of the Felt known as Snowman.",
+          "value": "A mysterious woman known as Snowman; killing her would destroy the universe.",
           "sourcePage": 1268,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         },
         {
           "from": "act-4",
-          "value": "The exiled Black Queen of the trolls' session, now the Felt's number 8. Her life is tied to something much larger.",
-          "sourcePage": 1988,
-          "sourceKind": "direct"
+          "value": "The exiled Black Queen of the trolls' session, who joins the Felt and comes to be known as Snowman; she has powers that make killing her highly inadvisable.",
+          "sourcePage": 1674,
+          "sourceKind": "direct",
+          "sourceNote": "The first-year recap states this identity chain and explicitly notes that she acquired special powers making her highly inadvisable to kill."
         }
       ],
       "sourcePage": 1268,
@@ -2563,7 +2648,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "DOC SCRATCH",
           "sourcePage": 2253,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -2571,7 +2656,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "Doc Scratch",
           "sourcePage": 2253,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -2582,7 +2667,7 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Doc Scratch"
           },
           "sourcePage": 2253,
-          "sourceKind": "intro"
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2592,9 +2677,23 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Role",
-              "value": "Mysterious figure associated with the Felt",
+              "value": "Alternia's First Guardian",
               "sourcePage": 2253,
-              "sourceKind": "intro"
+              "sourceKind": "direct",
+              "sourceNote": "The introduction explicitly identifies Scratch as Alternia's FIRST GUARDIAN."
+            }
+          ]
+        },
+        {
+          "id": "allegiance",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Allegiance",
+              "value": "Officer of Lord English",
+              "sourcePage": 2253,
+              "sourceKind": "direct",
+              "sourceNote": "The introduction explicitly calls Scratch an officer of Lord English."
             }
           ]
         }
@@ -2602,9 +2701,10 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "act-5-act-1",
-          "value": "Polite, omniscient-seeming, and deeply manipulative.",
+          "value": "His job is to pave the way for Lord English's arrival when the universe ends.",
           "sourcePage": 2253,
-          "sourceKind": "intro"
+          "sourceKind": "direct",
+          "sourceNote": "Paraphrases the introduction's explanation of Scratch's task and English's arrival."
         }
       ],
       "sourcePage": 2253,
@@ -2620,7 +2720,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "intermission",
           "value": "LORD ENGLISH",
           "sourcePage": 1155,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -2628,7 +2728,7 @@ window.HOMESTUCK_REFERENCE = {
           "from": "intermission",
           "value": "Lord English",
           "sourcePage": 1155,
-          "sourceKind": "intro"
+          "sourceKind": "direct"
         }
       ],
       "portrait": [
@@ -2636,10 +2736,11 @@ window.HOMESTUCK_REFERENCE = {
           "from": "intermission",
           "value": {
             "src": "../assets/ref-lord-english.png",
-            "alt": "The Lord English code"
+            "alt": "Lord English's name"
           },
           "sourcePage": 1155,
-          "sourceKind": "intro"
+          "sourceKind": "direct",
+          "sourceNote": "This placeholder portrait uses Lord English's name because the page names him but does not physically show him."
         }
       ],
       "stats": [
@@ -2649,9 +2750,18 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "intermission",
               "label": "Role",
-              "value": "The Felt's unseen boss",
+              "value": "Boss of the Felt",
               "sourcePage": 1155,
-              "sourceKind": "intro"
+              "sourceKind": "direct",
+              "sourceNote": "Spades Slick's introduction calls Lord English the Felt's boss."
+            },
+            {
+              "from": "act-5-act-1",
+              "label": "Role",
+              "value": "Indestructible demon; Doc Scratch's master",
+              "sourcePage": 2253,
+              "sourceKind": "direct",
+              "sourceNote": "Doc Scratch's introduction identifies English as an indestructible demon and Scratch's master."
             }
           ]
         }
@@ -2659,9 +2769,17 @@ window.HOMESTUCK_REFERENCE = {
       "note": [
         {
           "from": "intermission",
-          "value": "Known only indirectly so far.",
+          "value": "Spades Slick has entered his mansion to crack his secret vault.",
           "sourcePage": 1155,
-          "sourceKind": "intro"
+          "sourceKind": "direct",
+          "sourceNote": "This is the Midnight Crew's stated objective on Slick's Intermission introduction page."
+        },
+        {
+          "from": "act-5-act-1",
+          "value": "Doc Scratch is working to pave the way for his arrival when the universe ends.",
+          "sourcePage": 2253,
+          "sourceKind": "direct",
+          "sourceNote": "Doc Scratch's introduction directly explains this relationship and task."
         }
       ],
       "sourcePage": 1155,
@@ -2676,7 +2794,8 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-1",
           "value": "TROLL CHEAT SHEET",
           "sourcePage": 1994,
-          "sourceKind": "intro"
+          "sourceKind": "editorial",
+          "sourceNote": "Editorial section title; page 1994 marks the beginning of the current Hivebent character material."
         }
       ],
       "reveal": "act-5-act-1",
@@ -2687,21 +2806,21 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "value": "HEMOSPECTRUM",
-              "sourcePage": 2448,
-              "sourceKind": "direct"
+              "sourcePage": 2439,
+              "sourceKind": "direct",
+              "sourceNote": "Eridan's introduction explicitly uses the term hemospectrum."
             }
           ],
           "body": [
             {
               "from": "act-5-act-1",
-              "value": "Blood color determines caste. Rust is low. Fuchsia is highest. Karkat's candy red blood is a mutation outside the normal spectrum.",
-              "sourcePage": 2448,
-              "sourceKind": "direct",
+              "value": "A blood-based hierarchy. Eridan's blood is nearly the richest on the spectrum, while Karkat's candy-red blood is a mutation outside the normal order.",
+              "sourcePage": 2439,
               "sourcePages": [
-                1994,
-                2422,
-                2448
-              ]
+                2301
+              ],
+              "sourceKind": "composite",
+              "sourceNote": "Page 2439 establishes the ranked hemospectrum through Eridan; page 2301 explicitly identifies Karkat's candy-red blood as a mutation."
             }
           ]
         },
@@ -2711,20 +2830,18 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "value": "LUSUS",
-              "sourcePage": 2195,
-              "sourceKind": "direct"
+              "sourcePage": 2069,
+              "sourceKind": "direct",
+              "sourceNote": "The narration explicitly introduces LUSUS NATURAE."
             }
           ],
           "body": [
             {
               "from": "act-5-act-1",
-              "value": "An animal guardian who raises a young troll in place of parents. Plural: LUSII.",
-              "sourcePage": 2195,
+              "value": "A creature that raises a young troll in place of biological parents.",
+              "sourcePage": 2069,
               "sourceKind": "direct",
-              "sourcePages": [
-                1994,
-                2195
-              ]
+              "sourceNote": "The narration says a lusus looks after a troll from a young age in lieu of biological parents."
             }
           ]
         },
@@ -2735,15 +2852,17 @@ window.HOMESTUCK_REFERENCE = {
               "from": "act-5-act-1",
               "value": "TROLLIAN",
               "sourcePage": 2543,
-              "sourceKind": "direct"
+              "sourceKind": "direct",
+              "sourceNote": "The page shows the Trollian interface and names Trollian in the memo."
             }
           ],
           "body": [
             {
               "from": "act-5-act-1",
-              "value": "The trolls' chat client. It can contact people at different points in their personal timelines.",
+              "value": "The trolls' messaging client. Its transtimeline features let messages be read at different points in the participants' timelines.",
               "sourcePage": 2543,
-              "sourceKind": "direct"
+              "sourceKind": "direct",
+              "sourceNote": "Karkat describes Trollian's transtimeline memo features and says past and future memos can be read."
             }
           ]
         },
@@ -2753,22 +2872,18 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "value": "FLARP",
-              "sourcePage": 2195,
-              "sourceKind": "direct"
+              "sourcePage": 2167,
+              "sourceKind": "direct",
+              "sourceNote": "Tavros is explicitly about to play a game called FLARP."
             }
           ],
           "body": [
             {
               "from": "act-5-act-1",
-              "value": "Extreme live-action roleplaying. Tavros, Vriska, Aradia, and Terezi's old campaign produced several lasting injuries.",
-              "sourcePage": 2195,
+              "value": "A popular EXTREME ROLE PLAYING game with serious real-world consequences. Team Charge and Team Scourge are rival teams in the campaign shown.",
+              "sourcePage": 2167,
               "sourceKind": "direct",
-              "sourcePages": [
-                2031,
-                2101,
-                2134,
-                2195
-              ]
+              "sourceNote": "All of these details are stated on Tavros's FLARP setup page."
             }
           ]
         }
@@ -2778,29 +2893,33 @@ window.HOMESTUCK_REFERENCE = {
           "symbol": "♥",
           "name": "MATESPRIT",
           "caption": "flushed romance",
-          "sourcePage": 2625,
-          "sourceKind": "boundary"
+          "sourcePage": 2394,
+          "sourceKind": "direct",
+          "sourceNote": "The flushed-quadrant explanation names partners as MATESPRITS and compares the bond to human romance."
         },
         {
           "symbol": "♦",
           "name": "MOIRAIL",
           "caption": "pale, stabilizing bond",
-          "sourcePage": 2625,
-          "sourceKind": "boundary"
+          "sourcePage": 2401,
+          "sourceKind": "direct",
+          "sourceNote": "The pale-quadrant explanation defines MOIRAIL and its pacifying, balancing function."
         },
         {
           "symbol": "♠",
           "name": "KISMESIS",
-          "caption": "hostile romance",
-          "sourcePage": 2625,
-          "sourceKind": "boundary"
+          "caption": "caliginous arch-rivalry",
+          "sourcePage": 2395,
+          "sourceKind": "direct",
+          "sourceNote": "The caliginous-quadrant explanation defines KISMESIS as an especially potent arch-rivalry."
         },
         {
           "symbol": "♣",
           "name": "AUSPISTICE",
-          "caption": "third-party mediation",
-          "sourcePage": 2625,
-          "sourceKind": "boundary"
+          "caption": "ashen, third-party mediation",
+          "sourcePage": 2397,
+          "sourceKind": "direct",
+          "sourceNote": "The ashen-quadrant explanation defines the AUSPISTICE as a mediator between two trolls in conflict."
         }
       ]
     },
@@ -2811,7 +2930,8 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-1",
           "value": "GAME CHEAT SHEET",
           "sourcePage": 42,
-          "sourceKind": "direct"
+          "sourceKind": "editorial",
+          "sourceNote": "Editorial section heading; sourcePage points to the first direct SBURB-as-game reference used by this section."
         }
       ],
       "reveal": "act-1",
@@ -2835,15 +2955,18 @@ window.HOMESTUCK_REFERENCE = {
           "body": [
             {
               "from": "act-1",
-              "value": "The reality-altering game played by the kids.",
-              "sourcePage": 247,
-              "sourceKind": "boundary"
+              "value": "A computer game John begins playing with Rose.",
+              "sourcePage": 204,
+              "sourceKind": "direct"
             },
             {
               "from": "act-5-act-1",
-              "value": "The reality-altering game played by the kids. The trolls' version is called SGRUB.",
+              "value": "The kids play SBURB; the trolls' version of the game is called SGRUB.",
               "sourcePage": 2134,
-              "sourceKind": "direct"
+              "sourcePages": [
+                204
+              ],
+              "sourceKind": "composite"
             }
           ]
         },
@@ -2853,21 +2976,15 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-2",
               "value": "INCIPISPHERE",
-              "sourcePage": 758,
-              "sourceKind": "boundary"
+              "sourcePage": 421,
+              "sourceKind": "direct"
             }
           ],
           "body": [
             {
               "from": "act-2",
-              "value": "The larger game world surrounding Skaia.",
-              "sourcePage": 758,
-              "sourceKind": "boundary"
-            },
-            {
-              "from": "act-4",
-              "value": "The game cosmos: Skaia, Prospit, the player lands, the Veil, and Derse.",
-              "sourcePage": 1988,
+              "value": "The larger realm in which the Medium exists, untouched by the flow of time in John's universe.",
+              "sourcePage": 421,
               "sourceKind": "direct"
             }
           ]
@@ -2878,16 +2995,24 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-2",
               "value": "PROTOTYPING",
-              "sourcePage": 758,
-              "sourceKind": "boundary"
+              "sourcePage": 424,
+              "sourceKind": "direct",
+              "sourceNote": "Nannasprite explicitly uses the language of prototyping and explains that the Sprite's Kernel hatches on John's arrival, carrying information from anything prototyped before the hatch."
             }
           ],
           "body": [
             {
               "from": "act-2",
-              "value": "Prototyping a kernelsprite before a player enters also changes the session's enemies and royalty.",
-              "sourcePage": 758,
-              "sourceKind": "boundary"
+              "value": "When John arrives, the Sprite's Kernel hatches automatically. The two resulting Kernels carry whatever they were prototyped with before the hatch; John's ash mishap happens afterward and changes the Sprite's incarnation.",
+              "sourcePage": 424,
+              "sourceKind": "direct",
+              "sourceNote": "Nannasprite states that the Kernel hatches automatically in response to John's arrival, that both resulting Kernels carry the information they were prototyped with before the hatch, and that the ash mishap occurred afterward and changed the Sprite from its previous incarnation."
+            },
+            {
+              "from": "act-4",
+              "value": "Pre-entry prototypings alter the enemies the players face; post-entry prototypings affect only the sprite.",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
             }
           ]
         },
@@ -2897,28 +3022,22 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-3",
               "value": "ECTOBIOLOGY",
-              "sourcePage": 914,
+              "sourcePage": 934,
               "sourceKind": "direct"
             }
           ],
           "body": [
             {
               "from": "act-3",
-              "value": "A cloning science practiced in Rose's laboratory.",
-              "sourcePage": 914,
+              "value": "A cloning science used in the laboratory to produce a paradox clone of Jaspers.",
+              "sourcePage": 934,
               "sourceKind": "direct"
             },
             {
               "from": "act-4",
-              "value": "Paradox cloning across time.",
+              "value": "Paradox cloning across time: John uses ectobiology to create infant versions of himself, his friends, and their guardians, who are sent back to become them.",
               "sourcePage": 1988,
               "sourceKind": "direct"
-            },
-            {
-              "from": "act-5-act-1",
-              "value": "Paradox cloning across time. The troll session also involves players helping cause their own births.",
-              "sourcePage": 2625,
-              "sourceKind": "boundary"
             }
           ]
         },
@@ -2935,9 +3054,12 @@ window.HOMESTUCK_REFERENCE = {
           "body": [
             {
               "from": "act-4",
-              "value": "The meteor assault from the Veil. Skaia redirects the meteors through portals into the players' home world's history.",
+              "value": "A 24-hour meteor assault from the Veil toward Skaia. Skaia's defense portals redirect many of the meteors elsewhere in space and time.",
               "sourcePage": 1988,
-              "sourceKind": "direct"
+              "sourcePages": [
+                1674
+              ],
+              "sourceKind": "composite"
             }
           ]
         },
@@ -2946,21 +3068,70 @@ window.HOMESTUCK_REFERENCE = {
           "title": [
             {
               "from": "act-4",
+              "value": "ALTERNATE TIMELINE",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
+            },
+            {
+              "from": "act-5-act-1",
               "value": "DOOMED TIMELINE",
-              "sourcePage": 1988,
+              "sourcePage": 2591,
               "sourceKind": "direct"
             }
           ],
           "body": [
             {
               "from": "act-4",
-              "value": "An alternate branch that cannot sustain the main causal loop, even though its players can still act before it collapses.",
-              "sourcePage": 1988,
+              "value": "An alternative future timeline that is not meant to be. Dave travels back from one such future to change events, causing that future to cease.",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
+            },
+            {
+              "from": "act-5-act-1",
+              "value": "A doomed offshoot of the alpha timeline. A future self returning to the past from one is slated for imminent destruction.",
+              "sourcePage": 2591,
               "sourceKind": "direct"
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "sourceAudit": {
+    "verifiedThroughChunk": 5,
+    "verifiedChunks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "verifiedGroups": [
+      "kids",
+      "guardians-sprites",
+      "trolls",
+      "carapacians",
+      "others",
+      "troll-cheats",
+      "game-cheats"
+    ],
+    "verifiedDate": "2026-09-18",
+    "note": "All five staged audit chunks have been integrated and individually fact-checked. A final global source audit was completed on 2026-09-18, checking source-metadata conventions, stage-safe sourcing, spoiler-stage wording, and structural completeness across the merged file.",
+    "chunk2Notes": [
+      "Standardized later caste-color names are not back-projected into Act 5 Act 1. Blood wording uses terminology explicitly available by the end of A5A1.",
+      "Blood rows are omitted for Aradia, Tavros, Equius, and Gamzee because this audit did not identify an A5A1 page that directly establishes a sufficiently precise color label for those characters.",
+      "Sollux uses Yellow (p. 2146); Karkat Mutant candy-red (p. 2301); Nepeta Green (p. 2162); Kanaya Jade green (p. 2323); Terezi Teal (p. 2238); Vriska Cerulean (p. 2276); Eridan Penultimate on the hemospectrum (p. 2439); Feferi Most noble blood possible (p. 2441).",
+      "Sollux’s unsupported “Video games” interest was removed. Equius’s “Strength training” was changed to the textually supported “Strength.” Gamzee’s Faygo interest is composite-sourced to pp. 2012–2013."
+    ],
+    "globalAuditComplete": true,
+    "globalAuditDate": "2026-09-18",
+    "globalAuditNotes": [
+      "Editorial group-heading source metadata was made stage-specific so hidden citations never point beyond the currently visible spoiler boundary.",
+      "User-facing records previously tagged sourceKind \"intro\" were normalized to \"direct\" for textually supported intro-page claims and \"visual\" for portraits/alt text; character-level intro metadata remains available separately.",
+      "sourcePages now consistently contains only additional supporting pages and no longer repeats sourcePage.",
+      "The Act 2 PROTOTYPING entry was corrected from an unrelated p. 434 citation to p. 424 and reworded to match exactly what Nannasprite establishes at that reading stage; the later Act 4 wording remains unchanged.",
+      "Snowman's Intermission note was narrowed to what p. 1268 directly establishes, and her Felt affiliation now appears at Act 4 using the recap's explicit identification; Lord English's name-only placeholder portrait is classified as textually direct rather than visual.",
+      "Apart from that correction and source-convention normalization, previously fact-checked Chunk 1–5 wording was preserved; stage boundary records remain sourceKind \"boundary\" because they are intentionally reading checkpoints rather than evidence for a story claim."
+    ]
+  }
 };
