@@ -122,7 +122,7 @@ act subtitles are plain text. Panel source links open the comic in new tabs.
 On touch screens, use Next Slide and Go Back;
 tapping the panel or caption does not advance. On small screens, changing slides
 returns to the new panel so a previous caption’s scroll position is not retained.
-A numeric hash such as `recaps/01/#28` reopens that slide;
+A numeric hash such as `recaps/01/#12` reopens that slide;
 navigation updates the hash without filling browser history. Print styles reveal
 all slides, hide controls and the counter, and request one square page per slide.
 
@@ -141,6 +141,9 @@ standalone prototype files are not part of the site’s shared implementation.
 3. Put each image directly in `assets/`, with descriptive alt text and its natural
    width and height. The `story-` suffix must identify the actual source page.
    An image with no recognized suffix is allowed and has no source link.
+   Record verified panel or Flash-frame provenance in `ASSET_SOURCES.md`; unused
+   assets are not automatically approved for reuse. When importing edited copy,
+   preserve the verified image references, alt text, and current dimensions.
 4. Replace the corresponding availability paragraph in `recaps/index.html` with
    a reading link. Add a link in that meeting’s section of `schedule/index.html`.
 5. Run the checks below, then preview the cover, a long caption, an animated GIF,

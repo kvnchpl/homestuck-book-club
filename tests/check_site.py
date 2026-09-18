@@ -34,6 +34,11 @@ class Page(HTMLParser):
         assert self.stack[-1].tag == tag, f'{self.path}: unexpected closing {tag}'
         self.stack.pop()
 
+    def handle_startendtag(self, tag, attrs):
+        # Editors may serialize HTML void elements as <img /> or <meta />.
+        assert tag in VOID, f'{self.path}: non-void element cannot self-close: {tag}'
+        self.handle_starttag(tag, attrs)
+
     def handle_data(self, data):
         node = self.stack[-1]
         if len(node):
