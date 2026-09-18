@@ -579,26 +579,13 @@ button {
   margin: 0 0 28px;
 }
 
-.reference-hero {
-  max-width: 760px;
-  margin-bottom: 3rem;
-}
-
-.reference-scope {
-  margin: 0.5rem 0 1rem;
-  font-weight: 700;
-}
-
-.reference-jump {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  margin-top: 1.5rem;
-}
-
 .reference-section {
   margin: 4rem 0;
   scroll-margin-top: 2rem;
+}
+
+.reference-hero + .reference-section {
+  margin-top: 0;
 }
 
 .reference-section>h2 {
@@ -768,12 +755,6 @@ button {
 @media screen and (max-width: 600px) {
   .reference-page {
     padding-inline: 18px;
-  }
-
-  .reference-jump a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
   }
 
   .site-header {
@@ -1018,8 +999,7 @@ button {
 
   .site-header,
   .page-footer,
-  .skip-link,
-  .reference-jump {
+  .skip-link {
     display: none !important;
   }
 

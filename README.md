@@ -131,7 +131,7 @@ The reference at `reference/index.html` is a published club page, linked from ev
 page’s navigation and the homepage. It uses the shared wiki frame, CSS, and JS.
 Its stated spoiler boundary is Meeting #4 / Act 5 Act 1. Keep character portraits
 and descriptions within that boundary when editing it. The visual character cards
-and section links work without JavaScript. Portraits retain their native proportions
+work without JavaScript. Portraits retain their native proportions
 and live directly in `assets/`, alongside the recap panels. These small PNG
 portraits are separate from the 650px-wide recap GIF convention.
 
