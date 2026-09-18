@@ -695,10 +695,10 @@ button {
 }
 
 .character-option[aria-selected="true"] {
-  border-color: var(--link);
-  box-shadow: inset 0 0 0 2px var(--link);
+  border-color: var(--character-color, var(--link));
+  box-shadow: inset 0 0 0 2px var(--character-color, var(--link));
   background: #fff;
-  color: var(--link);
+  color: var(--character-text-color, var(--character-color, var(--link)));
 }
 
 .roster-portrait {
@@ -726,7 +726,8 @@ button {
 .is-ready .character-card {
   display: block;
   padding: 18px;
-  border-color: #000;
+  border-color: var(--character-color, #000);
+  box-shadow: inset 0 0 0 1px var(--character-color, #000);
   background: #fff;
   font-size: 14px;
 }
