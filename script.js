@@ -151,7 +151,7 @@
     if (event.pointerType === 'touch' || window.matchMedia('(pointer: coarse)').matches) return;
     const bounds = slides[index].getBoundingClientRect();
     if (event.clientX < bounds.left || event.clientX > bounds.right ||
-        event.clientY < bounds.top || event.clientY > bounds.bottom) return;
+      event.clientY < bounds.top || event.clientY > bounds.bottom) return;
     show(index + (event.clientX < bounds.left + bounds.width * .35 ? -1 : 1));
   });
   window.addEventListener('hashchange', () => show(indexFromHash(), false));
