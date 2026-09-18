@@ -445,7 +445,7 @@ button {
 .reader-controls {
   width: min(100%, 650px);
   margin: 0 auto;
-  padding: 0 24px 24px;
+  padding: 0 24px 12px;
   background: var(--paper);
 }
 
@@ -455,7 +455,7 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 4px 16px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .command-links li,
@@ -512,12 +512,42 @@ button {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 4px 12px;
+  gap: 0;
 }
 
 .reader-tools {
-  font-size: 10px;
+  font: 400 10px/12px Verdana, Arial, sans-serif;
+  align-items: flex-end;
   justify-content: space-between;
+  gap: 4px 16px;
+}
+
+/* Match the comic's compact tool lists and plain vertical-bar separator. */
+.reader-history,
+.reader-options {
+  padding: 0 8px 0 4px;
+}
+
+.reader-history {
+  flex-wrap: nowrap;
+}
+
+.reader-history > span[aria-hidden="true"] {
+  flex: 0 0 12px;
+  text-align: center;
+}
+
+.reader-tools button,
+.reader-tools a,
+.controls .next-command button {
+  min-height: 0;
+  min-width: 0;
+  padding: 0;
+  text-underline-offset: auto;
+}
+
+.next-command {
+  line-height: 32px;
 }
 
 .sr-only {
@@ -888,6 +918,20 @@ button {
 
   .cover h1 {
     overflow-wrap: anywhere;
+  }
+}
+
+/* Compact text on desktop; retain room to tap on phones and touch devices. */
+@media (max-width: 600px), (pointer: coarse) {
+  .reader-tools button,
+  .reader-tools a,
+  .controls .next-command button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .reader-next {
+    margin-bottom: 16px;
   }
 }
 
