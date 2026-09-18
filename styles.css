@@ -532,7 +532,7 @@ button {
   flex-wrap: nowrap;
 }
 
-.reader-history>span[aria-hidden="true"] {
+.reader-history > span[aria-hidden="true"] {
   flex: 0 0 12px;
   text-align: center;
 }
@@ -625,6 +625,24 @@ button {
   font-size: 1rem;
 }
 
+
+.character-card h3 .character-intro-link,
+.character-card h3 .character-intro-link:visited {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.is-ready .character-card h3 .character-intro-link,
+.is-ready .character-card h3 .character-intro-link:visited {
+  color: var(--character-text-color, #000);
+}
+
+.character-card h3 .character-intro-link:hover {
+  text-decoration-thickness: 2px;
+}
+
 .character-note {
   margin: 0.3rem 0 0;
 }
@@ -634,7 +652,7 @@ button {
   font-size: 14px;
 }
 
-.character-stats>div {
+.character-stats > div {
   padding: 6px 0;
   border-top: 1px dotted #aaa;
 }
@@ -673,7 +691,7 @@ button {
   font-size: 14px;
 }
 
-.character-option+.roster-group-label {
+.character-option + .roster-group-label {
   margin-top: 18px;
 }
 
@@ -701,23 +719,6 @@ button {
   color: var(--character-text-color, var(--character-color, var(--link)));
 }
 
-.character-card h3 .character-intro-link,
-.character-card h3 .character-intro-link:visited {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-
-.is-ready .character-card h3 .character-intro-link,
-.is-ready .character-card h3 .character-intro-link:visited {
-  color: var(--character-text-color, #000);
-}
-
-.character-card h3 .character-intro-link:hover {
-  text-decoration-thickness: 2px;
-}
-
 .roster-portrait {
   display: block;
   width: 100%;
@@ -731,7 +732,7 @@ button {
   margin: 0;
 }
 
-.is-ready .character-group>h2 {
+.is-ready .character-group > h2 {
   display: none;
 }
 
@@ -1027,9 +1028,7 @@ button {
 }
 
 /* Compact text on desktop; retain room to tap on phones and touch devices. */
-@media (max-width: 600px),
-(pointer: coarse) {
-
+@media (max-width: 600px), (pointer: coarse) {
   .reader-tools button,
   .reader-tools a,
   .controls .next-command button {
@@ -1137,7 +1136,7 @@ button {
     display: block;
   }
 
-  .is-ready .character-group>h2,
+  .is-ready .character-group > h2,
   .is-ready .character-card[hidden] {
     display: block !important;
   }
