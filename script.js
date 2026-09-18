@@ -1,3 +1,48 @@
+// Reference search is independent of the recap reader and enhances readable HTML.
+(() => {
+  'use strict';
+  const input = document.getElementById('reference-search');
+  const status = document.getElementById('reference-results');
+  const clear = document.getElementById('reference-clear');
+  if (!input || !status || !clear) return;
+  const tools = document.querySelector('.reference-search-tools');
+  if (!tools) return;
+  const normalize = value => value.toLowerCase().replace(/\s+/g, ' ').trim();
+  const cards = [...document.querySelectorAll('.reference-card')].map(card => ({
+    card, text: normalize(`${card.dataset.search || ''} ${card.textContent || ''}`),
+  }));
+  const sections = [...document.querySelectorAll('.reference-section')];
+  const links = [...document.querySelectorAll('.reference-jump a')];
+  function filter() {
+    const query = normalize(input.value);
+    const terms = query.split(' ').filter(Boolean);
+    let count = 0;
+    cards.forEach(({ card, text }) => {
+      card.hidden = !terms.every(term => text.includes(term));
+      if (!card.hidden) count++;
+    });
+    sections.forEach(section => {
+      section.hidden = [...section.querySelectorAll('.reference-card')].every(card => card.hidden);
+    });
+    links.forEach(link => {
+      const section = document.getElementById(link.getAttribute('href').slice(1));
+      link.hidden = Boolean(section && section.hidden);
+    });
+    clear.hidden = !query;
+    status.textContent = count
+      ? `${count} ${count === 1 ? 'entry' : 'entries'}${query ? (count === 1 ? ' matches your search' : ' match your search') : ' available'}.`
+      : 'No entries match. Try another name or term.';
+  }
+  input.addEventListener('input', filter);
+  clear.addEventListener('click', () => {
+    input.value = '';
+    filter();
+    input.focus();
+  });
+  tools.hidden = false;
+  filter();
+})();
+
 (() => {
   'use strict';
 

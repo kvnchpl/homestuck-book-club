@@ -81,6 +81,10 @@ button {
   color: #39d5f6;
 }
 
+.site-nav .nav-reference {
+  color: #ff82dc;
+}
+
 .site-nav .nav-story {
   color: #f7f72a;
 }
@@ -529,9 +533,9 @@ button {
 /* Reference page */
 
 .reference-page {
-  width: min(1120px, calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 3rem 0 5rem;
+  padding: 24px 28px 32px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .reference-hero {
@@ -539,11 +543,10 @@ button {
   margin-bottom: 3rem;
 }
 
-.reference-hero h1 {
-  margin: 0.25rem 0 1rem;
+.reference-hero .page-title {
+  margin: 0 0 28px;
 }
 
-.reference-kicker,
 .reference-scope,
 .reference-handle,
 .reference-footer {
@@ -598,19 +601,18 @@ button {
   margin-bottom: 1.5rem;
 }
 
-.reference-section-empty {
-  display: none;
+.reference-search-tools button {
+  margin-top: 0.75rem;
+  min-height: 44px;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 .reference-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
   align-items: start;
-}
-
-.reference-grid-wide {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .reference-card {
@@ -708,6 +710,16 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+  .reference-page {
+    padding-inline: 18px;
+  }
+
+  .reference-jump a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
   .site-header {
     width: 100%;
     padding: 8px 12px;
@@ -715,7 +727,7 @@ button {
 
   .site-nav {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4px;
     font-size: 14px;
   }
@@ -935,8 +947,19 @@ button {
 
   .site-header,
   .page-footer,
-  .skip-link {
+  .skip-link,
+  .reference-search-tools,
+  .reference-jump {
     display: none !important;
+  }
+
+  .reference-section[hidden],
+  .reference-card[hidden] {
+    display: block !important;
+  }
+
+  .reference-card {
+    break-inside: avoid;
   }
 
   .site-frame,

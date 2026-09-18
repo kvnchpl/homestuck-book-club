@@ -55,7 +55,8 @@ def text(node):
     return ''.join(node.itertext()).strip()
 
 
-paths = [ROOT / 'index.html', ROOT / 'schedule/index.html', *sorted((ROOT / 'recaps').rglob('index.html'))]
+paths = [ROOT / 'index.html', ROOT / 'schedule/index.html', ROOT / 'reference/index.html',
+         *sorted((ROOT / 'recaps').rglob('index.html'))]
 pages = {p.relative_to(ROOT).as_posix(): Page(p) for p in paths}
 assert all(p.is_file() for p in (ROOT / 'assets').iterdir()), 'Keep assets directly under assets/'
 for asset in (ROOT / 'assets').glob('*.gif'):
@@ -110,6 +111,9 @@ for name, page in pages.items():
         recap_nav = by_class(tree, 'nav-recaps')
         assert len(recap_nav) == 1
         assert urlparse(urljoin(base, recap_nav[0].get('href'))).path == prefix + 'recaps/'
+        reference_nav = by_class(tree, 'nav-reference')
+        assert len(reference_nav) == 1, f'{name}: missing reference navigation'
+        assert urlparse(urljoin(base, reference_nav[0].get('href'))).path == prefix + 'reference/'
     slides = by_class(tree, 'slide')
     if slides:
         assert 'cover' in slides[0].get('class', '').split(), f'{name}: start with a cover'
@@ -118,6 +122,14 @@ for name, page in pages.items():
             assert control in page.ids, f'{name}: missing {control}'
         assert page.ids['deck'].get('tabindex') == '-1'
         assert page.ids['start-over'].tag == 'button'
+
+reference = pages['reference/index.html']
+assert reference.ids['reference-search'].get('type') == 'search'
+assert reference.ids['reference-results'].get('role') == 'status'
+assert reference.ids['reference-clear'].tag == 'button'
+assert 'hidden' in by_class(reference.root, 'reference-search-tools')[0].attrib
+assert all('hidden' not in entry.attrib for entry in by_class(reference.root, 'reference-card'))
+assert all('hidden' not in section.attrib for section in by_class(reference.root, 'reference-section'))
 
 schedule = by_class(pages['schedule/index.html'].root, 'meeting')
 recaps = by_class(pages['recaps/index.html'].root, 'meeting')

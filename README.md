@@ -2,7 +2,7 @@
 
 ## Club wiki
 
-The homepage, `schedule/index.html`, `recaps/index.html`, and recap viewer share `styles.css` and
+The homepage, `schedule/index.html`, `recaps/index.html`, `reference/index.html`, and recap viewer share `styles.css` and
 `script.js`. The visual frame follows classic MS Paint Adventures: a dark-gray
 background, lighter gray outer column, 650px reading area, Courier text, colored
 navigation, and blue underlined content links. All internal URLs remain relative
@@ -127,8 +127,14 @@ A numeric hash such as `recaps/01/#12` reopens that slide;
 navigation updates the hash without filling browser history. Print styles reveal
 all slides, hide controls and the counter, and request one square page per slide.
 
-The ignored `reference/` directory is the original design/content archive; its
-standalone prototype files are not part of the site’s shared implementation.
+The reference at `reference/index.html` is a published club page, linked from every
+page’s navigation and the homepage. It uses the shared wiki frame, CSS, and JS.
+Its stated spoiler boundary is Meeting #4 / Act 5 Act 1. Keep visible descriptions,
+fact tables, and `data-search` keywords within that boundary when editing it.
+Search matches all entered words across each entry’s text and keywords, hides
+empty sections, and announces result counts. Clear Search restores every entry.
+Without JavaScript, all entries and section links remain readable; search controls
+are shown only when their behavior is available.
 
 
 ## Adding a recap
@@ -163,14 +169,14 @@ No package installation or build step is required. From the repository root:
 
 ```sh
 python3 tests/check_site.py
-node --test tests/reader.test.cjs
+node --test tests/*.test.cjs
 ```
 
 The Python check validates local links and fragments at both hosting paths,
 shared resources, image references, required reader controls, recap availability,
 and agreement between the schedule and recap index. It also checks that the
 reading ranges are continuous and their page counts add up. The Node tests cover
-reader state and interactions with a minimal DOM fixture; they do not replace
+reader state and reference filtering with minimal DOM fixtures; they do not replace
 browser layout or assistive-technology testing.
 
 Incomplete reader templates fall back to showing all slides. Unknown image

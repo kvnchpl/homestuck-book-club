@@ -22,10 +22,10 @@
     </nav>
   </header>
 
-  <main class="reference-page" id="reference-main">
+  <main class="site-frame" id="reference-main" tabindex="-1">
+    <article class="wiki-page reference-page">
     <header class="reference-hero">
-      <p class="reference-kicker">HOMESTUCK BOOK CLUB</p>
-      <h1>REFERENCE</h1>
+      <h1 class="page-title">Reference</h1>
       <p class="reference-scope">
         CURRENT THROUGH MEETING 04: ACT 5 ACT 1, <em>MOB1US DOUBL3 R34CH4ROUND</em> / HIVEBENT.
         Nothing below assumes knowledge beyond that reading.
@@ -34,21 +34,27 @@
         This is a memory aid, not a complete wiki. Entries are intentionally brief and will expand only when the book club reaches new information.
       </p>
 
-      <label class="reference-search-label" for="reference-search">Search the reference</label>
-      <input
-        id="reference-search"
-        class="reference-search"
-        type="search"
-        placeholder="Try: Kanaya, Reckoning, moirail, Jack Noir..."
-        autocomplete="off"
-      >
+      <div class="reference-search-tools" hidden>
+        <label class="reference-search-label" for="reference-search">Search the reference</label>
+        <input
+          id="reference-search"
+          class="reference-search"
+          type="search"
+          placeholder="Try: Kanaya, Reckoning, moirail, Jack Noir..."
+          autocomplete="off"
+          aria-describedby="reference-results"
+        >
+
+        <button id="reference-clear" type="button" hidden>Clear Search</button>
+        <p id="reference-results" role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
 
       <nav class="reference-jump" aria-label="Reference sections">
-        <a href="#snapshot">Where things stand</a>
-        <a href="#kids">The kids</a>
-        <a href="#trolls">The trolls</a>
-        <a href="#culture">Troll culture</a>
-        <a href="#game">Game and cosmology</a>
+        <a href="#snapshot">Where Things Stand</a>
+        <a href="#kids">The Kids</a>
+        <a href="#trolls">The Trolls</a>
+        <a href="#culture">Troll Culture</a>
+        <a href="#game">Game and Cosmology</a>
         <a href="#carapacians">Carapacians</a>
       </nav>
     </header>
@@ -87,7 +93,7 @@
           <h3>JOHN EGBERT</h3>
           <p class="reference-handle">ectoBiologist [EB]</p>
           <dl class="reference-facts">
-            <div><dt>Dream moon</dt><dd>Prospit</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
             <div><dt>Land</dt><dd>Land of Wind and Shade</dd></div>
           </dl>
           <p>
@@ -100,7 +106,7 @@
           <h3>ROSE LALONDE</h3>
           <p class="reference-handle">tentacleTherapist [TT]</p>
           <dl class="reference-facts">
-            <div><dt>Dream moon</dt><dd>Derse</dd></div>
+            <div><dt>Dream Moon</dt><dd>Derse</dd></div>
             <div><dt>Land</dt><dd>Land of Light and Rain</dd></div>
           </dl>
           <p>
@@ -113,12 +119,12 @@
           <h3>DAVE STRIDER</h3>
           <p class="reference-handle">turntechGodhead [TG]</p>
           <dl class="reference-facts">
-            <div><dt>Dream moon</dt><dd>Derse</dd></div>
+            <div><dt>Dream Moon</dt><dd>Derse</dd></div>
             <div><dt>Land</dt><dd>Land of Heat and Clockwork</dd></div>
           </dl>
           <p>
             Rose's server player and the group's resident time traveler.
-            A doomed future version of Dave became DAVESPRITE, leaving the current Dave with firsthand evidence that time travel rewards careful loops and punishes improvisation.
+            A version of Dave from a doomed future became DAVESPRITE and helped prevent John from dying in that timeline’s chain of events.
           </p>
         </article>
 
@@ -126,7 +132,7 @@
           <h3>JADE HARLEY</h3>
           <p class="reference-handle">gardenGnostic [GG]</p>
           <dl class="reference-facts">
-            <div><dt>Dream moon</dt><dd>Prospit</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
             <div><dt>Land</dt><dd>Not yet revealed</dd></div>
           </dl>
           <p>
@@ -154,7 +160,7 @@
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Rust</dd></div>
             <div><dt>Title</dt><dd>Maid of Time</dd></div>
-            <div><dt>Dream moon</dt><dd>Derse</dd></div>
+            <div><dt>Dream Moon</dt><dd>Derse</dd></div>
             <div><dt>Land</dt><dd>Land of Quartz and Melody</dd></div>
           </dl>
           <p>
@@ -170,7 +176,7 @@
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Bronze</dd></div>
             <div><dt>Title</dt><dd>Page of Breath</dd></div>
-            <div><dt>Dream moon</dt><dd>Prospit</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
             <div><dt>Land</dt><dd>Land of Sand and Zephyr</dd></div>
           </dl>
           <p>
@@ -186,7 +192,7 @@
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Gold</dd></div>
             <div><dt>Title</dt><dd>Mage of Doom</dd></div>
-            <div><dt>Dream moon</dt><dd>Prospit and Derse</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit and Derse</dd></div>
             <div><dt>Land</dt><dd>Land of Brains and Fire</dd></div>
           </dl>
           <p>
@@ -201,7 +207,7 @@
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Mutant candy red</dd></div>
             <div><dt>Title</dt><dd>Knight of Blood</dd></div>
-            <div><dt>Dream moon</dt><dd>Prospit</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
             <div><dt>Land</dt><dd>Land of Pulse and Haze</dd></div>
           </dl>
           <p>
@@ -210,14 +216,14 @@
           </p>
         </article>
 
-        <article class="reference-card searchable" data-search="nepeta leijon arseniccatnip ac leo olive rogue heart derse land little cubes tea cat moirail equius">
+        <article class="reference-card searchable" data-search="nepeta leijon arseniccatnip ac leo olive rogue heart derse cat moirail equius">
           <h3>♌ NEPETA LEIJON</h3>
           <p class="reference-handle">arsenicCatnip [AC]</p>
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Olive</dd></div>
             <div><dt>Title</dt><dd>Rogue of Heart</dd></div>
-            <div><dt>Dream moon</dt><dd>Derse</dd></div>
-            <div><dt>Land</dt><dd>Land of Little Cubes and Tea</dd></div>
+            <div><dt>Dream Moon</dt><dd>Derse</dd></div>
+            <div><dt>Land</dt><dd>Not yet named</dd></div>
           </dl>
           <p>
             A hunter, cat roleplayer, and enthusiastic keeper of a shipping wall.
@@ -225,18 +231,18 @@
           </p>
         </article>
 
-        <article class="reference-card searchable" data-search="kanaya maryam grimauxiliatrix ga virgo jade sylph space prospit land rays frogs mother grub fashion rose walkthrough">
+        <article class="reference-card searchable" data-search="kanaya maryam grimauxiliatrix ga virgo jade sylph space prospit mother grub fashion rose walkthrough">
           <h3>♍ KANAYA MARYAM</h3>
           <p class="reference-handle">grimAuxiliatrix [GA]</p>
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Jade</dd></div>
             <div><dt>Title</dt><dd>Sylph of Space</dd></div>
-            <div><dt>Dream moon</dt><dd>Prospit</dd></div>
-            <div><dt>Land</dt><dd>Land of Rays and Frogs</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
+            <div><dt>Land</dt><dd>Not yet named</dd></div>
           </dl>
           <p>
             A fashionable gardener whose lusus is the MOTHER GRUB.
-            Kanaya has access to Rose's GameFAQs walkthrough and, as the Space player, is responsible for the frog breeding required to complete the trolls' session.
+            Kanaya reads Rose’s GameFAQs walkthrough and protects a MATRIORB, which could hatch a new Mother Grub and help restore the trolls’ species.
           </p>
         </article>
 
@@ -246,7 +252,7 @@
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Teal</dd></div>
             <div><dt>Title</dt><dd>Seer of Mind</dd></div>
-            <div><dt>Dream moon</dt><dd>Prospit</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
             <div><dt>Land</dt><dd>Land of Thought and Flow</dd></div>
           </dl>
           <p>
@@ -261,7 +267,7 @@
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Cerulean</dd></div>
             <div><dt>Title</dt><dd>Thief of Light</dd></div>
-            <div><dt>Dream moon</dt><dd>Prospit</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
             <div><dt>Land</dt><dd>Land of Maps and Treasure</dd></div>
           </dl>
           <p>
@@ -276,7 +282,7 @@
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Indigo</dd></div>
             <div><dt>Title</dt><dd>Heir of Void</dd></div>
-            <div><dt>Dream moon</dt><dd>Derse</dd></div>
+            <div><dt>Dream Moon</dt><dd>Derse</dd></div>
             <div><dt>Land</dt><dd>Land of Caves and Silence</dd></div>
           </dl>
           <p>
@@ -286,14 +292,14 @@
           </p>
         </article>
 
-        <article class="reference-card searchable" data-search="gamzee makara terminallycapricious tc capricorn purple bard rage prospit land tents mirth clown faygo miracles sopor">
+        <article class="reference-card searchable" data-search="gamzee makara terminallycapricious tc capricorn purple prospit clown faygo miracles sopor">
           <h3>♑ GAMZEE MAKARA</h3>
           <p class="reference-handle">terminallyCapricious [TC]</p>
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Purple</dd></div>
-            <div><dt>Title</dt><dd>Bard of Rage</dd></div>
-            <div><dt>Dream moon</dt><dd>Prospit</dd></div>
-            <div><dt>Land</dt><dd>Land of Tents and Mirth</dd></div>
+            <div><dt>Title</dt><dd>Not yet named</dd></div>
+            <div><dt>Dream Moon</dt><dd>Prospit</dd></div>
+            <div><dt>Land</dt><dd>Not yet named</dd></div>
           </dl>
           <p>
             A clown devotee of miracles, Faygo, and sopor slime.
@@ -301,14 +307,14 @@
           </p>
         </article>
 
-        <article class="reference-card searchable" data-search="eridan ampora caligulasaquarium ca aquarius violet prince hope derse land wrath angels seadweller rifle feferi">
+        <article class="reference-card searchable" data-search="eridan ampora caligulasaquarium ca aquarius violet derse seadweller rifle feferi">
           <h3>♒ ERIDAN AMPORA</h3>
           <p class="reference-handle">caligulasAquarium [CA]</p>
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Violet</dd></div>
-            <div><dt>Title</dt><dd>Prince of Hope</dd></div>
-            <div><dt>Dream moon</dt><dd>Derse</dd></div>
-            <div><dt>Land</dt><dd>Land of Wrath and Angels</dd></div>
+            <div><dt>Title</dt><dd>Not yet named</dd></div>
+            <div><dt>Dream Moon</dt><dd>Derse</dd></div>
+            <div><dt>Land</dt><dd>Not yet named</dd></div>
           </dl>
           <p>
             A high ranking sea dweller with a rifle, imperial ambitions, and a great deal of romantic frustration.
@@ -322,7 +328,7 @@
           <dl class="reference-facts">
             <div><dt>Blood</dt><dd>Fuchsia</dd></div>
             <div><dt>Title</dt><dd>Witch of Life</dd></div>
-            <div><dt>Dream moon</dt><dd>Derse</dd></div>
+            <div><dt>Dream Moon</dt><dd>Derse</dd></div>
             <div><dt>Land</dt><dd>Land of Dew and Glass</dd></div>
           </dl>
           <p>
@@ -492,20 +498,11 @@
           </p>
         </article>
 
-        <article class="reference-card searchable" data-search="genesis frog space player breeding universe kanaya">
-          <h3>GENESIS FROG</h3>
+        <article class="reference-card searchable" data-search="new universe reward door trolls earth">
+          <h3>THE SESSION’S REWARD</h3>
           <p>
-            The Space player's central project.
-            By breeding frogs within the session, the players create the living form of the universe they hope to produce.
-            Kanaya performs this role for the trolls.
-          </p>
-        </article>
-
-        <article class="reference-card searchable" data-search="ultimate alchemy new universe reward portal trolls earth">
-          <h3>ULTIMATE ALCHEMY</h3>
-          <p>
-            The final act of a successful session, through which the players create a new universe.
-            The trolls complete this process and create the universe containing Earth, but an invincible demon destroys the doorway before they can claim their reward.
+            The trolls’ completed session created the universe containing Earth.
+            An invincible demon prevents them from passing through the door to claim their reward.
           </p>
         </article>
 
@@ -562,11 +559,11 @@
           </p>
         </article>
 
-        <article class="reference-card searchable" data-search="jack noir sovereign slayer ring orbs fourfold bec kids session">
+        <article class="reference-card searchable" data-search="jack noir ring orbs fourfold kids session">
           <h3>JACK NOIR</h3>
           <p>
-            The kids' session archagent who stole the RING OF ORBS FOURFOLD, killed the Black Queen, and became the SOVEREIGN SLAYER.
-            The kids' four pre-entry prototypings gave him harlequin, cat, tentacle, crow, and eventually Bec related powers.
+            The kids' session archagent who stole the RING OF ORBS FOURFOLD, killed the Black Queen, and gained the powers of the pre-entry prototypes.
+            At this point, those prototypes are a harlequin doll, Jaspers, a tentacled princess doll, and a crow.
           </p>
         </article>
 
@@ -602,41 +599,11 @@
         SPOILER BOUNDARY: Acts 1 through 4, the Intermission, and Act 5 Act 1.
       </p>
     </footer>
+    </article>
   </main>
+  <footer class="page-footer">
+    <p><a href="https://homestuck.com/">Homestuck</a> by Andrew Hussie. Book Club by <a href="https://kvnchpl.com/">kvnchpl</a>.</p>
+  </footer>
 
-  <script>
-    (() => {
-      const input = document.querySelector('#reference-search');
-      const cards = [...document.querySelectorAll('.searchable')];
-      const sections = [...document.querySelectorAll('.reference-section')];
-
-      if (!input) return;
-
-      const normalize = value =>
-        value.toLowerCase().replace(/\s+/g, ' ').trim();
-
-      const filter = () => {
-        const query = normalize(input.value);
-
-        cards.forEach(card => {
-          const haystack = normalize(
-            `${card.dataset.search || ''} ${card.textContent || ''}`
-          );
-          card.hidden = Boolean(query) && !haystack.includes(query);
-        });
-
-        sections.forEach(section => {
-          const sectionCards = [...section.querySelectorAll('.searchable')];
-          if (!sectionCards.length) return;
-          section.classList.toggle(
-            'reference-section-empty',
-            sectionCards.every(card => card.hidden)
-          );
-        });
-      };
-
-      input.addEventListener('input', filter);
-    })();
-  </script>
 </body>
 </html>
