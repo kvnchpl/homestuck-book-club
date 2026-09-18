@@ -23,7 +23,7 @@ function roster(hash = '') {
   const cards = Array.from({ length: 16 }, (_, i) => {
     const card = element();
     card.id = `character-${i}`;
-    if (i === 0) card.setAttribute('data-roster-label', 'Scratch');
+    if (i === 0) card.setAttribute('data-roster-label', 'Doc Scratch');
     card.closest = () => groups[i < 4 ? 0 : 1];
     card.querySelector = () => ({ alt: `Name${i} Surname`, cloneNode: element });
     return card;
@@ -51,7 +51,7 @@ test('a direct character link selects exactly one profile and exposes tab relati
   assert.equal(r.tabs[5].attrs['aria-selected'], 'true');
   assert.equal(r.tabs[5].tabIndex, 0);
   assert.equal(r.tabs[5].attrs['aria-controls'], r.cards[5].id);
-  assert.equal(r.tabs[0].children[1].textContent, 'Scratch');
+  assert.equal(r.tabs[0].children[1].textContent, 'Doc Scratch');
   assert.equal(r.tabs[1].children[1].textContent, 'Name1');
   assert.equal(r.tabs[0].attrs['aria-label'], 'Name0 Surname');
   assert.equal(r.cards[5].attrs['aria-labelledby'], r.tabs[5].id);

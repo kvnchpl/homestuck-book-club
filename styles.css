@@ -729,8 +729,9 @@ button {
 }
 
 .roster-name {
-  white-space: nowrap;
+  white-space: normal;
   overflow-wrap: normal;
+  word-break: normal;
 }
 
 .is-ready .character-group {
