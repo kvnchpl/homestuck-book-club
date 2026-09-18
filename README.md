@@ -133,6 +133,13 @@ standalone prototype files are not part of the site’s shared implementation.
 
 ## Adding a recap
 
+Keep the copy concise and let the story’s own absurdity carry much of the humor;
+not every slide needs an aside or a closing joke. Use only names, identities, and
+explanations established by that recap’s final reading page. Check the original
+dialogue or narration: a retrospective summary or modern image description may
+use a name before the comic introduces it. Distinguish a character’s belief from
+a confirmed explanation, and prefer a descriptive label when an early name is uncertain.
+
 1. Copy `recaps/01/index.html` to `recaps/NN/index.html` (two-digit numbering).
 2. Update the document title, description, deck label, cover, and slide content.
    Keep the shared resource paths, navigation, and complete controls block.
