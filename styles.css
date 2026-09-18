@@ -674,7 +674,7 @@ button {
 /* The roster enhances the same cards used for no-JS reading and printing. */
 .character-select.is-ready {
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
+  grid-template-columns: 320px minmax(0, 1fr);
   gap: 20px;
   align-items: start;
 }
@@ -732,6 +732,13 @@ button {
   white-space: normal;
   overflow-wrap: normal;
   word-break: normal;
+}
+
+@media (max-width: 359px) {
+  .character-option {
+    padding-inline: 1px;
+    font-size: 9px;
+  }
 }
 
 .is-ready .character-group {
