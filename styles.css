@@ -4,7 +4,7 @@
   --ink: #000;
   --surround: #535353;
   --frame: #c6c6c6;
-  --link: #0000ee;
+  --link: #0000ff;
   font-family: "Courier New", Courier, monospace;
   color: var(--ink);
   background: var(--surround);
@@ -55,7 +55,7 @@ button {
 .site-header {
   max-width: 940px;
   margin: 0 auto;
-  padding: 14px 12px;
+  padding: 6px 12px;
 }
 
 .site-nav {
@@ -64,7 +64,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px 20px;
-  font: 700 14px/1.5 Verdana, Arial, sans-serif;
+  font: 700 10px/1 Verdana, Arial, sans-serif;
 }
 
 .site-nav a {
@@ -77,12 +77,9 @@ button {
   color: #29ff4a;
 }
 
-.site-nav .nav-recaps {
-  color: #39d5f6;
-}
-
+.site-nav .nav-recaps,
 .site-nav .nav-reference {
-  color: #ff82dc;
+  color: #39d5f6;
 }
 
 .site-nav .nav-story {
@@ -730,6 +727,7 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4px;
     font-size: 14px;
+    line-height: 1.5;
   }
 
   .site-nav a {
