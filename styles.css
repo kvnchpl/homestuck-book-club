@@ -77,9 +77,12 @@ button {
   color: #29ff4a;
 }
 
-.site-nav .nav-recaps,
-.site-nav .nav-reference {
+.site-nav .nav-recaps {
   color: #39d5f6;
+}
+
+.site-nav .nav-reference {
+  color: #ffb529;
 }
 
 .site-nav .nav-story {
@@ -373,7 +376,7 @@ button {
   font-weight: 700;
 }
 
-.caption p + p {
+.caption p+p {
   margin-top: 1em;
 }
 
@@ -589,7 +592,7 @@ button {
   scroll-margin-top: 2rem;
 }
 
-.reference-section > h2 {
+.reference-section>h2 {
   margin-bottom: 0.5rem;
 }
 
@@ -646,8 +649,8 @@ button {
   margin: 1rem 0;
 }
 
-.reference-facts > div,
-.reference-map > div {
+.reference-facts>div,
+.reference-map>div {
   display: grid;
   grid-template-columns: minmax(7rem, 0.85fr) minmax(0, 1.65fr);
   gap: 0.75rem;
@@ -655,8 +658,8 @@ button {
   border-top: 1px dotted currentColor;
 }
 
-.reference-facts > div:last-child,
-.reference-map > div:last-child {
+.reference-facts>div:last-child,
+.reference-map>div:last-child {
   border-bottom: 1px dotted currentColor;
 }
 
@@ -677,7 +680,7 @@ button {
   margin-top: 1rem;
 }
 
-.quadrant-grid > div {
+.quadrant-grid>div {
   border-top: 1px dotted currentColor;
   padding-top: 0.75rem;
 }
@@ -689,6 +692,7 @@ button {
 }
 
 @media (max-width: 760px) {
+
   .reference-grid,
   .reference-grid-wide,
   .quadrant-grid {
@@ -699,8 +703,8 @@ button {
     grid-column: auto;
   }
 
-  .reference-facts > div,
-  .reference-map > div {
+  .reference-facts>div,
+  .reference-map>div {
     grid-template-columns: 1fr;
     gap: 0.1rem;
   }
