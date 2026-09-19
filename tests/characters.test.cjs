@@ -1,85 +1,152 @@
+// Exercise the actual staged reference renderer without browser dependencies.
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { readFileSync } = require('node:fs');
 const { join } = require('node:path');
 const { runInNewContext } = require('node:vm');
 const script = readFileSync(join(__dirname, '../script.js'), 'utf8');
+const dataScript = readFileSync(join(__dirname, '../reference-data.js'), 'utf8');
 
-function roster(hash = '') {
+function reference({ hash = '', saved = null, blockedStorage = false, missingData = false } = {}) {
   let focused;
-  function element() {
+  function element(tagName = 'div') {
     return {
-      attrs: {}, children: [], listeners: {}, hidden: false,
+      tagName, attrs: {}, children: [], listeners: {}, dataset: {}, hidden: false, className: '',
+      style: { setProperty() {} },
       classList: { add() {} },
       setAttribute(k, v) { this.attrs[k] = v; },
-      getAttribute(k) { return this.attrs[k] ?? null; },
       append(...children) { this.children.push(...children); },
-      prepend(child) { this.children.unshift(child); },
+      replaceChildren(...children) { this.children = children; },
+      querySelectorAll(selector) { return all(this).filter(e => e.className.split(' ').includes(selector.slice(1))); },
       addEventListener(k, fn) { this.listeners[k] = fn; },
       focus() { focused = this; },
     };
   }
-  const groups = ['THE KIDS', 'THE TWELVE TROLLS'].map(textContent => ({ querySelector: () => ({ textContent }) }));
-  const cards = Array.from({ length: 16 }, (_, i) => {
-    const card = element();
-    card.id = `character-${i}`;
-    if (i === 0) card.setAttribute('data-roster-label', 'Doc Scratch');
-    card.closest = () => groups[i < 4 ? 0 : 1];
-    card.querySelector = () => ({ alt: `Name${i} Surname`, cloneNode: element });
-    return card;
-  });
-  const select = element();
-  select.querySelectorAll = () => cards;
+  const ids = Object.fromEntries(['character-select', 'character-roster', 'character-groups',
+    'reference-cheats', 'reading-progress', 'reading-progress-scale', 'reading-progress-output',
+    'reading-progress-status', 'reference-boundary-label', 'reference-loading'].map(id => [id, element()]));
+  ids['character-select'].hidden = true;
   const location = { hash };
   const window = { addEventListener(k, fn) { this[k] = fn; } };
-  runInNewContext(script, {
-    document: { querySelector: s => s === '.character-select' ? select : null, createElement: element },
+  const warnings = [];
+  const context = {
+    document: { querySelector: s => s === '.reference-page' ? element() : null,
+      getElementById: id => ids[id], createElement: element, documentElement: element() },
     window, location, history: { replaceState(a, b, value) { location.hash = value; } },
-  });
-  const tabs = select.children[0].children.filter(c => c.attrs.role === 'tab');
-  return { cards, tabs, location, window, focused: () => focused,
+    localStorage: {
+      getItem() { if (blockedStorage) throw Error('Storage blocked'); return saved; },
+      setItem(key, value) { if (blockedStorage) throw Error('Storage blocked'); saved = value; },
+    },
+    console: { warn: (...args) => warnings.push(args) },
+  };
+  if (!missingData) runInNewContext(dataScript, context);
+  runInNewContext(script, context);
+  return { ids, location, window, warnings, saved: () => saved, focused: () => focused,
+    tabs: () => all(ids['character-roster']).filter(e => e.attrs.role === 'tab'),
+    cards: () => all(ids['character-groups']).filter(e => e.attrs.role === 'tabpanel'),
+    stage(value) { ids['reading-progress'].value = String(value); ids['reading-progress'].listeners.input(); },
     key(index, key) {
       const event = { key, preventDefault() { this.prevented = true; } };
-      tabs[index].listeners.keydown(event);
+      this.tabs()[index].listeners.keydown(event);
       return event;
-    } };
+    },
+  };
 }
+function all(root) { return root.children.flatMap(child => [child, ...all(child)]); }
+function text(root) { return [root.textContent || '', ...root.children.map(text)].join(' '); }
 
-test('a direct character link selects exactly one profile and exposes tab relationships', () => {
-  const r = roster('#character-5');
-  assert.deepEqual(r.cards.map(c => !c.hidden), r.cards.map((_, i) => i === 5));
-  assert.equal(r.tabs[5].attrs['aria-selected'], 'true');
-  assert.equal(r.tabs[5].tabIndex, 0);
-  assert.equal(r.tabs[5].attrs['aria-controls'], r.cards[5].id);
-  assert.equal(r.tabs[0].children[1].textContent, 'Doc Scratch');
-  assert.equal(r.tabs[1].children[1].textContent, 'Name1');
-  assert.equal(r.tabs[0].attrs['aria-label'], 'Name0 Surname');
-  assert.equal(r.cards[5].attrs['aria-labelledby'], r.tabs[5].id);
-  r.tabs[2].listeners.click();
-  assert.equal(r.location.hash, '#character-2');
-  assert.equal(r.cards[2].hidden, false);
-  assert.equal(r.cards[5].hidden, true);
-  assert.equal(r.tabs[5].tabIndex, -1);
+// Real names deliberately check early vs. late wording, beyond counting cards.
+test('fresh visits render only Act 1 content, regardless of a later-character hash', () => {
+  const r = reference({ hash: '#character-karkat' });
+  assert.deepEqual(r.cards().map(c => c.dataset.characterId), ['john', 'rose', 'dad']);
+  assert.equal(r.cards().filter(c => !c.hidden).length, 1);
+  assert.equal(r.cards().find(c => !c.hidden).dataset.characterId, 'john');
+  assert.doesNotMatch(text(r.ids['character-groups']), /KARKAT|DAVE|SNOWMAN/);
+  assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE|ECTOBIOLOGY/);
+  assert.equal(r.ids['reading-progress'].attrs['aria-valuetext'], 'Act 1');
+  assert.equal(r.ids['reference-loading'].hidden, true);
+  assert.deepEqual(r.warnings, []);
 });
 
-test('keyboard selection wraps, moves by roster rows, and keeps focus on the selected tab', () => {
-  const r = roster();
+test('all stages render one selected profile with valid tab relationships and stage-safe links', () => {
+  const r = reference();
+  const stages = r.window.HOMESTUCK_REFERENCE.stages;
+  for (const stage of stages) {
+    r.stage(stage.value);
+    assert.equal(r.cards().filter(c => !c.hidden).length, 1);
+    assert.equal(r.tabs().filter(t => t.attrs['aria-selected'] === 'true').length, 1);
+    assert.equal(r.cards().length, r.window.HOMESTUCK_REFERENCE.characters.filter(c =>
+      stages.find(s => s.key === c.reveal).value <= stage.value).length);
+    for (const [i, card] of r.cards().entries()) {
+      assert.equal(r.tabs()[i].attrs['aria-controls'], card.id);
+      assert.equal(card.attrs['aria-labelledby'], r.tabs()[i].id);
+      for (const link of all(card).filter(e => e.tagName === 'a')) {
+        assert(Number(link.href.split('/').pop()) <= stage.endPage);
+      }
+    }
+  }
+  assert.equal(r.cards().length, 35);
+  assert.equal(r.saved(), 'act-5-act-1');
+});
+
+test('lowering progress removes future facts and restores earlier terminology', () => {
+  const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat' });
+  assert.equal(r.cards().find(c => !c.hidden).dataset.characterId, 'karkat');
+  assert.match(text(r.ids['reference-cheats']), /DOOMED TIMELINE/);
+  r.stage(5);
+  assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE/);
+  assert.match(text(r.ids['reference-cheats']), /ALTERNATE TIMELINE/);
+  r.stage(1);
+  assert.deepEqual(r.cards().map(c => c.dataset.characterId), ['john', 'rose', 'dad']);
+  assert.doesNotMatch(text(r.ids['character-groups']), /KARKAT|SNOWMAN/);
+  assert.doesNotMatch(text(r.ids['reference-cheats']), /TIMELINE|ECTOBIOLOGY/);
+  assert.equal(r.cards().filter(c => !c.hidden).length, 1);
+});
+
+test('character links, clicks, and keyboard navigation select and focus available tabs', () => {
+  const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat' });
+  const tabs = r.tabs();
   assert.equal(r.key(0, 'ArrowLeft').prevented, true);
-  assert.equal(r.focused(), r.tabs[15]);
-  r.key(15, 'ArrowDown');
-  assert.equal(r.focused(), r.tabs[3]);
-  r.key(3, 'Home');
-  assert.equal(r.focused(), r.tabs[0]);
+  assert.equal(r.focused(), tabs.at(-1));
+  r.key(tabs.length - 1, 'Home');
+  assert.equal(r.focused(), tabs[0]);
+  r.key(0, 'ArrowDown');
+  assert.equal(r.focused(), tabs[4]);
+  r.key(4, 'ArrowUp');
+  assert.equal(r.focused(), tabs[0]);
   r.key(0, 'End');
-  assert.equal(r.focused(), r.tabs[15]);
-  assert.equal(r.key(15, 'Tab').prevented, undefined);
+  assert.equal(r.focused(), tabs.at(-1));
+  assert.equal(r.key(0, 'Tab').prevented, undefined);
+  tabs[1].listeners.click();
+  assert.equal(r.location.hash, '#character-rose');
+  r.location.hash = '#character-john';
+  r.window.hashchange();
+  assert.equal(r.cards().find(c => !c.hidden).dataset.characterId, 'john');
+  r.location.hash = '#character-unknown';
+  r.window.hashchange();
+  assert.equal(r.cards().filter(c => !c.hidden).length, 1);
 });
 
-test('unknown hashes default to the first revealed character; hash changes update the selection', () => {
-  const r = roster('#unrevealed');
-  assert.equal(r.cards[0].hidden, false);
-  r.location.hash = '#character-10';
-  r.window.hashchange();
-  assert.equal(r.cards[10].hidden, false);
-  assert.equal(r.cards.filter(c => !c.hidden).length, 1);
+test('saved keys, legacy numeric progress, invalid storage and blocked storage are supported', () => {
+  for (const saved of ['5', 'act-4']) {
+    const r = reference({ saved });
+    assert.equal(r.ids['reading-progress-output'].textContent, 'Act 4');
+  }
+  for (const options of [{ saved: 'future-stage' }, { blockedStorage: true }]) {
+    const r = reference(options);
+    assert.equal(r.ids['reading-progress-output'].textContent, 'Act 1');
+    r.stage(6);
+    assert.equal(r.cards().length, 35);
+  }
+  const r = reference();
+  r.ids['reading-progress-scale'].children.at(-1).listeners.click();
+  assert.equal(r.saved(), 'act-5-act-1');
+  assert.equal(r.ids['reading-progress-scale'].children.at(-1).attrs['aria-pressed'], 'true');
+});
+
+test('a missing data file leaves the reference empty with a useful error', () => {
+  const r = reference({ missingData: true });
+  assert.equal(r.ids['character-select'].hidden, true);
+  assert.equal(r.cards().length, 0);
+  assert.equal(r.ids['reference-loading'].textContent, 'The spoiler-safe reference could not be loaded.');
 });

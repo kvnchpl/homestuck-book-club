@@ -37,8 +37,8 @@ window.HOMESTUCK_REFERENCE = {
       "key": "act-3",
       "label": "Act 3",
       "shortLabel": "Act 3",
-      "endPage": 1152,
-      "sourcePage": 1152,
+      "endPage": 1153,
+      "sourcePage": 1153,
       "sourceKind": "boundary"
     },
     {
@@ -46,8 +46,8 @@ window.HOMESTUCK_REFERENCE = {
       "key": "intermission",
       "label": "Intermission",
       "shortLabel": "Inter.",
-      "endPage": 1356,
-      "sourcePage": 1356,
+      "endPage": 1357,
+      "sourcePage": 1357,
       "sourceKind": "boundary"
     },
     {
@@ -2585,7 +2585,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": {
-            "src": "../assets/ref-snowman.png",
+            "src": "../assets/ref-black-queen.png",
             "alt": "Snowman in her earlier Black Queen form"
           },
           "sourcePage": 1674,

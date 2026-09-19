@@ -33,7 +33,7 @@ fetch_png () {
   width="$(sips -g pixelWidth "$WORK_DIR/portrait.png" | awk '/pixelWidth:/ {print $2}')"
   height="$(sips -g pixelHeight "$WORK_DIR/portrait.png" | awk '/pixelHeight:/ {print $2}')"
   if [[ ! "$width" =~ ^[0-9]+$ || ! "$height" =~ ^[0-9]+$ ]] ||
-     (( width < 1 || height < 1 || width > 512 || height > 512 )); then
+     (( width < 1 || height < 1 || width > 650 || height > 650 )); then
     echo "Rejected $(basename "$out"): expected an individual portrait, got ${width}x${height}." >&2
     return 1
   fi

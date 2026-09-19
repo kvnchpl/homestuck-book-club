@@ -3,6 +3,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse
 import re
+import json
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,11 +53,10 @@ def by_class(node, name):
 
 
 def text(node):
-    return ''.join(node.itertext()).strip()
+    return ' '.join(''.join(node.itertext()).split())
 
 
-paths = [ROOT / 'index.html', ROOT / 'schedule/index.html', ROOT / 'reference/index.html',
-         *sorted((ROOT / 'recaps').rglob('index.html'))]
+paths = sorted(ROOT.rglob('index.html'))
 pages = {p.relative_to(ROOT).as_posix(): Page(p) for p in paths}
 assert all(p.is_file() for p in (ROOT / 'assets').iterdir()), 'Keep assets directly under assets/'
 for asset in (ROOT / 'assets').glob('*.gif'):
@@ -71,6 +71,11 @@ for name, page in pages.items():
     assert len(tree.findall('.//h1')) == 1, f'{name}: one page title required'
     assert tree.find('.//html').get('lang') == 'en'
     assert any(e.get('name') == 'viewport' for e in tree.iter('meta'))
+    nav = by_class(tree, 'site-nav')[0]
+    assert [text(a) for a in nav] == ['Homestuck Book Club', 'Schedule', 'Recaps', 'Reference', 'Read Homestuck']
+    for element in tree.iter():
+        for attribute in ('aria-labelledby', 'aria-describedby'):
+            assert all(key in page.ids for key in element.get(attribute, '').split()), f'{name}: broken {attribute}'
     assert not list(tree.iter('style')), f'{name}: use shared CSS'
     assert all(e.get('src') for e in tree.iter('script')), f'{name}: use shared JS'
     for prefix in ('/', '/homestuck-book-club/'):
@@ -124,29 +129,73 @@ for name, page in pages.items():
         assert page.ids['start-over'].tag == 'button'
 
 reference = pages['reference/index.html']
-portraits = by_class(reference.root, 'character-portrait')
-cards = by_class(reference.root, 'character-card')
-assert len(by_class(reference.ids['kids'], 'character-card')) == 4
-assert len(by_class(reference.ids['trolls'], 'character-card')) == 12
-assert len(portraits) == len(cards), 'Every character must have one portrait'
-for card in cards:
-    assert len(by_class(card, 'character-portrait')) == 1
-    introductions = by_class(card, 'character-intro-link')
-    assert len(introductions) == 1, 'Every character must have an introduction link'
-    introduction = re.fullmatch(r'https://homestuck\.com/story/(\d+)', introductions[0].get('href', ''))
-    assert introduction and 1 <= int(introduction[1]) <= 2625, 'Keep introductions within the reference spoiler boundary'
-for portrait in portraits:
-    data = (ROOT / 'reference' / portrait.get('src')).read_bytes()
-    assert data[:8] == b'\x89PNG\r\n\x1a\n', f"{portrait.get('src')}: expected a real PNG"
-    dimensions = (int.from_bytes(data[16:20], 'big'), int.from_bytes(data[20:24], 'big'))
-    assert dimensions == (int(portrait.get('width')), int(portrait.get('height')))
-    assert all(0 < side <= 650 for side in dimensions), 'Use individual portraits, not sprite sheets'
-assert all('hidden' not in section.attrib for section in by_class(reference.root, 'reference-section'))
+# The HTML shell must never embed facts that JavaScript would need to hide.
+assert not by_class(reference.root, 'character-card')
+assert not by_class(reference.root, 'character-portrait')
+for container in ('character-roster', 'character-groups', 'reference-cheats'):
+    assert not len(reference.ids[container]) and not text(reference.ids[container])
+assert 'hidden' in reference.ids['character-select'].attrib
+scripts = [element.get('src') for element in reference.root.iter('script')]
+assert scripts == ['../reference-data.js', '../script.js']
+
+source = (ROOT / 'reference-data.js').read_text()
+data = json.loads(source[source.index('{'):].rstrip().removesuffix(';'))
+stages = {stage['key']: stage for stage in data['stages']}
+assert len(stages) == len(data['stages'])
+assert [stage['value'] for stage in stages.values()] == list(range(1, len(stages) + 1))
+group_ids = {group['id'] for group in data['groups']}
+assert len(group_ids) == len(data['groups'])
+assert len({c['id'] for c in data['characters']}) == len(data['characters'])
+assert sum(c['group'] == 'kids' for c in data['characters']) == 4
+assert sum(c['group'] == 'trolls' for c in data['characters']) == 12
+
+
+def check_reference(item, path='reference', stage=None):
+    if isinstance(item, list):
+        variants = [entry['from'] for entry in item if isinstance(entry, dict) and 'from' in entry]
+        assert all(key in stages for key in variants), f'{path}: unknown variant stage'
+        values = [stages[key]['value'] for key in variants]
+        assert values == sorted(set(values)), f'{path}: unordered or duplicate variants'
+        for index, child in enumerate(item):
+            check_reference(child, f'{path}[{index}]', stage)
+    elif isinstance(item, dict):
+        stage = item.get('from', item.get('reveal', stage))
+        assert stage is None or stage in stages, f'{path}: unknown stage'
+        if 'from' in item or 'sourcePage' in item or 'symbol' in item:
+            pages = [item.get('sourcePage')] + item.get('sourcePages', [])
+            boundary = stages[stage]['endPage'] if stage else data['stages'][-1]['endPage']
+            assert all(isinstance(page, int) and 1 <= page <= boundary for page in pages), f'{path}: source beyond reading boundary or missing'
+            assert len(set(pages)) == len(pages), f'{path}: duplicate source pages'
+            assert item.get('sourceKind') in {'intro', 'direct', 'visual', 'composite', 'editorial', 'boundary'}, f'{path}: unknown source kind'
+        if 'src' in item:
+            asset = (ROOT / 'reference' / item['src']).resolve()
+            assert asset.parent == ROOT / 'assets' and asset.is_file(), f'{path}: missing portrait {item["src"]}'
+            assert item.get('alt', '').strip(), f'{path}: missing portrait description'
+            image = asset.read_bytes()
+            if asset.suffix == '.png':
+                assert image[:8] == b'\x89PNG\r\n\x1a\n', f'{asset}: expected PNG'
+                dimensions = (int.from_bytes(image[16:20], 'big'), int.from_bytes(image[20:24], 'big'))
+                assert all(0 < side <= 650 for side in dimensions), f'{asset}: use individual portraits'
+            elif asset.suffix == '.webp':
+                assert image[:4] == b'RIFF' and image[8:12] == b'WEBP', f'{asset}: expected WebP'
+            else:
+                raise AssertionError(f'{asset}: unsupported portrait format')
+        for key, child in item.items():
+            check_reference(child, f'{path}.{key}', stage)
+
+
+check_reference(data)
+for character in data['characters']:
+    group = character['group']
+    assignments = [v['value'] for v in group] if isinstance(group, list) else [group]
+    assert all(value in group_ids for value in assignments), f'{character["id"]}: unknown group'
+
 
 schedule = by_class(pages['schedule/index.html'].root, 'meeting')
 recaps = by_class(pages['recaps/index.html'].root, 'meeting')
 assert len(schedule) == len(recaps) == 13
 reading_count = 0
+reading_ends = []
 expected_start = 1
 for number, (meeting, recap) in enumerate(zip(schedule, recaps), 1):
     assert meeting.get('id') == f'meeting-{number}'
@@ -162,6 +211,7 @@ for number, (meeting, recap) in enumerate(zip(schedule, recaps), 1):
         assert start == expected_start, f'Meeting {number}: gap or overlap in readings'
         expected_start += count
         total += count
+        reading_ends.append(expected_start - 1)
     assert text(by_class(meeting, 'meeting-total')[0]) == f'{total} pages'
     assert [text(th) for th in meeting.findall('.//th')] == ['Suggested Reading', 'Start Page', '# of Pages']
     reading_count += len(rows)
@@ -172,5 +222,8 @@ for number, (meeting, recap) in enumerate(zip(schedule, recaps), 1):
     schedule_links = [a.get('href') for a in meeting.iter('a') if re.fullmatch(r'\.\./recaps/\d{2}/', a.get('href', ''))]
     assert schedule_links == ([f'../recaps/{number:02}/'] if published else []), f'Recap {number}: schedule publication link mismatch'
 
+checkpoints = [stage['endPage'] for stage in stages.values()]
+assert checkpoints == sorted(set(checkpoints)), 'Reference checkpoints must increase'
+assert all(page in reading_ends for page in checkpoints), 'Reference checkpoints must match the schedule'
 assert reading_count == 32 and expected_start == 8130
 print(f'PASS: {len(pages)} pages, 13 recap entries, 32 readings / 8129 pages; local links and assets at both hosting paths.')

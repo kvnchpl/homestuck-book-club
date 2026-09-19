@@ -1,96 +1,88 @@
-# Homestuck Reference — staged spoiler data refactor
+# Homestuck Book Club
 
-This package replaces the current reference-page implementation while preserving the rest of the site's existing structure and assets.
+A static site for a 13-meeting read-through of Homestuck, from June 2026 to July 2027. It includes the meeting schedule, published recap readers, and a reference that reveals information according to the reader's progress.
 
-## Files
+## Run locally
 
-- `reference/index.html` — spoiler-safe reference shell. It contains no character/reference facts that JavaScript must hide after load.
-- `reference-data.js` — all spoiler-sensitive reference content and its stage-specific wording.
-- `script.js` — renders the reference for the selected reading stage; also retains the existing recap/deck behavior from the previous script.
-- `styles.css` — existing site stylesheet with small reference-page adjustments.
+No build step or package installation is required. From the repository root:
 
-Your existing `assets/` directory is unchanged and is not included in this zip.
+```sh
+python3 -m http.server 8000
+```
 
-## Data model
+Open <http://localhost:8000/>. Publish the repository as static files; document-relative links support both a domain root and a project subdirectory.
 
-Spoiler-sensitive values are stored as ordered variants:
+## Repository layout
+
+- `index.html` — welcome page.
+- `schedule/index.html` — 13 meetings and 32 reading assignments covering 8,129 pages.
+- `recaps/index.html` — availability and reading list for each meeting.
+- `recaps/01/` through `recaps/04/` — published recaps, through Act 5 Act 1.
+- `reference/index.html` — reference shell with no embedded spoiler-sensitive facts.
+- `reference-data.js` — staged reference content and source metadata.
+- `script.js` — reference rendering, saved reading progress, and recap navigation.
+- `styles.css` — shared layouts, responsive styles, and print rules.
+- `assets/` — committed recap panels, reference portraits, and the home image.
+- `ASSET_SOURCES.md` — provenance audit for active recap images.
+- `tests/` — dependency-free static-site and interaction checks.
+
+## Checks
+
+Use Python 3.9+ and Node.js 18+:
+
+```sh
+python3 tests/check_site.py
+node --test tests/*.test.cjs
+```
+
+The static check validates HTML structure, navigation, local links at both hosting paths, image formats and dimensions, schedule/recap agreement, and reference assets and source boundaries. The JavaScript tests exercise the staged renderer, spoiler rollback, saved/blocked storage, character tabs, and recap interactions. These checks do not independently verify story claims against the comic.
+
+For changes to layout or interactions, also preview desktop and mobile widths, keyboard navigation, and printing in a browser.
+
+## Maintaining pages and recaps
+
+All pages share `styles.css`, `script.js`, and the same five navigation links. Keep paths relative to each HTML document. Update meeting dates and reading labels in both the schedule and recap index.
+
+To publish another recap, add `recaps/NN/index.html` using an existing recap's structure, link it from the corresponding entries in both indexes, and remove its “Not yet available” status. Keep slides readable without JavaScript; the script adds single-slide navigation and numeric URL fragments. Printing includes every slide.
+
+Recap image filenames encode the actual source story page (`A5_01_story-1989.gif`, for example); the reader derives its source link from that suffix. Use 650px-wide images with proportional heights and matching HTML dimensions. Follow `ASSET_SOURCES.md` before introducing or reusing an image. Some unused assets remain in the repository and are not verified for reuse.
+
+## Staged reference data
+
+Reference stages run from Act 1 through Act 5 Act 1. A fresh visit starts at Act 1. Progress is saved under `homestuck-reference-progress` in local storage; blocked storage does not prevent use.
+
+Spoiler-sensitive values are ordered variants:
 
 ```js
 note: [
-  { from: 'act-2', value: 'What the reader can say at this point.' },
-  { from: 'act-4', value: 'A later, more informed description.' }
+  { from: 'act-2', value: 'Earlier wording.', sourcePage: 424, sourceKind: 'direct' },
+  { from: 'act-4', value: 'Later wording.', sourcePage: 1988, sourceKind: 'direct' }
 ]
 ```
 
-At a selected reading stage, the renderer uses the latest variant whose `from` stage has been reached. If no variant is available, that property is not inserted into the DOM.
+The renderer uses the latest variant reached at the selected stage. If no variant is available, it does not insert that property into the DOM. Names, roster labels, portraits and alt text, stats, notes, group headings, and cheat-sheet copy all use this model. Character group assignments may also be staged. Quadrants become available with their containing section.
 
-This works for:
+Each character has a stable `id`, a `reveal` stage, and an `introPage`. Character URLs use `#character-ID`; following a link does not advance reading progress. Name links point to the currently revealed name's source page. Portrait paths are relative to `reference/index.html`. A character may intentionally have no portrait at an early stage.
 
-- character names
-- roster labels
-- portraits and alt text
-- stat labels and values
-- notes/descriptions
-- group headings
-- cheat-sheet titles and copy
+Every user-facing reference record carries a primary `sourcePage`. Optional `sourcePages` contains additional supporting pages without repeating the primary page. All supporting pages must fall within the record's reading stage. Source metadata is not rendered publicly.
 
-A stat whose existence is itself a spoiler simply has no earlier variant.
+`sourceKind` distinguishes:
 
-## Source-page metadata
+- `intro` — character-level introduction metadata.
+- `direct` — textually supported wording.
+- `visual` — support from an image or animation.
+- `composite` — wording supported by multiple pages.
+- `editorial` — an organizational label based on the cited material.
+- `boundary` — a reading checkpoint, not direct evidence for a claim.
 
-Every user-facing reference record also carries a `sourcePage` for manual fact-checking. This includes stage labels, group headings, character names, roster labels, portraits/alt-text states, every stat variant, character notes, cheat-sheet copy, and quadrant terminology. The source metadata is not rendered on the public page.
+`sourceNote` records audit context; `sourceAudit` records the scope and date of prior manual fact-checking. The renderer warns about missing source pages; the tests also check stage order, source boundaries, and asset availability.
 
-```js
-{
-  from: 'act-4',
-  label: 'Formerly',
-  value: 'WARWEARY VILLEIN',
-  sourcePage: 1988,
-  sourceKind: 'direct'
-}
-```
+To add a stage, append the next consecutive numeric `value` with a unique `key`, `label`, `shortLabel`, and real `endPage` matching the schedule. Include its source metadata and add the appropriate content variants in stage order. The slider and milestone buttons are generated from this array. Update the reference page description when its coverage changes.
 
-`sourceKind` describes how strong/precise the current page reference is:
+The reference requires JavaScript and stays empty if its data cannot load. Printing includes every character rendered for the selected stage, including profiles hidden by tab selection; later-stage facts remain absent.
 
-- `intro` — the character's introduction page is the working source.
-- `direct` — the page was selected as direct support for the displayed wording.
-- `editorial` — the text is an organizational label used by this reference page; `sourcePage`/`sourcePages` point to the relevant story material behind that grouping.
-- `boundary` — a conservative end-of-stage checkpoint. The wording is safe by this point, but the exact first/supporting page should ideally be tightened during a manual audit.
+## Portrait download helpers
 
-Some composite claims also carry `sourcePages: [...]` for additional supporting pages. `sourcePage` remains the required primary field. The renderer runs a maintenance check on load and warns in the browser console if any future user-facing record is added without a valid `sourcePage`.
+The optional `download-reference-assets-fixed.sh` (kids and trolls) and `download-reference-secondary-assets.sh` (secondary characters) refresh selected portraits on macOS using `curl` and `sips`. Both stage and validate each PNG before replacing it. They are maintenance tools, not a build step; review downloaded images before committing.
 
-## Adding a future reading stage
-
-Add the new stage to `stages` near the top of `reference-data.js`:
-
-```js
-{
-  value: 7,
-  key: 'act-5-act-2',
-  label: 'Act 5 Act 2',
-  shortLabel: 'A5A2',
-  endPage: 0
-}
-```
-
-Then add new variants to whichever properties change at that point. The slider and tick layout are generated from the stage array automatically.
-
-## Safer failure/print behavior
-
-The HTML no longer embeds later-story character facts and waits for JavaScript to hide them. If the data/renderer fails, the reference remains empty instead of exposing all future content.
-
-When printing, all character cards currently rendered for the selected reading stage can be printed, but characters/facts from later stages are not present in the DOM.
-
-## Placement
-
-The included paths assume your existing layout remains:
-
-```text
-/
-  assets/
-  reference-data.js
-  script.js
-  styles.css
-  reference/
-    index.html
-```
+`ref-black-queen.png` is Snowman's staged Black Queen portrait. The separate `ref-snowman.webp` is currently unused; the helpers do not download it. Do not change a portrait's reveal stage without checking its spoiler implications.

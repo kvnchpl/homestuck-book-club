@@ -581,10 +581,6 @@ button {
 
 
 /* Spoiler-aware reading progress control. */
-[data-progress-hidden] {
-  display: none !important;
-}
-
 .reading-progress {
   margin: 0 0 3rem;
   padding: 18px;
@@ -820,7 +816,7 @@ button {
   line-height: 1.4;
 }
 
-/* The roster enhances the same cards used for no-JS reading and printing. */
+/* The roster selects among the stage-safe cards; printing shows them all. */
 .character-select.is-ready {
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);

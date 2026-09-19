@@ -416,6 +416,7 @@
 
   function updateStageUI(stage) {
     progress.value = String(stage.value);
+    progress.setAttribute('aria-valuetext', stage.label);
     const first = stages[0].value;
     const last = stages.at(-1).value;
     const percent = stages.length === 1 ? 0 : ((stage.value - first) / (last - first)) * 100;

@@ -15,26 +15,29 @@ fi
 
 mkdir -p "$ASSETS_DIR"
 
+# Stage and validate each portrait before replacing the installed image.
+WORK_DIR="$(mktemp -d)"
+trap 'rm -rf "$WORK_DIR"' EXIT
+
 fetch_png () {
   local url="$1"
   local out="$2"
-  local tmp
+  local width height
 
-  tmp="$(mktemp)"
   echo "Fetching $(basename "$out")"
+  curl --fail --location --silent --show-error --retry 3 --retry-delay 1 \
+    --connect-timeout 15 --max-time 60 "$url" --output "$WORK_DIR/source"
 
-  curl \
-    --fail \
-    --location \
-    --silent \
-    --show-error \
-    --retry 3 \
-    --retry-delay 1 \
-    "$url" \
-    --output "$tmp"
-
-  sips -s format png "$tmp" --out "$out" >/dev/null
-  rm -f "$tmp"
+  # Some image hosts return WebP despite a PNG URL; keep the installed format honest.
+  sips -s format png "$WORK_DIR/source" --out "$WORK_DIR/portrait.png" >/dev/null
+  width="$(sips -g pixelWidth "$WORK_DIR/portrait.png" | awk '/pixelWidth:/ {print $2}')"
+  height="$(sips -g pixelHeight "$WORK_DIR/portrait.png" | awk '/pixelHeight:/ {print $2}')"
+  if [[ ! "$width" =~ ^[0-9]+$ || ! "$height" =~ ^[0-9]+$ ]] ||
+     (( width < 1 || height < 1 || width > 650 || height > 650 )); then
+    echo "Rejected $(basename "$out"): expected an individual portrait, got ${width}x${height}." >&2
+    return 1
+  fi
+  mv "$WORK_DIR/portrait.png" "$out"
 }
 
 GUARDIANS='https://homestuck.net/img/resources/assets/uncategorized-assets/Guardians'
@@ -65,7 +68,7 @@ fetch_png "$CARAPACIANS/Courtyard%20Droll%20-%20Default.png" "$ASSETS_DIR/ref-cd
 fetch_png "$CARAPACIANS/Hegemonic%20Brute%20-%20Default.png" "$ASSETS_DIR/ref-hb.png"
 
 # Snowman is represented here by her already-revealed troll-session Black Queen form.
-fetch_png "$CARAPACIANS/Black%20Queen.png" "$ASSETS_DIR/ref-snowman.png"
+fetch_png "$CARAPACIANS/Black%20Queen.png" "$ASSETS_DIR/ref-black-queen.png"
 
 # Other revealed figures
 fetch_png "$GUARDIANS/Doc%20Scratch.gif" "$ASSETS_DIR/ref-doc-scratch.png"
@@ -90,6 +93,6 @@ file \
   "$ASSETS_DIR/ref-dd.png" \
   "$ASSETS_DIR/ref-cd.png" \
   "$ASSETS_DIR/ref-hb.png" \
-  "$ASSETS_DIR/ref-snowman.png" \
+  "$ASSETS_DIR/ref-black-queen.png" \
   "$ASSETS_DIR/ref-doc-scratch.png" \
   "$ASSETS_DIR/ref-lord-english.png"
