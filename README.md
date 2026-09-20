@@ -72,15 +72,15 @@ Reference stages run from Act 1 through Act 5 Act 1. A fresh visit starts at Act
 Spoiler-sensitive values are ordered variants:
 
 ```js
-note: [
-  { from: 'act-2', value: 'Earlier wording.', sourcePage: 424, sourceKind: 'direct' },
-  { from: 'act-4', value: 'Later wording.', sourcePage: 1988, sourceKind: 'direct' }
+name: [
+  { from: 'intermission', value: 'SNOWMAN', sourcePage: 1268, sourceKind: 'direct' },
+  { from: 'act-4', value: 'SNOWMAN (BLACK QUEEN)', sourcePage: 1674, sourceKind: 'direct' }
 ]
 ```
 
-The renderer uses the latest variant reached at the selected stage. If no variant is available, it does not insert that property into the DOM. Names, roster labels, portraits and alt text, stats, notes, group headings, and cheat-sheet copy all use this model. Character group assignments may also be staged. Quadrants become available with their containing section.
+The renderer uses the latest variant reached at the selected stage. If no variant is available, it does not insert that property into the DOM. Names, roster labels, portraits and alt text, stats, group headings, and cheat-sheet copy all use this model. Character group assignments may also be staged. Quadrants become available with their containing section.
 
-For example, the guardian heading starts as `GUARDIANS` in Act 1 and becomes `GUARDIANS & SPRITES` in Act 2. Snowman's name and portrait change when her earlier identity is revealed in Act 4. Kid notes develop across the reading stages; troll notes begin at Act 5 Act 1, their first supported stage, and can gain later variants as coverage expands. Add variants to the relevant arrays rather than overwriting earlier wording. Names and compact roster labels have separate arrays; update both when an alias should also change in the roster.
+For example, the guardian heading starts as `GUARDIANS` in Act 1 and becomes `GUARDIANS & SPRITES` in Act 2. Snowman's name and portrait change when her earlier identity is revealed in Act 4. Add variants to the relevant arrays rather than overwriting earlier wording. Names and compact roster labels have separate arrays; update both when an alias should also change in the roster.
 
 Each character has a stable `id`, a `reveal` stage, and an `introPage`. Character URLs use `#character-ID`; following a link does not advance reading progress. Name links point to the currently revealed name's source page. Portrait paths are relative to `reference/index.html`. A character may intentionally have no portrait at an early stage.
 

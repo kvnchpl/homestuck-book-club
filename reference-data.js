@@ -335,26 +335,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-1",
-          "value": "A birthday boy with a taste for bad movies and amateur magic, and more enthusiasm for programming than skill.",
-          "sourcePage": 4,
-          "sourceKind": "direct"
-        },
-        {
-          "from": "act-2",
-          "value": "Now inside the game, John learns from Nannasprite how his arrival and prototyping have shaped the war between light and dark.",
-          "sourcePage": 424,
-          "sourceKind": "direct"
-        },
-        {
-          "from": "act-4",
-          "value": "John discovers that he is responsible for creating the baby versions of the kids and their guardians through ectobiology, completing a loop in their own origins.",
-          "sourcePage": 1988,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 4,
       "sourceKind": "intro"
     },
@@ -438,27 +418,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-1",
-          "value": "A private creative writer with an interest in psychoanalysis and strange fiction. A power outage leaves her relying on her laptop’s battery.",
-          "sourcePage": 217,
-          "sourceKind": "direct"
-        },
-        {
-          "from": "act-3",
-          "value": "With Dave acting as her server player, Rose escapes the meteor strike by bringing her house into the Medium.",
-          "sourcePage": 1149,
-          "sourceKind": "visual",
-          "sourceNote": "The Act 3 finale shows Dave helping Rose enter. The first-year recap on p. 1674 also describes these events and links to this sequence."
-        },
-        {
-          "from": "act-4",
-          "value": "Rose takes up dark magic with her new needlewands. The beings beyond the Veil advise her in dreams, including urging her to destroy her journal’s genetic code.",
-          "sourcePage": 1988,
-          "sourceKind": "direct"
         }
       ],
       "sourcePage": 217,
@@ -545,27 +504,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-2",
-          "value": "A self-styled cool kid whose music, photography, and online projects are wrapped in layers of irony.",
-          "sourcePage": 312,
-          "sourceKind": "direct"
-        },
-        {
-          "from": "act-3",
-          "value": "Dave connects as Rose’s server player and helps her escape the meteor strike by entering the Medium.",
-          "sourcePage": 1149,
-          "sourceKind": "visual",
-          "sourceNote": "The Act 3 finale shows Dave helping Rose enter. The first-year recap on p. 1674 also describes these events and links to this sequence."
-        },
-        {
-          "from": "act-4",
-          "value": "A future Dave travels back to prevent a disastrous timeline and becomes Davesprite, giving his past self equipment and a guide who already knows the game.",
-          "sourcePage": 1674,
-          "sourceKind": "direct"
         }
       ],
       "sourcePage": 312,
@@ -658,20 +596,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-3",
-          "value": "A gifted tinkerer with a habit of falling asleep unexpectedly and an uncanny ability to predict what is coming.",
-          "sourcePage": 789,
-          "sourceKind": "direct"
-        },
-        {
-          "from": "act-4",
-          "value": "Jade helps Dave enter the game while she remains outside it. Her dream self saves John when Prospit’s moon falls, dying in the process.",
-          "sourcePage": 1988,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 768,
       "sourceKind": "intro"
     },
@@ -734,14 +658,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "Guided by voices of the dead, Aradia uncovers the technology behind Sgrub and persuades a friend to adapt it, knowing it will bring destruction to their civilization.",
-          "sourcePage": 2134,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 2134,
       "sourceKind": "intro"
     },
@@ -802,14 +718,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The introduction directly establishes fantasy stories, creature communion/training, card and role-playing games, slam poetry, and flight lore."
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "Tavros can communicate with Alternia’s creatures and trains them as companions and game partners. He dreams of flight, but speaks with little confidence.",
-          "sourcePage": 2101,
-          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2101,
@@ -887,14 +795,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "A gifted hacker plagued by voices foretelling death. Sollux adapts ancient code into the game he believes can save his race and organizes two teams to play it.",
-          "sourcePage": 2076,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 2076,
       "sourceKind": "intro"
     },
@@ -967,14 +867,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "Quick to anger with his friends and fiercely ambitious, Karkat wants to become a fearsome warrior. His actual programming and sickle practice leave room for improvement.",
-          "sourcePage": 1994,
-          "sourceKind": "direct"
         }
       ],
       "sourcePage": 1994,
@@ -1051,14 +943,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "A cave-dwelling hunter who turns her adventures into wall comics. She loves friendly roleplay but avoids the dangerous kind that has hurt her friends.",
-          "sourcePage": 2156,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 2156,
       "sourceKind": "intro"
     },
@@ -1131,14 +1015,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "Unusually comfortable in sunlight, Kanaya tends an oasis around her home. Her rare jade blood allowed her to be raised by a virgin mother grub.",
-          "sourcePage": 2323,
-          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2323,
@@ -1215,14 +1091,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "A student of Alternian law with a passion for justice and roleplaying games with her plush dragons. She reads through smell and taste.",
-          "sourcePage": 2031,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 2031,
       "sourceKind": "intro"
     },
@@ -1297,14 +1165,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "A ruthless roleplayer whose victories provide victims for her hungry spider lusus. She chases advantages in games of chance while repeatedly making her own luck worse.",
-          "sourcePage": 2195,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 2195,
       "sourceKind": "intro"
     },
@@ -1365,14 +1225,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "“Strength training” was changed to “Strength”: the introduction says he loves being strong, alongside archery, musclebeast art, and robot-building/brawling."
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "An aristocrat obsessed with strength and bloodline status. His immense strength breaks every bow he tries to use; he builds robots to fight instead.",
-          "sourcePage": 2211,
-          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2211,
@@ -1438,14 +1290,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The introduction supports clowns, the one-wheel device, baking, and horns; the immediately following page identifies his “fine beverage” as Faygo."
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "A devotee of an obscure clown cult who considers Karkat his best friend. His days revolve around friends, baking, and a unicycle he can barely ride.",
-          "sourcePage": 2012,
-          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2012,
@@ -1524,14 +1368,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "A sea-dwelling aristocrat determined to wipe out land dwellers. He collects weapons and pursues a doomsday device while styling himself after legendary conquerors.",
-          "sourcePage": 2439,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 2408,
       "sourceKind": "intro"
     },
@@ -1608,14 +1444,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "The heir to Alternia’s throne, protected by her monstrous lusus. She hopes to replace culling with care for the vulnerable and to unite sea and land dwellers.",
-          "sourcePage": 2441,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 2422,
       "sourceKind": "intro"
     },
@@ -1666,18 +1494,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-1",
-          "value": "John's father, associated with constant baking and—John suspects—the performing arts.",
-          "sourcePage": 70,
-          "sourcePages": [
-            158
-          ],
-          "sourceKind": "composite",
-          "sourceNote": "Page 70 establishes the baking; page 158 has John infer from Dad's Serious Business contacts that the performing arts may be involved."
-        }
-      ],
       "sourcePage": 89,
       "sourceKind": "intro"
     },
@@ -1725,14 +1541,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-2",
-          "value": "Rose's mother, whose home is crowded with wizard statues and liquor bottles.",
-          "sourcePage": 365,
-          "sourceKind": "direct"
         }
       ],
       "sourcePage": 388,
@@ -1792,25 +1600,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-2",
-          "value": "Dave's brother, whose interests include elaborate puppet projects and expensive ninja swords.",
-          "sourcePage": 419,
-          "sourcePages": [
-            562
-          ],
-          "sourceKind": "composite",
-          "sourceNote": "Page 419 discusses Bro's puppet collection and websites; page 562 identifies his expensive ninja swords."
-        },
-        {
-          "from": "act-3",
-          "value": "Dave's brother, a formidable swordsman who defeats him in a rooftop strife.",
-          "sourcePage": 836,
-          "sourceKind": "visual",
-          "sourceNote": "[S] Dave: STRIFE directly depicts their rooftop fight and Dave's defeat."
-        }
-      ],
       "sourcePage": 757,
       "sourceKind": "intro"
     },
@@ -1862,19 +1651,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "Page 790 identifies him as Jade's grandfather; page 920 explicitly says he is no longer alive."
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-3",
-          "value": "A world-renowned explorer, naturalist, scientist, adventurer, and big-game hunter; his taxidermied body remains in Jade's home.",
-          "sourcePage": 790,
-          "sourcePages": [
-            919,
-            920
-          ],
-          "sourceKind": "composite",
-          "sourceNote": "Page 790 supplies his occupations; pages 919–920 visually/textually establish that his preserved body remains in the house."
         }
       ],
       "sourcePage": 919,
@@ -1940,18 +1716,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-2",
-          "value": "John's deceased nanna, resurrected through his sprite and guiding him through the Medium.",
-          "sourcePage": 420,
-          "sourcePages": [
-            425
-          ],
-          "sourceKind": "composite",
-          "sourceNote": "Page 420 establishes Nannasprite's identity; page 425 demonstrates her role as John's game guide."
-        }
-      ],
       "sourcePage": 420,
       "sourceKind": "intro"
     },
@@ -2015,14 +1779,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-4",
-          "value": "Rose's deceased cat, prototyped into her sprite along with an eldritch princess doll.",
-          "sourcePage": 1674,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 1626,
       "sourceKind": "intro"
     },
@@ -2084,14 +1840,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-4",
-          "value": "A Dave from a doomed timeline who travels back to change events, then prototypes himself into Crowsprite and becomes Davesprite.",
-          "sourcePage": 1674,
-          "sourceKind": "direct"
-        }
-      ],
       "sourcePage": 1651,
       "sourceKind": "intro"
     },
@@ -2140,21 +1888,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "By late Act 3 Jade explicitly calls Bec her dog/guardian and one of her best friends."
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-3",
-          "value": "Bec is almost completely invisible to Jade's precognition and is difficult to find unless he wants to be found.",
-          "sourcePage": 942,
-          "sourceKind": "direct"
-        },
-        {
-          "from": "act-4",
-          "value": "Jade's radioactive, enormously powerful, space-warping dog and guardian.",
-          "sourcePage": 1674,
-          "sourceKind": "direct",
-          "sourceNote": "The first-year recap explicitly describes Bec as radioactive, omnipotent, and space-warping, and says he looked after Jade."
         }
       ],
       "sourcePage": 942,
@@ -2219,28 +1952,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-2",
-          "value": "A wanderer in the desert who has been sending commands to John through a terminal.",
-          "sourcePage": 439,
-          "sourceKind": "composite",
-          "sourcePages": [
-            666
-          ],
-          "sourceNote": "Story 439 shows the future terminal operator issuing John's commands; story 666 identifies him as the Wayward Vagabond."
-        },
-        {
-          "from": "act-4",
-          "value": "An exile on post-apocalyptic Earth who commands John from a terminal; formerly a Warweary Villein, a simple farmer on the Battlefield.",
-          "sourcePage": 1674,
-          "sourceKind": "composite",
-          "sourcePages": [
-            1988
-          ],
-          "sourceNote": "The first-year recap establishes WV as an exile on future Earth commanding John; Recap 2 identifies the Warweary Villein as a simple farmer and WV's former identity."
-        }
-      ],
       "sourcePage": 666,
       "sourceKind": "intro"
     },
@@ -2303,25 +2014,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-3",
-          "value": "A wanderer traveling in a mobile station piled with mailboxes, carrying a package she is determined to deliver.",
-          "sourcePage": 892,
-          "sourceKind": "composite",
-          "sourcePages": [
-            1039
-          ],
-          "sourceNote": "Story 892 introduces PM in her mobile station amid mailboxes; the later Act 3 sequence around story 1039 shows her involvement with the package and its delivery instructions."
-        },
-        {
-          "from": "act-4",
-          "value": "A former Parcel Mistress who becomes an exile and continues her mission to deliver Jade's package to John.",
-          "sourcePage": 1674,
-          "sourceKind": "direct",
-          "sourceNote": "The first-year recap explicitly connects PM's Parcel Mistress role, exile status, and delivery mission."
-        }
-      ],
       "sourcePage": 892,
       "sourceKind": "intro"
     },
@@ -2382,22 +2074,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-3",
-          "value": "An armed figure defending his stronghold against WV and PM.",
-          "sourcePage": 1100,
-          "sourceKind": "direct",
-          "sourceNote": "AR's introduction describes WV and PM as unwelcome rogues outside his stronghold and notes that he has emptied his ammunition at them."
-        },
-        {
-          "from": "act-4",
-          "value": "A former Authority Regulator who becomes one of the exiles on post-apocalyptic Earth.",
-          "sourcePage": 1674,
-          "sourceKind": "direct",
-          "sourceNote": "The first-year recap explicitly establishes AR as a former Authority Regulator and one of the exiles."
         }
       ],
       "sourcePage": 1100,
@@ -2463,15 +2139,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-4",
-          "value": "The former White Queen, who abdicates, eventually exiles herself to post-apocalyptic Earth, and commands Rose from the egg-shaped station.",
-          "sourcePage": 1674,
-          "sourceKind": "direct",
-          "sourceNote": "The first-year recap explicitly covers her abdication, later exile as WQ, and her role issuing commands to Rose."
-        }
-      ],
       "sourcePage": 1543,
       "sourceKind": "intro"
     },
@@ -2535,21 +2202,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-3",
-          "value": "The Dark Kingdom's archagent, overseeing its affairs from his office.",
-          "sourcePage": 955,
-          "sourceKind": "direct"
-        },
-        {
-          "from": "act-4",
-          "value": "The kids' session Jack Noir; the corresponding Jack in the trolls' session is exiled and becomes Spades Slick of the Midnight Crew.",
-          "sourcePage": 1674,
-          "sourceKind": "direct",
-          "sourceNote": "The first-year recap explicitly distinguishes the sessions, identifies the troll-session Jack as Spades Slick, and says he and three other exiled agents formed the Midnight Crew."
-        }
-      ],
       "sourcePage": 955,
       "sourceKind": "intro"
     },
@@ -2598,15 +2250,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-4",
-          "value": "Jack Noir's henchman, carrying Rose's stolen journal copies and Dave's beta through the meteor lab.",
-          "sourcePage": 1988,
-          "sourceKind": "direct",
-          "sourceNote": "Recap 2 explicitly identifies DD as Jack's henchman and describes him carrying the duplicated journals and beta."
         }
       ],
       "sourcePage": 1532,
@@ -2659,15 +2302,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-4",
-          "value": "A lackey of Jack Noir who steals the White Queen's ring from PM.",
-          "sourcePage": 1988,
-          "sourceKind": "direct",
-          "sourceNote": "Recap 2 explicitly states that CD picked PM's pocket and stole the ring."
-        }
-      ],
       "sourcePage": 1784,
       "sourceKind": "intro"
     },
@@ -2717,15 +2351,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "Recap 2 explicitly calls HB 'Jack's muscle'."
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "act-4",
-          "value": "Jack Noir's muscle, who follows PM on the Battlefield and attacks her before she later beheads him.",
-          "sourcePage": 1988,
-          "sourceKind": "direct",
-          "sourceNote": "Recap 2 explicitly describes HB tailing and attacking PM, and PM later beheading him."
         }
       ],
       "sourcePage": 957,
@@ -2809,21 +2434,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "intermission",
-          "value": "A mysterious woman known as Snowman; killing her would destroy the universe.",
-          "sourcePage": 1268,
-          "sourceKind": "direct"
-        },
-        {
-          "from": "act-4",
-          "value": "The exiled Black Queen of the trolls' session, who joins the Felt and comes to be known as Snowman; she has powers that make killing her highly inadvisable.",
-          "sourcePage": 1674,
-          "sourceKind": "direct",
-          "sourceNote": "The first-year recap states this identity chain and explicitly notes that she acquired special powers making her highly inadvisable to kill."
-        }
-      ],
       "sourcePage": 1268,
       "sourceKind": "intro"
     },
@@ -2887,15 +2497,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
-      "note": [
-        {
-          "from": "act-5-act-1",
-          "value": "His job is to pave the way for Lord English's arrival when the universe ends.",
-          "sourcePage": 2253,
-          "sourceKind": "direct",
-          "sourceNote": "Paraphrases the introduction's explanation of Scratch's task and English's arrival."
-        }
-      ],
       "sourcePage": 2253,
       "sourceKind": "intro"
     },
@@ -2953,22 +2554,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "Doc Scratch's introduction identifies English as an indestructible demon and Scratch's master."
             }
           ]
-        }
-      ],
-      "note": [
-        {
-          "from": "intermission",
-          "value": "Spades Slick has entered his mansion to crack his secret vault.",
-          "sourcePage": 1155,
-          "sourceKind": "direct",
-          "sourceNote": "This is the Midnight Crew's stated objective on Slick's Intermission introduction page."
-        },
-        {
-          "from": "act-5-act-1",
-          "value": "Doc Scratch is working to pave the way for his arrival when the universe ends.",
-          "sourcePage": 2253,
-          "sourceKind": "direct",
-          "sourceNote": "Doc Scratch's introduction directly explains this relationship and task."
         }
       ],
       "sourcePage": 1155,
@@ -3331,6 +2916,10 @@ window.HOMESTUCK_REFERENCE = {
         "All twelve trolls currently first appear at the final supported stage, Act 5 Act 1. Their notes use variant arrays so later reading stages can add new wording without exposing it early.",
         "This is a targeted content update, not a repeat of the September 18 global audit."
       ]
+    },
+    "characterNotesRemoval": {
+      "date": "2026-09-20",
+      "note": "All character notes were removed at the user’s request. Earlier audit entries describe the historical content; names, portraits, stats, and group labels remain staged."
     }
   }
 };

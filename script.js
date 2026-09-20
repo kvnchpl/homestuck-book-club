@@ -49,7 +49,6 @@
       (character.stats || []).forEach((stat, si) => {
         (stat.variants || []).forEach((variant, vi) => check(variant, `characters[${ci}].stats[${si}].variants[${vi}]`));
       });
-      (character.note || []).forEach((variant, vi) => check(variant, `characters[${ci}].note[${vi}]`));
     });
     (cheatSections || []).forEach((section, si) => {
       (section.title || []).forEach((variant, vi) => check(variant, `cheatSections[${si}].title[${vi}]`));
@@ -235,14 +234,6 @@
     }
 
     if (statCount) copy.append(stats);
-
-    const note = resolvedValue(character.note);
-    if (note) {
-      const paragraph = document.createElement('p');
-      paragraph.className = 'character-note';
-      paragraph.textContent = note;
-      copy.append(paragraph);
-    }
 
     card.append(copy);
     return card;

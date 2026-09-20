@@ -144,40 +144,6 @@ test('Snowman’s name and both portraits follow the selected stage without leak
   assert(!r.tabs().some(t => t.dataset.characterId === 'snowman'));
 });
 
-test('kid notes evolve and roll back, while troll notes wait for their reveal stage', () => {
-  const r = reference();
-  const note = id => {
-    const card = r.cards().find(c => c.dataset.characterId === id);
-    return card && all(card).find(e => e.className === 'character-note')?.textContent;
-  };
-  const earlyNotes = new Map();
-  for (const [stage, ids] of [[1, ['john', 'rose']], [2, ['dave']], [3, ['jade']]]) {
-    r.stage(stage);
-    for (const id of ids) {
-      assert(note(id), `${id} should have a note when first revealed`);
-      earlyNotes.set(id, note(id));
-    }
-    assert.doesNotMatch(text(r.ids['character-groups']), /ectobiology|needlewands|future Dave|moon falls/i);
-  }
-  r.stage(5);
-  for (const [id, early] of earlyNotes) assert.notEqual(note(id), early);
-  assert.match(note('john'), /ectobiology/);
-  assert.match(note('rose'), /needlewands/);
-  assert.match(note('dave'), /future Dave/);
-  assert.match(note('jade'), /moon falls/);
-  r.stage(6);
-  const trolls = r.window.HOMESTUCK_REFERENCE.characters.filter(c => c.group === 'trolls');
-  assert.equal(trolls.length, 12);
-  for (const troll of trolls) assert(note(troll.id));
-  r.stage(5);
-  for (const troll of trolls) assert.equal(note(troll.id), undefined);
-  for (const [stage, ids] of [[3, ['jade']], [2, ['dave']], [1, ['john', 'rose']]]) {
-    r.stage(stage);
-    for (const id of ids) assert.equal(note(id), earlyNotes.get(id));
-  }
-  assert.deepEqual(r.warnings, []);
-});
-
 test('character links, clicks, and keyboard navigation select and focus available tabs', () => {
   const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat' });
   const tabs = r.tabs();

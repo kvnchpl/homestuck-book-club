@@ -788,10 +788,6 @@ button {
   text-decoration-thickness: 2px;
 }
 
-.character-note {
-  margin: 0.3rem 0 0;
-}
-
 .character-stats {
   margin: 16px 0;
   font-size: 14px;
@@ -810,10 +806,6 @@ button {
 
 .character-stats dd {
   margin: 0;
-}
-
-.character-note {
-  line-height: 1.4;
 }
 
 /* The roster selects among the stage-safe cards; printing shows them all. */
