@@ -484,10 +484,21 @@
   // An unfinished template should remain readable as a normal document.
   if (![controls, counter, sourceLink, previousButton, nextButton, startOver].every(Boolean)) return;
   const sources = new Map();
+  const panels = [...deck.querySelectorAll('.media img')];
+  const panelsBySlide = new Map(slides.map(slide => [slide, panels.filter(img => img.closest('.slide') === slide)]));
+
+  function loadSlide(slide) {
+    for (const img of panelsBySlide.get(slide) || []) img.loading = 'eager';
+  }
+
+  // Print includes every slide, including panels not yet visited in the reader.
+  window.addEventListener('beforeprint', () => {
+    panels.forEach(img => { img.loading = 'eager'; });
+  });
   // Accept the existing hyphen separator and intermission filenames, too.
   const panelPattern = /^(A\d+(?:\.I\d+)?|I\d+)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
 
-  deck.querySelectorAll('.media img').forEach(img => {
+  panels.forEach(img => {
     let filename;
     try {
       filename = decodeURIComponent(new URL(img.src).pathname.split('/').pop());
@@ -519,6 +530,9 @@
       slide.classList.toggle('active', n === index);
       slide.setAttribute('aria-label', `Slide ${n + 1} of ${slides.length}`);
     });
+    // Fetch the selected panel and one ahead; other slides stay lazy.
+    loadSlide(slides[index]);
+    loadSlide(slides[index + 1]);
     counter.textContent = `${index + 1} / ${slides.length}`;
     (slides[index].querySelector('.media') || slides[index]).append(counter);
     const isCover = slides[index].classList.contains('cover');

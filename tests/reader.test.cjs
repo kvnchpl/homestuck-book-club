@@ -26,7 +26,7 @@ function reader({ hash = '', missing, small = false, coarse = false, filename = 
   const slides = [element(['cover']), element(), element(), element(['cover'])];
   const images = slides.map((slide, n) => {
     const media = element(); slide.querySelector = () => media;
-    const img = element(); img.src = `https://site.test/assets/${n === 2 ? 'unlabeled.gif' : filename}`;
+    const img = element(); img.loading = 'lazy'; img.src = `https://site.test/assets/${n === 2 ? 'unlabeled.gif' : filename}`;
     img.closest = () => slide;
     return img;
   });
@@ -48,7 +48,7 @@ function reader({ hash = '', missing, small = false, coarse = false, filename = 
     document.listeners.keydown(event);
     return event;
   };
-  return { ids, slides, images, deck, controls, document, location, jump, key, element };
+  return { ids, slides, images, deck, controls, document, window, location, jump, key, element };
 }
 
 test('covers hide counter/source and disable Start Over, including covers with images', () => {
@@ -137,4 +137,18 @@ test('non-reader pages and incomplete templates remain ordinary documents', () =
     assert.equal(r.document.body.classList.contains('is-presenting'), false);
     assert(r.slides.every(slide => !slide.hidden));
   }
+});
+
+
+test('reader loads the current and next panels, including direct links; print loads every panel', () => {
+  const r = reader();
+  assert.deepEqual(r.images.map(img => img.loading), ['eager', 'eager', 'lazy', 'lazy']);
+  r.jump('#2');
+  assert.deepEqual(r.images.map(img => img.loading), ['eager', 'eager', 'eager', 'lazy']);
+  const direct = reader({ hash: '#3', filename: 'A5_02_story-1994.webp' });
+  assert.deepEqual(direct.images.map(img => img.loading), ['lazy', 'lazy', 'eager', 'eager']);
+  direct.jump('#2');
+  assert.equal(direct.ids['source-link'].href, 'https://homestuck.com/story/1994');
+  direct.window.listeners.beforeprint();
+  assert(direct.images.every(img => img.loading === 'eager'));
 });

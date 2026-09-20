@@ -1264,6 +1264,28 @@ button {
     print-color-adjust: exact;
   }
 
+  /* Fit tall panels and long captions onto their own square print page. */
+  .slide:not(.cover) {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .slide:not(.cover) .media {
+    flex: 1 1 0;
+    min-height: 0;
+  }
+
+  .slide:not(.cover) .media img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .caption,
+  .act-title {
+    flex: 0 0 auto;
+    min-height: 0;
+  }
+
   .slide:last-child {
     break-after: auto;
   }

@@ -56,6 +56,36 @@ def text(node):
     return ' '.join(''.join(node.itertext()).split())
 
 
+def image_dimensions(path):
+    data = path.read_bytes()
+    if path.suffix == '.png':
+        assert data[:8] == b'\x89PNG\r\n\x1a\n', f'{path}: expected PNG'
+        return int.from_bytes(data[16:20], 'big'), int.from_bytes(data[20:24], 'big')
+    if path.suffix == '.gif':
+        assert data[:6] in (b'GIF87a', b'GIF89a'), f'{path}: expected GIF'
+        return int.from_bytes(data[6:8], 'little'), int.from_bytes(data[8:10], 'little')
+    if path.suffix == '.webp':
+        assert data[:4] == b'RIFF' and data[8:12] == b'WEBP', f'{path}: expected WebP'
+        assert int.from_bytes(data[4:8], 'little') + 8 == len(data), f'{path}: truncated WebP'
+        offset = 12
+        while offset + 8 <= len(data):
+            kind = data[offset:offset + 4]
+            size = int.from_bytes(data[offset + 4:offset + 8], 'little')
+            chunk = data[offset + 8:offset + 8 + size]
+            if kind == b'VP8X':
+                return int.from_bytes(chunk[4:7], 'little') + 1, int.from_bytes(chunk[7:10], 'little') + 1
+            if kind == b'VP8L':
+                assert chunk[0] == 0x2f
+                bits = int.from_bytes(chunk[1:5], 'little')
+                return (bits & 0x3fff) + 1, ((bits >> 14) & 0x3fff) + 1
+            if kind == b'VP8 ':
+                assert chunk[3:6] == b'\x9d\x01\x2a'
+                return int.from_bytes(chunk[6:8], 'little') & 0x3fff, int.from_bytes(chunk[8:10], 'little') & 0x3fff
+            offset += 8 + size + size % 2
+        raise AssertionError(f'{path}: no WebP image dimensions')
+    raise AssertionError(f'{path}: unsupported image format')
+
+
 paths = sorted(ROOT.rglob('index.html'))
 pages = {p.relative_to(ROOT).as_posix(): Page(p) for p in paths}
 assert all(p.is_file() for p in (ROOT / 'assets').iterdir()), 'Keep assets directly under assets/'
@@ -105,13 +135,12 @@ for name, page in pages.items():
                     assert Path(target).parent == Path('assets'), f'{name}: image outside assets/'
                     assert element.get('alt', '').strip(), f'{name}: missing image description'
                     assert int(element.get('width', 0)) > 0 and int(element.get('height', 0)) > 0
-                    if Path(target).suffix.lower() == '.gif':
-                        header = (ROOT / target).read_bytes()[:10]
-                        assert header[:6] in (b'GIF87a', b'GIF89a'), f'{target}: not a GIF image'
-                        assert int.from_bytes(header[6:8], 'little') > 0
-                        assert int.from_bytes(header[8:10], 'little') > 0
-                        actual = (int.from_bytes(header[6:8], 'little'), int.from_bytes(header[8:10], 'little'))
-                        assert (int(element.get('width')), int(element.get('height'))) == actual, f'{name}: incorrect GIF dimensions'
+                    actual = image_dimensions(ROOT / target)
+                    assert (int(element.get('width')), int(element.get('height'))) == actual, f'{name}: incorrect image dimensions'
+                    if name.startswith('recaps/'):
+                        assert actual[0] == 650, f'{name}: keep recap panels 650px wide'
+                        assert element.get('loading') == 'lazy', f'{name}: defer unread panels'
+                        assert element.get('decoding') == 'async', f'{name}: decode panels asynchronously'
         assert 'styles.css' in targets and 'script.js' in targets, f'{name}: missing shared resources'
         recap_nav = by_class(tree, 'nav-recaps')
         assert len(recap_nav) == 1

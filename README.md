@@ -45,7 +45,24 @@ All pages share `styles.css`, `script.js`, and the same five navigation links. K
 
 To publish another recap, add `recaps/NN/index.html` using an existing recap's structure, link it from the corresponding entries in both indexes, and remove its “Not yet available” status. Keep slides readable without JavaScript; the script adds single-slide navigation and numeric URL fragments. Printing includes every slide.
 
-Recap image filenames encode the actual source story page (`A5_01_story-1989.gif`, for example); the reader derives its source link from that suffix. Use 650px-wide images with proportional heights and matching HTML dimensions. Follow `ASSET_SOURCES.md` before introducing or reusing an image. Some unused assets remain in the repository and are not verified for reuse.
+Recap image filenames encode the actual source story page (`A5_01_story-1989.webp`, for example); the reader derives its source link from that suffix. Use 650px-wide images with proportional heights and matching HTML dimensions. Follow `ASSET_SOURCES.md` before introducing or reusing an image. Some unused assets remain in the repository and are not verified for reuse.
+
+## Image optimization
+
+The homepage uses a 1300 × 975 WebP at quality 65 (enough resolution for its 650px display width on a 2× screen). Recap panels retain their 650px width and original proportions. Most use WebP; two remain GIF because converting them increased file size. Reference portraits remain PNG.
+
+Recap images use `loading="lazy"` and `decoding="async"`. The reader requests the current slide and the next slide eagerly; opening print preview requests every panel. With JavaScript disabled, the browser loads the ordinary document's images normally.
+
+`tools/optimize_images.py` compares lossy WebP at quality 65 against lossless WebP and writes only a smaller candidate to a separate directory. It checks dimensions and animation duration/looping. This optional maintenance tool requires Python with Pillow and `gif2webp` from libwebp; the site and its normal tests need neither.
+
+```sh
+python3 tools/optimize_images.py --output-dir /tmp/optimized /path/to/original.gif
+python3 tools/optimize_images.py --output-dir /tmp/optimized --max-width 1300 /path/to/original-photo.webp
+```
+
+Use original artwork as input to avoid repeatedly compressing an already lossy image. Review candidates, copy accepted outputs into `assets/`, update HTML paths and dimensions, and update the current asset filenames in `ASSET_SOURCES.md`. The script never modifies its inputs. The original GIF versions of the converted panels remain in Git history.
+
+The September 2026 pass reduced the homepage image from 2,791,434 to 70,868 bytes (97.5%) and the 122 active recap panels from 9,230,517 to 5,103,643 bytes (44.7%). All 52 animated panels retain their playback timing and looping. Unused assets were left alone.
 
 ## Staged reference data
 
