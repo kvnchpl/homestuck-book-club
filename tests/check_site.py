@@ -163,12 +163,13 @@ assert not by_class(reference.root, 'character-portrait')
 for container in ('character-roster', 'character-groups', 'reference-cheats'):
     assert not len(reference.ids[container]) and not text(reference.ids[container])
 assert 'hidden' in reference.ids['character-select'].attrib
-scripts = [element.get('src') for element in reference.root.iter('script')]
+scripts = [element.get('src').split('?')[0] for element in reference.root.iter('script')]
 assert scripts == ['../reference-data.js', '../script.js']
 
 source = (ROOT / 'reference-data.js').read_text()
 data = json.loads(source[source.index('{'):].rstrip().removesuffix(';'))
 stages = {stage['key']: stage for stage in data['stages']}
+assert data.get('availableThrough') in stages, 'Reference needs a valid book club reading cap'
 assert len(stages) == len(data['stages'])
 assert [stage['value'] for stage in stages.values()] == list(range(1, len(stages) + 1))
 group_ids = {group['id'] for group in data['groups']}
@@ -247,6 +248,6 @@ for number, (meeting, recap) in enumerate(zip(schedule, recaps), 1):
 
 checkpoints = [stage['endPage'] for stage in stages.values()]
 assert checkpoints == sorted(set(checkpoints)), 'Reference checkpoints must increase'
-assert all(page in reading_ends for page in checkpoints), 'Reference checkpoints must match the schedule'
+assert checkpoints == reading_ends, 'Reference timeline must cover every scheduled reading segment'
 assert reading_count == 32 and expected_start == 8130
 print(f'PASS: {len(pages)} pages, 13 recap entries, 32 readings / 8129 pages; local links and assets at both hosting paths.')

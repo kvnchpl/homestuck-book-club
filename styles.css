@@ -621,10 +621,47 @@ button {
   font-weight: 700;
 }
 
+.reading-progress-limit {
+  margin: 8px 0 12px;
+  font: 11px/1.5 Verdana, Arial, sans-serif;
+  color: #535353;
+}
+
+.reading-progress-scroll {
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.reading-progress-timeline {
+  --reading-stage-count: 1;
+  --reading-available-fraction: 1;
+  --reading-tick-width: 72px;
+  min-width: calc(var(--reading-stage-count) * var(--reading-tick-width));
+}
+
+.reading-progress-track {
+  position: relative;
+  /* Each thumb position lines up with the center of its label below. */
+  margin-inline: calc(var(--reading-tick-width) / 2 - 8px);
+}
+
+.reading-progress-track::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  right: 8px;
+  height: 4px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  background: #d0d0d0;
+}
+
 #reading-progress {
   --reading-progress-percent: 0%;
   display: block;
-  width: 100%;
+  position: relative;
+  width: calc((100% - 16px) * var(--reading-available-fraction) + 16px);
   height: 28px;
   margin: 0;
   padding: 0;
@@ -678,7 +715,7 @@ button {
 .reading-progress-scale {
   display: grid;
   grid-template-columns: repeat(var(--reading-stage-count, 6), minmax(0, 1fr));
-  gap: 4px;
+  gap: 0;
   margin-top: 2px;
 }
 
@@ -693,10 +730,23 @@ button {
   text-align: center;
 }
 
-.reading-progress-tick:hover,
+.reading-progress-tick:not(:disabled):hover,
 .reading-progress-tick:focus-visible {
   color: #000;
   text-decoration: underline;
+}
+
+.reading-progress-tick:disabled {
+  color: #757575;
+  cursor: not-allowed;
+}
+
+.reading-progress-tick:disabled::after {
+  content: 'Locked';
+  display: block;
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 8px;
 }
 
 .reading-progress-tick[aria-pressed="true"] {
@@ -1024,10 +1074,6 @@ button {
 @media screen and (max-width: 600px) {
   .reading-progress {
     padding-inline: 12px;
-  }
-
-  .reading-progress-scale {
-    gap: 1px;
   }
 
   .reading-progress-tick {

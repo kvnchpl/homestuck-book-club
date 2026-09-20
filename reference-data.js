@@ -13,6 +13,7 @@
 // variant for the same property supersedes it. If no variant is available yet,
 // that property is not rendered at all.
 window.HOMESTUCK_REFERENCE = {
+  "availableThrough": "act-5-act-1",
   "stages": [
     {
       "value": 1,
@@ -66,6 +67,240 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A5A1",
       "endPage": 2625,
       "sourcePage": 2625,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 7,
+      "key": "act-5-act-2-part-1",
+      "label": "Act 5 Act 2 — Part 1",
+      "shortLabel": "A5A2 · 1",
+      "endPage": 3173,
+      "sourcePage": 3173,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 8,
+      "key": "act-5-act-2-part-2",
+      "label": "Act 5 Act 2 — Part 2",
+      "shortLabel": "A5A2 · 2",
+      "endPage": 3625,
+      "sourcePage": 3625,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 9,
+      "key": "act-5-act-2-part-3",
+      "label": "Act 5 Act 2 — Part 3",
+      "shortLabel": "A5A2 · 3",
+      "endPage": 4110,
+      "sourcePage": 4110,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 10,
+      "key": "intermission-2",
+      "label": "Intermission 2",
+      "shortLabel": "I2",
+      "endPage": 4112,
+      "sourcePage": 4112,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 11,
+      "key": "act-6-act-1",
+      "label": "Act 6 Act 1",
+      "shortLabel": "A6A1",
+      "endPage": 4291,
+      "sourcePage": 4291,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 12,
+      "key": "act-6-intermission-1",
+      "label": "Act 6 Intermission 1",
+      "shortLabel": "A6I1",
+      "endPage": 4416,
+      "sourcePage": 4416,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 13,
+      "key": "act-6-act-2",
+      "label": "Act 6 Act 2",
+      "shortLabel": "A6A2",
+      "endPage": 4666,
+      "sourcePage": 4666,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 14,
+      "key": "act-6-intermission-2",
+      "label": "Act 6 Intermission 2",
+      "shortLabel": "A6I2",
+      "endPage": 4819,
+      "sourcePage": 4819,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 15,
+      "key": "act-6-act-3",
+      "label": "Act 6 Act 3",
+      "shortLabel": "A6A3",
+      "endPage": 5259,
+      "sourcePage": 5259,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 16,
+      "key": "act-6-intermission-3",
+      "label": "Act 6 Intermission 3",
+      "shortLabel": "A6I3",
+      "endPage": 5434,
+      "sourcePage": 5434,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 17,
+      "key": "act-6-act-4",
+      "label": "Act 6 Act 4",
+      "shortLabel": "A6A4",
+      "endPage": 5437,
+      "sourcePage": 5437,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 18,
+      "key": "act-6-intermission-4",
+      "label": "Act 6 Intermission 4",
+      "shortLabel": "A6I4",
+      "endPage": 5508,
+      "sourcePage": 5508,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 19,
+      "key": "act-6-act-5",
+      "label": "Act 6 Act 5",
+      "shortLabel": "A6A5",
+      "endPage": 5923,
+      "sourcePage": 5923,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 20,
+      "key": "act-6-intermission-5",
+      "label": "Act 6 Intermission 5",
+      "shortLabel": "A6I5",
+      "endPage": 6239,
+      "sourcePage": 6239,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 21,
+      "key": "act-6-act-6-act-1",
+      "label": "Act 6 Act 6 Act 1",
+      "shortLabel": "A6A6A1",
+      "endPage": 6277,
+      "sourcePage": 6277,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 22,
+      "key": "act-6-act-6-intermission-1",
+      "label": "Act 6 Act 6 Intermission 1",
+      "shortLabel": "A6A6I1",
+      "endPage": 6474,
+      "sourcePage": 6474,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 23,
+      "key": "act-6-act-6-act-2",
+      "label": "Act 6 Act 6 Act 2",
+      "shortLabel": "A6A6A2",
+      "endPage": 6530,
+      "sourcePage": 6530,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 24,
+      "key": "act-6-act-6-intermission-2",
+      "label": "Act 6 Act 6 Intermission 2",
+      "shortLabel": "A6A6I2",
+      "endPage": 6852,
+      "sourcePage": 6852,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 25,
+      "key": "act-6-act-6-act-3",
+      "label": "Act 6 Act 6 Act 3",
+      "shortLabel": "A6A6A3",
+      "endPage": 6901,
+      "sourcePage": 6901,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 26,
+      "key": "act-6-act-6-intermission-3",
+      "label": "Act 6 Act 6 Intermission 3",
+      "shortLabel": "A6A6I3",
+      "endPage": 6920,
+      "sourcePage": 6920,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 27,
+      "key": "act-6-act-6-act-4",
+      "label": "Act 6 Act 6 Act 4",
+      "shortLabel": "A6A6A4",
+      "endPage": 6943,
+      "sourcePage": 6943,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 28,
+      "key": "act-6-act-6-intermission-4",
+      "label": "Act 6 Act 6 Intermission 4",
+      "shortLabel": "A6A6I4",
+      "endPage": 7408,
+      "sourcePage": 7408,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 29,
+      "key": "act-6-act-6-act-5",
+      "label": "Act 6 Act 6 Act 5",
+      "shortLabel": "A6A6A5",
+      "endPage": 7448,
+      "sourcePage": 7448,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 30,
+      "key": "act-6-act-6-intermission-5",
+      "label": "Act 6 Act 6 Intermission 5",
+      "shortLabel": "A6A6I5",
+      "endPage": 8086,
+      "sourcePage": 8086,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 31,
+      "key": "act-6-act-6-act-6",
+      "label": "Act 6 Act 6 Act 6",
+      "shortLabel": "A6A6A6",
+      "endPage": 8126,
+      "sourcePage": 8126,
+      "sourceKind": "boundary"
+    },
+    {
+      "value": 32,
+      "key": "act-7",
+      "label": "Act 7",
+      "shortLabel": "A7",
+      "endPage": 8129,
+      "sourcePage": 8129,
       "sourceKind": "boundary"
     }
   ],

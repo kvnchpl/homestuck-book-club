@@ -7,7 +7,7 @@ const { runInNewContext } = require('node:vm');
 const script = readFileSync(join(__dirname, '../script.js'), 'utf8');
 const dataScript = readFileSync(join(__dirname, '../reference-data.js'), 'utf8');
 
-function reference({ hash = '', saved = null, blockedStorage = false, missingData = false } = {}) {
+function reference({ hash = '', saved = null, blockedStorage = false, missingData = false, availableThrough } = {}) {
   let focused;
   function element(tagName = 'div') {
     return {
@@ -24,7 +24,8 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
   }
   const ids = Object.fromEntries(['character-select', 'character-roster', 'character-groups',
     'reference-cheats', 'reading-progress', 'reading-progress-scale', 'reading-progress-output',
-    'reading-progress-status', 'reference-boundary-label', 'reference-loading'].map(id => [id, element()]));
+    'reading-progress-status', 'reading-progress-timeline', 'reading-progress-limit',
+    'reference-boundary-label', 'reference-loading'].map(id => [id, element()]));
   ids['character-select'].hidden = true;
   const location = { hash };
   const window = { addEventListener(k, fn) { this[k] = fn; } };
@@ -40,6 +41,7 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
     console: { warn: (...args) => warnings.push(args) },
   };
   if (!missingData) runInNewContext(dataScript, context);
+  if (!missingData && availableThrough !== undefined) window.HOMESTUCK_REFERENCE.availableThrough = availableThrough;
   runInNewContext(script, context);
   return { ids, location, window, warnings, saved: () => saved, focused: () => focused,
     tabs: () => all(ids['character-roster']).filter(e => e.attrs.role === 'tab'),
@@ -68,10 +70,10 @@ test('fresh visits render only Act 1 content, regardless of a later-character ha
   assert.deepEqual(r.warnings, []);
 });
 
-test('all stages render one selected profile with valid tab relationships and stage-safe links', () => {
-  const r = reference();
+test('all populated stages render one selected profile with valid tab relationships and stage-safe links', () => {
+  const r = reference({ availableThrough: 'act-5-act-1' });
   const stages = r.window.HOMESTUCK_REFERENCE.stages;
-  for (const stage of stages) {
+  for (const stage of stages.filter(s => s.value <= 6)) {
     r.stage(stage.value);
     assert.equal(r.cards().filter(c => !c.hidden).length, 1);
     assert.equal(r.tabs().filter(t => t.attrs['aria-selected'] === 'true').length, 1);
@@ -90,7 +92,7 @@ test('all stages render one selected profile with valid tab relationships and st
 });
 
 test('lowering progress removes future facts and restores earlier terminology', () => {
-  const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat' });
+  const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat', availableThrough: 'act-5-act-1' });
   assert.equal(r.cards().find(c => !c.hidden).dataset.characterId, 'karkat');
   assert.match(text(r.ids['reference-cheats']), /DOOMED TIMELINE/);
   r.stage(5);
@@ -145,7 +147,7 @@ test('Snowman’s name and both portraits follow the selected stage without leak
 });
 
 test('character links, clicks, and keyboard navigation select and focus available tabs', () => {
-  const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat' });
+  const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat', availableThrough: 'act-5-act-1' });
   const tabs = r.tabs();
   assert.equal(r.key(0, 'ArrowLeft').prevented, true);
   assert.equal(r.focused(), tabs.at(-1));
@@ -174,15 +176,54 @@ test('saved keys, legacy numeric progress, invalid storage and blocked storage a
     assert.equal(r.ids['reading-progress-output'].textContent, 'Act 4');
   }
   for (const options of [{ saved: 'future-stage' }, { blockedStorage: true }]) {
-    const r = reference(options);
+    const r = reference({ ...options, availableThrough: 'act-5-act-1' });
     assert.equal(r.ids['reading-progress-output'].textContent, 'Act 1');
     r.stage(6);
     assert.equal(r.cards().length, 35);
   }
-  const r = reference();
-  r.ids['reading-progress-scale'].children.at(-1).listeners.click();
+  const r = reference({ availableThrough: 'act-5-act-1' });
+  r.ids['reading-progress-scale'].children[5].listeners.click();
   assert.equal(r.saved(), 'act-5-act-1');
-  assert.equal(r.ids['reading-progress-scale'].children.at(-1).attrs['aria-pressed'], 'true');
+  assert.equal(r.ids['reading-progress-scale'].children[5].attrs['aria-pressed'], 'true');
+});
+
+test('the full timeline stays visible while input, saved progress, and deep links respect the club cap', () => {
+  for (const saved of ['act-7', '32', 'act-5-act-1', '6']) {
+    const r = reference({ saved, hash: '#character-karkat', availableThrough: 'act-4' });
+    assert.equal(r.ids['reading-progress'].max, '5');
+    assert.equal(r.ids['reading-progress-output'].textContent, 'Act 4');
+    const ticks = r.ids['reading-progress-scale'].children;
+    assert.equal(ticks.length, 32);
+    assert.equal(ticks.filter(t => !t.disabled).length, 5);
+    assert(ticks.slice(5).every(t => t.disabled && !t.listeners.click));
+    assert.equal(ticks.at(-1).textContent, 'A7');
+    assert.match(r.ids['reading-progress-limit'].textContent, /Act 4/);
+    assert(!r.cards().some(c => c.dataset.characterId === 'karkat'));
+    for (const value of [6, 20, 32]) {
+      r.stage(value);
+      assert.equal(r.ids['reading-progress'].value, '5');
+      assert.equal(r.saved(), 'act-4');
+      assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE/);
+    }
+    r.stage(1);
+    assert.equal(r.cards().length, 3);
+  }
+});
+
+test('the production cap is enforced and invalid caps fail closed', () => {
+  const r = reference({ saved: 'act-7' });
+  const data = r.window.HOMESTUCK_REFERENCE;
+  const cap = data.stages.find(s => s.key === data.availableThrough);
+  assert(cap);
+  assert.equal(r.ids['reading-progress'].max, String(cap.value));
+  assert.equal(r.ids['reading-progress-output'].textContent, cap.label);
+  for (const availableThrough of ['act-1', 'not-a-stage', null]) {
+    const closed = reference({ availableThrough, saved: 'act-7' });
+    closed.stage(32);
+    assert.equal(closed.ids['reading-progress'].max, '1');
+    assert.equal(closed.ids['reading-progress-output'].textContent, 'Act 1');
+    assert.equal(closed.cards().length, 3);
+  }
 });
 
 test('a missing data file leaves the reference empty with a useful error', () => {

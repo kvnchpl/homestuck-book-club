@@ -68,6 +68,8 @@
 
   const storageKey = 'homestuck-reference-progress';
   const stageIndex = new Map(stages.map((stage, index) => [stage.key, index]));
+  // A missing or invalid club cap fails closed to the first reading stage.
+  const availableStage = stages.find(stage => stage.key === data.availableThrough) || stages[0];
 
   const characterColors = {
     john:   { accent: '#0715cd', text: '#0715cd' },
@@ -94,9 +96,10 @@
   let currentCards = [];
 
   function stageFor(valueOrKey) {
-    return stages.find(stage =>
+    const requested = stages.find(stage =>
       stage.key === String(valueOrKey) || stage.value === Number(valueOrKey)
     ) || stages[0];
+    return requested.value > availableStage.value ? availableStage : requested;
   }
 
   function reached(requiredKey, atKey = currentStage.key) {
@@ -128,10 +131,7 @@
     try {
       const saved = localStorage.getItem(storageKey);
       if (!saved) return stages[0];
-      const byKey = stages.find(stage => stage.key === saved);
-      if (byKey) return byKey;
-      const byOldNumericValue = stages.find(stage => stage.value === Number(saved));
-      return byOldNumericValue || stages[0];
+      return stageFor(saved);
     } catch {
       return stages[0];
     }
@@ -409,8 +409,8 @@
     progress.value = String(stage.value);
     progress.setAttribute('aria-valuetext', stage.label);
     const first = stages[0].value;
-    const last = stages.at(-1).value;
-    const percent = stages.length === 1 ? 0 : ((stage.value - first) / (last - first)) * 100;
+    const last = availableStage.value;
+    const percent = last === first ? 0 : ((stage.value - first) / (last - first)) * 100;
     progress.style.setProperty('--reading-progress-percent', `${percent}%`);
     progressOutput.value = stage.label;
     progressOutput.textContent = stage.label;
@@ -433,9 +433,17 @@
   }
 
   progress.min = String(stages[0].value);
-  progress.max = String(stages.at(-1).value);
+  progress.max = String(availableStage.value);
   progress.step = '1';
-  progressScale.style.setProperty('--reading-stage-count', String(stages.length));
+  const timeline = document.getElementById('reading-progress-timeline');
+  const clubLimit = document.getElementById('reading-progress-limit');
+  if (timeline) {
+    timeline.style.setProperty('--reading-stage-count', String(stages.length));
+    const fraction = stages.length === 1 ? 1 : (availableStage.value - stages[0].value) /
+      (stages.at(-1).value - stages[0].value);
+    timeline.style.setProperty('--reading-available-fraction', String(fraction));
+  }
+  if (clubLimit) clubLimit.textContent = `Book club limit: ${availableStage.label}. Later sections are locked. Scroll sideways to see the full timeline.`;
 
   for (const stage of stages) {
     const button = document.createElement('button');
@@ -443,9 +451,12 @@
     button.className = 'reading-progress-tick';
     button.dataset.stageKey = stage.key;
     button.textContent = stage.shortLabel;
-    button.setAttribute('aria-label', `Show reference through ${stage.label}`);
+    const locked = stage.value > availableStage.value;
+    button.disabled = locked;
+    button.title = locked ? `${stage.label} — not yet available` : stage.label;
+    button.setAttribute('aria-label', locked ? `${stage.label} — not yet available` : `Show reference through ${stage.label}`);
     button.setAttribute('aria-pressed', 'false');
-    button.addEventListener('click', () => applyProgress(stage.key));
+    if (!locked) button.addEventListener('click', () => applyProgress(stage.key));
     progressScale.append(button);
   }
 
