@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Create smaller WebP candidates without modifying source artwork.
+"""Create standardized WebP files without modifying source artwork.
 
-Requires Pillow and gif2webp (libwebp). Only candidates smaller than their source
-are written. Use originals as inputs, not previously compressed derivatives.
+Requires Pillow and gif2webp (libwebp). Writes the smallest WebP candidate even
+when the source is smaller. Use originals, not previously compressed derivatives.
 """
 import argparse
 from concurrent.futures import ThreadPoolExecutor
@@ -25,7 +25,7 @@ def animation_info(path):
         return image.size, image.n_frames, sum(durations), image.info.get('loop')
 
 
-def optimize(source, output_dir, quality, max_width):
+def optimize(source, output_dir, quality, max_width, lossless_only=False):
     destination = output_dir / source.with_suffix('.webp').name
     if destination.resolve() == source.resolve():
         raise ValueError(f'Use a separate output directory for {source}')
@@ -33,7 +33,7 @@ def optimize(source, output_dir, quality, max_width):
     size, frames, duration, loop = animation_info(source)
     with tempfile.TemporaryDirectory() as temporary:
         candidates = []
-        for lossless in (False, True):
+        for lossless in ((True,) if lossless_only else (False, True)):
             candidate = Path(temporary) / f'{lossless}.webp'
             if source.suffix.lower() == '.gif':
                 if max_width and size[0] > max_width:
@@ -49,7 +49,7 @@ def optimize(source, output_dir, quality, max_width):
                         raise ValueError('Use the original GIF for animated images')
                     if max_width and image.width > max_width:
                         image = image.resize((max_width, round(image.height * max_width / image.width)), Image.Resampling.LANCZOS)
-                    image.save(candidate, 'WEBP', quality=quality, method=6, lossless=lossless)
+                    image.save(candidate, 'WEBP', quality=quality, method=6, lossless=lossless, exact=True)
             candidates.append(candidate)
         best = min(candidates, key=lambda path: path.stat().st_size)
         result_size, result_frames, result_duration, result_loop = animation_info(best)
@@ -60,10 +60,9 @@ def optimize(source, output_dir, quality, max_width):
             expected_loop = 1 if loop is None else (loop + 1 if loop else 0)
             assert result_frames > 1 and result_duration == duration and result_loop == expected_loop, f'{source}: changed animation timing/loop'
         after = best.stat().st_size
-        if after < before:
-            shutil.copyfile(best, destination)
-        return {'source': str(source), 'output': str(destination) if after < before else None,
-                'before': before, 'after': min(before, after), 'width': result_size[0],
+        shutil.copyfile(best, destination)
+        return {'source': str(source), 'output': str(destination),
+                'before': before, 'after': after, 'width': result_size[0],
                 'height': result_size[1], 'frames': result_frames,
                 'duration_ms': result_duration, 'lossless': best.stem == 'True'}
 
@@ -74,6 +73,7 @@ def main():
     parser.add_argument('--output-dir', required=True, type=Path)
     parser.add_argument('--quality', type=int, default=65)
     parser.add_argument('--max-width', type=int)
+    parser.add_argument('--lossless', action='store_true', help='preserve pixels; recommended for character portraits')
     args = parser.parse_args()
     if not 0 <= args.quality <= 100 or (args.max_width is not None and args.max_width < 1):
         parser.error('quality must be 0–100 and max-width must be positive')
@@ -81,7 +81,7 @@ def main():
         parser.error('input basenames must be unique')
     args.output_dir.mkdir(parents=True, exist_ok=True)
     with ThreadPoolExecutor(max_workers=4) as workers:
-        results = list(workers.map(lambda source: optimize(source, args.output_dir, args.quality, args.max_width), args.images))
+        results = list(workers.map(lambda source: optimize(source, args.output_dir, args.quality, args.max_width, args.lossless), args.images))
     print(json.dumps(results, indent=2))
 
 

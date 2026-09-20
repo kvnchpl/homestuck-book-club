@@ -4,7 +4,7 @@ Audit date: September 17, 2026. Scope: the 122 images currently used in Recaps #
 
 ## Optimized delivery files — September 2026
 
-The site now serves smaller derivatives of these audited images. Of 122 active recap panels, 120 were converted to WebP: 66 lossless and 54 lossy at quality 65. `A1_01_story-0001.gif` and `A5_13_story-2253.gif` remain GIF because they were smaller than either WebP candidate. Panel dimensions and source-page suffixes are unchanged; all 52 animations retain their playback timing and looping.
+The site now serves smaller derivatives of these audited images. All 122 active recap panels use WebP: 68 lossless and 54 lossy at quality 65. The two panels whose WebP files are slightly larger than their original GIFs also use WebP for format consistency. Panel dimensions and source-page suffixes are unchanged; all 52 animations retain their playback timing and looping.
 
 The asset column below names the current delivery file. The original source URLs and verification evidence are unchanged. The audit findings below describe the **original GIF files before optimization**, including their original pixel comparisons and byte-for-byte matches; those claims do not imply the lossy delivery files are byte-identical to the sources. Original files remain available in Git history. See `tools/optimize_images.py` and the README for the repeatable conversion process.
 
@@ -34,13 +34,13 @@ Source media paths were read from the official Homestuck story-page components. 
 
 New frame exports retain the native stage proportions and are encoded as static GIFs without added margins or cropping. Existing animated panels were left intact. All 122 active images are 650 pixels wide, their HTML dimensions match their files, and the revised alternative text describes the selected images.
 
-This audit covers images referenced by Recaps #1–4, not every unused file in `assets/`. The former `A4_02_story-1674.gif` diagram remains unused; it must not be reused under this sourcing standard. Other unused assets require a source check before use.
+This audit covers images referenced by Recaps #1–4. Unused assets have been removed from `assets/`, including the former `A4_02_story-1674.gif` diagram, which does not meet this sourcing standard. Check provenance before restoring any image from history.
 
 ## Recap #1
 
 | Slide | Asset | Source | Verification |
 | --- | --- | --- | --- |
-| 2 | `A1_01_story-0001.gif` | [p. 1](https://homestuck.com/story/1) | Main panel matched: [00001.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-1/00001.gif). |
+| 2 | `A1_01_story-0001.webp` | [p. 1](https://homestuck.com/story/1) | Main panel matched: [00001.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-1/00001.gif). |
 | 3 | `A1_02_story-0004.webp` | [p. 4](https://homestuck.com/story/4) | Main panel matched: [00004.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-1/00004.gif). |
 | 4 | `A1_03_story-0090.webp` | [p. 90](https://homestuck.com/story/90) | Complete-frame composition verified against [official SWF](https://storage.homestuck.com/story/homestuck/media/flashes/act-1/00090.swf), near frame 61. |
 | 5 | `A1_04_story-0132.webp` | [p. 132](https://homestuck.com/story/132) | Main panel matched: [00132.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-1/00132.gif). |
@@ -153,7 +153,7 @@ The reading covers story pages 1989–2625. Official media basenames sometimes d
 | 11 | `A5_10_story-2195.webp` | [p. 2195](https://homestuck.com/story/2195) | Main panel matched: [02195.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-5-act-1/02195.gif) (panel 1). |
 | 12 | `A5_11_story-2176.webp` | [p. 2176](https://homestuck.com/story/2176) | Main panel matched: [02176.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-5-act-1/02176.gif) (panel 2). |
 | 13 | `A5_12_story-2250.webp` | [p. 2250](https://homestuck.com/story/2250) | Main panel matched: [02250.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-5-act-1/02250.gif) (panel 1). |
-| 14 | `A5_13_story-2253.gif` | [p. 2253](https://homestuck.com/story/2253) | Main panel matched: [02253.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-5-act-1/02253.gif) (panel 1). |
+| 14 | `A5_13_story-2253.webp` | [p. 2253](https://homestuck.com/story/2253) | Main panel matched: [02253.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-5-act-1/02253.gif) (panel 1). |
 | 15 | `A5_14_story-2578.webp` | [p. 2578](https://homestuck.com/story/2578) | Complete frame exported from [official SWF](https://storage.homestuck.com/story/homestuck/media/flashes/act-5-act-1/02577.swf), frame 2071. |
 | 16 | `A5_15_story-2088.webp` | [p. 2088](https://homestuck.com/story/2088) | Main panel matched: [02088.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-5-act-1/02088.gif) (panel 1). |
 | 17 | `A5_16_story-2192.webp` | [p. 2192](https://homestuck.com/story/2192) | Main panel matched: [02192.gif](https://storage.homestuck.com/story/homestuck/media/images/panels/act-5-act-1/02192.gif) (panel 1). |

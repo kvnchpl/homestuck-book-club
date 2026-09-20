@@ -89,11 +89,9 @@ def image_dimensions(path):
 paths = sorted(ROOT.rglob('index.html'))
 pages = {p.relative_to(ROOT).as_posix(): Page(p) for p in paths}
 assert all(p.is_file() for p in (ROOT / 'assets').iterdir()), 'Keep assets directly under assets/'
-for asset in (ROOT / 'assets').glob('*.gif'):
-    header = asset.read_bytes()[:10]
-    assert header[:6] in (b'GIF87a', b'GIF89a'), f'{asset.name}: not a GIF image'
-    dimensions = (int.from_bytes(header[6:8], 'little'), int.from_bytes(header[8:10], 'little'))
-    assert dimensions[0] == 650 and dimensions[1] > 0, f'{asset.name}: expected 650px width and a proportional height, got {dimensions}'
+asset_paths = {p.resolve() for p in (ROOT / 'assets').iterdir() if not p.name.startswith('.')}
+assert all(p.suffix == '.webp' for p in asset_paths), 'Use WebP for all site images'
+referenced_assets = set()
 
 for name, page in pages.items():
     tree = page.root
@@ -132,6 +130,7 @@ for name, page in pages.items():
                         url.fragment.isdigit() and 1 <= int(url.fragment) <= len(by_class(destination.root, 'slide'))
                     ), f'{name}: broken fragment {link}'
                 if element.tag == 'img':
+                    referenced_assets.add((ROOT / target).resolve())
                     assert Path(target).parent == Path('assets'), f'{name}: image outside assets/'
                     assert element.get('alt', '').strip(), f'{name}: missing image description'
                     assert int(element.get('width', 0)) > 0 and int(element.get('height', 0)) > 0
@@ -200,20 +199,15 @@ def check_reference(item, path='reference', stage=None):
             asset = (ROOT / 'reference' / item['src']).resolve()
             assert asset.parent == ROOT / 'assets' and asset.is_file(), f'{path}: missing portrait {item["src"]}'
             assert item.get('alt', '').strip(), f'{path}: missing portrait description'
-            image = asset.read_bytes()
-            if asset.suffix == '.png':
-                assert image[:8] == b'\x89PNG\r\n\x1a\n', f'{asset}: expected PNG'
-                dimensions = (int.from_bytes(image[16:20], 'big'), int.from_bytes(image[20:24], 'big'))
-                assert all(0 < side <= 650 for side in dimensions), f'{asset}: use individual portraits'
-            elif asset.suffix == '.webp':
-                assert image[:4] == b'RIFF' and image[8:12] == b'WEBP', f'{asset}: expected WebP'
-            else:
-                raise AssertionError(f'{asset}: unsupported portrait format')
+            referenced_assets.add(asset)
+            dimensions = image_dimensions(asset)
+            assert all(0 < side <= 650 for side in dimensions), f'{asset}: use individual portraits'
         for key, child in item.items():
             check_reference(child, f'{path}.{key}', stage)
 
 
 check_reference(data)
+assert referenced_assets == asset_paths, f'Unused assets: {sorted(str(p.relative_to(ROOT)) for p in asset_paths - referenced_assets)}'
 for character in data['characters']:
     group = character['group']
     assignments = [v['value'] for v in group] if isinstance(group, list) else [group]

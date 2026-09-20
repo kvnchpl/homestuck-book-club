@@ -278,7 +278,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "value": {
-            "src": "../assets/ref-john.png",
+            "src": "../assets/ref-john.webp",
             "alt": "John Egbert"
           },
           "sourcePage": 3,
@@ -363,7 +363,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "value": {
-            "src": "../assets/ref-rose.png",
+            "src": "../assets/ref-rose.webp",
             "alt": "Rose Lalonde"
           },
           "sourcePage": 216,
@@ -448,7 +448,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": {
-            "src": "../assets/ref-dave.png",
+            "src": "../assets/ref-dave.webp",
             "alt": "Dave Strider"
           },
           "sourcePage": 311,
@@ -534,7 +534,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": {
-            "src": "../assets/ref-jade.png",
+            "src": "../assets/ref-jade.webp",
             "alt": "Jade Harley"
           },
           "sourcePage": 766,
@@ -624,7 +624,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-aradia.png",
+            "src": "../assets/ref-aradia.webp",
             "alt": "Aradia Megido"
           },
           "sourcePage": 2134,
@@ -686,7 +686,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-tavros.png",
+            "src": "../assets/ref-tavros.webp",
             "alt": "Tavros Nitram"
           },
           "sourcePage": 2101,
@@ -748,7 +748,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-sollux.png",
+            "src": "../assets/ref-sollux.webp",
             "alt": "Sollux Captor"
           },
           "sourcePage": 2076,
@@ -823,7 +823,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-karkat.png",
+            "src": "../assets/ref-karkat.webp",
             "alt": "Karkat Vantas"
           },
           "sourcePage": 1994,
@@ -897,7 +897,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-nepeta.png",
+            "src": "../assets/ref-nepeta.webp",
             "alt": "Nepeta Leijon"
           },
           "sourcePage": 2156,
@@ -971,7 +971,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-kanaya.png",
+            "src": "../assets/ref-kanaya.webp",
             "alt": "Kanaya Maryam"
           },
           "sourcePage": 2323,
@@ -1045,7 +1045,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-terezi.png",
+            "src": "../assets/ref-terezi.webp",
             "alt": "Terezi Pyrope"
           },
           "sourcePage": 2031,
@@ -1119,7 +1119,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-vriska.png",
+            "src": "../assets/ref-vriska.webp",
             "alt": "Vriska Serket"
           },
           "sourcePage": 2195,
@@ -1193,7 +1193,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-equius.png",
+            "src": "../assets/ref-equius.webp",
             "alt": "Equius Zahhak"
           },
           "sourcePage": 2211,
@@ -1255,7 +1255,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-gamzee.png",
+            "src": "../assets/ref-gamzee.webp",
             "alt": "Gamzee Makara"
           },
           "sourcePage": 2012,
@@ -1320,7 +1320,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-eridan.png",
+            "src": "../assets/ref-eridan.webp",
             "alt": "Eridan Ampora"
           },
           "sourcePage": 2408,
@@ -1396,7 +1396,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-feferi.png",
+            "src": "../assets/ref-feferi.webp",
             "alt": "Feferi Peixes"
           },
           "sourcePage": 2422,
@@ -1472,7 +1472,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "value": {
-            "src": "../assets/ref-dad.png",
+            "src": "../assets/ref-dad.webp",
             "alt": "Dad"
           },
           "sourcePage": 89,
@@ -1534,7 +1534,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": {
-            "src": "../assets/ref-mom.png",
+            "src": "../assets/ref-mom.webp",
             "alt": "Mom"
           },
           "sourcePage": 388,
@@ -1591,7 +1591,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": {
-            "src": "../assets/ref-bro.png",
+            "src": "../assets/ref-bro.webp",
             "alt": "Bro"
           },
           "sourcePage": 757,
@@ -1667,7 +1667,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": {
-            "src": "../assets/ref-grandpa.png",
+            "src": "../assets/ref-grandpa.webp",
             "alt": "Grandpa Harley"
           },
           "sourcePage": 919,
@@ -1733,7 +1733,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": {
-            "src": "../assets/ref-nannasprite.png",
+            "src": "../assets/ref-nannasprite.webp",
             "alt": "Nannasprite"
           },
           "sourcePage": 420,
@@ -1808,7 +1808,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": {
-            "src": "../assets/ref-jaspersprite.png",
+            "src": "../assets/ref-jaspersprite.webp",
             "alt": "Jaspersprite"
           },
           "sourcePage": 1626,
@@ -1879,7 +1879,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": {
-            "src": "../assets/ref-davesprite.png",
+            "src": "../assets/ref-davesprite.webp",
             "alt": "Davesprite"
           },
           "sourcePage": 1651,
@@ -1948,7 +1948,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": {
-            "src": "../assets/ref-bec.png",
+            "src": "../assets/ref-bec.webp",
             "alt": "Becquerel"
           },
           "sourcePage": 943,
@@ -2013,7 +2013,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": {
-            "src": "../assets/ref-wv.png",
+            "src": "../assets/ref-wv.webp",
             "alt": "Wayward Vagabond"
           },
           "sourcePage": 666,
@@ -2097,7 +2097,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": {
-            "src": "../assets/ref-pm.png",
+            "src": "../assets/ref-pm.webp",
             "alt": "Peregrine Mendicant"
           },
           "sourcePage": 892,
@@ -2178,7 +2178,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": {
-            "src": "../assets/ref-ar.png",
+            "src": "../assets/ref-ar.webp",
             "alt": "Aimless Renegade"
           },
           "sourcePage": 1100,
@@ -2257,7 +2257,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": {
-            "src": "../assets/ref-wq.png",
+            "src": "../assets/ref-wq.webp",
             "alt": "Windswept Questant"
           },
           "sourcePage": 1543,
@@ -2328,7 +2328,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": {
-            "src": "../assets/ref-jack-noir.png",
+            "src": "../assets/ref-jack-noir.webp",
             "alt": "Jack Noir"
           },
           "sourcePage": 955,
@@ -2407,7 +2407,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": {
-            "src": "../assets/ref-dd.png",
+            "src": "../assets/ref-dd.webp",
             "alt": "Draconian Dignitary"
           },
           "sourcePage": 1532,
@@ -2465,7 +2465,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": {
-            "src": "../assets/ref-cd.png",
+            "src": "../assets/ref-cd.webp",
             "alt": "Courtyard Droll"
           },
           "sourcePage": 1784,
@@ -2525,7 +2525,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": {
-            "src": "../assets/ref-hb.png",
+            "src": "../assets/ref-hb.webp",
             "alt": "Hegemonic Brute"
           },
           "sourcePage": 957,
@@ -2585,7 +2585,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-4",
           "value": {
-            "src": "../assets/ref-black-queen.png",
+            "src": "../assets/ref-black-queen.webp",
             "alt": "Snowman in her earlier Black Queen form"
           },
           "sourcePage": 1674,
@@ -2663,7 +2663,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-doc-scratch.png",
+            "src": "../assets/ref-doc-scratch.webp",
             "alt": "Doc Scratch"
           },
           "sourcePage": 2253,
@@ -2735,7 +2735,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "intermission",
           "value": {
-            "src": "../assets/ref-lord-english.png",
+            "src": "../assets/ref-lord-english.webp",
             "alt": "Lord English's name"
           },
           "sourcePage": 1155,
