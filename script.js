@@ -10,7 +10,6 @@
   const roster = document.getElementById('character-roster');
   const groupsContainer = document.getElementById('character-groups');
   const cheatsContainer = document.getElementById('reference-cheats');
-  const progress = document.getElementById('reading-progress');
   const progressScale = document.getElementById('reading-progress-scale');
   const progressOutput = document.getElementById('reading-progress-output');
   const progressStatus = document.getElementById('reading-progress-status');
@@ -18,7 +17,7 @@
   const loadingMessage = document.getElementById('reference-loading');
 
   if (!data || !select || !roster || !groupsContainer || !cheatsContainer ||
-      !progress || !progressScale || !progressOutput || !progressStatus) {
+      !progressScale || !progressOutput || !progressStatus) {
     if (loadingMessage) {
       loadingMessage.textContent = 'The spoiler-safe reference could not be loaded.';
     }
@@ -406,12 +405,6 @@
   }
 
   function updateStageUI(stage) {
-    progress.value = String(stage.value);
-    progress.setAttribute('aria-valuetext', stage.label);
-    const first = stages[0].value;
-    const last = availableStage.value;
-    const percent = last === first ? 0 : ((stage.value - first) / (last - first)) * 100;
-    progress.style.setProperty('--reading-progress-percent', `${percent}%`);
     progressOutput.value = stage.label;
     progressOutput.textContent = stage.label;
     progressStatus.textContent = `Showing only information revealed through ${stage.label}.`;
@@ -432,20 +425,25 @@
     if (persist) saveStage(currentStage);
   }
 
-  progress.min = String(stages[0].value);
-  progress.max = String(availableStage.value);
-  progress.step = '1';
-  const timeline = document.getElementById('reading-progress-timeline');
   const clubLimit = document.getElementById('reading-progress-limit');
-  if (timeline) {
-    timeline.style.setProperty('--reading-stage-count', String(stages.length));
-    const fraction = stages.length === 1 ? 1 : (availableStage.value - stages[0].value) /
-      (stages.at(-1).value - stages[0].value);
-    timeline.style.setProperty('--reading-available-fraction', String(fraction));
-  }
-  if (clubLimit) clubLimit.textContent = `Book club limit: ${availableStage.label}. Later sections are locked. Scroll sideways to see the full timeline.`;
+  if (clubLimit) clubLimit.textContent = `Book club limit: ${availableStage.label}. Shaded segments are locked.`;
 
+  const stageSections = new Map();
   for (const stage of stages) {
+    const sectionLabel = stage.section || 'Reading segments';
+    if (!stageSections.has(sectionLabel)) {
+      const section = document.createElement('section');
+      section.className = 'reading-progress-section';
+      const heading = document.createElement('h3');
+      heading.id = `reading-section-${stageSections.size + 1}`;
+      heading.textContent = sectionLabel;
+      section.setAttribute('aria-labelledby', heading.id);
+      const segments = document.createElement('div');
+      segments.className = 'reading-progress-segments';
+      section.append(heading, segments);
+      progressScale.append(section);
+      stageSections.set(sectionLabel, segments);
+    }
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'reading-progress-tick';
@@ -457,10 +455,9 @@
     button.setAttribute('aria-label', locked ? `${stage.label} — not yet available` : `Show reference through ${stage.label}`);
     button.setAttribute('aria-pressed', 'false');
     if (!locked) button.addEventListener('click', () => applyProgress(stage.key));
-    progressScale.append(button);
+    stageSections.get(sectionLabel).append(button);
   }
 
-  progress.addEventListener('input', () => applyProgress(progress.value));
   window.addEventListener('hashchange', () => {
     const id = characterFromHash();
     if (id) showCharacter(id, { updateHash: false });

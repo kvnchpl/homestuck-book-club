@@ -627,133 +627,63 @@ button {
   color: #535353;
 }
 
-.reading-progress-scroll {
-  overflow-x: auto;
-  padding-bottom: 8px;
-}
-
-.reading-progress-timeline {
-  --reading-stage-count: 1;
-  --reading-available-fraction: 1;
-  --reading-tick-width: 72px;
-  min-width: calc(var(--reading-stage-count) * var(--reading-tick-width));
-}
-
-.reading-progress-track {
-  position: relative;
-  /* Each thumb position lines up with the center of its label below. */
-  margin-inline: calc(var(--reading-tick-width) / 2 - 8px);
-}
-
-.reading-progress-track::before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 8px;
-  right: 8px;
-  height: 4px;
-  box-sizing: border-box;
-  border: 1px solid #bbb;
-  background: #d0d0d0;
-}
-
-#reading-progress {
-  --reading-progress-percent: 0%;
-  display: block;
-  position: relative;
-  width: calc((100% - 16px) * var(--reading-available-fraction) + 16px);
-  height: 28px;
-  margin: 0;
-  padding: 0;
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-#reading-progress::-webkit-slider-runnable-track {
-  height: 4px;
-  border: 1px solid #777;
-  background:
-    linear-gradient(
-      to right,
-      #ffb529 0 var(--reading-progress-percent),
-      #bbb var(--reading-progress-percent) 100%
-    );
-}
-
-#reading-progress::-webkit-slider-thumb {
-  width: 16px;
-  height: 16px;
-  margin-top: -7px;
-  border: 2px solid #000;
-  border-radius: 0;
-  appearance: none;
-  -webkit-appearance: none;
-  background: #fff;
-}
-
-#reading-progress::-moz-range-track {
-  height: 4px;
-  border: 1px solid #777;
-  background: #bbb;
-}
-
-#reading-progress::-moz-range-progress {
-  height: 4px;
-  background: #ffb529;
-}
-
-#reading-progress::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
-  border: 2px solid #000;
-  border-radius: 0;
-  background: #fff;
-}
-
 .reading-progress-scale {
   display: grid;
-  grid-template-columns: repeat(var(--reading-stage-count, 6), minmax(0, 1fr));
-  gap: 0;
-  margin-top: 2px;
+  gap: 12px;
+}
+
+.reading-progress-section {
+  min-width: 0;
+}
+
+.reading-progress-section h3 {
+  margin: 0 0 6px;
+  font: 700 11px/1.4 Verdana, Arial, sans-serif;
+  text-align: left;
+}
+
+.reading-progress-segments {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 5px;
 }
 
 .reading-progress-tick {
   min-width: 0;
-  padding: 5px 2px;
-  border: 0;
-  background: transparent;
-  color: #444;
+  min-height: 32px;
+  padding: 6px 3px;
+  border: 1px solid #999;
+  border-radius: 0;
+  background: #f7f7f7;
+  color: #222;
   cursor: pointer;
-  font: 700 9px/1.25 Verdana, Arial, sans-serif;
+  font: 700 10px/1.25 Verdana, Arial, sans-serif;
   text-align: center;
 }
 
-.reading-progress-tick:not(:disabled):hover,
+.reading-progress-tick:not(:disabled):hover {
+  background: #fff2cc;
+  border-color: #555;
+}
+
 .reading-progress-tick:focus-visible {
-  color: #000;
-  text-decoration: underline;
+  outline: 2px solid #000;
+  outline-offset: 2px;
 }
 
 .reading-progress-tick:disabled {
-  color: #757575;
+  color: #6b6b6b;
+  border-color: #bcbcbc;
+  border-style: dashed;
+  background: #d5d5d5;
   cursor: not-allowed;
-}
-
-.reading-progress-tick:disabled::after {
-  content: 'Locked';
-  display: block;
-  margin-top: 3px;
-  font-weight: 400;
-  font-size: 8px;
 }
 
 .reading-progress-tick[aria-pressed="true"] {
   color: #000;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 2px;
+  background: #ffcf70;
+  border-color: #000;
+  box-shadow: inset 0 0 0 1px #000;
 }
 
 .reading-progress-status {
@@ -1076,9 +1006,8 @@ button {
     padding-inline: 12px;
   }
 
-  .reading-progress-tick {
-    padding-inline: 0;
-    font-size: 8px;
+  .reading-progress-segments {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .reference-page {

@@ -22,7 +22,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "Act 1",
       "endPage": 247,
       "sourcePage": 247,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 2,
@@ -31,7 +32,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "Act 2",
       "endPage": 758,
       "sourcePage": 758,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 3,
@@ -40,7 +42,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "Act 3",
       "endPage": 1153,
       "sourcePage": 1153,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 4,
@@ -49,7 +52,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "Inter.",
       "endPage": 1357,
       "sourcePage": 1357,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 5,
@@ -58,7 +62,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "Act 4",
       "endPage": 1988,
       "sourcePage": 1988,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 6,
@@ -67,7 +72,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A5A1",
       "endPage": 2625,
       "sourcePage": 2625,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 7,
@@ -76,7 +82,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A5A2 · 1",
       "endPage": 3173,
       "sourcePage": 3173,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 8,
@@ -85,7 +92,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A5A2 · 2",
       "endPage": 3625,
       "sourcePage": 3625,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 9,
@@ -94,7 +102,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A5A2 · 3",
       "endPage": 4110,
       "sourcePage": 4110,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 10,
@@ -103,7 +112,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "I2",
       "endPage": 4112,
       "sourcePage": 4112,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Acts 1–5 & intermissions"
     },
     {
       "value": 11,
@@ -112,7 +122,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A1",
       "endPage": 4291,
       "sourcePage": 4291,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 12,
@@ -121,7 +132,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6I1",
       "endPage": 4416,
       "sourcePage": 4416,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 13,
@@ -130,7 +142,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A2",
       "endPage": 4666,
       "sourcePage": 4666,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 14,
@@ -139,7 +152,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6I2",
       "endPage": 4819,
       "sourcePage": 4819,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 15,
@@ -148,7 +162,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A3",
       "endPage": 5259,
       "sourcePage": 5259,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 16,
@@ -157,7 +172,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6I3",
       "endPage": 5434,
       "sourcePage": 5434,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 17,
@@ -166,7 +182,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A4",
       "endPage": 5437,
       "sourcePage": 5437,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 18,
@@ -175,7 +192,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6I4",
       "endPage": 5508,
       "sourcePage": 5508,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 19,
@@ -184,7 +202,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A5",
       "endPage": 5923,
       "sourcePage": 5923,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 20,
@@ -193,7 +212,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6I5",
       "endPage": 6239,
       "sourcePage": 6239,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6"
     },
     {
       "value": 21,
@@ -202,7 +222,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6A1",
       "endPage": 6277,
       "sourcePage": 6277,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 22,
@@ -211,7 +232,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6I1",
       "endPage": 6474,
       "sourcePage": 6474,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 23,
@@ -220,7 +242,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6A2",
       "endPage": 6530,
       "sourcePage": 6530,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 24,
@@ -229,7 +252,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6I2",
       "endPage": 6852,
       "sourcePage": 6852,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 25,
@@ -238,7 +262,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6A3",
       "endPage": 6901,
       "sourcePage": 6901,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 26,
@@ -247,7 +272,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6I3",
       "endPage": 6920,
       "sourcePage": 6920,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 27,
@@ -256,7 +282,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6A4",
       "endPage": 6943,
       "sourcePage": 6943,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 28,
@@ -265,7 +292,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6I4",
       "endPage": 7408,
       "sourcePage": 7408,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 29,
@@ -274,7 +302,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6A5",
       "endPage": 7448,
       "sourcePage": 7448,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 30,
@@ -283,7 +312,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6I5",
       "endPage": 8086,
       "sourcePage": 8086,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 31,
@@ -292,7 +322,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A6A6A6",
       "endPage": 8126,
       "sourcePage": 8126,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     },
     {
       "value": 32,
@@ -301,7 +332,8 @@ window.HOMESTUCK_REFERENCE = {
       "shortLabel": "A7",
       "endPage": 8129,
       "sourcePage": 8129,
-      "sourceKind": "boundary"
+      "sourceKind": "boundary",
+      "section": "Act 6 Act 6 & Act 7"
     }
   ],
   "groups": [

@@ -67,9 +67,9 @@ The September 2026 pass reduced the homepage image from 2,791,434 to 70,868 byte
 
 ## Staged reference data
 
-The reference timeline includes all 32 scheduled reading segments through Act 7, including the three Act 5 Act 2 reading assignments. Labels use act numbers rather than story titles. The full timeline scrolls horizontally, with later stops disabled. Character content is currently authored through Act 5 Act 1.
+The reference selector includes all 32 scheduled reading segments through Act 7, including the three Act 5 Act 2 reading assignments. All segments appear in a responsive button grid, grouped by each stage’s `section` label. The grid uses six columns on desktop and four on small screens, with no internal scrolling or collapsed groups. Labels use act numbers rather than story titles. Shaded buttons are locked; the selected segment is highlighted. Character content is currently authored through Act 5 Act 1.
 
-`availableThrough` in `reference-data.js` sets the book club's maximum selectable stage, currently `act-5-act-1`. Advance this key after the club reaches the next segment and its reference content is ready; it does not advance automatically by date. The native slider maximum, milestone buttons, saved progress, and rendering all respect this cap. Missing or invalid caps fall back to Act 1. A fresh visit starts at Act 1. Progress is saved under `homestuck-reference-progress` in local storage; blocked storage does not prevent use.
+`availableThrough` in `reference-data.js` sets the book club's maximum selectable stage, currently `act-5-act-1`. Advance this key after the club reaches the next segment and its reference content is ready; it does not advance automatically by date. The segment buttons, saved progress, and rendering all respect this cap. Missing or invalid caps fall back to Act 1. A fresh visit starts at Act 1. Progress is saved under `homestuck-reference-progress` in local storage; blocked storage does not prevent use.
 
 Spoiler-sensitive values are ordered variants:
 
@@ -99,11 +99,11 @@ Every user-facing reference record carries a primary `sourcePage`. Optional `sou
 
 `sourceNote` records audit context; `sourceAudit` records the scope and date of prior manual fact-checking. The renderer warns about missing source pages; the tests also check stage order, source boundaries, and asset availability.
 
-To prepare a later segment, add its content variants in stage order using the existing stage key. Keep `availableThrough` at the club's current boundary until the new segment is ready to open. If the schedule gains a segment, update the stage array with consecutive numeric values, unique keys, labels, and matching end pages. The slider and milestone buttons are generated from this array. Update the reference page description when its authored coverage changes.
+To prepare a later segment, add its content variants in stage order using the existing stage key. Keep `availableThrough` at the club's current boundary until the new segment is ready to open. If the schedule gains a segment, update the stage array with consecutive numeric values, unique keys, labels, and matching end pages. The grouped segment buttons are generated from this array. Update the reference page description when its authored coverage changes.
 
 The reference requires JavaScript and stays empty if its data cannot load. Printing includes every character rendered for the selected stage, including profiles hidden by tab selection; later-stage facts remain absent.
 
-The reference shell versions its stylesheet, data, and renderer URLs together. Bump their shared `v` query value when changing the cap or timeline behavior so returning visitors load the matching assets.
+The reference shell versions its stylesheet, data, and renderer URLs together. Bump their shared `v` query value when changing the cap or selector behavior so returning visitors load the matching assets.
 
 ## Portrait download helpers
 

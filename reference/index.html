@@ -7,9 +7,9 @@
   <meta name="description"
     content="A spoiler-conscious Homestuck quick reference for the book club, current through Meeting #4 and Act 5 Act 1.">
   <title>REFERENCE — HOMESTUCK BOOK CLUB</title>
-  <link rel="stylesheet" href="../styles.css?v=timeline-20260920">
-  <script src="../reference-data.js?v=timeline-20260920" defer></script>
-  <script src="../script.js?v=timeline-20260920" defer></script>
+  <link rel="stylesheet" href="../styles.css?v=stage-grid-20260920">
+  <script src="../reference-data.js?v=stage-grid-20260920" defer></script>
+  <script src="../script.js?v=stage-grid-20260920" defer></script>
 </head>
 
 <body class="reference">
@@ -41,27 +41,11 @@
         <div class="reading-progress-control">
           <div class="reading-progress-selected">
             <span>Showing through</span>
-            <output id="reading-progress-output" for="reading-progress">Act 1</output>
+            <output id="reading-progress-output">Act 1</output>
           </div>
 
           <p class="reading-progress-limit" id="reading-progress-limit"></p>
-          <div class="reading-progress-scroll" tabindex="0" role="region" aria-label="Reading timeline, scroll horizontally for later sections">
-            <div class="reading-progress-timeline" id="reading-progress-timeline">
-              <div class="reading-progress-track">
-                <input
-                  id="reading-progress"
-                  type="range"
-                  min="1"
-                  max="1"
-                  step="1"
-                  value="1"
-                  aria-labelledby="reading-progress-heading"
-                  aria-describedby="reading-progress-copy reading-progress-status reading-progress-limit"
-                >
-              </div>
-              <div class="reading-progress-scale" id="reading-progress-scale" aria-label="Reading milestones"></div>
-            </div>
-          </div>
+          <div class="reading-progress-scale" id="reading-progress-scale" aria-label="Reading segments"></div>
         </div>
 
         <p class="reading-progress-status" id="reading-progress-status" aria-live="polite">

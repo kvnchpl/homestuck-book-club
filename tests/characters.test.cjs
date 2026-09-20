@@ -23,8 +23,8 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
     };
   }
   const ids = Object.fromEntries(['character-select', 'character-roster', 'character-groups',
-    'reference-cheats', 'reading-progress', 'reading-progress-scale', 'reading-progress-output',
-    'reading-progress-status', 'reading-progress-timeline', 'reading-progress-limit',
+    'reference-cheats', 'reading-progress-scale', 'reading-progress-output',
+    'reading-progress-status', 'reading-progress-limit',
     'reference-boundary-label', 'reference-loading'].map(id => [id, element()]));
   ids['character-select'].hidden = true;
   const location = { hash };
@@ -46,7 +46,8 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
   return { ids, location, window, warnings, saved: () => saved, focused: () => focused,
     tabs: () => all(ids['character-roster']).filter(e => e.attrs.role === 'tab'),
     cards: () => all(ids['character-groups']).filter(e => e.attrs.role === 'tabpanel'),
-    stage(value) { ids['reading-progress'].value = String(value); ids['reading-progress'].listeners.input(); },
+    ticks: () => all(ids['reading-progress-scale']).filter(e => e.className === 'reading-progress-tick'),
+    stage(value) { this.ticks()[value - 1].listeners.click?.(); },
     key(index, key) {
       const event = { key, preventDefault() { this.prevented = true; } };
       this.tabs()[index].listeners.keydown(event);
@@ -65,7 +66,7 @@ test('fresh visits render only Act 1 content, regardless of a later-character ha
   assert.equal(r.cards().find(c => !c.hidden).dataset.characterId, 'john');
   assert.doesNotMatch(text(r.ids['character-groups']), /KARKAT|DAVE|SNOWMAN/);
   assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE|ECTOBIOLOGY/);
-  assert.equal(r.ids['reading-progress'].attrs['aria-valuetext'], 'Act 1');
+  assert.equal(r.ids['reading-progress-output'].textContent, 'Act 1');
   assert.equal(r.ids['reference-loading'].hidden, true);
   assert.deepEqual(r.warnings, []);
 });
@@ -182,17 +183,19 @@ test('saved keys, legacy numeric progress, invalid storage and blocked storage a
     assert.equal(r.cards().length, 35);
   }
   const r = reference({ availableThrough: 'act-5-act-1' });
-  r.ids['reading-progress-scale'].children[5].listeners.click();
+  r.ticks()[5].listeners.click();
   assert.equal(r.saved(), 'act-5-act-1');
-  assert.equal(r.ids['reading-progress-scale'].children[5].attrs['aria-pressed'], 'true');
+  assert.equal(r.ticks()[5].attrs['aria-pressed'], 'true');
 });
 
-test('the full timeline stays visible while input, saved progress, and deep links respect the club cap', () => {
+test('all segments are grouped in reading order while buttons, saved progress, and deep links respect the club cap', () => {
   for (const saved of ['act-7', '32', 'act-5-act-1', '6']) {
     const r = reference({ saved, hash: '#character-karkat', availableThrough: 'act-4' });
-    assert.equal(r.ids['reading-progress'].max, '5');
     assert.equal(r.ids['reading-progress-output'].textContent, 'Act 4');
-    const ticks = r.ids['reading-progress-scale'].children;
+    const ticks = r.ticks();
+    assert.deepEqual(r.ids['reading-progress-scale'].children.map(section => section.children[0].textContent),
+      ['Acts 1–5 & intermissions', 'Act 6', 'Act 6 Act 6 & Act 7']);
+    assert.deepEqual(ticks.map(t => t.dataset.stageKey), Array.from(r.window.HOMESTUCK_REFERENCE.stages, s => s.key));
     assert.equal(ticks.length, 32);
     assert.equal(ticks.filter(t => !t.disabled).length, 5);
     assert(ticks.slice(5).every(t => t.disabled && !t.listeners.click));
@@ -201,8 +204,7 @@ test('the full timeline stays visible while input, saved progress, and deep link
     assert(!r.cards().some(c => c.dataset.characterId === 'karkat'));
     for (const value of [6, 20, 32]) {
       r.stage(value);
-      assert.equal(r.ids['reading-progress'].value, '5');
-      assert.equal(r.saved(), 'act-4');
+      assert.equal(r.ids['reading-progress-output'].textContent, 'Act 4');
       assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE/);
     }
     r.stage(1);
@@ -215,12 +217,12 @@ test('the production cap is enforced and invalid caps fail closed', () => {
   const data = r.window.HOMESTUCK_REFERENCE;
   const cap = data.stages.find(s => s.key === data.availableThrough);
   assert(cap);
-  assert.equal(r.ids['reading-progress'].max, String(cap.value));
+  assert.equal(r.ticks().filter(t => !t.disabled).length, cap.value);
   assert.equal(r.ids['reading-progress-output'].textContent, cap.label);
   for (const availableThrough of ['act-1', 'not-a-stage', null]) {
     const closed = reference({ availableThrough, saved: 'act-7' });
     closed.stage(32);
-    assert.equal(closed.ids['reading-progress'].max, '1');
+    assert.equal(closed.ticks().filter(t => !t.disabled).length, 1);
     assert.equal(closed.ids['reading-progress-output'].textContent, 'Act 1');
     assert.equal(closed.cards().length, 3);
   }
