@@ -49,7 +49,7 @@ Recap image filenames encode the actual source story page (`A5_01_story-1989.web
 
 ## Image optimization
 
-The homepage uses a 1300 × 975 WebP at quality 65 (enough resolution for its 650px display width on a 2× screen). Recap panels retain their 650px width and original proportions. All site images use WebP, including every recap panel and all 35 reference portraits. Portraits use lossless encoding with exact transparency preservation.
+The homepage uses a 1300 × 975 WebP at quality 65 (enough resolution for its 650px display width on a 2× screen). Recap panels retain their 650px width and original proportions. All site images use WebP, including every recap panel and the reference portraits. The portrait conversion uses lossless encoding with exact transparency preservation.
 
 Recap images use `loading="lazy"` and `decoding="async"`. The reader requests the current slide and the next slide eagerly; opening print preview requests every panel. With JavaScript disabled, the browser loads the ordinary document's images normally.
 
@@ -80,6 +80,8 @@ note: [
 
 The renderer uses the latest variant reached at the selected stage. If no variant is available, it does not insert that property into the DOM. Names, roster labels, portraits and alt text, stats, notes, group headings, and cheat-sheet copy all use this model. Character group assignments may also be staged. Quadrants become available with their containing section.
 
+For example, the guardian heading starts as `GUARDIANS` in Act 1 and becomes `GUARDIANS & SPRITES` in Act 2. Snowman's name and portrait change when her earlier identity is revealed in Act 4. Kid notes develop across the reading stages; troll notes begin at Act 5 Act 1, their first supported stage, and can gain later variants as coverage expands. Add variants to the relevant arrays rather than overwriting earlier wording. Names and compact roster labels have separate arrays; update both when an alias should also change in the roster.
+
 Each character has a stable `id`, a `reveal` stage, and an `introPage`. Character URLs use `#character-ID`; following a link does not advance reading progress. Name links point to the currently revealed name's source page. Portrait paths are relative to `reference/index.html`. A character may intentionally have no portrait at an early stage.
 
 Every user-facing reference record carries a primary `sourcePage`. Optional `sourcePages` contains additional supporting pages without repeating the primary page. All supporting pages must fall within the record's reading stage. Source metadata is not rendered publicly.
@@ -103,4 +105,4 @@ The reference requires JavaScript and stays empty if its data cannot load. Print
 
 The optional `download-reference-assets-fixed.sh` (kids and trolls) and `download-reference-secondary-assets.sh` (secondary characters) refresh selected portraits on macOS using `curl`, `sips`, and `cwebp` from libwebp. Both stage and validate each download, then encode a lossless WebP before replacing the installed portrait. They are maintenance tools, not a build step; review downloaded images before committing.
 
-`ref-black-queen.webp` is Snowman's staged Black Queen portrait. Do not change a portrait's reveal stage without checking its spoiler implications.
+`ref-snowman.webp` is the separately supplied Intermission portrait; the download helpers do not replace it. `ref-black-queen.webp` becomes Snowman's portrait at Act 4, alongside her expanded name. Both the profile image and roster thumbnail use the selected portrait variant. Do not change a portrait's reveal stage without checking its spoiler implications.

@@ -103,6 +103,81 @@ test('lowering progress removes future facts and restores earlier terminology', 
   assert.equal(r.cards().filter(c => !c.hidden).length, 1);
 });
 
+test('group headings change in both the roster and profiles, including on rollback', () => {
+  const r = reference();
+  for (const [stage, expected] of [[1, 'GUARDIANS'], [2, 'GUARDIANS & SPRITES'], [6, 'GUARDIANS & SPRITES'], [1, 'GUARDIANS']]) {
+    r.stage(stage);
+    const labels = all(r.ids['character-roster']).filter(e => e.className === 'roster-group-label');
+    assert(labels.some(e => e.textContent === expected));
+    const section = all(r.ids['character-groups']).find(e => e.id === 'guardians-sprites');
+    assert.equal(section.children[0].textContent, expected);
+    if (stage === 1) assert.doesNotMatch(text(r.ids['character-roster']), /SPRITES/);
+  }
+});
+
+test('Snowman’s name and both portraits follow the selected stage without leaking her identity', () => {
+  const r = reference({ saved: 'intermission', hash: '#character-snowman' });
+  for (const [stage, asset, name, sourcePage] of [
+    [4, 'ref-snowman.webp', 'SNOWMAN', 1268],
+    [5, 'ref-black-queen.webp', 'SNOWMAN (BLACK QUEEN)', 1674],
+    [4, 'ref-snowman.webp', 'SNOWMAN', 1268],
+  ]) {
+    r.stage(stage);
+    const card = r.cards().find(c => c.dataset.characterId === 'snowman');
+    const tab = r.tabs().find(t => t.dataset.characterId === 'snowman');
+    assert.equal(card.hidden, false);
+    assert.equal(r.location.hash, '#character-snowman');
+    const link = all(card).find(e => e.className === 'character-intro-link');
+    assert.equal(link.textContent, name);
+    assert.equal(link.href, `https://homestuck.com/story/${sourcePage}`);
+    for (const root of [card, tab]) {
+      const img = all(root).find(e => e.tagName === 'img');
+      assert.equal(img.src, `../assets/${asset}`);
+      if (stage === 4) {
+        assert.doesNotMatch(text(root), /BLACK QUEEN|troll.session/i);
+        assert.doesNotMatch(img.alt, /BLACK QUEEN/i);
+      }
+    }
+  }
+  r.stage(3);
+  assert(!r.cards().some(c => c.dataset.characterId === 'snowman'));
+  assert(!r.tabs().some(t => t.dataset.characterId === 'snowman'));
+});
+
+test('kid notes evolve and roll back, while troll notes wait for their reveal stage', () => {
+  const r = reference();
+  const note = id => {
+    const card = r.cards().find(c => c.dataset.characterId === id);
+    return card && all(card).find(e => e.className === 'character-note')?.textContent;
+  };
+  const earlyNotes = new Map();
+  for (const [stage, ids] of [[1, ['john', 'rose']], [2, ['dave']], [3, ['jade']]]) {
+    r.stage(stage);
+    for (const id of ids) {
+      assert(note(id), `${id} should have a note when first revealed`);
+      earlyNotes.set(id, note(id));
+    }
+    assert.doesNotMatch(text(r.ids['character-groups']), /ectobiology|needlewands|future Dave|moon falls/i);
+  }
+  r.stage(5);
+  for (const [id, early] of earlyNotes) assert.notEqual(note(id), early);
+  assert.match(note('john'), /ectobiology/);
+  assert.match(note('rose'), /needlewands/);
+  assert.match(note('dave'), /future Dave/);
+  assert.match(note('jade'), /moon falls/);
+  r.stage(6);
+  const trolls = r.window.HOMESTUCK_REFERENCE.characters.filter(c => c.group === 'trolls');
+  assert.equal(trolls.length, 12);
+  for (const troll of trolls) assert(note(troll.id));
+  r.stage(5);
+  for (const troll of trolls) assert.equal(note(troll.id), undefined);
+  for (const [stage, ids] of [[3, ['jade']], [2, ['dave']], [1, ['john', 'rose']]]) {
+    r.stage(stage);
+    for (const id of ids) assert.equal(note(id), earlyNotes.get(id));
+  }
+  assert.deepEqual(r.warnings, []);
+});
+
 test('character links, clicks, and keyboard navigation select and focus available tabs', () => {
   const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat' });
   const tabs = r.tabs();

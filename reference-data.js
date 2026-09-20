@@ -134,7 +134,7 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "act-1",
-          "value": "GUARDIANS & SPRITES",
+          "value": "GUARDIANS",
           "sourcePage": 88,
           "sourceKind": "editorial"
         },
@@ -335,6 +335,26 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
+      "note": [
+        {
+          "from": "act-1",
+          "value": "A birthday boy with a taste for bad movies and amateur magic, and more enthusiasm for programming than skill.",
+          "sourcePage": 4,
+          "sourceKind": "direct"
+        },
+        {
+          "from": "act-2",
+          "value": "Now inside the game, John learns from Nannasprite how his arrival and prototyping have shaped the war between light and dark.",
+          "sourcePage": 424,
+          "sourceKind": "direct"
+        },
+        {
+          "from": "act-4",
+          "value": "John discovers that he is responsible for creating the baby versions of the kids and their guardians through ectobiology, completing a loop in their own origins.",
+          "sourcePage": 1988,
+          "sourceKind": "direct"
+        }
+      ],
       "sourcePage": 4,
       "sourceKind": "intro"
     },
@@ -418,6 +438,27 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        }
+      ],
+      "note": [
+        {
+          "from": "act-1",
+          "value": "A private creative writer with an interest in psychoanalysis and strange fiction. A power outage leaves her relying on her laptop’s battery.",
+          "sourcePage": 217,
+          "sourceKind": "direct"
+        },
+        {
+          "from": "act-3",
+          "value": "With Dave acting as her server player, Rose escapes the meteor strike by bringing her house into the Medium.",
+          "sourcePage": 1149,
+          "sourceKind": "visual",
+          "sourceNote": "The Act 3 finale shows Dave helping Rose enter. The first-year recap on p. 1674 also describes these events and links to this sequence."
+        },
+        {
+          "from": "act-4",
+          "value": "Rose takes up dark magic with her new needlewands. The beings beyond the Veil advise her in dreams, including urging her to destroy her journal’s genetic code.",
+          "sourcePage": 1988,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 217,
@@ -504,6 +545,27 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        }
+      ],
+      "note": [
+        {
+          "from": "act-2",
+          "value": "A self-styled cool kid whose music, photography, and online projects are wrapped in layers of irony.",
+          "sourcePage": 312,
+          "sourceKind": "direct"
+        },
+        {
+          "from": "act-3",
+          "value": "Dave connects as Rose’s server player and helps her escape the meteor strike by entering the Medium.",
+          "sourcePage": 1149,
+          "sourceKind": "visual",
+          "sourceNote": "The Act 3 finale shows Dave helping Rose enter. The first-year recap on p. 1674 also describes these events and links to this sequence."
+        },
+        {
+          "from": "act-4",
+          "value": "A future Dave travels back to prevent a disastrous timeline and becomes Davesprite, giving his past self equipment and a guide who already knows the game.",
+          "sourcePage": 1674,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 312,
@@ -596,6 +658,20 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
+      "note": [
+        {
+          "from": "act-3",
+          "value": "A gifted tinkerer with a habit of falling asleep unexpectedly and an uncanny ability to predict what is coming.",
+          "sourcePage": 789,
+          "sourceKind": "direct"
+        },
+        {
+          "from": "act-4",
+          "value": "Jade helps Dave enter the game while she remains outside it. Her dream self saves John when Prospit’s moon falls, dying in the process.",
+          "sourcePage": 1988,
+          "sourceKind": "direct"
+        }
+      ],
       "sourcePage": 768,
       "sourceKind": "intro"
     },
@@ -658,6 +734,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "Guided by voices of the dead, Aradia uncovers the technology behind Sgrub and persuades a friend to adapt it, knowing it will bring destruction to their civilization.",
+          "sourcePage": 2134,
+          "sourceKind": "direct"
+        }
+      ],
       "sourcePage": 2134,
       "sourceKind": "intro"
     },
@@ -718,6 +802,14 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The introduction directly establishes fantasy stories, creature communion/training, card and role-playing games, slam poetry, and flight lore."
             }
           ]
+        }
+      ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "Tavros can communicate with Alternia’s creatures and trains them as companions and game partners. He dreams of flight, but speaks with little confidence.",
+          "sourcePage": 2101,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2101,
@@ -795,6 +887,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "A gifted hacker plagued by voices foretelling death. Sollux adapts ancient code into the game he believes can save his race and organizes two teams to play it.",
+          "sourcePage": 2076,
+          "sourceKind": "direct"
+        }
+      ],
       "sourcePage": 2076,
       "sourceKind": "intro"
     },
@@ -867,6 +967,14 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        }
+      ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "Quick to anger with his friends and fiercely ambitious, Karkat wants to become a fearsome warrior. His actual programming and sickle practice leave room for improvement.",
+          "sourcePage": 1994,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 1994,
@@ -943,6 +1051,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "A cave-dwelling hunter who turns her adventures into wall comics. She loves friendly roleplay but avoids the dangerous kind that has hurt her friends.",
+          "sourcePage": 2156,
+          "sourceKind": "direct"
+        }
+      ],
       "sourcePage": 2156,
       "sourceKind": "intro"
     },
@@ -1015,6 +1131,14 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        }
+      ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "Unusually comfortable in sunlight, Kanaya tends an oasis around her home. Her rare jade blood allowed her to be raised by a virgin mother grub.",
+          "sourcePage": 2323,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2323,
@@ -1091,6 +1215,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "A student of Alternian law with a passion for justice and roleplaying games with her plush dragons. She reads through smell and taste.",
+          "sourcePage": 2031,
+          "sourceKind": "direct"
+        }
+      ],
       "sourcePage": 2031,
       "sourceKind": "intro"
     },
@@ -1165,6 +1297,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "A ruthless roleplayer whose victories provide victims for her hungry spider lusus. She chases advantages in games of chance while repeatedly making her own luck worse.",
+          "sourcePage": 2195,
+          "sourceKind": "direct"
+        }
+      ],
       "sourcePage": 2195,
       "sourceKind": "intro"
     },
@@ -1225,6 +1365,14 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "“Strength training” was changed to “Strength”: the introduction says he loves being strong, alongside archery, musclebeast art, and robot-building/brawling."
             }
           ]
+        }
+      ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "An aristocrat obsessed with strength and bloodline status. His immense strength breaks every bow he tries to use; he builds robots to fight instead.",
+          "sourcePage": 2211,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2211,
@@ -1290,6 +1438,14 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The introduction supports clowns, the one-wheel device, baking, and horns; the immediately following page identifies his “fine beverage” as Faygo."
             }
           ]
+        }
+      ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "A devotee of an obscure clown cult who considers Karkat his best friend. His days revolve around friends, baking, and a unicycle he can barely ride.",
+          "sourcePage": 2012,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2012,
@@ -1368,6 +1524,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "A sea-dwelling aristocrat determined to wipe out land dwellers. He collects weapons and pursues a doomsday device while styling himself after legendary conquerors.",
+          "sourcePage": 2439,
+          "sourceKind": "direct"
+        }
+      ],
       "sourcePage": 2408,
       "sourceKind": "intro"
     },
@@ -1442,6 +1606,14 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The detailed introduction establishes care for deep-sea fauna, aquatic hoofbeasts, and cuttlefish."
             }
           ]
+        }
+      ],
+      "note": [
+        {
+          "from": "act-5-act-1",
+          "value": "The heir to Alternia’s throne, protected by her monstrous lusus. She hopes to replace culling with care for the vulnerable and to unite sea and land dwellers.",
+          "sourcePage": 2441,
+          "sourceKind": "direct"
         }
       ],
       "sourcePage": 2422,
@@ -2571,6 +2743,13 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePage": 1268,
           "sourceKind": "direct",
           "sourceNote": "The Intermission text explicitly refers to her as Snowman and states the consequence of killing her."
+        },
+        {
+          "from": "act-4",
+          "value": "SNOWMAN (BLACK QUEEN)",
+          "sourcePage": 1674,
+          "sourceKind": "direct",
+          "sourceNote": "The first-year recap identifies Snowman as the exiled Black Queen of the trolls’ session. The heading includes this identity only after Act 4."
         }
       ],
       "rosterLabel": [
@@ -2582,6 +2761,16 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "portrait": [
+        {
+          "from": "intermission",
+          "value": {
+            "src": "../assets/ref-snowman.webp",
+            "alt": "Snowman wearing her wide-brimmed hat and dark suit"
+          },
+          "sourcePage": 1268,
+          "sourceKind": "visual",
+          "sourceNote": "User-supplied portrait of Snowman in her Intermission appearance; it does not depict or identify her earlier Black Queen form."
+        },
         {
           "from": "act-4",
           "value": {
@@ -3132,6 +3321,16 @@ window.HOMESTUCK_REFERENCE = {
       "The Act 2 PROTOTYPING entry was corrected from an unrelated p. 434 citation to p. 424 and reworded to match exactly what Nannasprite establishes at that reading stage; the later Act 4 wording remains unchanged.",
       "Snowman's Intermission note was narrowed to what p. 1268 directly establishes, and her Felt affiliation now appears at Act 4 using the recap's explicit identification; Lord English's name-only placeholder portrait is classified as textually direct rather than visual.",
       "Apart from that correction and source-convention normalization, previously fact-checked Chunk 1–5 wording was preserved; stage boundary records remain sourceKind \"boundary\" because they are intentionally reading checkpoints rather than evidence for a story claim."
-    ]
+    ],
+    "stagedProfileUpdate": {
+      "date": "2026-09-20",
+      "scope": "Act 1 guardian heading; Snowman portrait and name variants; new kid and troll notes.",
+      "notes": [
+        "New character notes were checked against official story-page sources; the Act 3 entry notes also use the audited finale sequence. Later variants replace earlier notes; they are not appended.",
+        "The supplied Snowman portrait is available at Intermission. The existing Black Queen portrait and the expanded name remain gated to Act 4, where p. 1674 establishes the connection.",
+        "All twelve trolls currently first appear at the final supported stage, Act 5 Act 1. Their notes use variant arrays so later reading stages can add new wording without exposing it early.",
+        "This is a targeted content update, not a repeat of the September 18 global audit."
+      ]
+    }
   }
 };
