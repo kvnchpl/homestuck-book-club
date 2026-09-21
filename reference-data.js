@@ -80,8 +80,8 @@ window.HOMESTUCK_REFERENCE = {
       "key": "act-5-act-2-part-1",
       "label": "Act 5 Act 2 — Part 1",
       "shortLabel": "A5A2 · 1",
-      "endPage": 3173,
-      "sourcePage": 3173,
+      "endPage": 3238,
+      "sourcePage": 3238,
       "sourceKind": "boundary",
       "section": "Part 1"
     },
@@ -90,8 +90,8 @@ window.HOMESTUCK_REFERENCE = {
       "key": "act-5-act-2-part-2",
       "label": "Act 5 Act 2 — Part 2",
       "shortLabel": "A5A2 · 2",
-      "endPage": 3625,
-      "sourcePage": 3625,
+      "endPage": 3762,
+      "sourcePage": 3762,
       "sourceKind": "boundary",
       "section": "Part 1"
     },
