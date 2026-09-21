@@ -17,6 +17,10 @@ The renderer uses the latest variant reached at the selected stage. If no varian
 
 For example, the guardian heading starts as `GUARDIANS` in Act 1 and becomes `GUARDIANS & SPRITES` in Act 2. Snowman's name and portrait change when her earlier identity is revealed in Act 4. Add variants to the relevant arrays rather than overwriting earlier wording. Names and compact roster labels have separate arrays; update both when an alias should also change in the roster.
 
+The roster groups exiles and Jack’s staff under `EXILES & AGENTS`, and Snowman, Doc Scratch, and Lord English under `THE FELT & ASSOCIATES`. Internal group IDs remain `carapacians` and `others`; the latter keeps Snowman’s early grouping from hinting at her royal identity. Every character must have an explicit accent and readable text color in `script.js`’s `characterColors` map. These are visual accents, not blood-caste labels.
+
+A thin gray divider separates the reading selector from the profiles, matching the schedule and recap rules. The former spoiler-boundary footer is intentionally omitted.
+
 Each character has a stable `id`, a `reveal` stage, and an `introPage`. Character URLs use `#character-ID`; following a link does not advance reading progress. Name links point to the currently revealed name's source page. Portrait paths are relative to `reference/index.html`. A character may intentionally have no portrait at an early stage.
 
 Every character must have at least one meaningful stat whenever they are visible, including their first reveal stage. Use a verified role, affiliation, weapon, or ability rather than a generic unknown placeholder. Later variants can make the stat more specific. The static checks enforce nonempty stat coverage at every stage; renderer tests also check that a stat row actually appears.

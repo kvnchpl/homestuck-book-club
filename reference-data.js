@@ -451,13 +451,13 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "act-2",
-          "value": "GAME WORLD CHARACTERS",
+          "value": "EXILES & AGENTS",
           "sourcePage": 666,
           "sourceKind": "editorial"
         },
         {
           "from": "act-3",
-          "value": "GAME WORLD CHARACTERS",
+          "value": "EXILES & AGENTS",
           "sourcePage": 666,
           "sourcePages": [
             892,
@@ -469,20 +469,19 @@ window.HOMESTUCK_REFERENCE = {
         },
         {
           "from": "intermission",
-          "value": "GAME WORLD CHARACTERS",
+          "value": "EXILES & AGENTS",
           "sourcePage": 666,
           "sourcePages": [
             892,
             1100,
             955,
-            957,
-            1268
+            957
           ],
           "sourceKind": "editorial"
         },
         {
           "from": "act-4",
-          "value": "GAME WORLD CHARACTERS",
+          "value": "EXILES & AGENTS",
           "sourcePage": 666,
           "sourcePages": [
             892,
@@ -491,8 +490,7 @@ window.HOMESTUCK_REFERENCE = {
             955,
             1532,
             1784,
-            957,
-            1268
+            957
           ],
           "sourceKind": "editorial"
         }
@@ -503,18 +501,26 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "intermission",
-          "value": "OTHER CHARACTERS",
+          "value": "THE FELT & ASSOCIATES",
           "sourcePage": 1155,
-          "sourceKind": "editorial"
+          "sourceKind": "editorial",
+          "sourcePages": [
+            1267,
+            1268
+          ],
+          "sourceNote": "Editorial grouping for the Felt and its associates: Lord English is named as its boss, Snowman appears as number eight during the Intermission, and Scratch is later introduced as an officer of English."
         },
         {
           "from": "act-5-act-1",
-          "value": "OTHER CHARACTERS",
+          "value": "THE FELT & ASSOCIATES",
           "sourcePage": 1155,
           "sourcePages": [
+            1267,
+            1268,
             2253
           ],
-          "sourceKind": "editorial"
+          "sourceKind": "editorial",
+          "sourceNote": "Editorial grouping for the Felt and its associates: Lord English is named as its boss, Snowman appears as number eight during the Intermission, and Scratch is later introduced as an officer of English."
         }
       ]
     }
@@ -2844,7 +2850,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "snowman",
-      "group": "carapacians",
+      "group": "others",
       "reveal": "intermission",
       "introPage": 1268,
       "name": [

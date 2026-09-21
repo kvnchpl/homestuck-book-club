@@ -11,7 +11,6 @@
   const groupsContainer = document.getElementById('character-groups');
   const progressScale = document.getElementById('reading-progress-scale');
   const progressOutput = document.getElementById('reading-progress-output');
-  const boundaryLabel = document.getElementById('reference-boundary-label');
   const loadingMessage = document.getElementById('reference-loading');
 
   if (!data || !select || !roster || !groupsContainer ||
@@ -46,7 +45,26 @@
     equius: { accent: '#000056', text: '#000056' },
     gamzee: { accent: '#2b0057', text: '#2b0057' },
     eridan: { accent: '#6a006a', text: '#6a006a' },
-    feferi: { accent: '#77003c', text: '#77003c' }
+    feferi: { accent: '#77003c', text: '#77003c' },
+    dad: { accent: '#555555', text: '#555555' },
+    mom: { accent: '#a64d79', text: '#893b63' },
+    bro: { accent: '#a65f26', text: '#8c4e1d' },
+    grandpa: { accent: '#82733b', text: '#6c5d2c' },
+    nannasprite: { accent: '#00a9c6', text: '#00748a' },
+    jaspersprite: { accent: '#b078cd', text: '#805398' },
+    davesprite: { accent: '#e67e22', text: '#9c4c08' },
+    bec: { accent: '#5c963a', text: '#426e28' },
+    wv: { accent: '#806b4b', text: '#6d593c' },
+    pm: { accent: '#75858d', text: '#566770' },
+    ar: { accent: '#b58b2b', text: '#7b5c15' },
+    wq: { accent: '#a3936a', text: '#70613d' },
+    'jack-noir': { accent: '#252525', text: '#252525' },
+    dd: { accent: '#454550', text: '#454550' },
+    cd: { accent: '#743e3e', text: '#743e3e' },
+    hb: { accent: '#584536', text: '#584536' },
+    snowman: { accent: '#305b40', text: '#305b40' },
+    'doc-scratch': { accent: '#7a9476', text: '#4e6b49' },
+    'lord-english': { accent: '#2f9b31', text: '#246e25' }
   };
 
   let currentStage = stages[0];
@@ -305,7 +323,6 @@
   function updateStageUI(stage) {
     progressOutput.value = stage.label;
     progressOutput.textContent = stage.label;
-    if (boundaryLabel) boundaryLabel.textContent = `SPOILER BOUNDARY: THROUGH ${stage.label.toUpperCase()}.`;
     document.documentElement.dataset.referenceProgress = stage.key;
 
     progressScale.querySelectorAll('.reading-progress-tick').forEach(button => {

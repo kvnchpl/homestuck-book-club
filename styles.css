@@ -567,7 +567,7 @@ button {
   white-space: nowrap;
 }
 
-/* Reference page: visual character cards and quick reference. */
+/* Reference page: staged character profiles. */
 
 .reference-page {
   padding: 24px 28px 4rem;
@@ -582,7 +582,7 @@ button {
 
 /* Spoiler-aware reading progress control. */
 .reading-progress {
-  margin: 0 0 3rem;
+  margin: 0 0 24px;
   padding: 18px;
   border: 1px solid #aaa;
   background: #ddd;
@@ -825,10 +825,10 @@ button {
 }
 
 .character-option[aria-selected="true"] {
-  border-color: var(--character-color, var(--link));
-  box-shadow: inset 0 0 0 2px var(--character-color, var(--link));
+  border-color: var(--character-color, #555);
+  box-shadow: inset 0 0 0 2px var(--character-color, #555);
   background: #fff;
-  color: var(--character-text-color, var(--character-color, var(--link)));
+  color: var(--character-text-color, var(--character-color, #555));
 }
 
 .roster-portrait {
@@ -887,10 +887,10 @@ button {
   }
 }
 
-.reference-footer {
-  margin-top: 4rem;
-  border-top: 1px solid currentColor;
-  padding-top: 1rem;
+.reference-divider {
+  margin: 0 0 24px;
+  border: 0;
+  border-top: 1px solid #aaa;
 }
 
 @media (max-width: 440px) {

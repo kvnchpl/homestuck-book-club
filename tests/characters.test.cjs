@@ -13,7 +13,7 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
   function element(tagName = 'div') {
     return {
       tagName, attrs: {}, children: [], listeners: {}, dataset: {}, hidden: false, className: '',
-      style: { setProperty() {} },
+      style: { setProperty(key, value) { this[key] = value; } },
       classList: { add() {} },
       setAttribute(k, v) { this.attrs[k] = v; },
       append(...children) { this.children.push(...children); },
@@ -124,6 +124,10 @@ test('all populated stages render one selected profile with valid tab relationsh
     for (const [i, card] of r.cards().entries()) {
       assert.equal(r.tabs()[i].attrs['aria-controls'], card.id);
       assert.equal(card.attrs['aria-labelledby'], r.tabs()[i].id);
+      for (const property of ['--character-color', '--character-text-color']) {
+        assert.match(card.style[property] || '', /^#[0-9a-f]{6}$/i, `${card.dataset.characterId}: missing palette`);
+        assert.equal(r.tabs()[i].style[property], card.style[property]);
+      }
       for (const link of all(card).filter(e => e.tagName === 'a')) {
         assert(Number(link.href.split('/').pop()) <= stage.endPage);
       }
