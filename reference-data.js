@@ -13,7 +13,7 @@
 // variant for the same property supersedes it. If no variant is available yet,
 // that property is not rendered at all.
 window.HOMESTUCK_REFERENCE = {
-  "availableThrough": "act-6-act-3",
+  "availableThrough": "act-5-act-1",
   "stages": [
     {
       "value": 1,
