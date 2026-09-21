@@ -949,11 +949,12 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-aradia.webp",
-            "alt": "Aradia Megido"
+            "src": "../assets/ref-aradiabot.webp",
+            "alt": "Aradia in her robot body"
           },
-          "sourcePage": 2134,
-          "sourceKind": "visual"
+          "sourcePage": 2287,
+          "sourceKind": "visual",
+          "sourceNote": "User-supplied Aradiabot.webp. Her robot body is established during Hivebent and represents her at the completed Act 5 Act 1 checkpoint."
         }
       ],
       "stats": [
@@ -1024,11 +1025,12 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-tavros.webp",
-            "alt": "Tavros Nitram"
+            "src": "../assets/ref-tavros-wheelchair.webp",
+            "alt": "Tavros Nitram seated in his wheelchair"
           },
-          "sourcePage": 2101,
-          "sourceKind": "visual"
+          "sourcePage": 2113,
+          "sourceKind": "visual",
+          "sourceNote": "User-supplied TavrosWheelchair.webp, matching his wheelchair depiction during Hivebent."
         }
       ],
       "stats": [
@@ -2656,6 +2658,19 @@ window.HOMESTUCK_REFERENCE = {
           },
           "sourcePage": 955,
           "sourceKind": "visual"
+        },
+        {
+          "from": "act-4",
+          "value": {
+            "src": "../assets/ref-jack-prototyped.webp",
+            "alt": "Jack Noir with wings and prototyped features after taking the queen’s ring"
+          },
+          "sourcePage": 1668,
+          "sourcePages": [
+            1674
+          ],
+          "sourceKind": "visual",
+          "sourceNote": "User-supplied JackPrototyped.webp, showing the ring-transformed appearance established during Act 4. Keep the original agent portrait through Intermission."
         }
       ],
       "stats": [
@@ -2860,13 +2875,6 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePage": 1268,
           "sourceKind": "direct",
           "sourceNote": "The Intermission text explicitly refers to her as Snowman and states the consequence of killing her."
-        },
-        {
-          "from": "act-4",
-          "value": "SNOWMAN (BLACK QUEEN)",
-          "sourcePage": 1674,
-          "sourceKind": "direct",
-          "sourceNote": "The first-year recap identifies Snowman as the exiled Black Queen of the trolls’ session. The heading includes this identity only after Act 4."
         }
       ],
       "rosterLabel": [
@@ -2886,17 +2894,7 @@ window.HOMESTUCK_REFERENCE = {
           },
           "sourcePage": 1268,
           "sourceKind": "visual",
-          "sourceNote": "User-supplied portrait of Snowman in her Intermission appearance; it does not depict or identify her earlier Black Queen form."
-        },
-        {
-          "from": "act-4",
-          "value": {
-            "src": "../assets/ref-black-queen.webp",
-            "alt": "Snowman in her earlier Black Queen form"
-          },
-          "sourcePage": 1674,
-          "sourceKind": "direct",
-          "sourceNote": "The first-year recap directly establishes that the troll-session Black Queen was exiled and became Snowman; the portrait is held until this identity is safe."
+          "sourceNote": "User-supplied portrait of Snowman in her hat and suit. Keep this recognizable appearance after her former Black Queen identity becomes known; that revelation is conveyed by the Act 4 Formerly stat."
         }
       ],
       "stats": [
@@ -3030,12 +3028,11 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "intermission",
           "value": {
-            "src": "../assets/ref-lord-english.webp",
-            "alt": "Lord English's name"
+            "placeholder": "Appearance not yet revealed"
           },
           "sourcePage": 1155,
-          "sourceKind": "direct",
-          "sourceNote": "This placeholder portrait uses Lord English's name because the page names him but does not physically show him."
+          "sourceKind": "editorial",
+          "sourceNote": "A text placeholder for the named but unseen Felt boss. Replaces the unrelated server-device image formerly misidentified in the metadata as a name-only portrait."
         }
       ],
       "stats": [
@@ -3130,6 +3127,14 @@ window.HOMESTUCK_REFERENCE = {
     "cheatSheetsRemoval": {
       "date": "2026-09-21",
       "note": "All reference cheat sheets, including the quadrant strip, were removed at the user’s request. Earlier audit entries referring to these sections are historical; the reference now contains only staged character profiles."
+    },
+    "snowmanPortraitUpdate": {
+      "date": "2026-09-21",
+      "note": "Snowman retains her name and supplied hat-and-suit portrait from Intermission onward. The troll-session Black Queen identity remains in the Formerly stat starting at Act 4. This supersedes the portrait and name switches described in stagedProfileUpdate. The unused Black Queen portrait asset is retained for future use."
+    },
+    "portraitReplacements": {
+      "date": "2026-09-21",
+      "note": "Implemented the user-approved portrait review with supplied WebP images: Tavros in his wheelchair and Aradiabot at Act 5 Act 1, Jack’s ring-transformed appearance from Act 4 with rollback to his original portrait, and a genuine text-only Lord English placeholder from Intermission. Replaced assets for Aradia, Tavros, and Lord English are retained for future use although no current checkpoint displays them. Earlier Lord English name-only portrait claims were incorrect and are superseded."
     }
   }
 };

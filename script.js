@@ -135,7 +135,13 @@
   }
 
   function createPortrait(portrait, className, loading = 'lazy') {
-    if (!portrait?.src) return null;
+    if (!portrait?.src) {
+      if (!portrait?.placeholder) return null;
+      const placeholder = document.createElement('span');
+      placeholder.className = `${className} portrait-placeholder`;
+      placeholder.textContent = className === 'roster-portrait' ? '?' : portrait.placeholder;
+      return placeholder;
+    }
     const img = document.createElement('img');
     img.className = className;
     img.src = portrait.src;
@@ -231,7 +237,8 @@
     const portrait = resolvedValue(character.portrait);
     const thumbnail = createPortrait(portrait, 'roster-portrait', 'eager');
     if (thumbnail) {
-      thumbnail.alt = '';
+      if (thumbnail.tagName.toLowerCase() === 'img') thumbnail.alt = '';
+      thumbnail.setAttribute('aria-hidden', 'true');
       tab.append(thumbnail);
     }
 

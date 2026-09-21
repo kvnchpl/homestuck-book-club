@@ -881,6 +881,24 @@ button {
   margin: 0 auto 20px;
 }
 
+.portrait-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--character-text-color, #555);
+  text-align: center;
+}
+
+.character-portrait.portrait-placeholder {
+  padding: 16px;
+  border: 1px dashed #aaa;
+  font: 400 13px/1.5 Verdana, Arial, sans-serif;
+}
+
+.roster-portrait.portrait-placeholder {
+  font: 700 32px/1 "Courier New", Courier, monospace;
+}
+
 @media (max-width: 600px) {
   .character-select.is-ready {
     grid-template-columns: 1fr;
