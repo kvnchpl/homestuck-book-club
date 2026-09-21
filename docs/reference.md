@@ -19,6 +19,12 @@ For example, the guardian heading starts as `GUARDIANS` in Act 1 and becomes `GU
 
 Each character has a stable `id`, a `reveal` stage, and an `introPage`. Character URLs use `#character-ID`; following a link does not advance reading progress. Name links point to the currently revealed name's source page. Portrait paths are relative to `reference/index.html`. A character may intentionally have no portrait at an early stage.
 
+Every character must have at least one meaningful stat whenever they are visible, including their first reveal stage. Use a verified role, affiliation, weapon, or ability rather than a generic unknown placeholder. Later variants can make the stat more specific. The static checks enforce nonempty stat coverage at every stage; renderer tests also check that a stat row actually appears.
+
+Strife specibi are staged like other stats. Show a named allocation only when the comic establishes it; a known weapon or ability is sufficient when its allocation is not verified. Do not back-project later equipment: early Kanaya uses `makeupkind`, Gamzee uses `clubkind`, and Eridan uses `riflekind`. Rose's `needlekind` starts at Act 2, after her Act 1 introduction.
+
+Troll blood rows are intentionally delayed until `act-5-act-2-part-3`, the end of Act 5 Act 2, after its later caste and ancestry material. The system is explained incrementally; this is a conservative editorial checkpoint rather than a claim of one definitive explanation page. Earlier source pages remain valid evidence for individual blood facts, but do not determine their display timing. Keep these rows hidden through the preceding stages, including on rollback, and do not advance the club cap to expose them. The early hemospectrum cheat gives only a general definition; its individual blood examples follow the same later gate.
+
 Every user-facing reference record carries a primary `sourcePage`. Optional `sourcePages` contains additional supporting pages without repeating the primary page. All supporting pages must fall within the record's reading stage. Source metadata is not rendered publicly.
 
 `sourceKind` distinguishes:

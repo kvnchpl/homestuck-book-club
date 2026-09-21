@@ -566,6 +566,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-1",
+              "label": "Strife specibus",
+              "value": "hammerkind",
+              "sourcePage": 38,
+              "sourceKind": "direct",
+              "sourceNote": "Narration explicitly allocates the HAMMERKIND ABSTRATUS."
+            }
+          ]
+        },
+        {
           "id": "land",
           "variants": [
             {
@@ -647,6 +660,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "tentacleTherapist [TT]",
               "sourcePage": 135,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-2",
+              "label": "Strife specibus",
+              "value": "needlekind",
+              "sourcePage": 299,
+              "sourceKind": "visual",
+              "sourceNote": "The allocated card is visibly labelled needlekind; checked against the official main panel."
             }
           ]
         },
@@ -733,6 +759,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 382,
               "sourceKind": "direct",
               "sourceNote": "The pesterlog on this Dave page labels him turntechGodhead [TG] and is addressed to him by name."
+            }
+          ]
+        },
+        {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-2",
+              "label": "Strife specibus",
+              "value": "bladekind",
+              "sourcePage": 342,
+              "sourceKind": "direct",
+              "sourceNote": "Narration states that his specibus is already allocated with the BLADEKIND ABSTRATUS."
             }
           ]
         },
@@ -826,6 +865,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-3",
+              "label": "Strife specibus",
+              "value": "riflekind",
+              "sourcePage": 1077,
+              "sourceKind": "visual",
+              "sourceNote": "The harpoon gun is placed in her visibly labelled riflekind card."
+            }
+          ]
+        },
+        {
           "id": "land",
           "variants": [
             {
@@ -912,6 +964,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "ability",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Ability",
+              "value": "Hears the voices of the dead",
+              "sourcePage": 2134,
+              "sourceKind": "direct",
+              "sourceNote": "Her introduction states that she has heard the voices of the dead since she was young; no unverified weapon allocation is inferred."
+            }
+          ]
+        },
+        {
           "id": "former-interests",
           "variants": [
             {
@@ -970,6 +1035,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "adiosToreador [AT]",
               "sourcePage": 2101,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Strife specibus",
+              "value": "lancekind",
+              "sourcePage": 2115,
+              "sourceKind": "visual",
+              "sourceNote": "The jousting lance is placed in the lancekind card."
             }
           ]
         },
@@ -1036,15 +1114,28 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "combat",
           "variants": [
             {
               "from": "act-5-act-1",
+              "label": "Combat",
+              "value": "Psionics",
+              "sourcePage": 2077,
+              "sourceKind": "direct",
+              "sourceNote": "Narration says a high-level psionic has no use for a particular specibus allocation, while he levitates the throwing stars."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
               "label": "Blood",
               "value": "Yellow",
               "sourcePage": 2146,
               "sourceKind": "direct",
-              "sourceNote": "Sollux compares lower castes to his own and asks, “what’s worse than yellow?”"
+              "sourceNote": "Sollux compares lower castes to his own and asks, “what’s worse than yellow?” Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -1111,15 +1202,28 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "weapon",
           "variants": [
             {
               "from": "act-5-act-1",
+              "label": "Weapon",
+              "value": "Sickle",
+              "sourcePage": 1994,
+              "sourceKind": "direct",
+              "sourceNote": "His introduction explicitly describes practicing with his sickle. This verifies the weapon without claiming a named allocation from a page that does not show it."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
               "label": "Blood",
               "value": "Mutant candy-red",
               "sourcePage": 2301,
               "sourceKind": "direct",
-              "sourceNote": "Narration explicitly calls his blood “mutant candy-red.”"
+              "sourceNote": "Narration explicitly calls his blood “mutant candy-red.” Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -1185,15 +1289,28 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
+              "label": "Strife specibus",
+              "value": "clawkind",
+              "sourcePage": 2157,
+              "sourceKind": "visual",
+              "sourceNote": "Her claw gloves are displayed in the clawkind card."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
               "label": "Blood",
               "value": "Green",
               "sourcePage": 2162,
               "sourceKind": "direct",
-              "sourceNote": "Nepeta asks what “green blood” means and Equius answers using the same term."
+              "sourceNote": "Nepeta asks what “green blood” means and Equius answers using the same term. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -1259,15 +1376,28 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
+              "label": "Strife specibus",
+              "value": "makeupkind",
+              "sourcePage": 2325,
+              "sourceKind": "visual",
+              "sourceNote": "The lipstick is equipped to a makeupkind card; later weapon terminology is not substituted."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
               "label": "Blood",
               "value": "Jade green",
               "sourcePage": 2323,
               "sourceKind": "direct",
-              "sourceNote": "Her introduction explicitly states that she has JADE GREEN BLOOD."
+              "sourceNote": "Her introduction explicitly states that she has JADE GREEN BLOOD. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -1333,15 +1463,28 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
+              "label": "Strife specibus",
+              "value": "canekind",
+              "sourcePage": 2052,
+              "sourceKind": "visual",
+              "sourceNote": "The walking cane is placed in the canekind card."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
               "label": "Blood",
               "value": "Teal",
               "sourcePage": 2238,
               "sourceKind": "direct",
-              "sourceNote": "Terezi describes herself as “a little too teal for their tastes.”"
+              "sourceNote": "Terezi describes herself as “a little too teal for their tastes.” Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -1407,15 +1550,28 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
+              "label": "Strife specibus",
+              "value": "dicekind",
+              "sourcePage": 2199,
+              "sourceKind": "visual",
+              "sourceNote": "The Fluorite Octet is placed in the dicekind card."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
               "label": "Blood",
               "value": "Cerulean",
               "sourcePage": 2276,
               "sourceKind": "direct",
-              "sourceNote": "Vriska calls the blue blood covering her “cerulean swill.”"
+              "sourceNote": "Vriska calls the blue blood covering her “cerulean swill.” Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -1481,6 +1637,22 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Strife specibi",
+              "value": "1/2bowkind · bowkind · fistkind",
+              "sourcePage": 2219,
+              "sourceKind": "direct",
+              "sourceNote": "The narration and portfolio identify all three cards; page 2218 also explicitly names 1/2bowkind.",
+              "sourcePages": [
+                2218
+              ]
+            }
+          ]
+        },
+        {
           "id": "interests",
           "variants": [
             {
@@ -1539,6 +1711,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "terminallyCapricious [TC]",
               "sourcePage": 2012,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Strife specibus",
+              "value": "clubkind",
+              "sourcePage": 2018,
+              "sourceKind": "visual",
+              "sourceNote": "The juggling club is equipped to a clubkind card; later jokerkind is not revealed here."
             }
           ]
         },
@@ -1609,15 +1794,28 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
+              "label": "Strife specibus",
+              "value": "riflekind",
+              "sourcePage": 2456,
+              "sourceKind": "visual",
+              "sourceNote": "Unequipping Ahab’s Crosshairs exposes the riflekind card; later wandkind is not revealed here."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
               "label": "Blood",
               "value": "Penultimate on the hemospectrum",
               "sourcePage": 2439,
               "sourceKind": "direct",
-              "sourceNote": "The narration says his blood is nearly the richest the hemospectrum offers and “penultimate on the scale”; the later standardized color name is intentionally not used."
+              "sourceNote": "The narration says his blood is nearly the richest the hemospectrum offers and “penultimate on the scale”; the later standardized color name is intentionally not used. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -1685,15 +1883,28 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
+              "label": "Strife specibus",
+              "value": "2x3dentkind",
+              "sourcePage": 2455,
+              "sourceKind": "visual",
+              "sourceNote": "Unequipping the double culling fork exposes the 2x3dentkind card."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
               "label": "Blood",
               "value": "Most noble blood possible",
               "sourcePage": 2441,
               "sourceKind": "direct",
-              "sourceNote": "The narration calls it “the most noble blood possible” and says she is the only troll of her kind known to possess it; the later standardized color name is intentionally not used."
+              "sourceNote": "The narration calls it “the most noble blood possible” and says she is the only troll of her kind known to possess it; the later standardized color name is intentionally not used. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -2610,6 +2821,14 @@ window.HOMESTUCK_REFERENCE = {
           "id": "role",
           "variants": [
             {
+              "from": "act-3",
+              "label": "Role",
+              "value": "Jack Noir's agent",
+              "sourcePage": 957,
+              "sourceKind": "direct",
+              "sourceNote": "Jack orders one of his burliest agents to the scene; the later recap supplies the more specific muscle description."
+            },
+            {
               "from": "act-4",
               "label": "Role",
               "value": "Jack Noir's muscle",
@@ -2675,6 +2894,19 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "stats": [
+        {
+          "id": "special-rule",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Special rule",
+              "value": "Killing her destroys the universe",
+              "sourcePage": 1268,
+              "sourceKind": "direct",
+              "sourceNote": "The Intermission states this when Snowman appears; it does not require her later Black Queen identity."
+            }
+          ]
+        },
         {
           "id": "formerly",
           "variants": [
@@ -2855,6 +3087,13 @@ window.HOMESTUCK_REFERENCE = {
           "body": [
             {
               "from": "act-5-act-1",
+              "value": "A social hierarchy based on blood color.",
+              "sourcePage": 2439,
+              "sourceKind": "direct",
+              "sourceNote": "Eridan's introduction establishes the hierarchy. Individual blood examples are deferred with the character blood rows."
+            },
+            {
+              "from": "act-5-act-2-part-3",
               "value": "A blood-based hierarchy. Eridan's blood is nearly the richest on the spectrum, while Karkat's candy-red blood is a mutation outside the normal order.",
               "sourcePage": 2439,
               "sourcePages": [
@@ -3187,6 +3426,16 @@ window.HOMESTUCK_REFERENCE = {
     "characterNotesRemoval": {
       "date": "2026-09-20",
       "note": "All character notes were removed at the user’s request. Earlier audit entries describe the historical content; names, portraits, stats, and group labels remain staged."
+    },
+    "statCoverageUpdate": {
+      "date": "2026-09-21",
+      "scope": "Minimum stat coverage, kid/troll weapon or ability fields, and delayed blood rows.",
+      "notes": [
+        "Every revealed character must retain at least one nonempty, source-backed stat at every visible stage. HB gains an Act 3 role from p. 957; Snowman gains the Intermission rule from p. 1268 without revealing her former identity.",
+        "Strife allocations were checked in official story-page components; Rose’s card was also inspected directly. Aradia and Sollux receive supported ability/combat facts, and Karkat a supported weapon field, rather than unverified allocation names.",
+        "The eight existing troll blood rows and individual blood examples in the hemospectrum cheat now begin at act-5-act-2-part-3. This is a conservative editorial gate after the later caste and ancestry material, not a claim that a single page exhaustively explains the system. Earlier blood audit notes describe historical display timing and are superseded by this gate.",
+        "The current selectable cap remains act-5-act-1. No reference character notes were added."
+      ]
     }
   }
 };

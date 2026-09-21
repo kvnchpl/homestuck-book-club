@@ -219,6 +219,17 @@ for character in data['characters']:
     group = character['group']
     assignments = [v['value'] for v in group] if isinstance(group, list) else [group]
     assert all(value in group_ids for value in assignments), f'{character["id"]}: unknown group'
+    for stage in data['stages']:
+        if stage['value'] < stages[character['reveal']]['value']:
+            continue
+        visible_stats = []
+        for stat in character.get('stats', []):
+            reached = [v for v in stat['variants'] if stages[v['from']]['value'] <= stage['value']]
+            if reached:
+                visible_stats.append(reached[-1])
+        assert any(v.get('label', '').strip() and v.get('value', '').strip() for v in visible_stats), (
+            f'{character["id"]}: needs at least one visible stat at {stage["key"]}'
+        )
 
 
 schedule = by_class(pages['schedule/index.html'].root, 'meeting')

@@ -55,6 +55,53 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
 }
 function all(root) { return root.children.flatMap(child => [child, ...all(child)]); }
 function text(root) { return [root.textContent || '', ...root.children.map(text)].join(' '); }
+function stats(card) {
+  const list = all(card).find(e => e.className === 'character-stats');
+  return (list?.children || []).map(row => row.children.map(cell => cell.textContent));
+}
+
+test('every revealed character has a nonempty stat at every checkpoint', () => {
+  const r = reference({ availableThrough: 'act-7' });
+  for (const stage of r.window.HOMESTUCK_REFERENCE.stages) {
+    r.stage(stage.value);
+    for (const card of r.cards()) {
+      const rows = stats(card);
+      assert(rows.length > 0, `${card.dataset.characterId} has no stats at ${stage.key}`);
+      assert(rows.every(([label, value]) => label?.trim() && value?.trim()),
+        `${card.dataset.characterId} has an empty stat at ${stage.key}`);
+    }
+  }
+});
+
+test('new early stats and strife details respect their reveal stages', () => {
+  const r = reference();
+  const characterStats = id => stats(r.cards().find(c => c.dataset.characterId === id));
+  assert(!characterStats('rose').some(([label]) => label === 'Strife specibus'));
+  assert(characterStats('john').some(([label, value]) => label === 'Strife specibus' && value === 'hammerkind'));
+  r.stage(2);
+  assert(characterStats('rose').some(([label, value]) => label === 'Strife specibus' && value === 'needlekind'));
+  r.stage(3);
+  assert(characterStats('hb').some(([label, value]) => label === 'Role' && value === "Jack Noir's agent"));
+  r.stage(4);
+  assert(characterStats('snowman').some(([label, value]) => label === 'Special rule' && value === 'Killing her destroys the universe'));
+  r.stage(6);
+  for (const [id, value] of [['kanaya', 'makeupkind'], ['gamzee', 'clubkind'], ['eridan', 'riflekind']]) {
+    assert(characterStats(id).some(([label, actual]) => label === 'Strife specibus' && actual === value));
+  }
+  r.stage(1);
+  assert(!characterStats('rose').some(([label]) => label === 'Strife specibus'));
+});
+
+test('blood stats wait until the end of Act 5 Act 2 and disappear on rollback', () => {
+  const r = reference({ availableThrough: 'act-5-act-2-part-3' });
+  for (const [stage, count] of [[6, 0], [7, 0], [8, 0], [9, 8], [8, 0], [6, 0]]) {
+    r.stage(stage);
+    const blood = r.cards().flatMap(stats).filter(([label]) => label === 'Blood');
+    assert.equal(blood.length, count, `blood rows at checkpoint ${stage}`);
+    if (count === 0) assert.doesNotMatch(text(r.ids['reference-cheats']), /candy-red|Eridan's blood/);
+    else assert.match(text(r.ids['reference-cheats']), /candy-red/);
+  }
+});
 
 // Real names deliberately check early vs. late wording, beyond counting cards.
 test('fresh visits render only Act 1 content, regardless of a later-character hash', () => {
