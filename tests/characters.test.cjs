@@ -6,6 +6,7 @@ const { join } = require('node:path');
 const { runInNewContext } = require('node:vm');
 const script = readFileSync(join(__dirname, '../script.js'), 'utf8');
 const dataScript = readFileSync(join(__dirname, '../reference-data.js'), 'utf8');
+const referenceHtml = readFileSync(join(__dirname, '../reference/index.html'), 'utf8');
 
 function reference({ hash = '', saved = null, blockedStorage = false, missingData = false, availableThrough } = {}) {
   let focused;
@@ -22,10 +23,9 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
       focus() { focused = this; },
     };
   }
-  const ids = Object.fromEntries(['character-select', 'character-roster', 'character-groups',
-    'reference-cheats', 'reading-progress-scale', 'reading-progress-output',
-    'reading-progress-status', 'reading-progress-limit',
-    'reference-boundary-label', 'reference-loading'].map(id => [id, element()]));
+  // Match the actual shell: invented elements can hide broken DOM dependencies.
+  const ids = Object.fromEntries(Array.from(referenceHtml.matchAll(/\sid="([^"]+)"/g),
+    match => [match[1], element()]));
   ids['character-select'].hidden = true;
   const location = { hash };
   const window = { addEventListener(k, fn) { this[k] = fn; } };
@@ -197,7 +197,6 @@ test('all segments are grouped in reading order while buttons, saved progress, a
     assert.equal(ticks.filter(t => !t.disabled).length, 5);
     assert(ticks.slice(5).every(t => t.disabled && !t.listeners.click));
     assert.equal(ticks.at(-1).textContent, 'A7');
-    assert.match(r.ids['reading-progress-limit'].textContent, /Act 4/);
     assert(!r.cards().some(c => c.dataset.characterId === 'karkat'));
     for (const value of [6, 20, 32]) {
       r.stage(value);

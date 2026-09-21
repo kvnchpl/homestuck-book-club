@@ -12,12 +12,11 @@
   const cheatsContainer = document.getElementById('reference-cheats');
   const progressScale = document.getElementById('reading-progress-scale');
   const progressOutput = document.getElementById('reading-progress-output');
-  const progressStatus = document.getElementById('reading-progress-status');
   const boundaryLabel = document.getElementById('reference-boundary-label');
   const loadingMessage = document.getElementById('reference-loading');
 
   if (!data || !select || !roster || !groupsContainer || !cheatsContainer ||
-    !progressScale || !progressOutput || !progressStatus) {
+    !progressScale || !progressOutput) {
     if (loadingMessage) {
       loadingMessage.textContent = 'The spoiler-safe reference could not be loaded.';
     }
