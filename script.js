@@ -17,7 +17,7 @@
   const loadingMessage = document.getElementById('reference-loading');
 
   if (!data || !select || !roster || !groupsContainer || !cheatsContainer ||
-      !progressScale || !progressOutput || !progressStatus) {
+    !progressScale || !progressOutput || !progressStatus) {
     if (loadingMessage) {
       loadingMessage.textContent = 'The spoiler-safe reference could not be loaded.';
     }
@@ -33,10 +33,10 @@
   const availableStage = stages.find(stage => stage.key === data.availableThrough) || stages[0];
 
   const characterColors = {
-    john:   { accent: '#0715cd', text: '#0715cd' },
-    rose:   { accent: '#b536da', text: '#8f1dac' },
-    dave:   { accent: '#e00707', text: '#b80606' },
-    jade:   { accent: '#4ac925', text: '#2f7f1b' },
+    john: { accent: '#0715cd', text: '#0715cd' },
+    rose: { accent: '#b536da', text: '#8f1dac' },
+    dave: { accent: '#e00707', text: '#b80606' },
+    jade: { accent: '#4ac925', text: '#2f7f1b' },
     aradia: { accent: '#a10000', text: '#a10000' },
     tavros: { accent: '#a15000', text: '#8a4500' },
     sollux: { accent: '#a1a100', text: '#686800' },
@@ -369,7 +369,6 @@
   function updateStageUI(stage) {
     progressOutput.value = stage.label;
     progressOutput.textContent = stage.label;
-    progressStatus.textContent = `Showing only information revealed through ${stage.label}.`;
     if (boundaryLabel) boundaryLabel.textContent = `SPOILER BOUNDARY: THROUGH ${stage.label.toUpperCase()}.`;
     document.documentElement.dataset.referenceProgress = stage.key;
 
@@ -386,9 +385,6 @@
     if (loadingMessage) loadingMessage.hidden = true;
     if (persist) saveStage(currentStage);
   }
-
-  const clubLimit = document.getElementById('reading-progress-limit');
-  if (clubLimit) clubLimit.textContent = `Book club limit: ${availableStage.label}. Shaded segments are locked.`;
 
   const stageSections = new Map();
   for (const stage of stages) {
