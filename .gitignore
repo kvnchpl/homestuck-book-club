@@ -8,7 +8,6 @@ _site/
 .sass-cache/
 node_modules/
 
-# Local authoring, agent guidance, and validation (not published site files).
 /AGENTS.md
 /README.md
 /docs/
