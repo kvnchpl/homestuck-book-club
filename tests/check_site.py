@@ -86,7 +86,10 @@ def image_dimensions(path):
     raise AssertionError(f'{path}: unsupported image format')
 
 
-paths = sorted(ROOT.rglob('index.html'))
+paths = sorted([ROOT / 'index.html'] + [
+    path for directory in ('schedule', 'recaps', 'reference')
+    for path in (ROOT / directory).rglob('index.html')
+])
 pages = {p.relative_to(ROOT).as_posix(): Page(p) for p in paths}
 assert all(p.is_file() for p in (ROOT / 'assets').iterdir()), 'Keep assets directly under assets/'
 asset_paths = {p.resolve() for p in (ROOT / 'assets').iterdir() if not p.name.startswith('.')}
@@ -151,6 +154,9 @@ for name, page in pages.items():
     if slides:
         assert 'cover' in slides[0].get('class', '').split(), f'{name}: start with a cover'
         assert all('hidden' not in slide.attrib for slide in slides), f'{name}: keep no-JS reading available'
+        for number, slide in enumerate(slides, 1):
+            assert slide.get('data-slide') == str(number), f'{name}: incorrect slide number'
+            assert slide.get('aria-label') == f'Slide {number} of {len(slides)}', f'{name}: stale slide label'
         for control in ('counter', 'source-link', 'start-over', 'prev', 'next', 'deck'):
             assert control in page.ids, f'{name}: missing {control}'
         assert page.ids['deck'].get('tabindex') == '-1'
@@ -240,6 +246,15 @@ for number, (meeting, recap) in enumerate(zip(schedule, recaps), 1):
     assert [text(th) for th in meeting.findall('.//th')] == ['Suggested Reading', 'Start Page', '# of Pages']
     reading_count += len(rows)
     published = (ROOT / f'recaps/{number:02}/index.html').is_file()
+    if published:
+        recap_page = pages[f'recaps/{number:02}/index.html']
+        audit = (ROOT / 'docs/asset-sources.md').read_text()
+        for image in recap_page.root.iter('img'):
+            filename = Path(image.get('src')).name
+            source = re.search(r'story-(\d+)\.webp$', filename)
+            assert source, f'Recap {number}: image needs a source-page suffix: {filename}'
+            assert 1 <= int(source[1]) < expected_start, f'Recap {number}: image exceeds reading boundary'
+            assert f'`{filename}`' in audit, f'Recap {number}: record image provenance for {filename}'
     reading_links = [a.get('href') for a in recap.iter('a') if re.fullmatch(r'\./\d{2}/', a.get('href', ''))]
     assert reading_links == ([f'./{number:02}/'] if published else []), f'Recap {number}: index publication link mismatch'
     assert bool(by_class(recap, 'recap-status')) != published, f'Recap {number}: incorrect availability'

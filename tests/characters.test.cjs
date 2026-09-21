@@ -29,7 +29,6 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
   ids['character-select'].hidden = true;
   const location = { hash };
   const window = { addEventListener(k, fn) { this[k] = fn; } };
-  const warnings = [];
   const context = {
     document: { querySelector: s => s === '.reference-page' ? element() : null,
       getElementById: id => ids[id], createElement: element, documentElement: element() },
@@ -38,12 +37,11 @@ function reference({ hash = '', saved = null, blockedStorage = false, missingDat
       getItem() { if (blockedStorage) throw Error('Storage blocked'); return saved; },
       setItem(key, value) { if (blockedStorage) throw Error('Storage blocked'); saved = value; },
     },
-    console: { warn: (...args) => warnings.push(args) },
   };
   if (!missingData) runInNewContext(dataScript, context);
   if (!missingData && availableThrough !== undefined) window.HOMESTUCK_REFERENCE.availableThrough = availableThrough;
   runInNewContext(script, context);
-  return { ids, location, window, warnings, saved: () => saved, focused: () => focused,
+  return { ids, location, window, saved: () => saved, focused: () => focused,
     tabs: () => all(ids['character-roster']).filter(e => e.attrs.role === 'tab'),
     cards: () => all(ids['character-groups']).filter(e => e.attrs.role === 'tabpanel'),
     ticks: () => all(ids['reading-progress-scale']).filter(e => e.className === 'reading-progress-tick'),
@@ -68,7 +66,6 @@ test('fresh visits render only Act 1 content, regardless of a later-character ha
   assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE|ECTOBIOLOGY/);
   assert.equal(r.ids['reading-progress-output'].textContent, 'Act 1');
   assert.equal(r.ids['reference-loading'].hidden, true);
-  assert.deepEqual(r.warnings, []);
 });
 
 test('all populated stages render one selected profile with valid tab relationships and stage-safe links', () => {

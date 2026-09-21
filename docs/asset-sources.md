@@ -6,7 +6,7 @@ Audit date: September 17, 2026. Scope: the 122 images currently used in Recaps #
 
 The site now serves smaller derivatives of these audited images. All 122 active recap panels use WebP: 68 lossless and 54 lossy at quality 65. The two panels whose WebP files are slightly larger than their original GIFs also use WebP for format consistency. Panel dimensions and source-page suffixes are unchanged; all 52 animations retain their playback timing and looping.
 
-The asset column below names the current delivery file. The original source URLs and verification evidence are unchanged. The audit findings below describe the **original GIF files before optimization**, including their original pixel comparisons and byte-for-byte matches; those claims do not imply the lossy delivery files are byte-identical to the sources. Original files remain available in Git history. See `tools/optimize_images.py` and the README for the repeatable conversion process.
+The asset column below names the current delivery file. The original source URLs and verification evidence are unchanged. The audit findings below describe the **original GIF files before optimization**, including their original pixel comparisons and byte-for-byte matches; those claims do not imply the lossy delivery files are byte-identical to the sources. Original files remain available in Git history. See [the recap workflow](recaps.md#prepare-images) and `tools/optimize_images.py` (from the repository root) for the repeatable conversion process.
 
 ## Required sourcing standard
 
@@ -32,7 +32,7 @@ The Rose illustration previously used on Recap #3 slide 15 was official embedded
 
 Source media paths were read from the official Homestuck story-page components. Main-panel comparisons included every animation frame. Flash verification used JPEXS FFDec 26.3.0 to render the complete root timeline with its backgrounds, layers, and effects; individual bitmap exports were not accepted as frames. Frame numbers are one-based and refer to the linked SWF, not a video adaptation.
 
-New frame exports retain the native stage proportions and are encoded as static GIFs without added margins or cropping. Existing animated panels were left intact. All 122 active images are 650 pixels wide, their HTML dimensions match their files, and the revised alternative text describes the selected images.
+At the time of this audit, new frame exports retained the native stage proportions and were encoded as static GIFs without added margins or cropping. Existing animated panels were left intact. All of these delivery files were subsequently converted to WebP as described above. All 122 active images are 650 pixels wide, their HTML dimensions match their files, and the revised alternative text describes the selected images.
 
 This audit covers images referenced by Recaps #1–4. Unused assets have been removed from `assets/`, including the former `A4_02_story-1674.gif` diagram, which does not meet this sourcing standard. Check provenance before restoring any image from history.
 
