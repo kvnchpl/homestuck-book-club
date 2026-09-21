@@ -51,6 +51,7 @@
     bro: { accent: '#a65f26', text: '#8c4e1d' },
     grandpa: { accent: '#82733b', text: '#6c5d2c' },
     nannasprite: { accent: '#00a9c6', text: '#00748a' },
+    jadesprite: { accent: '#4ac925', text: '#29751b' },
     jaspersprite: { accent: '#b078cd', text: '#805398' },
     davesprite: { accent: '#e67e22', text: '#9c4c08' },
     bec: { accent: '#5c963a', text: '#426e28' },

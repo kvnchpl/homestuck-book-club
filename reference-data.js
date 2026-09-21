@@ -556,6 +556,15 @@ window.HOMESTUCK_REFERENCE = {
           },
           "sourcePage": 3,
           "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "value": {
+            "src": "../assets/ref-john-god-tier.webp",
+            "alt": "John Egbert in his god-tier Heir of Breath outfit"
+          },
+          "sourcePage": 3197,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -616,6 +625,31 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Bad movies · Programming · Paranormal lore · Amateur magic · Video games",
               "sourcePage": 4,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Heir of Breath",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
+            }
+          ]
+        },
+        {
+          "id": "tier",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Tier",
+              "value": "God tier",
+              "sourcePage": 3238,
               "sourceKind": "direct"
             }
           ]
@@ -717,6 +751,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Seer of Light",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
+            }
+          ]
         }
       ],
       "sourcePage": 217,
@@ -816,6 +863,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Knight of Time",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
+            }
+          ]
         }
       ],
       "sourcePage": 312,
@@ -892,6 +952,13 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Not yet revealed",
               "sourcePage": 1674,
               "sourceKind": "direct"
+            },
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Land",
+              "value": "Land of Frost and Frogs (LOFAF)",
+              "sourcePage": 2988,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -917,6 +984,36 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Gardening · Nostalgic cartoons · Anthropomorphic animals · Nuclear physics · Advanced gadgetry",
               "sourcePage": 789,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Witch of Space",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
+            }
+          ]
+        },
+        {
+          "id": "sprite",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Sprite",
+              "value": "Jadesprite",
+              "sourcePage": 3213,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3210,
+                3211,
+                3212
+              ]
             }
           ]
         }
@@ -995,6 +1092,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The introduction recalls archaeology as a former interest and says a certain kind of role playing might also have been one."
             }
           ]
+        },
+        {
+          "id": "body",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Robot body",
+              "value": "Destroyed",
+              "sourcePage": 3186,
+              "sourceKind": "visual",
+              "sourceNote": "The robot explodes before this cutoff. Retain the last-known robot portrait; do not expose her later form or infer that her story has ended."
+            }
+          ]
         }
       ],
       "sourcePage": 2134,
@@ -1031,6 +1141,18 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePage": 2113,
           "sourceKind": "visual",
           "sourceNote": "User-supplied TavrosWheelchair.webp, matching his wheelchair depiction during Hivebent."
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "value": {
+            "src": "../assets/ref-tavros-robot-legs.webp",
+            "alt": "Tavros Nitram with robotic legs"
+          },
+          "sourcePage": 3066,
+          "sourceKind": "visual",
+          "sourcePages": [
+            3055
+          ]
         }
       ],
       "stats": [
@@ -1069,6 +1191,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 2101,
               "sourceKind": "direct",
               "sourceNote": "The introduction directly establishes fantasy stories, creature communion/training, card and role-playing games, slam poetry, and flight lore."
+            }
+          ]
+        },
+        {
+          "id": "mobility",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Mobility",
+              "value": "Robotic legs",
+              "sourcePage": 3055,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1507,6 +1641,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Seer of Mind",
+              "sourcePage": 3095,
+              "sourceKind": "direct"
+            }
+          ]
         }
       ],
       "sourcePage": 2031,
@@ -1541,6 +1687,15 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Vriska Serket"
           },
           "sourcePage": 2195,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "value": {
+            "src": "../assets/ref-vriska-god-tier.webp",
+            "alt": "Vriska Serket in her god-tier Thief of Light outfit"
+          },
+          "sourcePage": 3130,
           "sourceKind": "visual"
         }
       ],
@@ -1591,6 +1746,30 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Extreme roleplaying · Games of chance · Doomsday devices · Fortune-telling",
               "sourcePage": 2195,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Thief of Light",
+              "sourcePage": 3238,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "tier",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Tier",
+              "value": "God tier",
+              "sourcePage": 3238,
               "sourceKind": "direct"
             }
           ]
@@ -1839,6 +2018,34 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The detailed introduction directly establishes extreme roleplaying, doomsday devices, military history, legendary conquerors, and magic."
             }
           ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Prince of Hope",
+              "sourcePage": 3046,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Weapon",
+              "value": "Wand",
+              "sourcePage": 3047,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3046
+              ],
+              "sourceNote": "Kanaya supplies the wand while presenting it to Rose as white sorcery. This is a weapon description, not an unverified strife allocation."
+            }
+          ]
         }
       ],
       "sourcePage": 2408,
@@ -2082,6 +2289,21 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 1674,
               "sourceKind": "direct",
               "sourceNote": "The first-year recap explicitly groups Bro with the kids' guardians."
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3202,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3238
+              ]
             }
           ]
         }
@@ -2330,6 +2552,88 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     },
     {
+      "id": "jadesprite",
+      "group": "guardians-sprites",
+      "reveal": "act-5-act-2-part-1",
+      "introPage": 3213,
+      "name": [
+        {
+          "from": "act-5-act-2-part-1",
+          "value": "JADESPRITE",
+          "sourcePage": 3213,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-1",
+          "value": "Jadesprite",
+          "sourcePage": 3213,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-1",
+          "value": {
+            "src": "../assets/ref-jadesprite.webp",
+            "alt": "Jadesprite"
+          },
+          "sourcePage": 3212,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Role",
+              "value": "Jade’s sprite",
+              "sourcePage": 3213,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3212
+              ]
+            }
+          ]
+        },
+        {
+          "id": "components",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Components",
+              "value": "Becquerel + Jade’s dead dream self",
+              "sourcePage": 3238,
+              "sourceKind": "direct",
+              "sourcePages": [
+                2927,
+                3210,
+                3211,
+                3212
+              ]
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "First Guardian powers",
+              "sourcePage": 3238,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3213,
+      "sourceKind": "intro"
+    },
+    {
       "id": "bec",
       "group": "guardians-sprites",
       "reveal": "act-3",
@@ -2372,6 +2676,29 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 1075,
               "sourceKind": "direct",
               "sourceNote": "By late Act 3 Jade explicitly calls Bec her dog/guardian and one of her best friends."
+            },
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Role",
+              "value": "Earth’s First Guardian · Jade’s dog and guardian",
+              "sourcePage": 3238,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "prototyping",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Prototyping",
+              "value": "Becsprite, then Jadesprite",
+              "sourcePage": 3238,
+              "sourceKind": "direct",
+              "sourcePages": [
+                2927,
+                3212
+              ]
             }
           ]
         }
@@ -2671,6 +2998,15 @@ window.HOMESTUCK_REFERENCE = {
           ],
           "sourceKind": "visual",
           "sourceNote": "User-supplied JackPrototyped.webp, showing the ring-transformed appearance established during Act 4. Keep the original agent portrait through Intermission."
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "value": {
+            "src": "../assets/ref-bec-noir.webp",
+            "alt": "Jack Noir after Becquerel’s prototyping"
+          },
+          "sourcePage": 2927,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2697,6 +3033,30 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 1674,
               "sourceKind": "direct",
               "sourceNote": "The first-year recap explicitly states that the troll session's version of Jack Noir was exiled and took the name Spades Slick."
+            }
+          ]
+        },
+        {
+          "id": "alias",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Also known as",
+              "value": "Bec Noir",
+              "sourcePage": 3238,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "First Guardian powers, drawn from the Green Sun",
+              "sourcePage": 3238,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -3135,6 +3495,12 @@ window.HOMESTUCK_REFERENCE = {
     "portraitReplacements": {
       "date": "2026-09-21",
       "note": "Implemented the user-approved portrait review with supplied WebP images: Tavros in his wheelchair and Aradiabot at Act 5 Act 1, Jack’s ring-transformed appearance from Act 4 with rollback to his original portrait, and a genuine text-only Lord English placeholder from Intermission. Replaced assets for Aradia, Tavros, and Lord English are retained for future use although no current checkpoint displays them. Earlier Lord English name-only portrait claims were incorrect and are superseded."
+    },
+    "act5Act2Part1": {
+      "date": "2026-09-21",
+      "throughPage": 3238,
+      "stage": "act-5-act-2-part-1",
+      "note": "Added Jadesprite and staged portraits for John, Vriska, Tavros, and Jack. New stats checked against official comic page components and Recap 3 (3238); kid titles cross-checked against Recap 1 (1674). Retained the manual Act 5 Act 1 cap, earlier variants, and end-of-Act-5-Act-2 blood gate. Aradia’s robot destruction is recorded without revealing her later form; no death claim is made for Davesprite. This audit covers the new records, not a new global audit."
     }
   }
 };
