@@ -571,7 +571,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-4",
               "label": "Land",
-              "value": "Land of Wind and Shade",
+              "value": "Land of Wind and Shade (LOWAS)",
               "sourcePage": 1674,
               "sourceKind": "direct"
             }
@@ -656,7 +656,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-4",
               "label": "Land",
-              "value": "Land of Light and Rain",
+              "value": "Land of Light and Rain (LOLAR)",
               "sourcePage": 1674,
               "sourceKind": "direct"
             }
@@ -742,7 +742,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-4",
               "label": "Land",
-              "value": "Land of Heat and Clockwork",
+              "value": "Land of Heat and Clockwork (LOHAC)",
               "sourcePage": 1674,
               "sourceKind": "direct"
             }
