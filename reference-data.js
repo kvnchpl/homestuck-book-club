@@ -1349,7 +1349,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Strife specibus",
-              "value": "Sicklekind",
+              "value": "sicklekind",
               "sourcePage": 1994,
               "sourceKind": "editorial",
               "sourceNote": "User-requested allocation label for his established sickle weapon. This source page describes sickle practice rather than spelling out the allocation name."
