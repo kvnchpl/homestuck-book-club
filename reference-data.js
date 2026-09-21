@@ -123,7 +123,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4291,
       "sourcePage": 4291,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 12,
@@ -133,7 +133,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4416,
       "sourcePage": 4416,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 13,
@@ -143,7 +143,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4666,
       "sourcePage": 4666,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 14,
@@ -153,7 +153,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4819,
       "sourcePage": 4819,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 15,
@@ -163,7 +163,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5259,
       "sourcePage": 5259,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 16,
@@ -173,7 +173,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5434,
       "sourcePage": 5434,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 17,
@@ -183,7 +183,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5437,
       "sourcePage": 5437,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 18,
@@ -193,7 +193,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5508,
       "sourcePage": 5508,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 19,
@@ -203,7 +203,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5923,
       "sourcePage": 5923,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 20,
@@ -213,7 +213,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6239,
       "sourcePage": 6239,
       "sourceKind": "boundary",
-      "section": "Act 6"
+      "section": "Part 2"
     },
     {
       "value": 21,
@@ -223,7 +223,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6277,
       "sourcePage": 6277,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 22,
@@ -233,7 +233,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6474,
       "sourcePage": 6474,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 23,
@@ -243,7 +243,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6530,
       "sourcePage": 6530,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 24,
@@ -253,7 +253,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6852,
       "sourcePage": 6852,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 25,
@@ -263,7 +263,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6901,
       "sourcePage": 6901,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 26,
@@ -273,7 +273,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6920,
       "sourcePage": 6920,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 27,
@@ -283,7 +283,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6943,
       "sourcePage": 6943,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 28,
@@ -293,7 +293,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 7408,
       "sourcePage": 7408,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 29,
@@ -303,7 +303,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 7448,
       "sourcePage": 7448,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 30,
@@ -313,7 +313,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 8086,
       "sourcePage": 8086,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 31,
@@ -323,7 +323,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 8126,
       "sourcePage": 8126,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     },
     {
       "value": 32,
@@ -333,7 +333,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 8129,
       "sourcePage": 8129,
       "sourceKind": "boundary",
-      "section": "Act 6 Act 6 & Act 7"
+      "section": "Part 3"
     }
   ],
   "groups": [
