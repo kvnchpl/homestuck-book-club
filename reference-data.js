@@ -964,15 +964,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "ability",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
-              "label": "Ability",
-              "value": "Hears the voices of the dead",
+              "label": "Strife specibus",
+              "value": "Not yet revealed",
               "sourcePage": 2134,
-              "sourceKind": "direct",
-              "sourceNote": "Her introduction states that she has heard the voices of the dead since she was young; no unverified weapon allocation is inferred."
+              "sourceKind": "editorial",
+              "sourceNote": "Editorial placeholder requested for the current Act 5 Act 1 coverage; her introduction does not establish a named strife allocation."
             }
           ]
         },
@@ -1114,15 +1114,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "combat",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
-              "label": "Combat",
-              "value": "Psionics",
+              "label": "Strife specibus",
+              "value": "None",
               "sourcePage": 2077,
-              "sourceKind": "direct",
-              "sourceNote": "Narration says a high-level psionic has no use for a particular specibus allocation, while he levitates the throwing stars."
+              "sourceKind": "editorial",
+              "sourceNote": "User-requested display wording for the narration that a high-level psionic has no use for any particular specibus allocation."
             }
           ]
         },
@@ -1202,15 +1202,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "weapon",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-5-act-1",
-              "label": "Weapon",
-              "value": "Sickle",
+              "label": "Strife specibus",
+              "value": "Sicklekind",
               "sourcePage": 1994,
-              "sourceKind": "direct",
-              "sourceNote": "His introduction explicitly describes practicing with his sickle. This verifies the weapon without claiming a named allocation from a page that does not show it."
+              "sourceKind": "editorial",
+              "sourceNote": "User-requested allocation label for his established sickle weapon. This source page describes sickle practice rather than spelling out the allocation name."
             }
           ]
         },
@@ -3436,6 +3436,10 @@ window.HOMESTUCK_REFERENCE = {
         "The eight existing troll blood rows and individual blood examples in the hemospectrum cheat now begin at act-5-act-2-part-3. This is a conservative editorial gate after the later caste and ancestry material, not a claim that a single page exhaustively explains the system. Earlier blood audit notes describe historical display timing and are superseded by this gate.",
         "The current selectable cap remains act-5-act-1. No reference character notes were added."
       ]
+    },
+    "strifeDisplayUpdate": {
+      "date": "2026-09-21",
+      "note": "At the user’s request, Aradia, Sollux, and Karkat now use Strife specibus rows reading Not yet revealed, None, and Sicklekind respectively. This supersedes the weapon/ability display choices in statCoverageUpdate; source notes distinguish the requested wording from direct evidence."
     }
   }
 };
