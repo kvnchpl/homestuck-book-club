@@ -78,8 +78,8 @@ window.HOMESTUCK_REFERENCE = {
     {
       "value": 7,
       "key": "act-5-act-2-part-1",
-      "label": "Act 5 Act 2 — Part 1",
-      "shortLabel": "A5A2 · 1",
+      "label": "Act 5 Act 2 (Part 1)",
+      "shortLabel": "A5A2P1",
       "endPage": 3238,
       "sourcePage": 3238,
       "sourceKind": "boundary",
@@ -88,8 +88,8 @@ window.HOMESTUCK_REFERENCE = {
     {
       "value": 8,
       "key": "act-5-act-2-part-2",
-      "label": "Act 5 Act 2 — Part 2",
-      "shortLabel": "A5A2 · 2",
+      "label": "Act 5 Act 2 (Part 2)",
+      "shortLabel": "A5A2P2",
       "endPage": 3762,
       "sourcePage": 3762,
       "sourceKind": "boundary",
@@ -98,8 +98,8 @@ window.HOMESTUCK_REFERENCE = {
     {
       "value": 9,
       "key": "act-5-act-2-part-3",
-      "label": "Act 5 Act 2 — Part 3",
-      "shortLabel": "A5A2 · 3",
+      "label": "Act 5 Act 2 (Part 3)",
+      "shortLabel": "A5A2P3",
       "endPage": 4110,
       "sourcePage": 4110,
       "sourceKind": "boundary",
