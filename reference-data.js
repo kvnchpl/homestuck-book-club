@@ -342,7 +342,7 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "act-1",
-          "value": "THE KIDS",
+          "value": "KIDS",
           "sourcePage": 3,
           "sourcePages": [
             216
@@ -351,7 +351,7 @@ window.HOMESTUCK_REFERENCE = {
         },
         {
           "from": "act-2",
-          "value": "THE KIDS",
+          "value": "KIDS",
           "sourcePage": 3,
           "sourcePages": [
             216,
@@ -361,7 +361,7 @@ window.HOMESTUCK_REFERENCE = {
         },
         {
           "from": "act-3",
-          "value": "THE KIDS",
+          "value": "KIDS",
           "sourcePage": 3,
           "sourcePages": [
             216,
@@ -377,7 +377,7 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "act-5-act-1",
-          "value": "THE TROLLS",
+          "value": "TROLLS",
           "sourcePage": 1994,
           "sourcePages": [
             2012,
@@ -451,13 +451,13 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "act-2",
-          "value": "THE GAME WORLD",
+          "value": "GAME WORLD CHARACTERS",
           "sourcePage": 666,
           "sourceKind": "editorial"
         },
         {
           "from": "act-3",
-          "value": "THE GAME WORLD",
+          "value": "GAME WORLD CHARACTERS",
           "sourcePage": 666,
           "sourcePages": [
             892,
@@ -469,7 +469,7 @@ window.HOMESTUCK_REFERENCE = {
         },
         {
           "from": "intermission",
-          "value": "THE GAME WORLD",
+          "value": "GAME WORLD CHARACTERS",
           "sourcePage": 666,
           "sourcePages": [
             892,
@@ -482,7 +482,7 @@ window.HOMESTUCK_REFERENCE = {
         },
         {
           "from": "act-4",
-          "value": "THE GAME WORLD",
+          "value": "GAME WORLD CHARACTERS",
           "sourcePage": 666,
           "sourcePages": [
             892,
@@ -503,13 +503,13 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "intermission",
-          "value": "OTHERS",
+          "value": "OTHER CHARACTERS",
           "sourcePage": 1155,
           "sourceKind": "editorial"
         },
         {
           "from": "act-5-act-1",
-          "value": "OTHERS",
+          "value": "OTHER CHARACTERS",
           "sourcePage": 1155,
           "sourcePages": [
             2253
