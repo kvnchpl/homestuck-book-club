@@ -3482,7 +3482,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     "strifeDisplayUpdate": {
       "date": "2026-09-21",
-      "note": "At the user’s request, Aradia, Sollux, and Karkat now use Strife specibus rows reading Not yet revealed, None, and Sicklekind respectively. This supersedes the weapon/ability display choices in statCoverageUpdate; source notes distinguish the requested wording from direct evidence."
+      "note": "At the user’s request, Aradia, Sollux, and Karkat now use Strife specibus rows reading Not yet revealed, None, and sicklekind respectively. This supersedes the weapon/ability display choices in statCoverageUpdate; source notes distinguish the requested wording from direct evidence."
     },
     "cheatSheetsRemoval": {
       "date": "2026-09-21",
