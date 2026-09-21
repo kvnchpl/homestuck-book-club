@@ -23,7 +23,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 247,
       "sourcePage": 247,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 2,
@@ -33,7 +33,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 758,
       "sourcePage": 758,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 3,
@@ -43,7 +43,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 1153,
       "sourcePage": 1153,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 4,
@@ -53,7 +53,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 1357,
       "sourcePage": 1357,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 5,
@@ -63,7 +63,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 1988,
       "sourcePage": 1988,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 6,
@@ -73,7 +73,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 2625,
       "sourcePage": 2625,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 7,
@@ -83,7 +83,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 3173,
       "sourcePage": 3173,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 8,
@@ -93,7 +93,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 3625,
       "sourcePage": 3625,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 9,
@@ -103,7 +103,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4110,
       "sourcePage": 4110,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 10,
@@ -113,7 +113,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4112,
       "sourcePage": 4112,
       "sourceKind": "boundary",
-      "section": "Acts 1–5 & intermissions"
+      "section": "Part 1"
     },
     {
       "value": 11,
@@ -377,7 +377,7 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "act-5-act-1",
-          "value": "THE TWELVE TROLLS",
+          "value": "THE TROLLS",
           "sourcePage": 1994,
           "sourcePages": [
             2012,

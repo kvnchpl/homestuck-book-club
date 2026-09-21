@@ -194,7 +194,7 @@ test('all segments are grouped in reading order while buttons, saved progress, a
     assert.equal(r.ids['reading-progress-output'].textContent, 'Act 4');
     const ticks = r.ticks();
     assert.deepEqual(r.ids['reading-progress-scale'].children.map(section => section.children[0].textContent),
-      ['Acts 1–5 & intermissions', 'Act 6', 'Act 6 Act 6 & Act 7']);
+      ['Part 1', 'Act 6', 'Act 6 Act 6 & Act 7']);
     assert.deepEqual(ticks.map(t => t.dataset.stageKey), Array.from(r.window.HOMESTUCK_REFERENCE.stages, s => s.key));
     assert.equal(ticks.length, 32);
     assert.equal(ticks.filter(t => !t.disabled).length, 5);
