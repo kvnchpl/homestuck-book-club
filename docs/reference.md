@@ -13,7 +13,7 @@ name: [
 ]
 ```
 
-The renderer uses the latest variant reached at the selected stage. If no variant is available, it does not insert that property into the DOM. Names, roster labels, portraits and alt text, stats, group headings, and cheat-sheet copy all use this model. Character group assignments may also be staged. Quadrants become available with their containing section.
+The renderer uses the latest variant reached at the selected stage. If no variant is available, it does not insert that property into the DOM. Names, roster labels, portraits and alt text, stats, and group headings all use this model. Character group assignments may also be staged.
 
 For example, the guardian heading starts as `GUARDIANS` in Act 1 and becomes `GUARDIANS & SPRITES` in Act 2. Snowman's name and portrait change when her earlier identity is revealed in Act 4. Add variants to the relevant arrays rather than overwriting earlier wording. Names and compact roster labels have separate arrays; update both when an alias should also change in the roster.
 
@@ -23,7 +23,7 @@ Every character must have at least one meaningful stat whenever they are visible
 
 Strife specibi are staged like other stats. Prefer a verified named allocation; a known weapon or ability is sufficient when its allocation is not verified. The user has explicitly chosen these Act 5 Act 1 strife rows: Aradia — `Not yet revealed`; Sollux — `None`; Karkat — `Sicklekind`. Preserve these editorial choices and their source notes. Aradia’s placeholder supplements her other meaningful stats; replace it with a verified allocation when later coverage establishes one. Do not back-project later equipment: early Kanaya uses `makeupkind`, Gamzee uses `clubkind`, and Eridan uses `riflekind`. Rose's `needlekind` starts at Act 2, after her Act 1 introduction.
 
-Troll blood rows are intentionally delayed until `act-5-act-2-part-3`, the end of Act 5 Act 2, after its later caste and ancestry material. The system is explained incrementally; this is a conservative editorial checkpoint rather than a claim of one definitive explanation page. Earlier source pages remain valid evidence for individual blood facts, but do not determine their display timing. Keep these rows hidden through the preceding stages, including on rollback, and do not advance the club cap to expose them. The early hemospectrum cheat gives only a general definition; its individual blood examples follow the same later gate.
+Troll blood rows are intentionally delayed until `act-5-act-2-part-3`, the end of Act 5 Act 2, after its later caste and ancestry material. The system is explained incrementally; this is a conservative editorial checkpoint rather than a claim of one definitive explanation page. Earlier source pages remain valid evidence for individual blood facts, but do not determine their display timing. Keep these rows hidden through the preceding stages, including on rollback, and do not advance the club cap to expose them.
 
 Every user-facing reference record carries a primary `sourcePage`. Optional `sourcePages` contains additional supporting pages without repeating the primary page. All supporting pages must fall within the record's reading stage. Source metadata is not rendered publicly.
 
@@ -44,6 +44,6 @@ The reference requires JavaScript and stays empty if its data cannot load. Print
 
 The reference shell versions its stylesheet, data, and renderer URLs together. Bump their shared `v` query value when changing the cap or selector behavior so returning visitors load the matching assets.
 
-Character notes have been removed by request. Do not reintroduce them as part of routine updates.
+Character notes and all cheat sheets (including the quadrant strip) have been removed by request. Keep the reference focused on character profiles; do not reintroduce these sections as part of routine updates.
 
 For portrait provenance, see [portrait sources](portrait-sources.md). Snowman uses the supplied `ref-snowman.webp` during Intermission and `ref-black-queen.webp` after the Act 4 identity reveal. Preserve that distinction.

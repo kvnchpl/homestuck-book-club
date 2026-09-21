@@ -16,7 +16,7 @@ This is a static HTML/CSS/JavaScript site deployed by GitHub Pages from the repo
 - Use original paraphrases and the established illustrated-slide format. Do not generate replacement comic artwork.
 - All delivered images use WebP. Moderate quality loss is acceptable; consistent format, correct source imagery, proportions, transparency, and animation matter.
 - Preserve the reference's manual `availableThrough` cap, stage keys, and Part 1 / Part 2 / Part 3 grouping. Publishing a recap does not automatically authorize raising the cap.
-- Character notes were intentionally removed. Names, portraits, and group labels may vary by stage; preserve earlier variants and spoiler rollback.
+- Character notes and reference cheat sheets were intentionally removed. Names, portraits, and group labels may vary by stage; preserve earlier variants and spoiler rollback.
 - Every visible character must have at least one meaningful, source-backed stat from their first reveal onward. Add an early role, weapon, or ability when later facts are still hidden. Gate troll blood rows to the end of Act 5 Act 2 (`act-5-act-2-part-3`), after the later caste/ancestry material.
 - Keep source downloads, extracted frames, screenshots, and experiments outside the repository, preferably in a temporary directory. Commit only used delivery assets and useful provenance.
 

@@ -98,8 +98,6 @@ test('blood stats wait until the end of Act 5 Act 2 and disappear on rollback', 
     r.stage(stage);
     const blood = r.cards().flatMap(stats).filter(([label]) => label === 'Blood');
     assert.equal(blood.length, count, `blood rows at checkpoint ${stage}`);
-    if (count === 0) assert.doesNotMatch(text(r.ids['reference-cheats']), /candy-red|Eridan's blood/);
-    else assert.match(text(r.ids['reference-cheats']), /candy-red/);
   }
 });
 
@@ -110,7 +108,6 @@ test('fresh visits render only Act 1 content, regardless of a later-character ha
   assert.equal(r.cards().filter(c => !c.hidden).length, 1);
   assert.equal(r.cards().find(c => !c.hidden).dataset.characterId, 'john');
   assert.doesNotMatch(text(r.ids['character-groups']), /KARKAT|DAVE|SNOWMAN/);
-  assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE|ECTOBIOLOGY/);
   assert.equal(r.ids['reading-progress-output'].textContent, 'Act 1');
   assert.equal(r.ids['reference-loading'].hidden, true);
 });
@@ -139,14 +136,15 @@ test('all populated stages render one selected profile with valid tab relationsh
 test('lowering progress removes future facts and restores earlier terminology', () => {
   const r = reference({ saved: 'act-5-act-1', hash: '#character-karkat', availableThrough: 'act-5-act-1' });
   assert.equal(r.cards().find(c => !c.hidden).dataset.characterId, 'karkat');
-  assert.match(text(r.ids['reference-cheats']), /DOOMED TIMELINE/);
   r.stage(5);
-  assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE/);
-  assert.match(text(r.ids['reference-cheats']), /ALTERNATE TIMELINE/);
+  assert.match(text(r.cards().find(c => c.dataset.characterId === 'hb')), /Jack Noir's muscle/);
+  r.stage(3);
+  const brute = r.cards().find(c => c.dataset.characterId === 'hb');
+  assert.match(text(brute), /Jack Noir's agent/);
+  assert.doesNotMatch(text(brute), /muscle/);
   r.stage(1);
   assert.deepEqual(r.cards().map(c => c.dataset.characterId), ['john', 'rose', 'dad']);
   assert.doesNotMatch(text(r.ids['character-groups']), /KARKAT|SNOWMAN/);
-  assert.doesNotMatch(text(r.ids['reference-cheats']), /TIMELINE|ECTOBIOLOGY/);
   assert.equal(r.cards().filter(c => !c.hidden).length, 1);
 });
 
@@ -248,7 +246,6 @@ test('all segments are grouped in reading order while buttons, saved progress, a
     for (const value of [6, 20, 32]) {
       r.stage(value);
       assert.equal(r.ids['reading-progress-output'].textContent, 'Act 4');
-      assert.doesNotMatch(text(r.ids['reference-cheats']), /DOOMED TIMELINE/);
     }
     r.stage(1);
     assert.equal(r.cards().length, 3);

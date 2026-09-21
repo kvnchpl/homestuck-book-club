@@ -166,7 +166,7 @@ reference = pages['reference/index.html']
 # The HTML shell must never embed facts that JavaScript would need to hide.
 assert not by_class(reference.root, 'character-card')
 assert not by_class(reference.root, 'character-portrait')
-for container in ('character-roster', 'character-groups', 'reference-cheats'):
+for container in ('character-roster', 'character-groups'):
     assert not len(reference.ids[container]) and not text(reference.ids[container])
 assert 'hidden' in reference.ids['character-select'].attrib
 scripts = [element.get('src').split('?')[0] for element in reference.root.iter('script')]

@@ -9,13 +9,12 @@
   const select = document.getElementById('character-select');
   const roster = document.getElementById('character-roster');
   const groupsContainer = document.getElementById('character-groups');
-  const cheatsContainer = document.getElementById('reference-cheats');
   const progressScale = document.getElementById('reading-progress-scale');
   const progressOutput = document.getElementById('reading-progress-output');
   const boundaryLabel = document.getElementById('reference-boundary-label');
   const loadingMessage = document.getElementById('reference-loading');
 
-  if (!data || !select || !roster || !groupsContainer || !cheatsContainer ||
+  if (!data || !select || !roster || !groupsContainer ||
     !progressScale || !progressOutput) {
     if (loadingMessage) {
       loadingMessage.textContent = 'The spoiler-safe reference could not be loaded.';
@@ -23,7 +22,7 @@
     return;
   }
 
-  const { stages, groups, characters, cheatSections } = data;
+  const { stages, groups, characters } = data;
   if (!Array.isArray(stages) || !stages.length) return;
 
   const storageKey = 'homestuck-reference-progress';
@@ -303,68 +302,6 @@
     showCharacter(selectedCharacterId || currentCards[0].dataset.characterId, { updateHash: false });
   }
 
-  function renderCheats() {
-    cheatsContainer.replaceChildren();
-
-    for (const sectionData of cheatSections || []) {
-      if (!reached(sectionData.reveal)) continue;
-      const title = resolvedValue(sectionData.title);
-      if (!title) continue;
-
-      const visibleCards = (sectionData.cards || []).map(card => ({
-        data: card,
-        title: resolvedValue(card.title),
-        body: resolvedValue(card.body)
-      })).filter(card => card.title && card.body);
-
-      if (!visibleCards.length && !sectionData.quadrants?.length) continue;
-
-      const section = document.createElement('section');
-      section.className = 'reference-section';
-      section.id = sectionData.id;
-      const heading = document.createElement('h2');
-      heading.textContent = title;
-      section.append(heading);
-
-      if (visibleCards.length) {
-        const grid = document.createElement('div');
-        grid.className = 'quick-grid';
-        for (const card of visibleCards) {
-          const article = document.createElement('article');
-          article.className = 'quick-card';
-          const cardHeading = document.createElement('h3');
-          cardHeading.textContent = card.title;
-          const paragraph = document.createElement('p');
-          paragraph.textContent = card.body;
-          article.append(cardHeading, paragraph);
-          grid.append(article);
-        }
-        section.append(grid);
-      }
-
-      if (sectionData.quadrants?.length) {
-        const strip = document.createElement('div');
-        strip.className = 'quadrant-strip';
-        strip.setAttribute('aria-label', 'The four troll romance quadrants');
-        for (const quadrant of sectionData.quadrants) {
-          const item = document.createElement('div');
-          const symbol = document.createElement('span');
-          symbol.className = 'quadrant-symbol';
-          symbol.textContent = quadrant.symbol;
-          const strong = document.createElement('strong');
-          strong.textContent = quadrant.name;
-          const small = document.createElement('small');
-          small.textContent = quadrant.caption;
-          item.append(symbol, strong, small);
-          strip.append(item);
-        }
-        section.append(strip);
-      }
-
-      cheatsContainer.append(section);
-    }
-  }
-
   function updateStageUI(stage) {
     progressOutput.value = stage.label;
     progressOutput.textContent = stage.label;
@@ -380,7 +317,6 @@
     currentStage = stageFor(valueOrKey);
     updateStageUI(currentStage);
     renderCharacters();
-    renderCheats();
     if (loadingMessage) loadingMessage.hidden = true;
     if (persist) saveStage(currentStage);
   }
