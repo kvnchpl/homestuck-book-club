@@ -4289,7 +4289,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "intermission",
           "value": {
-            "placeholder": "Appearance not yet revealed"
+            "placeholder": "?"
           },
           "sourcePage": 1155,
           "sourceKind": "editorial",
