@@ -600,15 +600,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "strife-specibus",
+          "id": "title",
           "variants": [
             {
-              "from": "act-1",
-              "label": "Strife specibus",
-              "value": "hammerkind",
-              "sourcePage": 38,
+              "from": "act-4",
+              "label": "Title",
+              "value": "Heir of Breath",
+              "sourcePage": 1674,
               "sourceKind": "direct",
-              "sourceNote": "Narration explicitly allocates the HAMMERKIND ABSTRATUS."
+              "sourceNote": "The official first-year recap explicitly lists all four titles. Display begins at Act 4, which contains this source, rather than waiting for the later authoring increment."
             }
           ]
         },
@@ -629,9 +629,34 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-4",
-              "label": "Dream Moon",
+              "label": "Dream moon",
               "value": "Prospit",
               "sourcePage": 1674,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-1",
+              "label": "Strife specibus",
+              "value": "hammerkind",
+              "sourcePage": 38,
+              "sourceKind": "direct",
+              "sourceNote": "Narration explicitly allocates the HAMMERKIND ABSTRATUS."
+            }
+          ]
+        },
+        {
+          "id": "form",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Form",
+              "value": "God tier",
+              "sourcePage": 3238,
               "sourceKind": "direct"
             }
           ]
@@ -644,31 +669,6 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Interests",
               "value": "Bad movies · Programming · Paranormal lore · Amateur magic · Video games",
               "sourcePage": 4,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "title",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Title",
-              "value": "Heir of Breath",
-              "sourcePage": 1674,
-              "sourceKind": "direct",
-              "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
-            }
-          ]
-        },
-        {
-          "id": "tier",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Tier",
-              "value": "God tier",
-              "sourcePage": 3238,
               "sourceKind": "direct"
             }
           ]
@@ -741,15 +741,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "strife-specibus",
+          "id": "title",
           "variants": [
             {
-              "from": "act-2",
-              "label": "Strife specibus",
-              "value": "needlekind",
-              "sourcePage": 299,
-              "sourceKind": "visual",
-              "sourceNote": "The allocated card is visibly labelled needlekind; checked against the official main panel."
+              "from": "act-4",
+              "label": "Title",
+              "value": "Seer of Light",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The official first-year recap explicitly lists all four titles. Display begins at Act 4, which contains this source, rather than waiting for the later authoring increment."
             }
           ]
         },
@@ -770,7 +770,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-4",
-              "label": "Dream Moon",
+              "label": "Dream moon",
               "value": "Derse",
               "sourcePage": 1674,
               "sourceKind": "direct"
@@ -778,27 +778,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "interests",
+          "id": "strife-specibus",
           "variants": [
             {
-              "from": "act-1",
-              "label": "Interests",
-              "value": "Obscure literature · Creative writing · Strange fiction · Psychoanalysis · Knitting · Video games",
-              "sourcePage": 217,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "title",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Title",
-              "value": "Seer of Light",
-              "sourcePage": 1674,
-              "sourceKind": "direct",
-              "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
+              "from": "act-2",
+              "label": "Strife specibus",
+              "value": "needlekind",
+              "sourcePage": 299,
+              "sourceKind": "visual",
+              "sourceNote": "The allocated card is visibly labelled needlekind; checked against the official main panel."
             }
           ]
         },
@@ -815,23 +803,22 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-3",
               "label": "Form",
-              "value": "God-tier dream self",
+              "value": "God tier",
               "sourcePage": 4109,
               "sourceKind": "visual",
-              "sourceNote": "Replaces the Part 2 grimdark form after her dream self ascends in Cascade."
+              "sourceNote": "Her dream self ascends in Cascade. A single evolving Form row replaces the duplicate Form/Tier display and restores Grimdark on rollback."
             }
           ]
         },
         {
-          "id": "tier",
+          "id": "interests",
           "variants": [
             {
-              "from": "act-5-act-2-part-3",
-              "label": "Tier",
-              "value": "God tier",
-              "sourcePage": 4109,
-              "sourceKind": "visual",
-              "sourceNote": "Cascade: ascended outfits and aspect emblems verified in the official animation’s artwork. The next Intermission is outside this checkpoint."
+              "from": "act-1",
+              "label": "Interests",
+              "value": "Obscure literature · Creative writing · Strange fiction · Psychoanalysis · Knitting · Video games",
+              "sourcePage": 217,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -895,15 +882,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "strife-specibus",
+          "id": "title",
           "variants": [
             {
-              "from": "act-2",
-              "label": "Strife specibus",
-              "value": "bladekind",
-              "sourcePage": 342,
+              "from": "act-4",
+              "label": "Title",
+              "value": "Knight of Time",
+              "sourcePage": 1674,
               "sourceKind": "direct",
-              "sourceNote": "Narration states that his specibus is already allocated with the BLADEKIND ABSTRATUS."
+              "sourceNote": "The official first-year recap explicitly lists all four titles. Display begins at Act 4, which contains this source, rather than waiting for the later authoring increment."
             }
           ]
         },
@@ -924,10 +911,36 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-4",
-              "label": "Dream Moon",
+              "label": "Dream moon",
               "value": "Derse",
               "sourcePage": 1674,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-2",
+              "label": "Strife specibus",
+              "value": "bladekind",
+              "sourcePage": 342,
+              "sourceKind": "direct",
+              "sourceNote": "Narration states that his specibus is already allocated with the BLADEKIND ABSTRATUS."
+            }
+          ]
+        },
+        {
+          "id": "form",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Form",
+              "value": "God tier",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "Cascade: ascended outfits and aspect emblems verified in the official animation’s artwork. The next Intermission is outside this checkpoint."
             }
           ]
         },
@@ -940,32 +953,6 @@ window.HOMESTUCK_REFERENCE = {
               "value": "DJing · Obscure bands · Preserved animals · Photography",
               "sourcePage": 312,
               "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "title",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Title",
-              "value": "Knight of Time",
-              "sourcePage": 1674,
-              "sourceKind": "direct",
-              "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
-            }
-          ]
-        },
-        {
-          "id": "tier",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Tier",
-              "value": "God tier",
-              "sourcePage": 4109,
-              "sourceKind": "visual",
-              "sourceNote": "Cascade: ascended outfits and aspect emblems verified in the official animation’s artwork. The next Intermission is outside this checkpoint."
             }
           ]
         }
@@ -1032,15 +1019,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "strife-specibus",
+          "id": "title",
           "variants": [
             {
-              "from": "act-3",
-              "label": "Strife specibus",
-              "value": "riflekind",
-              "sourcePage": 1077,
-              "sourceKind": "visual",
-              "sourceNote": "The harpoon gun is placed in her visibly labelled riflekind card."
+              "from": "act-4",
+              "label": "Title",
+              "value": "Witch of Space",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The official first-year recap explicitly lists all four titles. Display begins at Act 4, which contains this source, rather than waiting for the later authoring increment."
             }
           ]
         },
@@ -1068,7 +1055,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-3",
-              "label": "Dream Moon",
+              "label": "Dream moon",
               "value": "Prospit",
               "sourcePage": 1026,
               "sourceKind": "visual",
@@ -1077,27 +1064,43 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "interests",
+          "id": "strife-specibus",
           "variants": [
             {
               "from": "act-3",
-              "label": "Interests",
-              "value": "Gardening · Nostalgic cartoons · Anthropomorphic animals · Nuclear physics · Advanced gadgetry",
-              "sourcePage": 789,
-              "sourceKind": "direct"
+              "label": "Strife specibus",
+              "value": "riflekind",
+              "sourcePage": 1077,
+              "sourceKind": "visual",
+              "sourceNote": "The harpoon gun is placed in her visibly labelled riflekind card."
             }
           ]
         },
         {
-          "id": "title",
+          "id": "powers",
           "variants": [
             {
-              "from": "act-5-act-2-part-1",
-              "label": "Title",
-              "value": "Witch of Space",
-              "sourcePage": 1674,
-              "sourceKind": "direct",
-              "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
+              "from": "act-5-act-2-part-3",
+              "label": "Powers",
+              "value": "Space manipulation · First Guardian powers",
+              "sourcePage": 4109,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "quest",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Quest",
+              "value": "Breed the Genesis Frog",
+              "sourcePage": 3319,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3311
+              ],
+              "sourceNote": "Kanaya explains breeding the session’s frog. The named Genesis Frog is identified in the same conversation."
             }
           ]
         },
@@ -1126,27 +1129,11 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "quest",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Quest",
-              "value": "Breed the Genesis Frog",
-              "sourcePage": 3319,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3311
-              ],
-              "sourceNote": "Kanaya explains breeding the session’s frog. The named Genesis Frog is identified in the same conversation."
-            }
-          ]
-        },
-        {
-          "id": "tier",
+          "id": "form",
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Tier",
+              "label": "Form",
               "value": "God tier",
               "sourcePage": 4109,
               "sourceKind": "visual",
@@ -1155,14 +1142,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "powers",
+          "id": "interests",
           "variants": [
             {
-              "from": "act-5-act-2-part-3",
-              "label": "Powers",
-              "value": "Space manipulation · First Guardian powers",
-              "sourcePage": 4109,
-              "sourceKind": "visual"
+              "from": "act-3",
+              "label": "Interests",
+              "value": "Gardening · Nostalgic cartoons · Anthropomorphic animals · Nuclear physics · Advanced gadgetry",
+              "sourcePage": 789,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1226,6 +1213,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Maid of Time",
+              "sourcePage": 2540,
+              "sourceKind": "direct",
+              "sourceNote": "Earlier explicit title in Hivebent; replaces the later citation and unnecessarily delayed display stage."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -1239,66 +1239,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "former-interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Former Interests",
-              "value": "Archaeology · Roleplaying",
-              "sourcePage": 2134,
-              "sourceKind": "direct",
-              "sourceNote": "The introduction recalls archaeology as a former interest and says a certain kind of role playing might also have been one."
-            }
-          ]
-        },
-        {
-          "id": "body",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Robot body",
-              "value": "Destroyed",
-              "sourcePage": 3186,
-              "sourceKind": "visual",
-              "sourceNote": "The robot explodes before this cutoff. Retain the last-known robot portrait; do not expose her later form or infer that her story has ended."
-            },
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Former body",
-              "value": "Robot (destroyed)",
-              "sourcePage": 3186,
-              "sourceKind": "visual",
-              "sourcePages": [
-                3297
-              ],
-              "sourceNote": "Supersedes the Part 1 label so the destroyed robot is not confused with her newly living form."
-            }
-          ]
-        },
-        {
-          "id": "title",
+          "id": "weapon",
           "variants": [
             {
               "from": "act-5-act-2-part-2",
-              "label": "Title",
-              "value": "Maid of Time",
-              "sourcePage": 3482,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "tier",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Tier",
-              "value": "God tier",
-              "sourcePage": 3297,
+              "label": "Weapon",
+              "value": "Whip",
+              "sourcePage": 3582,
               "sourceKind": "visual",
-              "sourcePages": [
-                3565
-              ]
+              "sourceNote": "Shown in the memory of her archaeological exploration. This does not establish a formally named strife allocation."
             }
           ]
         },
@@ -1308,7 +1257,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-2",
               "label": "Powers",
-              "value": "Can hold an opponent in a time-freezing spell",
+              "value": "Time-freezing spells",
               "sourcePage": 3565,
               "sourceKind": "composite",
               "sourcePages": [
@@ -1319,15 +1268,26 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "weapon",
+          "id": "form",
           "variants": [
             {
-              "from": "act-5-act-2-part-2",
-              "label": "Known weapon",
-              "value": "Whip",
-              "sourcePage": 3582,
+              "from": "act-5-act-2-part-1",
+              "label": "Form",
+              "value": "Robot body destroyed",
+              "sourcePage": 3186,
               "sourceKind": "visual",
-              "sourceNote": "Shown in the memory of her archaeological exploration. This does not establish a formally named strife allocation."
+              "sourceNote": "The robot explodes before this cutoff. Retain the last-known robot portrait; do not expose her later form or infer that her story has ended."
+            },
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Form",
+              "value": "God tier",
+              "sourcePage": 3297,
+              "sourceKind": "visual",
+              "sourcePages": [
+                3565
+              ],
+              "sourceNote": "Her living god-tier form supersedes the destroyed-robot state. The earlier state remains visible at Part 1."
             }
           ]
         },
@@ -1356,6 +1316,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "The Handmaid",
               "sourcePage": 4069,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "former-interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Former interests",
+              "value": "Archaeology · Roleplaying",
+              "sourcePage": 2134,
+              "sourceKind": "direct",
+              "sourceNote": "The introduction recalls archaeology as a former interest and says a certain kind of role playing might also have been one."
             }
           ]
         }
@@ -1422,6 +1395,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Page of Breath",
+              "sourcePage": 2348,
+              "sourceKind": "direct",
+              "sourceNote": "Explicitly named in the Hivebent narration; no later title or aspect powers inferred."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -1435,15 +1421,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "interests",
+          "id": "status",
           "variants": [
             {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Fantasy stories · Creature training · Card games · Roleplaying · Slam poetry · Flight lore",
-              "sourcePage": 2101,
-              "sourceKind": "direct",
-              "sourceNote": "The introduction directly establishes fantasy stories, creature communion/training, card and role-playing games, slam poetry, and flight lore."
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3299,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
             }
           ]
         },
@@ -1456,19 +1442,6 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Robotic legs",
               "sourcePage": 3055,
               "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "status",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Status",
-              "value": "Deceased",
-              "sourcePage": 3299,
-              "sourceKind": "visual",
-              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
             }
           ]
         },
@@ -1494,6 +1467,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "The Summoner",
               "sourcePage": 3758,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Fantasy stories · Creature training · Card games · Roleplaying · Slam poetry · Flight lore",
+              "sourcePage": 2101,
+              "sourceKind": "direct",
+              "sourceNote": "The introduction directly establishes fantasy stories, creature communion/training, card and role-playing games, slam poetry, and flight lore."
             }
           ]
         }
@@ -1565,6 +1551,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Mage of Doom",
+              "sourcePage": 2514,
+              "sourceKind": "direct",
+              "sourceNote": "Explicitly named in the Hivebent narration; no later title or aspect powers inferred."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -1578,28 +1577,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
+          "id": "form",
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Blood",
-              "value": "Yellow",
-              "sourcePage": 2146,
-              "sourceKind": "direct",
-              "sourceNote": "Sollux compares lower castes to his own and asks, “what’s worse than yellow?” Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
-            }
-          ]
-        },
-        {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Programming · Hacking · Apiculture networking",
-              "sourcePage": 2076,
-              "sourceKind": "direct",
-              "sourceNote": "The introduction establishes his computer/code expertise, hacking, and apiculture networking; “video games” was removed as an unsupported generalization."
+              "label": "Form",
+              "value": "Partly a ghost",
+              "sourcePage": 3998,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3999,
+                4001
+              ],
+              "sourceNote": "Aradia describes him as having a foot on either side; the next pages show one ghost eye and describe his body arriving separately. Do not label him simply dead."
             }
           ]
         },
@@ -1624,19 +1614,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "form",
+          "id": "blood",
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Form",
-              "value": "Partly a ghost",
-              "sourcePage": 3998,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3999,
-                4001
-              ],
-              "sourceNote": "Aradia describes him as having a foot on either side; the next pages show one ghost eye and describe his body arriving separately. Do not label him simply dead."
+              "label": "Blood",
+              "value": "Yellow",
+              "sourcePage": 2146,
+              "sourceKind": "direct",
+              "sourceNote": "Sollux compares lower castes to his own and asks, “what’s worse than yellow?” Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
             }
           ]
         },
@@ -1649,6 +1635,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "The Psiioniic",
               "sourcePage": 4058,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Programming · Hacking · Apiculture networking",
+              "sourcePage": 2076,
+              "sourceKind": "direct",
+              "sourceNote": "The introduction establishes his computer/code expertise, hacking, and apiculture networking; “video games” was removed as an unsupported generalization."
             }
           ]
         }
@@ -1702,6 +1701,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Knight of Blood",
+              "sourcePage": 2059,
+              "sourceKind": "direct",
+              "sourceNote": "Earlier explicit title in Hivebent; replaces the later citation and unnecessarily delayed display stage."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -1728,26 +1740,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Romantic comedies · Programming · Sickle practice",
-              "sourcePage": 1994,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "title",
+          "id": "ancestor",
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Title",
-              "value": "Knight of Blood",
-              "sourcePage": 4096,
-              "sourceKind": "direct"
+              "label": "Ancestor",
+              "value": "The Signless / Sufferer",
+              "sourcePage": 4085,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -1764,14 +1764,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "ancestor",
+          "id": "interests",
           "variants": [
             {
-              "from": "act-5-act-2-part-3",
-              "label": "Ancestor",
-              "value": "The Signless / Sufferer",
-              "sourcePage": 4085,
-              "sourceKind": "visual"
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Romantic comedies · Programming · Sickle practice",
+              "sourcePage": 1994,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1825,6 +1825,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Rogue of Heart",
+              "sourcePage": 2532,
+              "sourceKind": "direct",
+              "sourceNote": "Explicitly named in the Hivebent narration; no later title or aspect powers inferred."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -1834,31 +1847,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 2157,
               "sourceKind": "visual",
               "sourceNote": "Her claw gloves are displayed in the clawkind card."
-            }
-          ]
-        },
-        {
-          "id": "blood",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Blood",
-              "value": "Green",
-              "sourcePage": 2162,
-              "sourceKind": "direct",
-              "sourceNote": "Nepeta asks what “green blood” means and Equius answers using the same term. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
-            }
-          ]
-        },
-        {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Friendly roleplaying · Hunting · Wall comics",
-              "sourcePage": 2156,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -1876,6 +1864,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Blood",
+              "value": "Green",
+              "sourcePage": 2162,
+              "sourceKind": "direct",
+              "sourceNote": "Nepeta asks what “green blood” means and Equius answers using the same term. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
+            }
+          ]
+        },
+        {
           "id": "ancestor",
           "variants": [
             {
@@ -1884,6 +1885,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "The Disciple",
               "sourcePage": 4058,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Friendly roleplaying · Hunting · Wall comics",
+              "sourcePage": 2156,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1946,6 +1959,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Sylph of Space",
+              "sourcePage": 2565,
+              "sourceKind": "direct",
+              "sourceNote": "Earlier explicit title in Hivebent; replaces the later citation and unnecessarily delayed display stage."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -1959,58 +1985,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Blood",
-              "value": "Jade green",
-              "sourcePage": 2323,
-              "sourceKind": "direct",
-              "sourceNote": "Her introduction explicitly states that she has JADE GREEN BLOOD. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
-            }
-          ]
-        },
-        {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Landscaping · Topiary · Supernatural romance novels · Fashion · Sewing",
-              "sourcePage": 2323,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "title",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Title",
-              "value": "Sylph of Space",
-              "sourcePage": 3305,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3311
-              ],
-              "sourceNote": "Kanaya contrasts her Sylph class with Jade’s Witch class while explaining their shared Space-player duties: the Forge and frog breeding."
-            }
-          ]
-        },
-        {
           "id": "weapon",
           "variants": [
             {
-              "from": "act-5-act-2-part-2",
+              "from": "act-5-act-1",
               "label": "Weapon",
               "value": "Lipstick that transforms into a chainsaw",
-              "sourcePage": 3539,
+              "sourcePage": 2324,
               "sourceKind": "visual",
-              "sourcePages": [
-                3344
-              ]
+              "sourceNote": "The transformation is shown at her introduction. Keep the separately verified makeupkind allocation; a weapon does not establish a new allocation."
             }
           ]
         },
@@ -2039,6 +2022,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Blood",
+              "value": "Jade green",
+              "sourcePage": 2323,
+              "sourceKind": "direct",
+              "sourceNote": "Her introduction explicitly states that she has JADE GREEN BLOOD. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
+            }
+          ]
+        },
+        {
           "id": "ancestor",
           "variants": [
             {
@@ -2047,6 +2043,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "The Dolorosa",
               "sourcePage": 4057,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Landscaping · Topiary · Supernatural romance novels · Fashion · Sewing",
+              "sourcePage": 2323,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -2100,6 +2108,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Seer of Mind",
+              "sourcePage": 2523,
+              "sourceKind": "direct",
+              "sourceNote": "Earlier explicit title in Hivebent; replaces the later citation and unnecessarily delayed display stage."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -2126,30 +2147,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Dragons · Scalemates · Live-action roleplaying · Alternian law",
-              "sourcePage": 2031,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "title",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Title",
-              "value": "Seer of Mind",
-              "sourcePage": 3095,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
           "id": "ancestor",
           "variants": [
             {
@@ -2158,6 +2155,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Neophyte Redglare",
               "sourcePage": 3518,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Dragons · Scalemates · Live-action roleplaying · Alternian law",
+              "sourcePage": 2031,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -2229,6 +2238,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Thief of Light",
+              "sourcePage": 3238,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -2242,48 +2263,11 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "blood",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Blood",
-              "value": "Cerulean",
-              "sourcePage": 2276,
-              "sourceKind": "direct",
-              "sourceNote": "Vriska calls the blue blood covering her “cerulean swill.” Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
-            }
-          ]
-        },
-        {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Extreme roleplaying · Games of chance · Doomsday devices · Fortune-telling",
-              "sourcePage": 2195,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "title",
+          "id": "form",
           "variants": [
             {
               "from": "act-5-act-2-part-1",
-              "label": "Title",
-              "value": "Thief of Light",
-              "sourcePage": 3238,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "tier",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Tier",
+              "label": "Form",
               "value": "God tier",
               "sourcePage": 3238,
               "sourceKind": "direct"
@@ -2307,6 +2291,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Blood",
+              "value": "Cerulean",
+              "sourcePage": 2276,
+              "sourceKind": "direct",
+              "sourceNote": "Vriska calls the blue blood covering her “cerulean swill.” Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
+            }
+          ]
+        },
+        {
           "id": "ancestor",
           "variants": [
             {
@@ -2315,6 +2312,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Mindfang",
               "sourcePage": 3475,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Extreme roleplaying · Games of chance · Doomsday devices · Fortune-telling",
+              "sourcePage": 2195,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -2368,6 +2377,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Heir of Void",
+              "sourcePage": 2540,
+              "sourceKind": "direct",
+              "sourceNote": "Explicitly named in the Hivebent narration; no later title or aspect powers inferred."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -2380,19 +2402,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePages": [
                 2218
               ]
-            }
-          ]
-        },
-        {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Archery · Musclebeast art · Robotics · Strength",
-              "sourcePage": 2211,
-              "sourceKind": "direct",
-              "sourceNote": "“Strength training” was changed to “Strength”: the introduction says he loves being strong, alongside archery, musclebeast art, and robot-building/brawling."
             }
           ]
         },
@@ -2434,6 +2443,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Darkleer",
               "sourcePage": 3756,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Archery · Musclebeast art · Robotics · Strength",
+              "sourcePage": 2211,
+              "sourceKind": "direct",
+              "sourceNote": "“Strength training” was changed to “Strength”: the introduction says he loves being strong, alongside archery, musclebeast art, and robot-building/brawling."
             }
           ]
         }
@@ -2487,6 +2509,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Title",
+              "value": "Bard of Rage",
+              "sourcePage": 3360,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -2504,46 +2538,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 3452,
               "sourceKind": "visual",
               "sourceNote": "The strife deck explicitly displays jokerkind; preserve clubkind at the earlier checkpoints."
-            }
-          ]
-        },
-        {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Clowns · Unicycling · Faygo · Baking · Horns",
-              "sourcePage": 2012,
-              "sourceKind": "composite",
-              "sourcePages": [
-                2013
-              ],
-              "sourceNote": "The introduction supports clowns, the one-wheel device, baking, and horns; the immediately following page identifies his “fine beverage” as Faygo."
-            }
-          ]
-        },
-        {
-          "id": "title",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Title",
-              "value": "Bard of Rage",
-              "sourcePage": 3360,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "moirail",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Moirail",
-              "value": "Karkat Vantas",
-              "sourcePage": 4096,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -2569,6 +2563,34 @@ window.HOMESTUCK_REFERENCE = {
               "value": "The Grand Highblood",
               "sourcePage": 3514,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "moirail",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Moirail",
+              "value": "Karkat Vantas",
+              "sourcePage": 4096,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Clowns · Unicycling · Faygo · Baking · Horns",
+              "sourcePage": 2012,
+              "sourceKind": "composite",
+              "sourcePages": [
+                2013
+              ],
+              "sourceNote": "The introduction supports clowns, the one-wheel device, baking, and horns; the immediately following page identifies his “fine beverage” as Faygo."
             }
           ]
         }
@@ -2623,6 +2645,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Title",
+              "value": "Prince of Hope",
+              "sourcePage": 3046,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -2632,47 +2666,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 2456,
               "sourceKind": "visual",
               "sourceNote": "Unequipping Ahab’s Crosshairs exposes the riflekind card; later wandkind is not revealed here."
-            }
-          ]
-        },
-        {
-          "id": "blood",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Blood",
-              "value": "Violet · Second-highest caste",
-              "sourcePage": 2439,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3536
-              ],
-              "sourceNote": "The earlier dialogue places his caste second from the top; the later injury supplies the visible color. Both remain hidden before the end-of-Act-5 gate."
-            }
-          ]
-        },
-        {
-          "id": "interests",
-          "variants": [
-            {
-              "from": "act-5-act-1",
-              "label": "Interests",
-              "value": "Extreme roleplaying · Doomsday devices · Military history · Legendary conquerors · Magic",
-              "sourcePage": 2439,
-              "sourceKind": "direct",
-              "sourceNote": "The detailed introduction directly establishes extreme roleplaying, doomsday devices, military history, legendary conquerors, and magic."
-            }
-          ]
-        },
-        {
-          "id": "title",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Title",
-              "value": "Prince of Hope",
-              "sourcePage": 3046,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -2706,6 +2699,22 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Blood",
+              "value": "Violet · Second-highest caste",
+              "sourcePage": 2439,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3536
+              ],
+              "sourceNote": "The earlier dialogue places his caste second from the top; the later injury supplies the visible color. Both remain hidden before the end-of-Act-5 gate."
+            }
+          ]
+        },
+        {
           "id": "ancestor",
           "variants": [
             {
@@ -2714,6 +2723,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Orphaner Dualscar",
               "sourcePage": 3508,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Interests",
+              "value": "Extreme roleplaying · Doomsday devices · Military history · Legendary conquerors · Magic",
+              "sourcePage": 2439,
+              "sourceKind": "direct",
+              "sourceNote": "The detailed introduction directly establishes extreme roleplaying, doomsday devices, military history, legendary conquerors, and magic."
             }
           ]
         }
@@ -2768,6 +2790,19 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Title",
+              "value": "Witch of Life",
+              "sourcePage": 2466,
+              "sourceKind": "direct",
+              "sourceNote": "Explicitly named in the Hivebent narration; no later title or aspect powers inferred."
+            }
+          ]
+        },
+        {
           "id": "strife-specibus",
           "variants": [
             {
@@ -2777,6 +2812,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 2455,
               "sourceKind": "visual",
               "sourceNote": "Unequipping the double culling fork exposes the 2x3dentkind card."
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3352,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
             }
           ]
         },
@@ -2797,6 +2845,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Condesce",
+              "sourcePage": 4063,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
           "id": "interests",
           "variants": [
             {
@@ -2806,31 +2866,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 2441,
               "sourceKind": "direct",
               "sourceNote": "The detailed introduction establishes care for deep-sea fauna, aquatic hoofbeasts, and cuttlefish."
-            }
-          ]
-        },
-        {
-          "id": "status",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Status",
-              "value": "Deceased",
-              "sourcePage": 3352,
-              "sourceKind": "visual",
-              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
-            }
-          ]
-        },
-        {
-          "id": "ancestor",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Ancestor",
-              "value": "The Condesce",
-              "sourcePage": 4063,
-              "sourceKind": "visual"
             }
           ]
         }
@@ -3074,13 +3109,22 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-3",
               "label": "Role",
-              "value": "Jade's late grandfather",
+              "value": "Jade's grandfather",
               "sourcePage": 790,
-              "sourcePages": [
-                920
-              ],
-              "sourceKind": "composite",
-              "sourceNote": "Page 790 identifies him as Jade's grandfather; page 920 explicitly says he is no longer alive."
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-3",
+              "label": "Status",
+              "value": "Deceased on Earth",
+              "sourcePage": 920,
+              "sourceKind": "direct",
+              "sourceNote": "Jade explicitly refers to when he was alive. The location qualifier accommodates his earlier appearances in the Medium without suggesting a resurrection."
             }
           ]
         }
@@ -3335,12 +3379,24 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-1",
               "label": "Role",
-              "value": "Jade’s sprite",
+              "value": "Jade’s sprite guide",
               "sourcePage": 3213,
               "sourceKind": "composite",
               "sourcePages": [
                 3212
               ]
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "First Guardian powers",
+              "sourcePage": 3238,
+              "sourceKind": "direct"
             }
           ]
         },
@@ -3359,18 +3415,6 @@ window.HOMESTUCK_REFERENCE = {
                 3211,
                 3212
               ]
-            }
-          ]
-        },
-        {
-          "id": "powers",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Powers",
-              "value": "First Guardian powers",
-              "sourcePage": 3238,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -3498,27 +3542,27 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-2",
+              "label": "Role",
+              "value": "Founder and mayor of Can Town",
+              "sourcePage": 685,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "formerly",
           "variants": [
             {
               "from": "act-4",
               "label": "Formerly",
-              "value": "WARWEARY VILLEIN",
+              "value": "Warweary Villein",
               "sourcePage": 1988,
               "sourceKind": "direct",
               "sourceNote": "Recap 2 explicitly identifies WV's earlier Battlefield identity as the Warweary Villein."
-            }
-          ]
-        },
-        {
-          "id": "abbreviation",
-          "variants": [
-            {
-              "from": "act-2",
-              "label": "Abbreviation",
-              "value": "WV",
-              "sourcePage": 666,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -3589,39 +3633,36 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-3",
+              "label": "Role",
+              "value": "Mail carrier",
+              "sourcePage": 894,
+              "sourceKind": "direct",
+              "sourceNote": "Her pledge to deliver the letter establishes her role before the later Parcel Mistress name reveal."
+            },
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Role",
+              "value": "Queen of Prospit",
+              "sourcePage": 3260,
+              "sourceKind": "direct",
+              "sourceNote": "The narration explicitly calls her the new queen at page 3260, within Part 2; the ring-transformed portrait still waits for Part 3."
+            }
+          ]
+        },
+        {
           "id": "formerly",
           "variants": [
             {
               "from": "act-4",
               "label": "Formerly",
-              "value": "PARCEL MISTRESS",
+              "value": "Parcel Mistress",
               "sourcePage": 1674,
               "sourceKind": "direct",
               "sourceNote": "The first-year recap explicitly says PM worked as a Parcel Mistress."
-            }
-          ]
-        },
-        {
-          "id": "abbreviation",
-          "variants": [
-            {
-              "from": "act-3",
-              "label": "Abbreviation",
-              "value": "PM",
-              "sourcePage": 892,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Role",
-              "value": "Queen of Prospit",
-              "sourcePage": 3260,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -3687,27 +3728,31 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-3",
+              "label": "Role",
+              "value": "Self-appointed wasteland law enforcer",
+              "sourcePage": 1100,
+              "sourceKind": "editorial",
+              "sourceNote": "Summarizes his claimed jurisdiction and enforcement without prematurely revealing his earlier Authority Regulator identity.",
+              "sourcePages": [
+                1103
+              ]
+            }
+          ]
+        },
+        {
           "id": "formerly",
           "variants": [
             {
               "from": "act-4",
               "label": "Formerly",
-              "value": "AUTHORITY REGULATOR",
+              "value": "Authority Regulator",
               "sourcePage": 1674,
               "sourceKind": "direct",
               "sourceNote": "The first-year recap explicitly identifies AR's earlier role as an Authority Regulator."
-            }
-          ]
-        },
-        {
-          "id": "abbreviation",
-          "variants": [
-            {
-              "from": "act-3",
-              "label": "Abbreviation",
-              "value": "AR",
-              "sourcePage": 1100,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -3768,22 +3813,10 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-4",
               "label": "Formerly",
-              "value": "WHITE QUEEN",
+              "value": "White Queen",
               "sourcePage": 1674,
               "sourceKind": "direct",
               "sourceNote": "The first-year recap explicitly says the Windswept Questant was formerly the White Queen."
-            }
-          ]
-        },
-        {
-          "id": "abbreviation",
-          "variants": [
-            {
-              "from": "act-4",
-              "label": "Abbreviation",
-              "value": "WQ",
-              "sourcePage": 1543,
-              "sourceKind": "visual"
             }
           ]
         },
@@ -3873,19 +3906,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "counterpart",
-          "variants": [
-            {
-              "from": "act-4",
-              "label": "Counterpart",
-              "value": "SPADES SLICK, troll session",
-              "sourcePage": 1674,
-              "sourceKind": "direct",
-              "sourceNote": "The first-year recap explicitly states that the troll session's version of Jack Noir was exiled and took the name Spades Slick."
-            }
-          ]
-        },
-        {
           "id": "alias",
           "variants": [
             {
@@ -3894,6 +3914,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Bec Noir",
               "sourcePage": 3238,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Spades Slick (trolls’ session)",
+              "sourcePage": 1674,
+              "sourceKind": "direct",
+              "sourceNote": "The first-year recap explicitly states that the troll session's version of Jack Noir was exiled and took the name Spades Slick."
             }
           ]
         },
@@ -4080,6 +4113,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "Recap 2 explicitly calls HB 'Jack's muscle'."
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 1988,
+              "sourceKind": "direct",
+              "sourceNote": "The Act 4 recap explicitly recounts PM beheading the Hegemonic Brute. Do not confuse him with the troll-session Hearts Boxcars."
+            }
+          ]
         }
       ],
       "sourcePage": 957,
@@ -4121,25 +4167,12 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "special-rule",
-          "variants": [
-            {
-              "from": "intermission",
-              "label": "Special rule",
-              "value": "Killing her destroys the universe",
-              "sourcePage": 1268,
-              "sourceKind": "direct",
-              "sourceNote": "The Intermission states this when Snowman appears; it does not require her later Black Queen identity."
-            }
-          ]
-        },
-        {
           "id": "formerly",
           "variants": [
             {
               "from": "act-4",
               "label": "Formerly",
-              "value": "Troll-session BLACK QUEEN",
+              "value": "Black Queen of the trolls’ session",
               "sourcePage": 1674,
               "sourceKind": "direct"
             }
@@ -4155,6 +4188,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 1674,
               "sourceKind": "direct",
               "sourceNote": "The first-year recap explicitly states that the troll-session Black Queen was exiled and later joined the Felt, becoming Snowman."
+            }
+          ]
+        },
+        {
+          "id": "special-rule",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Special rule",
+              "value": "Killing her destroys the universe",
+              "sourcePage": 1268,
+              "sourceKind": "direct",
+              "sourceNote": "The Intermission states this when Snowman appears; it does not require her later Black Queen identity."
             }
           ]
         },
@@ -4235,12 +4281,12 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "status",
+          "id": "body",
           "variants": [
             {
               "from": "intermission-2",
-              "label": "Status",
-              "value": "Deceased",
+              "label": "Body",
+              "value": "Vessel from which Lord English emerges",
               "sourcePage": 4111,
               "sourceKind": "visual",
               "sourceNote": "Verified against the official Intermission 2 animation transcript. No later origins, species, or identities are inferred."
@@ -4248,12 +4294,12 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "body",
+          "id": "status",
           "variants": [
             {
               "from": "intermission-2",
-              "label": "Body",
-              "value": "Vessel from which Lord English emerges",
+              "label": "Status",
+              "value": "Deceased",
               "sourcePage": 4111,
               "sourceKind": "visual",
               "sourceNote": "Verified against the official Intermission 2 animation transcript. No later origins, species, or identities are inferred."
@@ -4392,18 +4438,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Descendant",
-              "value": "Vriska Serket",
-              "sourcePage": 3475,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "role",
           "variants": [
             {
@@ -4412,6 +4446,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Pirate fleet commander",
               "sourcePage": 3475,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Vriska Serket",
+              "sourcePage": 3475,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -4480,6 +4526,18 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Role",
+              "value": "Mindfang’s maritime overlord and rival",
+              "sourcePage": 3507,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "descendant",
           "variants": [
             {
@@ -4492,14 +4550,15 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "role",
+          "id": "status",
           "variants": [
             {
               "from": "act-5-act-2-part-2",
-              "label": "Role",
-              "value": "Mindfang’s maritime overlord and rival",
-              "sourcePage": 3507,
-              "sourceKind": "direct"
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3514,
+              "sourceKind": "direct",
+              "sourceNote": "Mindfang explicitly reports his demise. Do not infer the status of other ancestors merely from their age or association."
             }
           ]
         }
@@ -4541,18 +4600,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Descendant",
-              "value": "Gamzee Makara",
-              "sourcePage": 3514,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "affiliation",
           "variants": [
             {
@@ -4561,6 +4608,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Subjugglators",
               "sourcePage": 3514,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Gamzee Makara",
+              "sourcePage": 3514,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -4602,18 +4661,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Descendant",
-              "value": "Terezi Pyrope",
-              "sourcePage": 3518,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "role",
           "variants": [
             {
@@ -4625,6 +4672,30 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePages": [
                 3517
               ]
+            }
+          ]
+        },
+        {
+          "id": "affiliation",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Affiliation",
+              "value": "Secret follower of the Signless",
+              "sourcePage": 4056,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Terezi Pyrope",
+              "sourcePage": 3518,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -4644,14 +4715,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "affiliation",
+          "id": "status",
           "variants": [
             {
-              "from": "act-5-act-2-part-3",
-              "label": "Affiliation",
-              "value": "Secret follower of the Signless",
-              "sourcePage": 4056,
-              "sourceKind": "visual"
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3751,
+              "sourceKind": "composite",
+              "sourceNote": "The hanging is depicted, and Mindfang explicitly refers to her demise.",
+              "sourcePages": [
+                3750
+              ]
             }
           ]
         }
@@ -4693,18 +4768,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Descendant",
-              "value": "Equius Zahhak",
-              "sourcePage": 3756,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "role",
           "variants": [
             {
@@ -4716,18 +4779,6 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePages": [
                 3754
               ]
-            }
-          ]
-        },
-        {
-          "id": "ability",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Ability",
-              "value": "Conceals nearby objects from Doc Scratch’s awareness",
-              "sourcePage": 3757,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -4744,6 +4795,30 @@ window.HOMESTUCK_REFERENCE = {
                 3756
               ],
               "sourceNote": "The executioner who spares the Disciple is depicted as Equius’s ancestor, previously identified as Darkleer."
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Equius Zahhak",
+              "sourcePage": 3756,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "ability",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Powers",
+              "value": "Conceals nearby objects from Doc Scratch’s awareness",
+              "sourcePage": 3757,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -4785,18 +4860,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Descendant",
-              "value": "Tavros Nitram",
-              "sourcePage": 3758,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "foretold-role",
           "variants": [
             {
@@ -4814,6 +4877,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 4063,
               "sourceKind": "direct",
               "sourceNote": "Scratch’s history now confirms the uprising that Part 2 presented through Mindfang’s prophecy."
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Tavros Nitram",
+              "sourcePage": 3758,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -4867,14 +4942,14 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
+          "id": "role",
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Karkat Vantas",
-              "sourcePage": 4085,
-              "sourceKind": "visual"
+              "label": "Role",
+              "value": "Preacher of compassion and equality among bloodlines",
+              "sourcePage": 4054,
+              "sourceKind": "direct"
             }
           ]
         },
@@ -4891,14 +4966,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "role",
+          "id": "descendant",
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Role",
-              "value": "Preacher of compassion and equality among bloodlines",
-              "sourcePage": 4054,
-              "sourceKind": "direct"
+              "label": "Descendant",
+              "value": "Karkat Vantas",
+              "sourcePage": 4085,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -4908,7 +4983,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-3",
               "label": "Status",
-              "value": "Executed",
+              "value": "Deceased (executed)",
               "sourcePage": 4055,
               "sourceKind": "direct"
             }
@@ -4952,18 +5027,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Kanaya Maryam",
-              "sourcePage": 4057,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "role",
           "variants": [
             {
@@ -4984,6 +5047,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Mother Grub’s attendant in the brooding caverns",
               "sourcePage": 4057,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Kanaya Maryam",
+              "sourcePage": 4057,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -5025,18 +5100,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Nepeta Leijon",
-              "sourcePage": 4058,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "role",
           "variants": [
             {
@@ -5048,6 +5111,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePages": [
                 4059
               ]
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Nepeta Leijon",
+              "sourcePage": 4058,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -5089,6 +5164,18 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Helmsman powering the Condesce’s battleship",
+              "sourcePage": 4060,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "descendant",
           "variants": [
             {
@@ -5113,24 +5200,12 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Role",
-              "value": "Helmsman powering the Condesce’s battleship",
-              "sourcePage": 4060,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
           "id": "status",
           "variants": [
             {
               "from": "act-5-act-2-part-3",
               "label": "Status",
-              "value": "Killed by the Vast Glub",
+              "value": "Deceased (Vast Glub)",
               "sourcePage": 4064,
               "sourceKind": "direct"
             }
@@ -5174,18 +5249,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Aradia Megido",
-              "sourcePage": 4069,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "role",
           "variants": [
             {
@@ -5197,6 +5260,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePages": [
                 4068
               ]
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Aradia Megido",
+              "sourcePage": 4069,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -5263,18 +5338,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Feferi Peixes",
-              "sourcePage": 4063,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "role",
           "variants": [
             {
@@ -5286,6 +5349,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePages": [
                 4063
               ]
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Feferi Peixes",
+              "sourcePage": 4063,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -5436,6 +5511,13 @@ window.HOMESTUCK_REFERENCE = {
       "throughPage": 4112,
       "stage": "intermission-2",
       "note": "Intermission 2 comprises the page-4111 animation and page-4112 end card. The official animation transcript explicitly identifies Scratch’s corpse, English’s emergence, and the sarcophagus carrying him through time and space. Added only the information revealed here; no Act 6 origins, species, or aliases. Preserved the current Part 3 cap and all prior checkpoint variants."
+    },
+    "statConsistencyAudit": {
+      "date": "2026-09-22",
+      "throughPage": 4112,
+      "charactersReviewed": 48,
+      "originalStatVariantsReviewed": 224,
+      "note": "Reviewed every existing stat for relevance, naming, redundancy, checkpoint timing, and consistency with related profiles. Revisited the official comic sources for revised facts and timing; retained established source-backed stats where no issue was found. Corrected title timing, added five omitted troll titles and four confirmed status rows, replaced exile abbreviation-only coverage with early roles, revealed Kanaya’s weapon and PM’s role at their supported checkpoints, and consolidated form fields. Blood rows, requested strife allocations, character/portrait variants, and the manual cap are unchanged. Earlier audit notes describe historical data and are superseded where this audit revises a row."
     }
   }
 };
