@@ -716,6 +716,15 @@ window.HOMESTUCK_REFERENCE = {
           },
           "sourcePage": 3643,
           "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-rose-god-tier.webp",
+            "alt": "Rose Lalonde in her god-tier Seer of Light outfit"
+          },
+          "sourcePage": 4109,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -802,6 +811,27 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Grimdark",
               "sourcePage": 3643,
               "sourceKind": "direct"
+            },
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Form",
+              "value": "God-tier dream self",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "Replaces the Part 2 grimdark form after her dream self ascends in Cascade."
+            }
+          ]
+        },
+        {
+          "id": "tier",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Tier",
+              "value": "God tier",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "Cascade: ascended outfits and aspect emblems verified in the official animation’s artwork. The next Intermission is outside this checkpoint."
             }
           ]
         }
@@ -838,6 +868,15 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Dave Strider"
           },
           "sourcePage": 311,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-dave-god-tier.webp",
+            "alt": "Dave Strider in his god-tier Knight of Time outfit"
+          },
+          "sourcePage": 4109,
           "sourceKind": "visual"
         }
       ],
@@ -916,6 +955,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
             }
           ]
+        },
+        {
+          "id": "tier",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Tier",
+              "value": "God tier",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "Cascade: ascended outfits and aspect emblems verified in the official animation’s artwork. The next Intermission is outside this checkpoint."
+            }
+          ]
         }
       ],
       "sourcePage": 312,
@@ -950,6 +1002,15 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Jade Harley"
           },
           "sourcePage": 766,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-jade-god-tier.webp",
+            "alt": "Jade Harley in her god-tier Witch of Space outfit with dog ears"
+          },
+          "sourcePage": 4109,
           "sourceKind": "visual"
         }
       ],
@@ -1054,6 +1115,13 @@ window.HOMESTUCK_REFERENCE = {
                 3211,
                 3212
               ]
+            },
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Sprite",
+              "value": "Jadesprite (merged with Jade)",
+              "sourcePage": 4109,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -1070,6 +1138,31 @@ window.HOMESTUCK_REFERENCE = {
                 3311
               ],
               "sourceNote": "Kanaya explains breeding the session’s frog. The named Genesis Frog is identified in the same conversation."
+            }
+          ]
+        },
+        {
+          "id": "tier",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Tier",
+              "value": "God tier",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "Cascade: ascended outfits and aspect emblems verified in the official animation’s artwork. The next Intermission is outside this checkpoint."
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Powers",
+              "value": "Space manipulation · First Guardian powers",
+              "sourcePage": 4109,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -1237,6 +1330,34 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "Shown in the memory of her archaeological exploration. This does not establish a formally named strife allocation."
             }
           ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Blood",
+              "value": "Rust red",
+              "sourcePage": 4071,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4069
+              ],
+              "sourceNote": "The Handmaid is identified as Aradia’s ancestor and her lineage as rust-blooded. Color terminology summarizes the established ancestor/descendant bloodline, not the blue blood of Aradia’s former robot body."
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Handmaid",
+              "sourcePage": 4069,
+              "sourceKind": "visual"
+            }
+          ]
         }
       ],
       "sourcePage": 2134,
@@ -1350,6 +1471,31 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
             }
           ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Blood",
+              "value": "Brown",
+              "sourcePage": 3299,
+              "sourceKind": "visual",
+              "sourceNote": "Brown blood is visible around Tavros’s body. Its earlier appearance does not advance the editorial blood gate."
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Summoner",
+              "sourcePage": 3758,
+              "sourceKind": "visual"
+            }
+          ]
         }
       ],
       "sourcePage": 2101,
@@ -1393,6 +1539,15 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Sollux Captor after losing his sight"
           },
           "sourcePage": 3477,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-sollux-half-ghost.webp",
+            "alt": "Sollux with one dark eye and one white ghost eye"
+          },
+          "sourcePage": 4001,
           "sourceKind": "visual"
         }
       ],
@@ -1457,6 +1612,43 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Blind",
               "sourcePage": 3476,
               "sourceKind": "direct"
+            },
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Sight",
+              "value": "Can see the Green Sun in two dimensions",
+              "sourcePage": 4000,
+              "sourceKind": "direct",
+              "sourceNote": "Replaces the unqualified Blind row, without claiming that normal vision has returned."
+            }
+          ]
+        },
+        {
+          "id": "form",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Form",
+              "value": "Partly a ghost",
+              "sourcePage": 3998,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3999,
+                4001
+              ],
+              "sourceNote": "Aradia describes him as having a foot on either side; the next pages show one ghost eye and describe his body arriving separately. Do not label him simply dead."
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Psiioniic",
+              "sourcePage": 4058,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -1544,6 +1736,42 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Romantic comedies · Programming · Sickle practice",
               "sourcePage": 1994,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Title",
+              "value": "Knight of Blood",
+              "sourcePage": 4096,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "moirail",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Moirail",
+              "value": "Gamzee Makara",
+              "sourcePage": 4096,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Signless / Sufferer",
+              "sourcePage": 4085,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -1644,6 +1872,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 3711,
               "sourceKind": "visual",
               "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Disciple",
+              "sourcePage": 4058,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -1788,6 +2028,25 @@ window.HOMESTUCK_REFERENCE = {
                 3521
               ],
               "sourceNote": "Describe the demonstrated change; the later rainbow-drinker explanation is not introduced here."
+            },
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Form",
+              "value": "Rainbow drinker",
+              "sourcePage": 3978,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Dolorosa",
+              "sourcePage": 4057,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -1889,6 +2148,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "Neophyte Redglare",
+              "sourcePage": 3518,
+              "sourceKind": "visual"
+            }
+          ]
         }
       ],
       "sourcePage": 2031,
@@ -1932,6 +2203,15 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Vriska Serket in her god-tier Thief of Light outfit"
           },
           "sourcePage": 3130,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-vriska-ghost.webp",
+            "alt": "Vriska Serket as a ghost with blank eyes"
+          },
+          "sourcePage": 3905,
           "sourceKind": "visual"
         }
       ],
@@ -2007,6 +2287,34 @@ window.HOMESTUCK_REFERENCE = {
               "value": "God tier",
               "sourcePage": 3238,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Deceased · Appears in dream bubbles",
+              "sourcePage": 3882,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3863,
+                3905
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "Mindfang",
+              "sourcePage": 3475,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -2098,6 +2406,34 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 3448,
               "sourceKind": "visual",
               "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Blood",
+              "value": "Dark blue",
+              "sourcePage": 3448,
+              "sourceKind": "visual",
+              "sourceNote": "Blue blood is visible on Equius’s body; Aradia also calls him blue blood on page 2288.",
+              "sourcePages": [
+                2288
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "Darkleer",
+              "sourcePage": 3756,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -2198,6 +2534,43 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "moirail",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Moirail",
+              "value": "Karkat Vantas",
+              "sourcePage": 4096,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Blood",
+              "value": "Purple",
+              "sourcePage": 3455,
+              "sourceKind": "visual",
+              "sourceNote": "Purple blood is visible where Gamzee cuts his face with Nepeta’s claws."
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Grand Highblood",
+              "sourcePage": 3514,
+              "sourceKind": "visual"
+            }
+          ]
         }
       ],
       "sourcePage": 2012,
@@ -2268,10 +2641,13 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-3",
               "label": "Blood",
-              "value": "Penultimate on the hemospectrum",
+              "value": "Violet · Second-highest caste",
               "sourcePage": 2439,
-              "sourceKind": "direct",
-              "sourceNote": "The narration says his blood is nearly the richest the hemospectrum offers and “penultimate on the scale”; the later standardized color name is intentionally not used. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
+              "sourceKind": "composite",
+              "sourcePages": [
+                3536
+              ],
+              "sourceNote": "The earlier dialogue places his caste second from the top; the later injury supplies the visible color. Both remain hidden before the end-of-Act-5 gate."
             }
           ]
         },
@@ -2326,6 +2702,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 3535,
               "sourceKind": "visual",
               "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "Orphaner Dualscar",
+              "sourcePage": 3508,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -2398,10 +2786,13 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-3",
               "label": "Blood",
-              "value": "Most noble blood possible",
+              "value": "Fuchsia · Highest caste",
               "sourcePage": 2441,
-              "sourceKind": "direct",
-              "sourceNote": "The narration calls it “the most noble blood possible” and says she is the only troll of her kind known to possess it; the later standardized color name is intentionally not used. Display is intentionally deferred until the end of Act 5 Act 2, after the later caste/ancestry material; the source page records the earlier evidence for the individual fact."
+              "sourceKind": "composite",
+              "sourcePages": [
+                3352
+              ],
+              "sourceNote": "Her introduction states her blood’s rank; its color is visible on her body. Both remain hidden before the end-of-Act-5 gate."
             }
           ]
         },
@@ -2428,6 +2819,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 3352,
               "sourceKind": "visual",
               "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
+        },
+        {
+          "id": "ancestor",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ancestor",
+              "value": "The Condesce",
+              "sourcePage": 4063,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -2841,6 +3244,15 @@ window.HOMESTUCK_REFERENCE = {
           },
           "sourcePage": 1651,
           "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-davesprite-injured.webp",
+            "alt": "Davesprite bandaged and missing one wing"
+          },
+          "sourcePage": 3889,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2865,6 +3277,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Doomed-timeline Dave + Crowsprite",
               "sourcePage": 1674,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "condition",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Condition",
+              "value": "Bandaged · One wing missing",
+              "sourcePage": 3889,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -2947,6 +3371,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "First Guardian powers",
               "sourcePage": 3238,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "form",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Form",
+              "value": "Merged with Jade’s god-tier self",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "Keep the sprite’s own historical profile and portrait; show the resulting combined form on Jade’s card."
             }
           ]
         }
@@ -3084,6 +3521,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "condition",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Condition",
+              "value": "Severely wounded",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "Do not infer death or a later recovery from the injury shown in Cascade."
+            }
+          ]
         }
       ],
       "sourcePage": 666,
@@ -3100,6 +3550,13 @@ window.HOMESTUCK_REFERENCE = {
           "value": "PEREGRINE MENDICANT",
           "sourcePage": 892,
           "sourceKind": "direct"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "PROSPITIAN MONARCH",
+          "sourcePage": 3018,
+          "sourceKind": "direct",
+          "sourceNote": "PM’s new title is named on page 3018. This variant accompanies her ring-transformed portrait in the Part 3 reference update; earlier reference wording remains intact."
         }
       ],
       "rosterLabel": [
@@ -3118,6 +3575,15 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Peregrine Mendicant"
           },
           "sourcePage": 892,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-pm-prototyped.webp",
+            "alt": "PM transformed by the White Queen’s ring"
+          },
+          "sourcePage": 4109,
           "sourceKind": "visual"
         }
       ],
@@ -3144,6 +3610,42 @@ window.HOMESTUCK_REFERENCE = {
               "value": "PM",
               "sourcePage": 892,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Queen of Prospit",
+              "sourcePage": 3260,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "ring",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Ring",
+              "value": "White Queen’s ring",
+              "sourcePage": 4109,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Powers",
+              "value": "First Guardian powers",
+              "sourcePage": 4109,
+              "sourceKind": "visual"
             }
           ]
         }
@@ -3208,6 +3710,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "The death occurs in Cascade. Retain the earlier portrait and remove the status on rollback."
+            }
+          ]
         }
       ],
       "sourcePage": 1100,
@@ -3269,6 +3784,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "WQ",
               "sourcePage": 1543,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "The death occurs in Cascade. Retain the earlier portrait and remove the status on rollback."
             }
           ]
         }
@@ -3480,6 +4008,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "Recap 2 calls Courtyard Droll another of Noir's lackeys."
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "The death occurs in Cascade. Retain the earlier portrait and remove the status on rollback."
+            }
+          ]
         }
       ],
       "sourcePage": 1784,
@@ -3614,6 +4155,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 1674,
               "sourceKind": "direct",
               "sourceNote": "The first-year recap explicitly states that the troll-session Black Queen was exiled and later joined the Felt, becoming Snowman."
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 4109,
+              "sourceKind": "visual",
+              "sourceNote": "The death occurs in Cascade. Retain the earlier portrait and remove the status on rollback."
             }
           ]
         }
@@ -4026,6 +4580,18 @@ window.HOMESTUCK_REFERENCE = {
               ]
             }
           ]
+        },
+        {
+          "id": "affiliation",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Affiliation",
+              "value": "Secret follower of the Signless",
+              "sourcePage": 4056,
+              "sourceKind": "visual"
+            }
+          ]
         }
       ],
       "sourcePage": 3518,
@@ -4102,6 +4668,22 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "former-role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Former role",
+              "value": "Imperial executioner",
+              "sourcePage": 4059,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3756
+              ],
+              "sourceNote": "The executioner who spares the Disciple is depicted as Equius’s ancestor, previously identified as Darkleer."
+            }
+          ]
         }
       ],
       "sourcePage": 3756,
@@ -4162,6 +4744,14 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 3758,
               "sourceKind": "direct",
               "sourceNote": "Explicitly framed as a prophecy from Mindfang’s journal, not as a new witnessed event."
+            },
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Rebellion leader",
+              "sourcePage": 4063,
+              "sourceKind": "direct",
+              "sourceNote": "Scratch’s history now confirms the uprising that Part 2 presented through Mindfang’s prophecy."
             }
           ]
         },
@@ -4179,6 +4769,511 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "sourcePage": 3758,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "signless",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4054,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE SIGNLESS",
+          "sourcePage": 4054,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Signless",
+          "sourcePage": 4054,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-signless.webp",
+            "alt": "Signless"
+          },
+          "sourcePage": 4054,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Karkat Vantas",
+              "sourcePage": 4085,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "alias",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Also known as",
+              "value": "The Sufferer",
+              "sourcePage": 4054,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Preacher of compassion and equality among bloodlines",
+              "sourcePage": 4054,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Executed",
+              "sourcePage": 4055,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4054,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "dolorosa",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4057,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE DOLOROSA",
+          "sourcePage": 4057,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Dolorosa",
+          "sourcePage": 4057,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-dolorosa.webp",
+            "alt": "Dolorosa"
+          },
+          "sourcePage": 4057,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Kanaya Maryam",
+              "sourcePage": 4057,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Raised the Signless and became his first follower",
+              "sourcePage": 4057,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "former-role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Former role",
+              "value": "Mother Grub’s attendant in the brooding caverns",
+              "sourcePage": 4057,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4057,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "disciple",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4058,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE DISCIPLE",
+          "sourcePage": 4058,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Disciple",
+          "sourcePage": 4058,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-disciple.webp",
+            "alt": "Disciple"
+          },
+          "sourcePage": 4059,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Nepeta Leijon",
+              "sourcePage": 4058,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Recorded and preserved the Signless’s teachings",
+              "sourcePage": 4058,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4059
+              ]
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4058,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "psiioniic",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4058,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE PSIIONIIC",
+          "sourcePage": 4058,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Psiioniic",
+          "sourcePage": 4058,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-psiioniic.webp",
+            "alt": "Psiioniic"
+          },
+          "sourcePage": 4058,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Sollux Captor",
+              "sourcePage": 4058,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Powers",
+              "value": "Telekinesis",
+              "sourcePage": 4058,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Helmsman powering the Condesce’s battleship",
+              "sourcePage": 4060,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Killed by the Vast Glub",
+              "sourcePage": 4064,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4058,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "handmaid",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4068,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE HANDMAID",
+          "sourcePage": 4068,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Handmaid",
+          "sourcePage": 4068,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-handmaid.webp",
+            "alt": "Handmaid"
+          },
+          "sourcePage": 4069,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Aradia Megido",
+              "sourcePage": 4069,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Lord English’s time-traveling servant",
+              "sourcePage": 4069,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4068
+              ]
+            }
+          ]
+        },
+        {
+          "id": "guardian",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Raised by",
+              "value": "Doc Scratch",
+              "sourcePage": 4068,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "fate",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Foretold fate",
+              "value": "Killed by the Condesce, her replacement",
+              "sourcePage": 4071,
+              "sourceKind": "direct",
+              "sourceNote": "Scratch states the future outcome; do not present the young Handmaid’s escape from his apartment as her death."
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4068,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "condesce",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4063,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE CONDESCE",
+          "sourcePage": 4063,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Condesce",
+          "sourcePage": 4060,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-condesce.webp",
+            "alt": "Condesce"
+          },
+          "sourcePage": 4063,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Feferi Peixes",
+              "sourcePage": 4063,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Empress of Alternia",
+              "sourcePage": 4062,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4063
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lusus",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Lusus",
+              "value": "Gl’bgolyb",
+              "sourcePage": 4063,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Powers",
+              "value": "Extends life · Communes with Gl’bgolyb",
+              "sourcePage": 4060,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4063,
+                4064
+              ]
+            }
+          ]
+        },
+        {
+          "id": "future-service",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Future service",
+              "value": "Lord English’s witch",
+              "sourcePage": 4070,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4068,
+                4069
+              ],
+              "sourceNote": "Keep the future-service framing used in Scratch’s narration; no later identity or alias is introduced."
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4063,
       "sourceKind": "intro"
     }
   ],
@@ -4267,6 +5362,12 @@ window.HOMESTUCK_REFERENCE = {
       "throughPage": 3762,
       "stage": "act-5-act-2-part-2",
       "note": "New records checked against the official comic page components within 3239–3762. Added six ancestors, four staged portrait changes, confirmed titles, weapon changes, and status facts. The Summoner’s role remains framed as foretold. Kanaya’s form is described by its visible effects without importing the later rainbow-drinker explanation. No new blood rows or cap advancement. Earlier variants and all prior delivery portraits preserved. Kid death/resurrection states and other transient events are not inferred from inaccessible Flash contents; parent deaths are supported by the official 3696 animation transcript."
+    },
+    "act5Act2Part3": {
+      "date": "2026-09-22",
+      "throughPage": 4110,
+      "stage": "act-5-act-2-part-3",
+      "note": "Added six ancestors and seven portrait variants, completing 48 profiles. New text verified against official standard and Doc Scratch comic components; Cascade’s supplied portraits and transformations checked against extracted artwork from the official page-4109 SWF. Completed all twelve player blood rows at the existing gate. Handmaid/Condesce future service remains explicitly prospective; Sollux is partly a ghost, WV severely wounded, and Lord English’s later physical reveal remains absent. The selectable cap is still Part 1. Earlier variants and delivered portraits are retained. This audit covers the new records, not a new global re-audit."
     }
   }
 };
