@@ -4233,6 +4233,32 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The introduction explicitly calls Scratch an officer of Lord English."
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "intermission-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 4111,
+              "sourceKind": "visual",
+              "sourceNote": "Verified against the official Intermission 2 animation transcript. No later origins, species, or identities are inferred."
+            }
+          ]
+        },
+        {
+          "id": "body",
+          "variants": [
+            {
+              "from": "intermission-2",
+              "label": "Body",
+              "value": "Vessel from which Lord English emerges",
+              "sourcePage": 4111,
+              "sourceKind": "visual",
+              "sourceNote": "Verified against the official Intermission 2 animation transcript. No later origins, species, or identities are inferred."
+            }
+          ]
         }
       ],
       "sourcePage": 2253,
@@ -4268,6 +4294,16 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePage": 1155,
           "sourceKind": "editorial",
           "sourceNote": "A text placeholder for the named but unseen Felt boss. Replaces the unrelated server-device image formerly misidentified in the metadata as a name-only portrait."
+        },
+        {
+          "from": "intermission-2",
+          "value": {
+            "src": "../assets/ref-lord-english-revealed.webp",
+            "alt": "Lord English in his green overcoat, with pool-ball eyes and a gold prosthetic leg"
+          },
+          "sourcePage": 4111,
+          "sourceKind": "visual",
+          "sourceNote": "User-supplied portrait, inspected against the physical form revealed in Intermission 2. Earlier stages retain the unrevealed-appearance placeholder; the old server-device asset remains retained."
         }
       ],
       "stats": [
@@ -4289,6 +4325,32 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 2253,
               "sourceKind": "direct",
               "sourceNote": "Doc Scratch's introduction identifies English as an indestructible demon and Scratch's master."
+            }
+          ]
+        },
+        {
+          "id": "vessel",
+          "variants": [
+            {
+              "from": "intermission-2",
+              "label": "Vessel",
+              "value": "Doc Scratch’s body",
+              "sourcePage": 4111,
+              "sourceKind": "visual",
+              "sourceNote": "Verified against the official Intermission 2 animation transcript. No later origins, species, or identities are inferred."
+            }
+          ]
+        },
+        {
+          "id": "travel",
+          "variants": [
+            {
+              "from": "intermission-2",
+              "label": "Travel",
+              "value": "Time travel via a sarcophagus",
+              "sourcePage": 4111,
+              "sourceKind": "visual",
+              "sourceNote": "Verified against the official Intermission 2 animation transcript. No later origins, species, or identities are inferred."
             }
           ]
         }
@@ -5368,6 +5430,12 @@ window.HOMESTUCK_REFERENCE = {
       "throughPage": 4110,
       "stage": "act-5-act-2-part-3",
       "note": "Added six ancestors and seven portrait variants, completing 48 profiles. New text verified against official standard and Doc Scratch comic components; Cascade’s supplied portraits and transformations checked against extracted artwork from the official page-4109 SWF. Completed all twelve player blood rows at the existing gate. Handmaid/Condesce future service remains explicitly prospective; Sollux is partly a ghost, WV severely wounded, and Lord English’s later physical reveal remains absent. The selectable cap is still Part 1. Earlier variants and delivered portraits are retained. This audit covers the new records, not a new global re-audit."
+    },
+    "intermission2": {
+      "date": "2026-09-22",
+      "throughPage": 4112,
+      "stage": "intermission-2",
+      "note": "Intermission 2 comprises the page-4111 animation and page-4112 end card. The official animation transcript explicitly identifies Scratch’s corpse, English’s emergence, and the sarcophagus carrying him through time and space. Added only the information revealed here; no Act 6 origins, species, or aliases. Preserved the current Part 3 cap and all prior checkpoint variants."
     }
   }
 };
