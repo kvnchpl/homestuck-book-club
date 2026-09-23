@@ -397,6 +397,25 @@ window.HOMESTUCK_REFERENCE = {
       ]
     },
     {
+      "id": "ancestors",
+      "title": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "ANCESTORS",
+          "sourcePage": 3473,
+          "sourceKind": "editorial",
+          "sourcePages": [
+            3475,
+            3508,
+            3514,
+            3518,
+            3756,
+            3758
+          ]
+        }
+      ]
+    },
+    {
       "id": "guardians-sprites",
       "title": [
         {
@@ -688,6 +707,15 @@ window.HOMESTUCK_REFERENCE = {
           },
           "sourcePage": 216,
           "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-rose-grimdark.webp",
+            "alt": "Rose Lalonde in her grimdark form"
+          },
+          "sourcePage": 3643,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -762,6 +790,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 1674,
               "sourceKind": "direct",
               "sourceNote": "The first-year recap names all four titles. Added with Part 1 coverage; no earlier variants changed."
+            }
+          ]
+        },
+        {
+          "id": "form",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Form",
+              "value": "Grimdark",
+              "sourcePage": 3643,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1016,6 +1056,22 @@ window.HOMESTUCK_REFERENCE = {
               ]
             }
           ]
+        },
+        {
+          "id": "quest",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Quest",
+              "value": "Breed the Genesis Frog",
+              "sourcePage": 3319,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3311
+              ],
+              "sourceNote": "Kanaya explains breeding the session’s frog. The named Genesis Frog is identified in the same conversation."
+            }
+          ]
         }
       ],
       "sourcePage": 768,
@@ -1052,6 +1108,15 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePage": 2287,
           "sourceKind": "visual",
           "sourceNote": "User-supplied Aradiabot.webp. Her robot body is established during Hivebent and represents her at the completed Act 5 Act 1 checkpoint."
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-aradia-god-tier.webp",
+            "alt": "Aradia Megido in her god-tier outfit"
+          },
+          "sourcePage": 3297,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -1103,6 +1168,73 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 3186,
               "sourceKind": "visual",
               "sourceNote": "The robot explodes before this cutoff. Retain the last-known robot portrait; do not expose her later form or infer that her story has ended."
+            },
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Former body",
+              "value": "Robot (destroyed)",
+              "sourcePage": 3186,
+              "sourceKind": "visual",
+              "sourcePages": [
+                3297
+              ],
+              "sourceNote": "Supersedes the Part 1 label so the destroyed robot is not confused with her newly living form."
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Title",
+              "value": "Maid of Time",
+              "sourcePage": 3482,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "tier",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Tier",
+              "value": "God tier",
+              "sourcePage": 3297,
+              "sourceKind": "visual",
+              "sourcePages": [
+                3565
+              ]
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Powers",
+              "value": "Can hold an opponent in a time-freezing spell",
+              "sourcePage": 3565,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3297,
+                3566
+              ]
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Known weapon",
+              "value": "Whip",
+              "sourcePage": 3582,
+              "sourceKind": "visual",
+              "sourceNote": "Shown in the memory of her archaeological exploration. This does not establish a formally named strife allocation."
             }
           ]
         }
@@ -1205,6 +1337,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3299,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
         }
       ],
       "sourcePage": 2101,
@@ -1239,6 +1384,15 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Sollux Captor"
           },
           "sourcePage": 2076,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-sollux-blind.webp",
+            "alt": "Sollux Captor after losing his sight"
+          },
+          "sourcePage": 3477,
           "sourceKind": "visual"
         }
       ],
@@ -1291,6 +1445,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 2076,
               "sourceKind": "direct",
               "sourceNote": "The introduction establishes his computer/code expertise, hacking, and apiculture networking; “video games” was removed as an unsupported generalization."
+            }
+          ]
+        },
+        {
+          "id": "sight",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Sight",
+              "value": "Blind",
+              "sourcePage": 3476,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -1467,6 +1633,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3711,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
         }
       ],
       "sourcePage": 2156,
@@ -1501,6 +1680,15 @@ window.HOMESTUCK_REFERENCE = {
             "alt": "Kanaya Maryam"
           },
           "sourcePage": 2323,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-kanaya-glowing.webp",
+            "alt": "Kanaya Maryam with glowing white skin"
+          },
+          "sourcePage": 3523,
           "sourceKind": "visual"
         }
       ],
@@ -1552,6 +1740,54 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Landscaping · Topiary · Supernatural romance novels · Fashion · Sewing",
               "sourcePage": 2323,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Title",
+              "value": "Sylph of Space",
+              "sourcePage": 3305,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3311
+              ],
+              "sourceNote": "Kanaya contrasts her Sylph class with Jade’s Witch class while explaining their shared Space-player duties: the Forge and frog breeding."
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Weapon",
+              "value": "Lipstick that transforms into a chainsaw",
+              "sourcePage": 3539,
+              "sourceKind": "visual",
+              "sourcePages": [
+                3344
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Form",
+              "value": "Revived with glowing skin",
+              "sourcePage": 3523,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3347,
+                3521
+              ],
+              "sourceNote": "Describe the demonstrated change; the later rainbow-drinker explanation is not introduced here."
             }
           ]
         }
@@ -1851,6 +2087,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "“Strength training” was changed to “Strength”: the introduction says he loves being strong, alongside archery, musclebeast art, and robot-building/brawling."
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3448,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
         }
       ],
       "sourcePage": 2211,
@@ -1911,6 +2160,14 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePage": 2018,
               "sourceKind": "visual",
               "sourceNote": "The juggling club is equipped to a clubkind card; later jokerkind is not revealed here."
+            },
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Strife specibus",
+              "value": "jokerkind",
+              "sourcePage": 3452,
+              "sourceKind": "visual",
+              "sourceNote": "The strife deck explicitly displays jokerkind; preserve clubkind at the earlier checkpoints."
             }
           ]
         },
@@ -1927,6 +2184,18 @@ window.HOMESTUCK_REFERENCE = {
                 2013
               ],
               "sourceNote": "The introduction supports clowns, the one-wheel device, baking, and horns; the immediately following page identifies his “fine beverage” as Faygo."
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Title",
+              "value": "Bard of Rage",
+              "sourcePage": 3360,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -2046,6 +2315,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "Kanaya supplies the wand while presenting it to Rose as white sorcery. This is a weapon description, not an unverified strife allocation."
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3535,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
         }
       ],
       "sourcePage": 2408,
@@ -2135,6 +2417,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceNote": "The detailed introduction establishes care for deep-sea fauna, aquatic hoofbeasts, and cuttlefish."
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3352,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
         }
       ],
       "sourcePage": 2422,
@@ -2185,6 +2480,19 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3696,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
+            }
+          ]
         }
       ],
       "sourcePage": 89,
@@ -2232,6 +2540,19 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Rose's mother",
               "sourcePage": 365,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3696,
+              "sourceKind": "visual",
+              "sourceNote": "Confirmed by the depicted body or fatal attack before the Part 2 cutoff. Do not apply this state at earlier checkpoints."
             }
           ]
         }
@@ -3420,6 +3741,445 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "sourcePage": 1155,
       "sourceKind": "intro"
+    },
+    {
+      "id": "mindfang",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3475,
+      "name": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "MINDFANG",
+          "sourcePage": 3506,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "Mindfang",
+          "sourcePage": 3506,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-mindfang.webp",
+            "alt": "Mindfang"
+          },
+          "sourcePage": 3475,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Vriska Serket",
+              "sourcePage": 3475,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Role",
+              "value": "Pirate fleet commander",
+              "sourcePage": 3475,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Powers",
+              "value": "Mind control",
+              "sourcePage": 3749,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3748
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arm",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Arm",
+              "value": "Robotic replacement made by Darkleer",
+              "sourcePage": 3756,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3475,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "dualscar",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3508,
+      "name": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "ORPHANER DUALSCAR",
+          "sourcePage": 3507,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "Dualscar",
+          "sourcePage": 3507,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-dualscar.webp",
+            "alt": "Dualscar"
+          },
+          "sourcePage": 3508,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Eridan Ampora",
+              "sourcePage": 3508,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Role",
+              "value": "Mindfang’s maritime overlord and rival",
+              "sourcePage": 3507,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3508,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "grand-highblood",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3514,
+      "name": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "GRAND HIGHBLOOD",
+          "sourcePage": 3514,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "Grand Highblood",
+          "sourcePage": 3514,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-grand-highblood.webp",
+            "alt": "Grand Highblood"
+          },
+          "sourcePage": 3514,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Gamzee Makara",
+              "sourcePage": 3514,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "affiliation",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Affiliation",
+              "value": "Subjugglators",
+              "sourcePage": 3514,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3514,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "redglare",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3518,
+      "name": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "NEOPHYTE REDGLARE",
+          "sourcePage": 3518,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "Redglare",
+          "sourcePage": 3518,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-redglare.webp",
+            "alt": "Redglare"
+          },
+          "sourcePage": 3518,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Terezi Pyrope",
+              "sourcePage": 3518,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Role",
+              "value": "Legislacerator sent to apprehend Mindfang",
+              "sourcePage": 3518,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3517
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lusus",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Lusus",
+              "value": "Pyralspite, a dragon",
+              "sourcePage": 3742,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3756
+              ]
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3518,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "darkleer",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3756,
+      "name": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "DARKLEER",
+          "sourcePage": 3756,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "Darkleer",
+          "sourcePage": 3756,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-darkleer.webp",
+            "alt": "Darkleer"
+          },
+          "sourcePage": 3756,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Equius Zahhak",
+              "sourcePage": 3756,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Role",
+              "value": "Expatriate and skilled machinist",
+              "sourcePage": 3756,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3754
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ability",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Ability",
+              "value": "Conceals nearby objects from Doc Scratch’s awareness",
+              "sourcePage": 3757,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3756,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "summoner",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3758,
+      "name": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "THE SUMMONER",
+          "sourcePage": 3757,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "Summoner",
+          "sourcePage": 3757,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-summoner.webp",
+            "alt": "Summoner"
+          },
+          "sourcePage": 3758,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Tavros Nitram",
+              "sourcePage": 3758,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "foretold-role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Foretold role",
+              "value": "Leader of a rebellion",
+              "sourcePage": 3758,
+              "sourceKind": "direct",
+              "sourceNote": "Explicitly framed as a prophecy from Mindfang’s journal, not as a new witnessed event."
+            }
+          ]
+        },
+        {
+          "id": "ability",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Foretold abilities",
+              "value": "Animal communion · Wings",
+              "sourcePage": 3758,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3758,
+      "sourceKind": "intro"
     }
   ],
   "sourceAudit": {
@@ -3501,6 +4261,12 @@ window.HOMESTUCK_REFERENCE = {
       "throughPage": 3238,
       "stage": "act-5-act-2-part-1",
       "note": "Added Jadesprite and staged portraits for John, Vriska, Tavros, and Jack. New stats checked against official comic page components and Recap 3 (3238); kid titles cross-checked against Recap 1 (1674). Retained the manual Act 5 Act 1 cap, earlier variants, and end-of-Act-5-Act-2 blood gate. Aradia’s robot destruction is recorded without revealing her later form; no death claim is made for Davesprite. This audit covers the new records, not a new global audit."
+    },
+    "act5Act2Part2": {
+      "date": "2026-09-22",
+      "throughPage": 3762,
+      "stage": "act-5-act-2-part-2",
+      "note": "New records checked against the official comic page components within 3239–3762. Added six ancestors, four staged portrait changes, confirmed titles, weapon changes, and status facts. The Summoner’s role remains framed as foretold. Kanaya’s form is described by its visible effects without importing the later rainbow-drinker explanation. No new blood rows or cap advancement. Earlier variants and all prior delivery portraits preserved. Kid death/resurrection states and other transient events are not inferred from inaccessible Flash contents; parent deaths are supported by the official 3696 animation transcript."
     }
   }
 };
