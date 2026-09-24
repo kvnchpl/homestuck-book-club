@@ -315,7 +315,7 @@
       heading.textContent = groupTitle;
       section.append(heading);
       const grid = document.createElement('div');
-      grid.className = `character-grid ${group.id === 'trolls' ? 'troll-grid' : group.id === 'guardians-sprites' ? 'guardian-grid' : group.id === 'carapacians' ? 'carapacian-grid' : group.id === 'others' ? 'other-grid' : 'kid-grid'}`;
+      grid.className = `character-grid ${group.id === 'trolls' ? 'troll-grid' : group.id === 'guardians-sprites' ? 'guardian-grid' : group.id === 'exiles-agents' ? 'exiles-agents-grid' : group.id === 'felt-associates' ? 'felt-associates-grid' : 'kid-grid'}`;
       section.append(grid);
 
       for (const character of groupCharacters) {

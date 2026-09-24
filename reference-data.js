@@ -454,7 +454,7 @@ window.HOMESTUCK_REFERENCE = {
       ]
     },
     {
-      "id": "carapacians",
+      "id": "exiles-agents",
       "title": [
         {
           "from": "act-2",
@@ -504,7 +504,7 @@ window.HOMESTUCK_REFERENCE = {
       ]
     },
     {
-      "id": "others",
+      "id": "felt-associates",
       "title": [
         {
           "from": "intermission",
@@ -3373,7 +3373,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "wv",
-      "group": "carapacians",
+      "group": "exiles-agents",
       "reveal": "act-2",
       "introPage": 666,
       "name": [
@@ -3446,7 +3446,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "pm",
-      "group": "carapacians",
+      "group": "exiles-agents",
       "reveal": "act-3",
       "introPage": 892,
       "name": [
@@ -3541,7 +3541,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "ar",
-      "group": "carapacians",
+      "group": "exiles-agents",
       "reveal": "act-3",
       "introPage": 1100,
       "name": [
@@ -3617,7 +3617,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "wq",
-      "group": "carapacians",
+      "group": "exiles-agents",
       "reveal": "act-4",
       "introPage": 1543,
       "name": [
@@ -3678,7 +3678,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "jack-noir",
-      "group": "carapacians",
+      "group": "exiles-agents",
       "reveal": "act-3",
       "introPage": 955,
       "name": [
@@ -3784,7 +3784,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "dd",
-      "group": "carapacians",
+      "group": "exiles-agents",
       "reveal": "act-4",
       "introPage": 1532,
       "name": [
@@ -3845,7 +3845,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "cd",
-      "group": "carapacians",
+      "group": "exiles-agents",
       "reveal": "act-4",
       "introPage": 1784,
       "name": [
@@ -3918,7 +3918,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "hb",
-      "group": "carapacians",
+      "group": "exiles-agents",
       "reveal": "act-3",
       "introPage": 957,
       "name": [
@@ -3998,7 +3998,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "snowman",
-      "group": "others",
+      "group": "felt-associates",
       "reveal": "intermission",
       "introPage": 1268,
       "name": [
@@ -4083,7 +4083,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "doc-scratch",
-      "group": "others",
+      "group": "felt-associates",
       "reveal": "act-5-act-1",
       "introPage": 2253,
       "name": [
@@ -4156,7 +4156,7 @@ window.HOMESTUCK_REFERENCE = {
     },
     {
       "id": "lord-english",
-      "group": "others",
+      "group": "felt-associates",
       "reveal": "intermission",
       "introPage": 1155,
       "name": [
