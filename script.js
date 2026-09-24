@@ -75,6 +75,10 @@
     dd: { accent: '#252525', text: '#252525' },
     cd: { accent: '#252525', text: '#252525' },
     hb: { accent: '#252525', text: '#252525' },
+    'spades-slick': { accent: '#252525', text: '#252525' },
+    'diamonds-droog': { accent: '#252525', text: '#252525' },
+    'clubs-deuce': { accent: '#252525', text: '#252525' },
+    'hearts-boxcars': { accent: '#252525', text: '#252525' },
     snowman: { accent: '#305b40', text: '#305b40' },
     'doc-scratch': { accent: '#7a9476', text: '#4e6b49' },
     'lord-english': { accent: '#2f9b31', text: '#246e25' }
@@ -315,7 +319,7 @@
       heading.textContent = groupTitle;
       section.append(heading);
       const grid = document.createElement('div');
-      grid.className = `character-grid ${group.id === 'trolls' ? 'troll-grid' : group.id === 'guardians-sprites' ? 'guardian-grid' : group.id === 'exiles-agents' ? 'exiles-agents-grid' : group.id === 'felt-associates' ? 'felt-associates-grid' : 'kid-grid'}`;
+      grid.className = `character-grid ${group.id === 'trolls' ? 'troll-grid' : group.id === 'guardians-sprites' ? 'guardian-grid' : group.id === 'exiles-agents' ? 'exiles-agents-grid' : group.id === 'felt-associates' ? 'felt-associates-grid' : group.id === 'midnight-crew' ? 'midnight-crew-grid' : 'kid-grid'}`;
       section.append(grid);
 
       for (const character of groupCharacters) {

@@ -504,6 +504,17 @@ window.HOMESTUCK_REFERENCE = {
       ]
     },
     {
+      "id": "midnight-crew",
+      "title": [
+        {
+          "from": "intermission",
+          "value": "MIDNIGHT CREW",
+          "sourcePage": 1155,
+          "sourceKind": "editorial"
+        }
+      ]
+    },
+    {
       "id": "felt-associates",
       "title": [
         {
@@ -3994,6 +4005,334 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "sourcePage": 957,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "spades-slick",
+      "group": "midnight-crew",
+      "reveal": "intermission",
+      "introPage": 1155,
+      "name": [
+        {
+          "from": "intermission",
+          "value": "SPADES SLICK",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "intermission",
+          "value": "Spades Slick",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "intermission",
+          "value": {
+            "src": "../assets/ref-spades-slick.webp",
+            "alt": "Spades Slick in a dark suit and hat"
+          },
+          "sourcePage": 1155,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Jack Noir (kids’ session)",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Role",
+              "value": "Leader of the Midnight Crew",
+              "sourcePage": 1155,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "affiliation",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Affiliation",
+              "value": "Midnight Crew",
+              "sourcePage": 1155,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Weapon",
+              "value": "Knives",
+              "sourcePage": 1163,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 1155,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "diamonds-droog",
+      "group": "midnight-crew",
+      "reveal": "intermission",
+      "introPage": 1155,
+      "name": [
+        {
+          "from": "intermission",
+          "value": "DIAMONDS DROOG",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "intermission",
+          "value": "Diamonds Droog",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "intermission",
+          "value": {
+            "src": "../assets/ref-diamonds-droog.webp",
+            "alt": "Diamonds Droog in a dark suit and hat"
+          },
+          "sourcePage": 1198,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Draconian Dignitary",
+              "sourcePage": 1674,
+              "sourceKind": "composite",
+              "sourcePages": [
+                1988
+              ]
+            }
+          ]
+        },
+        {
+          "id": "affiliation",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Affiliation",
+              "value": "Midnight Crew",
+              "sourcePage": 1155,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Weapon",
+              "value": "Guns",
+              "sourcePage": 1200,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Interests",
+              "value": "Finely tailored suits",
+              "sourcePage": 1200,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 1155,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "clubs-deuce",
+      "group": "midnight-crew",
+      "reveal": "intermission",
+      "introPage": 1155,
+      "name": [
+        {
+          "from": "intermission",
+          "value": "CLUBS DEUCE",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "intermission",
+          "value": "Clubs Deuce",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "intermission",
+          "value": {
+            "src": "../assets/ref-clubs-deuce.webp",
+            "alt": "Clubs Deuce in a dark suit and hat"
+          },
+          "sourcePage": 1177,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Courtyard Droll",
+              "sourcePage": 1674,
+              "sourceKind": "composite",
+              "sourcePages": [
+                1988
+              ]
+            }
+          ]
+        },
+        {
+          "id": "affiliation",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Affiliation",
+              "value": "Midnight Crew",
+              "sourcePage": 1155,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Weapon",
+              "value": "Bombs · Crook of Felony",
+              "sourcePage": 1192,
+              "sourceKind": "composite",
+              "sourcePages": [
+                1178
+              ]
+            }
+          ]
+        }
+      ],
+      "sourcePage": 1155,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "hearts-boxcars",
+      "group": "midnight-crew",
+      "reveal": "intermission",
+      "introPage": 1155,
+      "name": [
+        {
+          "from": "intermission",
+          "value": "HEARTS BOXCARS",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "intermission",
+          "value": "Hearts Boxcars",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "intermission",
+          "value": {
+            "src": "../assets/ref-hearts-boxcars.webp",
+            "alt": "Hearts Boxcars in a dark suit and hat"
+          },
+          "sourcePage": 1251,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Hegemonic Brute",
+              "sourcePage": 1674,
+              "sourceKind": "composite",
+              "sourcePages": [
+                1988
+              ]
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Role",
+              "value": "Heavy muscle and expert safecracker",
+              "sourcePage": 1172,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "affiliation",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Affiliation",
+              "value": "Midnight Crew",
+              "sourcePage": 1155,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 1155,
       "sourceKind": "intro"
     },
     {
