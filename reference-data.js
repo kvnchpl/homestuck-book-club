@@ -3731,6 +3731,18 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Spades Slick",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "alias",
           "variants": [
             {
@@ -3804,6 +3816,18 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Diamonds Droog",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "role",
           "variants": [
             {
@@ -3852,6 +3876,18 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "stats": [
+        {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Clubs Deuce",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
+            }
+          ]
+        },
         {
           "id": "role",
           "variants": [
@@ -3913,6 +3949,18 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "stats": [
+        {
+          "id": "counterpart",
+          "variants": [
+            {
+              "from": "act-4",
+              "label": "Counterpart",
+              "value": "Hearts Boxcars",
+              "sourcePage": 1674,
+              "sourceKind": "direct"
+            }
+          ]
+        },
         {
           "id": "role",
           "variants": [

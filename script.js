@@ -72,9 +72,9 @@
     ar: { accent: '#b58b2b', text: '#7b5c15' },
     wq: { accent: '#a3936a', text: '#70613d' },
     'jack-noir': { accent: '#252525', text: '#252525' },
-    dd: { accent: '#454550', text: '#454550' },
-    cd: { accent: '#743e3e', text: '#743e3e' },
-    hb: { accent: '#584536', text: '#584536' },
+    dd: { accent: '#252525', text: '#252525' },
+    cd: { accent: '#252525', text: '#252525' },
+    hb: { accent: '#252525', text: '#252525' },
     snowman: { accent: '#305b40', text: '#305b40' },
     'doc-scratch': { accent: '#7a9476', text: '#4e6b49' },
     'lord-english': { accent: '#2f9b31', text: '#246e25' }
