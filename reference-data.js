@@ -1062,45 +1062,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "quest",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Quest",
-              "value": "Breed the Genesis Frog",
-              "sourcePage": 3319,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3311
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sprite",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-1",
-              "label": "Sprite",
-              "value": "Jadesprite",
-              "sourcePage": 3213,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3210,
-                3211,
-                3212
-              ]
-            },
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Sprite",
-              "value": "Jadesprite (merged with Jade)",
-              "sourcePage": 4109,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "form",
           "variants": [
             {
@@ -1288,8 +1249,8 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-1",
-              "label": "Former interests",
-              "value": "Archaeology · Roleplaying",
+              "label": "Interests",
+              "value": "Formerly: Archaeology · Roleplaying",
               "sourcePage": 2134,
               "sourceKind": "direct"
             }
@@ -1397,7 +1358,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-2-part-1",
-              "label": "Mobility",
+              "label": "Condition",
               "value": "Robotic legs",
               "sourcePage": 3055,
               "sourceKind": "direct"
@@ -1552,14 +1513,14 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-2-part-2",
-              "label": "Sight",
+              "label": "Condition",
               "value": "Blind",
               "sourcePage": 3476,
               "sourceKind": "direct"
             },
             {
               "from": "act-5-act-2-part-3",
-              "label": "Sight",
+              "label": "Condition",
               "value": "Can see the Green Sun in two dimensions",
               "sourcePage": 4000,
               "sourceKind": "direct"
@@ -2327,7 +2288,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-1",
-              "label": "Strife specibi",
+              "label": "Strife specibus",
               "value": "1/2bowkind · bowkind · fistkind",
               "sourcePage": 2219,
               "sourceKind": "direct",
@@ -3395,8 +3356,8 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-2-part-1",
-              "label": "Prototyping",
-              "value": "Becsprite, then Jadesprite",
+              "label": "Form",
+              "value": "Prototyped into Becsprite, then Jadesprite",
               "sourcePage": 3238,
               "sourceKind": "direct",
               "sourcePages": [
@@ -3559,18 +3520,6 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Parcel Mistress",
               "sourcePage": 1674,
               "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "ring",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Ring",
-              "value": "White Queen’s ring",
-              "sourcePage": 4109,
-              "sourceKind": "visual"
             }
           ]
         },
@@ -3782,18 +3731,6 @@ window.HOMESTUCK_REFERENCE = {
       ],
       "stats": [
         {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-3",
-              "label": "Role",
-              "value": "Archagent of the Dark Kingdom",
-              "sourcePage": 955,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
           "id": "alias",
           "variants": [
             {
@@ -3806,13 +3743,13 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "counterpart",
+          "id": "role",
           "variants": [
             {
-              "from": "act-4",
-              "label": "Counterpart",
-              "value": "Spades Slick (trolls’ session)",
-              "sourcePage": 1674,
+              "from": "act-3",
+              "label": "Role",
+              "value": "Archagent of the Dark Kingdom",
+              "sourcePage": 955,
               "sourceKind": "direct"
             }
           ]
@@ -4069,18 +4006,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "special-rule",
-          "variants": [
-            {
-              "from": "intermission",
-              "label": "Special rule",
-              "value": "Killing her destroys the universe",
-              "sourcePage": 1268,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
           "id": "status",
           "variants": [
             {
@@ -4089,6 +4014,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Deceased",
               "sourcePage": 4109,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "special-rule",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Condition",
+              "value": "Killing her destroys the universe",
+              "sourcePage": 1268,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -4146,22 +4083,10 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-1",
-              "label": "Allegiance",
+              "label": "Affiliation",
               "value": "Officer of Lord English",
               "sourcePage": 2253,
               "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "body",
-          "variants": [
-            {
-              "from": "intermission-2",
-              "label": "Body",
-              "value": "Vessel from which Lord English emerges",
-              "sourcePage": 4111,
-              "sourceKind": "visual"
             }
           ]
         },
@@ -4242,23 +4167,11 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "vessel",
-          "variants": [
-            {
-              "from": "intermission-2",
-              "label": "Vessel",
-              "value": "Doc Scratch’s body",
-              "sourcePage": 4111,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "travel",
           "variants": [
             {
               "from": "intermission-2",
-              "label": "Travel",
+              "label": "Powers",
               "value": "Time travel via a sarcophagus",
               "sourcePage": 4111,
               "sourceKind": "visual"
@@ -4267,6 +4180,563 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "sourcePage": 1155,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "handmaid",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4068,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE HANDMAID",
+          "sourcePage": 4068,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Handmaid",
+          "sourcePage": 4068,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-handmaid.webp",
+            "alt": "Handmaid"
+          },
+          "sourcePage": 4069,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Lord English’s time-traveling servant",
+              "sourcePage": 4069,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4068
+              ]
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Aradia Megido",
+              "sourcePage": 4069,
+              "sourceKind": "visual"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4068,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "summoner",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3758,
+      "name": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "THE SUMMONER",
+          "sourcePage": 3757,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "Summoner",
+          "sourcePage": 3757,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-summoner.webp",
+            "alt": "Summoner"
+          },
+          "sourcePage": 3758,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "foretold-role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Role",
+              "value": "Leader of a rebellion (foretold)",
+              "sourcePage": 3758,
+              "sourceKind": "direct"
+            },
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Rebellion leader",
+              "sourcePage": 4063,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Tavros Nitram",
+              "sourcePage": 3758,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "ability",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Powers",
+              "value": "Animal communion · Wings (foretold)",
+              "sourcePage": 3758,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3758,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "psiioniic",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4058,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE PSIIONIIC",
+          "sourcePage": 4058,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Psiioniic",
+          "sourcePage": 4058,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-psiioniic.webp",
+            "alt": "Psiioniic"
+          },
+          "sourcePage": 4058,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Helmsman powering the Condesce’s battleship",
+              "sourcePage": 4060,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Sollux Captor",
+              "sourcePage": 4058,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Powers",
+              "value": "Telekinesis",
+              "sourcePage": 4058,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Deceased (Vast Glub)",
+              "sourcePage": 4064,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4058,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "signless",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4054,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE SIGNLESS",
+          "sourcePage": 4054,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Signless",
+          "sourcePage": 4054,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-signless.webp",
+            "alt": "Signless"
+          },
+          "sourcePage": 4054,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "alias",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Also known as",
+              "value": "The Sufferer",
+              "sourcePage": 4054,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Preacher of compassion and equality among bloodlines",
+              "sourcePage": 4054,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Karkat Vantas",
+              "sourcePage": 4085,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Status",
+              "value": "Deceased (executed)",
+              "sourcePage": 4055,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4054,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "disciple",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4058,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE DISCIPLE",
+          "sourcePage": 4058,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Disciple",
+          "sourcePage": 4058,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-disciple.webp",
+            "alt": "Disciple"
+          },
+          "sourcePage": 4059,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Recorded and preserved the Signless’s teachings",
+              "sourcePage": 4058,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4059
+              ]
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Nepeta Leijon",
+              "sourcePage": 4058,
+              "sourceKind": "visual"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4058,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "dolorosa",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-3",
+      "introPage": 4057,
+      "name": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "THE DOLOROSA",
+          "sourcePage": 4057,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": "Dolorosa",
+          "sourcePage": 4057,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-3",
+          "value": {
+            "src": "../assets/ref-dolorosa.webp",
+            "alt": "Dolorosa"
+          },
+          "sourcePage": 4057,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Role",
+              "value": "Raised the Signless and became his first follower",
+              "sourcePage": 4057,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "former-role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Former role",
+              "value": "Mother Grub’s attendant in the brooding caverns",
+              "sourcePage": 4057,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Descendant",
+              "value": "Kanaya Maryam",
+              "sourcePage": 4057,
+              "sourceKind": "visual"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4057,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "redglare",
+      "group": "ancestors",
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3518,
+      "name": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "NEOPHYTE REDGLARE",
+          "sourcePage": 3518,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": "Redglare",
+          "sourcePage": 3518,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-redglare.webp",
+            "alt": "Redglare"
+          },
+          "sourcePage": 3518,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Role",
+              "value": "Legislacerator sent to apprehend Mindfang",
+              "sourcePage": 3518,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3517
+              ]
+            }
+          ]
+        },
+        {
+          "id": "affiliation",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Affiliation",
+              "value": "Secret follower of the Signless",
+              "sourcePage": 4056,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "descendant",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Descendant",
+              "value": "Terezi Pyrope",
+              "sourcePage": 3518,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 3751,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3750
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lusus",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Lusus",
+              "value": "Pyralspite, a dragon",
+              "sourcePage": 3742,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3756
+              ]
+            }
+          ]
+        }
+      ],
+      "sourcePage": 3518,
       "sourceKind": "intro"
     },
     {
@@ -4346,8 +4816,8 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-2-part-2",
-              "label": "Arm",
-              "value": "Robotic replacement made by Darkleer",
+              "label": "Condition",
+              "value": "Robotic arm made by Darkleer",
               "sourcePage": 3756,
               "sourceKind": "direct"
             }
@@ -4355,246 +4825,6 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "sourcePage": 3475,
-      "sourceKind": "intro"
-    },
-    {
-      "id": "dualscar",
-      "group": "ancestors",
-      "reveal": "act-5-act-2-part-2",
-      "introPage": 3508,
-      "name": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": "ORPHANER DUALSCAR",
-          "sourcePage": 3507,
-          "sourceKind": "direct"
-        }
-      ],
-      "rosterLabel": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": "Dualscar",
-          "sourcePage": 3507,
-          "sourceKind": "direct"
-        }
-      ],
-      "portrait": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": {
-            "src": "../assets/ref-dualscar.webp",
-            "alt": "Dualscar"
-          },
-          "sourcePage": 3508,
-          "sourceKind": "visual"
-        }
-      ],
-      "stats": [
-        {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Role",
-              "value": "Mindfang’s maritime overlord and rival",
-              "sourcePage": 3507,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Descendant",
-              "value": "Eridan Ampora",
-              "sourcePage": 3508,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
-          "id": "status",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Status",
-              "value": "Deceased",
-              "sourcePage": 3514,
-              "sourceKind": "direct"
-            }
-          ]
-        }
-      ],
-      "sourcePage": 3508,
-      "sourceKind": "intro"
-    },
-    {
-      "id": "grand-highblood",
-      "group": "ancestors",
-      "reveal": "act-5-act-2-part-2",
-      "introPage": 3514,
-      "name": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": "GRAND HIGHBLOOD",
-          "sourcePage": 3514,
-          "sourceKind": "direct"
-        }
-      ],
-      "rosterLabel": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": "Grand Highblood",
-          "sourcePage": 3514,
-          "sourceKind": "direct"
-        }
-      ],
-      "portrait": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": {
-            "src": "../assets/ref-grand-highblood.webp",
-            "alt": "Grand Highblood"
-          },
-          "sourcePage": 3514,
-          "sourceKind": "visual"
-        }
-      ],
-      "stats": [
-        {
-          "id": "affiliation",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Affiliation",
-              "value": "Subjugglators",
-              "sourcePage": 3514,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Descendant",
-              "value": "Gamzee Makara",
-              "sourcePage": 3514,
-              "sourceKind": "visual"
-            }
-          ]
-        }
-      ],
-      "sourcePage": 3514,
-      "sourceKind": "intro"
-    },
-    {
-      "id": "redglare",
-      "group": "ancestors",
-      "reveal": "act-5-act-2-part-2",
-      "introPage": 3518,
-      "name": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": "NEOPHYTE REDGLARE",
-          "sourcePage": 3518,
-          "sourceKind": "direct"
-        }
-      ],
-      "rosterLabel": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": "Redglare",
-          "sourcePage": 3518,
-          "sourceKind": "direct"
-        }
-      ],
-      "portrait": [
-        {
-          "from": "act-5-act-2-part-2",
-          "value": {
-            "src": "../assets/ref-redglare.webp",
-            "alt": "Redglare"
-          },
-          "sourcePage": 3518,
-          "sourceKind": "visual"
-        }
-      ],
-      "stats": [
-        {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Role",
-              "value": "Legislacerator sent to apprehend Mindfang",
-              "sourcePage": 3518,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3517
-              ]
-            }
-          ]
-        },
-        {
-          "id": "affiliation",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Affiliation",
-              "value": "Secret follower of the Signless",
-              "sourcePage": 4056,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Descendant",
-              "value": "Terezi Pyrope",
-              "sourcePage": 3518,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
-          "id": "lusus",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Lusus",
-              "value": "Pyralspite, a dragon",
-              "sourcePage": 3742,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3756
-              ]
-            }
-          ]
-        },
-        {
-          "id": "status",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Status",
-              "value": "Deceased",
-              "sourcePage": 3751,
-              "sourceKind": "composite",
-              "sourcePages": [
-                3750
-              ]
-            }
-          ]
-        }
-      ],
-      "sourcePage": 3518,
       "sourceKind": "intro"
     },
     {
@@ -4689,23 +4919,23 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     },
     {
-      "id": "summoner",
+      "id": "grand-highblood",
       "group": "ancestors",
       "reveal": "act-5-act-2-part-2",
-      "introPage": 3758,
+      "introPage": 3514,
       "name": [
         {
           "from": "act-5-act-2-part-2",
-          "value": "THE SUMMONER",
-          "sourcePage": 3757,
+          "value": "GRAND HIGHBLOOD",
+          "sourcePage": 3514,
           "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
         {
           "from": "act-5-act-2-part-2",
-          "value": "Summoner",
-          "sourcePage": 3757,
+          "value": "Grand Highblood",
+          "sourcePage": 3514,
           "sourceKind": "direct"
         }
       ],
@@ -4713,29 +4943,22 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-2-part-2",
           "value": {
-            "src": "../assets/ref-summoner.webp",
-            "alt": "Summoner"
+            "src": "../assets/ref-grand-highblood.webp",
+            "alt": "Grand Highblood"
           },
-          "sourcePage": 3758,
+          "sourcePage": 3514,
           "sourceKind": "visual"
         }
       ],
       "stats": [
         {
-          "id": "foretold-role",
+          "id": "affiliation",
           "variants": [
             {
               "from": "act-5-act-2-part-2",
-              "label": "Foretold role",
-              "value": "Leader of a rebellion",
-              "sourcePage": 3758,
-              "sourceKind": "direct"
-            },
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Role",
-              "value": "Rebellion leader",
-              "sourcePage": 4063,
+              "label": "Affiliation",
+              "value": "Subjugglators",
+              "sourcePage": 3514,
               "sourceKind": "direct"
             }
           ]
@@ -4746,57 +4969,45 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-2",
               "label": "Descendant",
-              "value": "Tavros Nitram",
-              "sourcePage": 3758,
+              "value": "Gamzee Makara",
+              "sourcePage": 3514,
               "sourceKind": "visual"
-            }
-          ]
-        },
-        {
-          "id": "ability",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Foretold abilities",
-              "value": "Animal communion · Wings",
-              "sourcePage": 3758,
-              "sourceKind": "direct"
             }
           ]
         }
       ],
-      "sourcePage": 3758,
+      "sourcePage": 3514,
       "sourceKind": "intro"
     },
     {
-      "id": "signless",
+      "id": "dualscar",
       "group": "ancestors",
-      "reveal": "act-5-act-2-part-3",
-      "introPage": 4054,
+      "reveal": "act-5-act-2-part-2",
+      "introPage": 3508,
       "name": [
         {
-          "from": "act-5-act-2-part-3",
-          "value": "THE SIGNLESS",
-          "sourcePage": 4054,
+          "from": "act-5-act-2-part-2",
+          "value": "ORPHANER DUALSCAR",
+          "sourcePage": 3507,
           "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
         {
-          "from": "act-5-act-2-part-3",
-          "value": "Signless",
-          "sourcePage": 4054,
+          "from": "act-5-act-2-part-2",
+          "value": "Dualscar",
+          "sourcePage": 3507,
           "sourceKind": "direct"
         }
       ],
       "portrait": [
         {
-          "from": "act-5-act-2-part-3",
+          "from": "act-5-act-2-part-2",
           "value": {
-            "src": "../assets/ref-signless.webp",
-            "alt": "Signless"
+            "src": "../assets/ref-dualscar.webp",
+            "alt": "Dualscar"
           },
-          "sourcePage": 4054,
+          "sourcePage": 3508,
           "sourceKind": "visual"
         }
       ],
@@ -4805,22 +5016,10 @@ window.HOMESTUCK_REFERENCE = {
           "id": "role",
           "variants": [
             {
-              "from": "act-5-act-2-part-3",
+              "from": "act-5-act-2-part-2",
               "label": "Role",
-              "value": "Preacher of compassion and equality among bloodlines",
-              "sourcePage": 4054,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "alias",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Also known as",
-              "value": "The Sufferer",
-              "sourcePage": 4054,
+              "value": "Mindfang’s maritime overlord and rival",
+              "sourcePage": 3507,
               "sourceKind": "direct"
             }
           ]
@@ -4829,10 +5028,10 @@ window.HOMESTUCK_REFERENCE = {
           "id": "descendant",
           "variants": [
             {
-              "from": "act-5-act-2-part-3",
+              "from": "act-5-act-2-part-2",
               "label": "Descendant",
-              "value": "Karkat Vantas",
-              "sourcePage": 4085,
+              "value": "Eridan Ampora",
+              "sourcePage": 3508,
               "sourceKind": "visual"
             }
           ]
@@ -4841,326 +5040,16 @@ window.HOMESTUCK_REFERENCE = {
           "id": "status",
           "variants": [
             {
-              "from": "act-5-act-2-part-3",
+              "from": "act-5-act-2-part-2",
               "label": "Status",
-              "value": "Deceased (executed)",
-              "sourcePage": 4055,
+              "value": "Deceased",
+              "sourcePage": 3514,
               "sourceKind": "direct"
             }
           ]
         }
       ],
-      "sourcePage": 4054,
-      "sourceKind": "intro"
-    },
-    {
-      "id": "dolorosa",
-      "group": "ancestors",
-      "reveal": "act-5-act-2-part-3",
-      "introPage": 4057,
-      "name": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": "THE DOLOROSA",
-          "sourcePage": 4057,
-          "sourceKind": "direct"
-        }
-      ],
-      "rosterLabel": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": "Dolorosa",
-          "sourcePage": 4057,
-          "sourceKind": "direct"
-        }
-      ],
-      "portrait": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": {
-            "src": "../assets/ref-dolorosa.webp",
-            "alt": "Dolorosa"
-          },
-          "sourcePage": 4057,
-          "sourceKind": "visual"
-        }
-      ],
-      "stats": [
-        {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Role",
-              "value": "Raised the Signless and became his first follower",
-              "sourcePage": 4057,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "former-role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Former role",
-              "value": "Mother Grub’s attendant in the brooding caverns",
-              "sourcePage": 4057,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Kanaya Maryam",
-              "sourcePage": 4057,
-              "sourceKind": "visual"
-            }
-          ]
-        }
-      ],
-      "sourcePage": 4057,
-      "sourceKind": "intro"
-    },
-    {
-      "id": "disciple",
-      "group": "ancestors",
-      "reveal": "act-5-act-2-part-3",
-      "introPage": 4058,
-      "name": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": "THE DISCIPLE",
-          "sourcePage": 4058,
-          "sourceKind": "direct"
-        }
-      ],
-      "rosterLabel": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": "Disciple",
-          "sourcePage": 4058,
-          "sourceKind": "direct"
-        }
-      ],
-      "portrait": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": {
-            "src": "../assets/ref-disciple.webp",
-            "alt": "Disciple"
-          },
-          "sourcePage": 4059,
-          "sourceKind": "visual"
-        }
-      ],
-      "stats": [
-        {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Role",
-              "value": "Recorded and preserved the Signless’s teachings",
-              "sourcePage": 4058,
-              "sourceKind": "composite",
-              "sourcePages": [
-                4059
-              ]
-            }
-          ]
-        },
-        {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Nepeta Leijon",
-              "sourcePage": 4058,
-              "sourceKind": "visual"
-            }
-          ]
-        }
-      ],
-      "sourcePage": 4058,
-      "sourceKind": "intro"
-    },
-    {
-      "id": "psiioniic",
-      "group": "ancestors",
-      "reveal": "act-5-act-2-part-3",
-      "introPage": 4058,
-      "name": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": "THE PSIIONIIC",
-          "sourcePage": 4058,
-          "sourceKind": "direct"
-        }
-      ],
-      "rosterLabel": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": "Psiioniic",
-          "sourcePage": 4058,
-          "sourceKind": "direct"
-        }
-      ],
-      "portrait": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": {
-            "src": "../assets/ref-psiioniic.webp",
-            "alt": "Psiioniic"
-          },
-          "sourcePage": 4058,
-          "sourceKind": "visual"
-        }
-      ],
-      "stats": [
-        {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Role",
-              "value": "Helmsman powering the Condesce’s battleship",
-              "sourcePage": 4060,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Sollux Captor",
-              "sourcePage": 4058,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
-          "id": "powers",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Powers",
-              "value": "Telekinesis",
-              "sourcePage": 4058,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "status",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Status",
-              "value": "Deceased (Vast Glub)",
-              "sourcePage": 4064,
-              "sourceKind": "direct"
-            }
-          ]
-        }
-      ],
-      "sourcePage": 4058,
-      "sourceKind": "intro"
-    },
-    {
-      "id": "handmaid",
-      "group": "ancestors",
-      "reveal": "act-5-act-2-part-3",
-      "introPage": 4068,
-      "name": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": "THE HANDMAID",
-          "sourcePage": 4068,
-          "sourceKind": "direct"
-        }
-      ],
-      "rosterLabel": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": "Handmaid",
-          "sourcePage": 4068,
-          "sourceKind": "direct"
-        }
-      ],
-      "portrait": [
-        {
-          "from": "act-5-act-2-part-3",
-          "value": {
-            "src": "../assets/ref-handmaid.webp",
-            "alt": "Handmaid"
-          },
-          "sourcePage": 4069,
-          "sourceKind": "visual"
-        }
-      ],
-      "stats": [
-        {
-          "id": "role",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Role",
-              "value": "Lord English’s time-traveling servant",
-              "sourcePage": 4069,
-              "sourceKind": "composite",
-              "sourcePages": [
-                4068
-              ]
-            }
-          ]
-        },
-        {
-          "id": "descendant",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Descendant",
-              "value": "Aradia Megido",
-              "sourcePage": 4069,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
-          "id": "guardian",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Raised by",
-              "value": "Doc Scratch",
-              "sourcePage": 4068,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
-          "id": "fate",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Foretold fate",
-              "value": "Killed by the Condesce, her replacement",
-              "sourcePage": 4071,
-              "sourceKind": "direct"
-            }
-          ]
-        }
-      ],
-      "sourcePage": 4068,
+      "sourcePage": 3508,
       "sourceKind": "intro"
     },
     {
@@ -5224,18 +5113,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "lusus",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Lusus",
-              "value": "Gl’bgolyb",
-              "sourcePage": 4063,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
           "id": "powers",
           "variants": [
             {
@@ -5252,18 +5129,14 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "future-service",
+          "id": "lusus",
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Future service",
-              "value": "Lord English’s witch",
-              "sourcePage": 4070,
-              "sourceKind": "composite",
-              "sourcePages": [
-                4068,
-                4069
-              ]
+              "label": "Lusus",
+              "value": "Gl’bgolyb",
+              "sourcePage": 4063,
+              "sourceKind": "direct"
             }
           ]
         }
