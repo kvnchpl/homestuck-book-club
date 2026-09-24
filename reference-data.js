@@ -1,7 +1,7 @@
 // Spoiler-aware reference data.
 // Variants apply from their reading stage until superseded by a later variant.
 window.HOMESTUCK_REFERENCE = {
-  "availableThrough": "intermission-2",
+  "availableThrough": "act-5-act-1",
   "stages": [
     {
       "value": 1,
