@@ -410,7 +410,7 @@
   const previousButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
   const startOver = document.getElementById('start-over');
-  // An unfinished template should remain readable as a normal document.
+  // Keep the document readable if required reader controls are missing.
   if (![controls, counter, sourceLink, previousButton, nextButton, startOver].every(Boolean)) return;
   const sources = new Map();
   const panels = [...deck.querySelectorAll('.media img')];
@@ -424,7 +424,7 @@
   window.addEventListener('beforeprint', () => {
     panels.forEach(img => { img.loading = 'eager'; });
   });
-  // Accept the existing hyphen separator and intermission filenames, too.
+  // Support hyphenated source suffixes and intermission filenames.
   const panelPattern = /^(A\d+(?:\.I\d+)?|I\d+)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
 
   panels.forEach(img => {
