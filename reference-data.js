@@ -1,7 +1,7 @@
 // Spoiler-aware reference data.
 // Variants apply from their reading stage until superseded by a later variant.
 window.HOMESTUCK_REFERENCE = {
-  "availableThrough": "act-5-act-1",
+  "availableThrough": "intermission-2",
   "stages": [
     {
       "value": 1,
@@ -540,8 +540,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "value": "JOHN EGBERT",
-          "sourcePage": 3,
-          "sourceKind": "visual"
+          "sourcePage": 4,
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -670,8 +670,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "value": "ROSE LALONDE",
-          "sourcePage": 216,
-          "sourceKind": "visual"
+          "sourcePage": 217,
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -816,8 +816,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-2",
           "value": "DAVE STRIDER",
-          "sourcePage": 311,
-          "sourceKind": "visual"
+          "sourcePage": 312,
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
@@ -946,7 +946,7 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-3",
           "value": "JADE HARLEY",
-          "sourcePage": 766,
+          "sourcePage": 768,
           "sourceKind": "visual"
         }
       ],
