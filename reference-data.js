@@ -1250,7 +1250,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Interests",
-              "value": "Formerly: Archaeology · Roleplaying",
+              "value": "Archaeology · Roleplaying",
               "sourcePage": 2134,
               "sourceKind": "direct"
             }
