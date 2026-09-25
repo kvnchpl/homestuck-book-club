@@ -4077,18 +4077,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "weapon",
-          "variants": [
-            {
-              "from": "intermission",
-              "label": "Weapon of choice",
-              "value": "Cast Iron Horse Hitcher",
-              "sourcePage": 1213,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
           "id": "inventory",
           "variants": [
             {
@@ -4100,6 +4088,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePages": [
                 1157
               ]
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Weapon of choice",
+              "value": "Cast Iron Horse Hitcher",
+              "sourcePage": 1213,
+              "sourceKind": "direct"
             }
           ]
         }
@@ -4371,18 +4371,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "weapon",
-          "variants": [
-            {
-              "from": "intermission",
-              "label": "Weapon of choice",
-              "value": "TV antenna",
-              "sourcePage": 1216,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "inventory",
           "variants": [
             {
@@ -4394,6 +4382,18 @@ window.HOMESTUCK_REFERENCE = {
               "sourcePages": [
                 1216
               ]
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Weapon of choice",
+              "value": "TV antenna",
+              "sourcePage": 1216,
+              "sourceKind": "visual"
             }
           ]
         }
