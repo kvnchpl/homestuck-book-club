@@ -4268,18 +4268,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "weapon",
-          "variants": [
-            {
-              "from": "intermission",
-              "label": "Weapon of choice",
-              "value": "Crook of Felony",
-              "sourcePage": 1178,
-              "sourceKind": "direct"
-            }
-          ]
-        },
-        {
           "id": "inventory",
           "variants": [
             {
@@ -4293,7 +4281,19 @@ window.HOMESTUCK_REFERENCE = {
               ]
             }
           ]
-        }
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Weapon of choice",
+              "value": "Crook of Felony",
+              "sourcePage": 1178,
+              "sourceKind": "direct"
+            }
+          ]
+        },
       ],
       "sourcePage": 1155,
       "sourceKind": "intro"
