@@ -4081,10 +4081,25 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "intermission",
-              "label": "Weapon",
-              "value": "Knives",
-              "sourcePage": 1163,
+              "label": "Weapon of choice",
+              "value": "Cast Iron Horse Hitcher",
+              "sourcePage": 1213,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "inventory",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Inventory",
+              "value": "War Chest (deck of cards)",
+              "sourcePage": 1161,
+              "sourceKind": "composite",
+              "sourcePages": [
+                1157
+              ]
             }
           ]
         }
@@ -4157,9 +4172,21 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "intermission",
-              "label": "Weapon",
-              "value": "Guns",
-              "sourcePage": 1200,
+              "label": "Weapon of choice",
+              "value": "Ultra-Violence Cuestick",
+              "sourcePage": 1231,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "inventory",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Inventory",
+              "value": "Brawlsoleum (deck of cards)",
+              "sourcePage": 1199,
               "sourceKind": "direct"
             }
           ]
@@ -4245,12 +4272,24 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "intermission",
-              "label": "Weapon",
-              "value": "Bombs · Crook of Felony",
+              "label": "Weapon of choice",
+              "value": "Crook of Felony",
+              "sourcePage": 1178,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "inventory",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Inventory",
+              "value": "Battledrobe (deck of cards)",
               "sourcePage": 1192,
               "sourceKind": "composite",
               "sourcePages": [
-                1178
+                1182
               ]
             }
           ]
@@ -4328,6 +4367,33 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Midnight Crew",
               "sourcePage": 1155,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Weapon of choice",
+              "value": "TV antenna",
+              "sourcePage": 1216,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "inventory",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Inventory",
+              "value": "Wrathtub (deck of cards)",
+              "sourcePage": 1219,
+              "sourceKind": "composite",
+              "sourcePages": [
+                1216
+              ]
             }
           ]
         }
