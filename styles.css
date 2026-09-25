@@ -882,6 +882,40 @@ button {
   margin: 0 auto 20px;
 }
 
+/* Reframe selected source panels without altering the original artwork. */
+.character-portrait.portrait-frame {
+  --portrait-size: 180px;
+}
+
+.is-ready .character-portrait.portrait-frame {
+  --portrait-size: 200px;
+}
+
+.roster-portrait.portrait-frame {
+  --portrait-size: 64px;
+}
+
+.character-portrait.portrait-frame,
+.roster-portrait.portrait-frame {
+  position: relative;
+  overflow: hidden;
+  width: min(100%, var(--portrait-size));
+  height: auto;
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.portrait-framed-image {
+  position: absolute;
+  max-width: none;
+  image-rendering: pixelated;
+}
+
+/* Give pale transparent silhouettes an edge against white cards. */
+img:is([src$="/ref-wq.webp"], [src$="/ref-doc-scratch.webp"], [src$="/ref-pm-prototyped.webp"]) {
+  filter: drop-shadow(0 0 1px #666);
+}
+
 .portrait-placeholder {
   display: flex;
   align-items: center;

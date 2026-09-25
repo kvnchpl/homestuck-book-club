@@ -1313,6 +1313,15 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             3055
           ]
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-tavros-ghost.webp",
+            "alt": "Tavros Nitram as a ghost with blank white eyes"
+          },
+          "sourcePage": 3491,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2107,8 +2116,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
-            "src": "../assets/ref-vriska.webp",
-            "alt": "Vriska Serket"
+            "src": "../assets/ref-vriska-injured.webp",
+            "alt": "Vriska Serket with an eyepatch and robotic arm"
           },
           "sourcePage": 2195,
           "sourceKind": "visual"
@@ -2394,6 +2403,18 @@ window.HOMESTUCK_REFERENCE = {
           },
           "sourcePage": 2012,
           "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-gamzee-scratched.webp",
+            "alt": "Gamzee Makara with a wild expression and scratches across his face"
+          },
+          "sourcePage": 3455,
+          "sourceKind": "visual",
+          "sourcePages": [
+            3454
+          ]
         }
       ],
       "stats": [
@@ -2664,6 +2685,15 @@ window.HOMESTUCK_REFERENCE = {
           },
           "sourcePage": 2422,
           "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "value": {
+            "src": "../assets/ref-feferi-ghost.webp",
+            "alt": "Feferi Peixes appearing as a ghost in a dream bubble, with blank white eyes"
+          },
+          "sourcePage": 2994,
+          "sourceKind": "visual"
         }
       ],
       "stats": [
@@ -2706,6 +2736,17 @@ window.HOMESTUCK_REFERENCE = {
         {
           "id": "status",
           "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Status",
+              "value": "Appears as a ghost in a dream bubble",
+              "sourcePage": 2994,
+              "sourceKind": "composite",
+              "sourcePages": [
+                2992,
+                2993
+              ]
+            },
             {
               "from": "act-5-act-2-part-2",
               "label": "Status",
@@ -4032,10 +4073,22 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "intermission",
           "value": {
-            "src": "../assets/ref-spades-slick.webp",
-            "alt": "Spades Slick in a dark suit and hat"
+            "src": "../assets/ref-spades-slick-injured.webp",
+            "alt": "Spades Slick with a stitched eye injury and a missing arm"
           },
-          "sourcePage": 1155,
+          "sourcePage": 1346,
+          "sourceKind": "visual",
+          "sourcePages": [
+            1269
+          ]
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
+            "src": "../assets/ref-spades-slick-prosthetic.webp",
+            "alt": "Spades Slick with an eyepatch and robotic arm"
+          },
+          "sourcePage": 3617,
           "sourceKind": "visual"
         }
       ],
@@ -4725,7 +4778,14 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-2-part-2",
           "value": {
             "src": "../assets/ref-summoner.webp",
-            "alt": "Summoner"
+            "alt": "Summoner",
+            "crop": {
+              "x": 330,
+              "y": 50,
+              "size": 220,
+              "width": 650,
+              "height": 450
+            }
           },
           "sourcePage": 3758,
           "sourceKind": "visual"
@@ -5306,7 +5366,14 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-5-act-2-part-2",
           "value": {
             "src": "../assets/ref-darkleer.webp",
-            "alt": "Darkleer"
+            "alt": "Darkleer",
+            "crop": {
+              "x": 210,
+              "y": 0,
+              "size": 420,
+              "width": 650,
+              "height": 650
+            }
           },
           "sourcePage": 3756,
           "sourceKind": "visual"
