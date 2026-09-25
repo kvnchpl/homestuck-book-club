@@ -4094,7 +4094,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "intermission",
               "label": "Inventory",
-              "value": "War Chest (deck of cards)",
+              "value": "War Chest",
               "sourcePage": 1161,
               "sourceKind": "composite",
               "sourcePages": [
@@ -4185,7 +4185,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "intermission",
               "label": "Inventory",
-              "value": "Brawlsoleum (deck of cards)",
+              "value": "Brawlsoleum",
               "sourcePage": 1199,
               "sourceKind": "direct"
             }
@@ -4285,7 +4285,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "intermission",
               "label": "Inventory",
-              "value": "Battledrobe (deck of cards)",
+              "value": "Battledrobe",
               "sourcePage": 1192,
               "sourceKind": "composite",
               "sourcePages": [
@@ -4388,7 +4388,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "intermission",
               "label": "Inventory",
-              "value": "Wrathtub (deck of cards)",
+              "value": "Wrathtub",
               "sourcePage": 1219,
               "sourceKind": "composite",
               "sourcePages": [
