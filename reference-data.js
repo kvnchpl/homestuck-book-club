@@ -4168,18 +4168,6 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "id": "weapon",
-          "variants": [
-            {
-              "from": "intermission",
-              "label": "Weapon of choice",
-              "value": "Ultra-Violence Cuestick",
-              "sourcePage": 1231,
-              "sourceKind": "visual"
-            }
-          ]
-        },
-        {
           "id": "inventory",
           "variants": [
             {
@@ -4188,6 +4176,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Brawlsoleum",
               "sourcePage": 1199,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "intermission",
+              "label": "Weapon of choice",
+              "value": "Ultra-Violence Cuestick",
+              "sourcePage": 1231,
+              "sourceKind": "visual"
             }
           ]
         },
