@@ -4293,7 +4293,7 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             }
           ]
-        },
+        }
       ],
       "sourcePage": 1155,
       "sourceKind": "intro"

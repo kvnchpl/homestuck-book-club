@@ -428,8 +428,8 @@
   window.addEventListener('beforeprint', () => {
     panels.forEach(img => { img.loading = 'eager'; });
   });
-  // Support hyphenated source suffixes and intermission filenames.
-  const panelPattern = /^(A\d+(?:\.I\d+)?|I\d+)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
+  // Support legacy act prefixes and the recap workflow's RNN filenames.
+  const panelPattern = /^(A\d+(?:\.I\d+)?|I\d+|R\d+)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
 
   panels.forEach(img => {
     let filename;
@@ -443,7 +443,8 @@
     const [, section, , paddedPage] = match;
     const page = Number(paddedPage);
     if (!Number.isSafeInteger(page) || page < 1) return;
-    const sectionLabel = /^I/i.test(section) ? `Intermission ${section.slice(1)}` : `Act ${section.slice(1)}`;
+    const sectionLabel = /^R/i.test(section) ? `Recap ${Number(section.slice(1))}` :
+      /^I/i.test(section) ? `Intermission ${section.slice(1)}` : `Act ${section.slice(1)}`;
     if (!img.hasAttribute('alt')) img.alt = `Homestuck ${sectionLabel}, page ${page}`;
     sources.set(img.closest('.slide'), page);
   });
