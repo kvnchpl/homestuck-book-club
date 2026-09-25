@@ -61,7 +61,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 2625,
       "sourcePage": 2625,
       "sourceKind": "boundary",
-      "section": "Part 1"
+      "section": "Part 2"
     },
     {
       "value": 7,
@@ -71,7 +71,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 3238,
       "sourcePage": 3238,
       "sourceKind": "boundary",
-      "section": "Part 1"
+      "section": "Part 2"
     },
     {
       "value": 8,
@@ -81,7 +81,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 3762,
       "sourcePage": 3762,
       "sourceKind": "boundary",
-      "section": "Part 1"
+      "section": "Part 2"
     },
     {
       "value": 9,
@@ -91,7 +91,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4110,
       "sourcePage": 4110,
       "sourceKind": "boundary",
-      "section": "Part 1"
+      "section": "Part 2"
     },
     {
       "value": 10,
@@ -101,7 +101,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4112,
       "sourcePage": 4112,
       "sourceKind": "boundary",
-      "section": "Part 1"
+      "section": "Part 2"
     },
     {
       "value": 11,
@@ -111,7 +111,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4294,
       "sourcePage": 4294,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 12,
@@ -121,7 +121,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4419,
       "sourcePage": 4419,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 13,
@@ -131,7 +131,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4666,
       "sourcePage": 4666,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 14,
@@ -141,7 +141,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 4819,
       "sourcePage": 4819,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 15,
@@ -151,7 +151,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5262,
       "sourcePage": 5262,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 16,
@@ -161,7 +161,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5437,
       "sourcePage": 5437,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 17,
@@ -171,7 +171,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5440,
       "sourcePage": 5440,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 18,
@@ -181,7 +181,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5511,
       "sourcePage": 5511,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 19,
@@ -191,7 +191,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 5926,
       "sourcePage": 5926,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 20,
@@ -201,7 +201,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6242,
       "sourcePage": 6242,
       "sourceKind": "boundary",
-      "section": "Part 2"
+      "section": "Part 3"
     },
     {
       "value": 21,
@@ -211,7 +211,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6277,
       "sourcePage": 6277,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 22,
@@ -221,7 +221,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6474,
       "sourcePage": 6474,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 23,
@@ -231,7 +231,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6530,
       "sourcePage": 6530,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 24,
@@ -241,7 +241,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6852,
       "sourcePage": 6852,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 25,
@@ -251,7 +251,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6900,
       "sourcePage": 6900,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 26,
@@ -261,7 +261,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6920,
       "sourcePage": 6920,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 27,
@@ -271,7 +271,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 6943,
       "sourcePage": 6943,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 28,
@@ -281,7 +281,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 7408,
       "sourcePage": 7408,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 29,
@@ -291,7 +291,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 7448,
       "sourcePage": 7448,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 30,
@@ -301,7 +301,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 8086,
       "sourcePage": 8086,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 31,
@@ -311,7 +311,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 8126,
       "sourcePage": 8126,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     },
     {
       "value": 32,
@@ -321,7 +321,7 @@ window.HOMESTUCK_REFERENCE = {
       "endPage": 8129,
       "sourcePage": 8129,
       "sourceKind": "boundary",
-      "section": "Part 3"
+      "section": "Part 4"
     }
   ],
   "groups": [
