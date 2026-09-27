@@ -34,6 +34,17 @@
     rose: { accent: '#b536da', text: '#8f1dac' },
     dave: { accent: '#e00707', text: '#b80606' },
     jade: { accent: '#4ac925', text: '#2f7f1b' },
+    'jane': { accent: '#00d5f2', text: '#00758a' },
+    'jake': { accent: '#1f9400', text: '#197500' },
+    'lalonde': { accent: '#ff6ff2', text: '#a42a96' },
+    'strider': { accent: '#f2a400', text: '#845900' },
+    'uranian-umbra': { accent: '#929292', text: '#595959' },
+    'dad-crocker': { accent: '#555555', text: '#555555' },
+    'poppop': { accent: '#0715cd', text: '#0715cd' },
+    'grandma': { accent: '#4ac925', text: '#2f7f1b' },
+    'auto-responder': { accent: '#f2a400', text: '#845900' },
+    'brobot': { accent: '#f2a400', text: '#845900' },
+    'lil-seb': { accent: '#e00707', text: '#b80606' },
     aradia: { accent: '#a10000', text: '#a10000' },
     tavros: { accent: '#a15000', text: '#8a4500' },
     sollux: { accent: '#a1a100', text: '#686800' },
@@ -156,7 +167,7 @@
       if (!portrait?.placeholder) return null;
       const placeholder = document.createElement('span');
       placeholder.className = `${className} portrait-placeholder`;
-      placeholder.textContent = className === 'roster-portrait' ? '?' : portrait.placeholder;
+      placeholder.textContent = '?';
       return placeholder;
     }
     const img = document.createElement('img');

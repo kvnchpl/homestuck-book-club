@@ -925,9 +925,7 @@ img:is([src$="/ref-wq.webp"], [src$="/ref-doc-scratch.webp"], [src$="/ref-pm-pro
 }
 
 .character-portrait.portrait-placeholder {
-  padding: 16px;
-  border: 1px dashed #aaa;
-  font: 400 13px/1.5 Verdana, Arial, sans-serif;
+  font: 700 64px/1 "Courier New", Courier, monospace;
 }
 
 .roster-portrait.portrait-placeholder {

@@ -357,6 +357,28 @@ window.HOMESTUCK_REFERENCE = {
             766
           ],
           "sourceKind": "editorial"
+        },
+        {
+          "from": "act-6-act-1",
+          "value": "KIDS — ACTS 1–5",
+          "sourcePage": 4113,
+          "sourceKind": "editorial"
+        }
+      ]
+    },
+    {
+      "id": "new-kids",
+      "title": [
+        {
+          "from": "act-6-act-1",
+          "value": "KIDS — ACT 6",
+          "sourcePage": 4117,
+          "sourceKind": "editorial",
+          "sourcePages": [
+            4120,
+            4156,
+            4256
+          ]
         }
       ]
     },
@@ -537,6 +559,32 @@ window.HOMESTUCK_REFERENCE = {
             2253
           ],
           "sourceKind": "editorial"
+        }
+      ]
+    },
+    {
+      "id": "other-players",
+      "title": [
+        {
+          "from": "act-6-act-1",
+          "value": "OTHER PLAYERS",
+          "sourcePage": 4144,
+          "sourceKind": "editorial"
+        }
+      ]
+    },
+    {
+      "id": "ai-robots",
+      "title": [
+        {
+          "from": "act-6-act-1",
+          "value": "AI & ROBOTS",
+          "sourcePage": 4185,
+          "sourceKind": "editorial",
+          "sourcePages": [
+            4192,
+            4242
+          ]
         }
       ]
     }
@@ -2810,12 +2858,24 @@ window.HOMESTUCK_REFERENCE = {
           "value": "DAD",
           "sourcePage": 70,
           "sourceKind": "direct"
+        },
+        {
+          "from": "act-6-act-1",
+          "value": "JOHN'S DAD",
+          "sourcePage": 70,
+          "sourceKind": "direct"
         }
       ],
       "rosterLabel": [
         {
           "from": "act-1",
           "value": "Dad",
+          "sourcePage": 70,
+          "sourceKind": "direct"
+        },
+        {
+          "from": "act-6-act-1",
+          "value": "John's dad",
           "sourcePage": 70,
           "sourceKind": "direct"
         }
@@ -5662,6 +5722,913 @@ window.HOMESTUCK_REFERENCE = {
         }
       ],
       "sourcePage": 4063,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "jane",
+      "group": "new-kids",
+      "reveal": "act-6-act-1",
+      "introPage": 4115,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "JANE CROCKER",
+          "sourcePage": 4116,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Jane",
+          "sourcePage": 4116,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "src": "../assets/ref-jane.webp",
+            "alt": "Jane Crocker in her blue ghost shirt"
+          },
+          "sourcePage": 4115,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Crockercorp heiress",
+              "sourcePage": 4117,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "handle",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Handle",
+              "value": "gutsyGumshoe [GG]",
+              "sourcePage": 4136,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Title",
+              "value": "Hero of Life",
+              "sourcePage": 4144,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "dream-moon",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Dream moon",
+              "value": "Prospit",
+              "sourcePage": 4144,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "strife-specibus",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Strife specibus",
+              "value": "spoonkind / forkkind",
+              "sourcePage": 4141,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4128
+              ]
+            }
+          ]
+        },
+        {
+          "id": "inventory",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Inventory",
+              "value": "Recipe modus",
+              "sourcePage": 4123,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Interests",
+              "value": "Baking · Detective stories · Pranks · Sitcoms",
+              "sourcePage": 4117,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4115,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "jake",
+      "group": "new-kids",
+      "reveal": "act-6-act-1",
+      "introPage": 4118,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "JAKE ENGLISH",
+          "sourcePage": 4119,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Jake",
+          "sourcePage": 4119,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "src": "../assets/ref-jake.webp",
+            "alt": "Jake English in his green skull shirt"
+          },
+          "sourcePage": 4120,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "handle",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Handle",
+              "value": "golgothasTerror [GT]",
+              "sourcePage": 4136,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "title",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Title",
+              "value": "Page",
+              "sourcePage": 4215,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "dream-moon",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Dream moon",
+              "value": "Prospit",
+              "sourcePage": 4209,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4215
+              ]
+            }
+          ]
+        },
+        {
+          "id": "weapon-of-choice",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Weapon of choice",
+              "value": "Twin M9 Berettas",
+              "sourcePage": 4164,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "inventory",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Inventory",
+              "value": "Puzzle modus",
+              "sourcePage": 4176,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Status",
+              "value": "Dream self deceased",
+              "sourcePage": 4216,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Interests",
+              "value": "Movies · Adventure · Firearms · Wrestling · Skulls",
+              "sourcePage": 4120,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4118,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "lalonde",
+      "group": "new-kids",
+      "reveal": "act-6-act-1",
+      "introPage": 4156,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "LALONDE",
+          "sourcePage": 4156,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Lalonde",
+          "sourcePage": 4156,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "placeholder": "?"
+          },
+          "sourcePage": 4121,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Computer expert; Jane's intended server player",
+              "sourcePage": 4225,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4175,
+                4226
+              ]
+            }
+          ]
+        },
+        {
+          "id": "handle",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Handle",
+              "value": "tipsyGnostalgic [TG]",
+              "sourcePage": 4156,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4156,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "strider",
+      "group": "new-kids",
+      "reveal": "act-6-act-1",
+      "introPage": 4256,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "D. STRIDER",
+          "sourcePage": 4259,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Strider",
+          "sourcePage": 4259,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "placeholder": "?"
+          },
+          "sourcePage": 4121,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Robotics and artificial-intelligence creator",
+              "sourcePage": 4256,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4258,
+                4192
+              ]
+            }
+          ]
+        },
+        {
+          "id": "handle",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Handle",
+              "value": "timaeusTestified [TT]",
+              "sourcePage": 4256,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Interests",
+              "value": "Irony · Puppetry · Robotics",
+              "sourcePage": 4257,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4259
+              ]
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4256,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "uranian-umbra",
+      "group": "other-players",
+      "reveal": "act-6-act-1",
+      "introPage": 4144,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "URANIANUMBRA",
+          "sourcePage": 4144,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "UU",
+          "sourcePage": 4144,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "placeholder": "?"
+          },
+          "sourcePage": 4114,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Off-world guide to Jane and her friends",
+              "sourcePage": 4144,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4181
+              ]
+            }
+          ]
+        },
+        {
+          "id": "handle",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Handle",
+              "value": "uranianUmbra [UU]",
+              "sourcePage": 4144,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "dream-moon",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Dream moon",
+              "value": "Prospit in a separate session",
+              "sourcePage": 4144,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4144,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "dad-crocker",
+      "group": "guardians-sprites",
+      "reveal": "act-6-act-1",
+      "introPage": 4131,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "JANE'S DAD",
+          "sourcePage": 4123,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Jane's dad",
+          "sourcePage": 4123,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "src": "../assets/ref-dad-crocker.webp",
+            "alt": "Jane's dad outside her house"
+          },
+          "sourcePage": 4131,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Jane's father",
+              "sourcePage": 4123,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "former-role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Former role",
+              "value": "Private investigator",
+              "sourcePage": 4198,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "interests",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Interests",
+              "value": "Car care · Comedy",
+              "sourcePage": 4126,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4132,
+                4196
+              ]
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4131,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "poppop",
+      "group": "guardians-sprites",
+      "reveal": "act-6-act-1",
+      "introPage": 4145,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "POPPOP CROCKER",
+          "sourcePage": 4145,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Poppop",
+          "sourcePage": 4145,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "src": "../assets/ref-poppop.webp",
+            "alt": "Poppop Crocker's stuffed body holding a joke book"
+          },
+          "sourcePage": 4201,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Jane's grandfather; comedian and sitcom actor",
+              "sourcePage": 4145,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Status",
+              "value": "Deceased at age 86",
+              "sourcePage": 4145,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4145,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "grandma",
+      "group": "guardians-sprites",
+      "reveal": "act-6-act-1",
+      "introPage": 4129,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "JAKE'S GRANDMA",
+          "sourcePage": 4168,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Grandma",
+          "sourcePage": 4168,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "placeholder": "?"
+          },
+          "sourcePage": 4168,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Jake's grandmother; adventurer and entrepreneur",
+              "sourcePage": 4183,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "also-known-as",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Also known as",
+              "value": "Jade",
+              "sourcePage": 4173,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4174
+              ]
+            }
+          ]
+        },
+        {
+          "id": "status",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Status",
+              "value": "Deceased",
+              "sourcePage": 4189,
+              "sourceKind": "direct"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4129,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "auto-responder",
+      "group": "ai-robots",
+      "reveal": "act-6-act-1",
+      "introPage": 4184,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "AUTO-RESPONDER",
+          "sourcePage": 4185,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Auto-responder",
+          "sourcePage": 4185,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "src": "../assets/ref-auto-responder.webp",
+            "alt": "Strider's auto-responder running in his sunglasses"
+          },
+          "sourcePage": 4185,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Self-aware software modeled on Strider's mind, housed in his sunglasses",
+              "sourcePage": 4256,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4185
+              ]
+            }
+          ]
+        },
+        {
+          "id": "handle",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Handle",
+              "value": "timaeusTestified [TT] (shared with Strider)",
+              "sourcePage": 4184,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4185
+              ]
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4184,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "brobot",
+      "group": "ai-robots",
+      "reveal": "act-6-act-1",
+      "introPage": 4236,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "BROBOT",
+          "sourcePage": 4191,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Brobot",
+          "sourcePage": 4191,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "src": "../assets/ref-brobot.webp",
+            "alt": "Strider's robot double wearing red sunglasses"
+          },
+          "sourcePage": 4276,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Jake's robotic sparring partner",
+              "sourcePage": 4192,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Weapon",
+              "value": "Sword",
+              "sourcePage": 4276,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "components",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Components",
+              "value": "Uranium-powered robot assembled by Jake from Strider’s parts",
+              "sourcePage": 4208,
+              "sourceKind": "composite",
+              "sourcePages": [
+                4192
+              ]
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4236,
+      "sourceKind": "intro"
+    },
+    {
+      "id": "lil-seb",
+      "group": "ai-robots",
+      "reveal": "act-6-act-1",
+      "introPage": 4242,
+      "name": [
+        {
+          "from": "act-6-act-1",
+          "value": "LIL’ SEBASTIAN",
+          "sourcePage": 4258,
+          "sourceKind": "direct"
+        }
+      ],
+      "rosterLabel": [
+        {
+          "from": "act-6-act-1",
+          "value": "Lil’ Seb",
+          "sourcePage": 4258,
+          "sourceKind": "direct"
+        }
+      ],
+      "portrait": [
+        {
+          "from": "act-6-act-1",
+          "value": {
+            "src": "../assets/ref-lil-seb.webp",
+            "alt": "Lil’ Sebastian, Jane's robotic rabbit"
+          },
+          "sourcePage": 4260,
+          "sourceKind": "visual"
+        }
+      ],
+      "stats": [
+        {
+          "id": "role",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Role",
+              "value": "Jane's robotic protector, a gift from Strider",
+              "sourcePage": 4258,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "also-known-as",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Also known as",
+              "value": "Huggy Bear",
+              "sourcePage": 4256,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "components",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Components",
+              "value": "Stuffed Con Air bunny inside a robotic exoskeleton",
+              "sourcePage": 4258,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "weapon",
+          "variants": [
+            {
+              "from": "act-6-act-1",
+              "label": "Weapon",
+              "value": "Retractable blade",
+              "sourcePage": 4241,
+              "sourceKind": "visual"
+            }
+          ]
+        }
+      ],
+      "sourcePage": 4242,
       "sourceKind": "intro"
     }
   ]
