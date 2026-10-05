@@ -16,9 +16,7 @@
   const conceptSearch = document.getElementById('concept-search');
   const conceptClear = document.getElementById('concept-clear');
   const conceptResults = document.getElementById('concept-results');
-  const conceptStatus = document.getElementById('concept-status');
   const conceptEmpty = document.getElementById('concept-empty');
-  const conceptCoverage = document.getElementById('concept-coverage');
 
   if (!data || !select || !roster || !groupsContainer ||
     !progressScale || !progressOutput) {
@@ -36,70 +34,71 @@
   // A missing or invalid club cap fails closed to the first reading stage.
   const availableStage = stages.find(stage => stage.key === data.availableThrough) || stages[0];
 
+  // Named accents match the user-supplied site CSS; provenance is in local docs.
   const characterColors = {
-    john: { accent: '#0715cd', text: '#0715cd' },
-    rose: { accent: '#b536da', text: '#8f1dac' },
-    dave: { accent: '#e00707', text: '#b80606' },
-    jade: { accent: '#4ac925', text: '#2f7f1b' },
-    'jane': { accent: '#00d5f2', text: '#00758a' },
-    'jake': { accent: '#1f9400', text: '#197500' },
-    'lalonde': { accent: '#ff6ff2', text: '#a42a96' },
-    'strider': { accent: '#f2a400', text: '#845900' },
-    'uranian-umbra': { accent: '#929292', text: '#595959' },
-    'dad-crocker': { accent: '#555555', text: '#555555' },
-    'poppop': { accent: '#0715cd', text: '#0715cd' },
-    'grandma': { accent: '#4ac925', text: '#2f7f1b' },
-    'auto-responder': { accent: '#f2a400', text: '#845900' },
-    'brobot': { accent: '#f2a400', text: '#845900' },
-    'lil-seb': { accent: '#e00707', text: '#b80606' },
-    aradia: { accent: '#a10000', text: '#a10000' },
-    tavros: { accent: '#a15000', text: '#8a4500' },
-    sollux: { accent: '#a1a100', text: '#686800' },
-    karkat: { accent: '#626262', text: '#4f4f4f' },
-    nepeta: { accent: '#416600', text: '#416600' },
-    kanaya: { accent: '#008141', text: '#007239' },
-    terezi: { accent: '#008282', text: '#006f6f' },
-    vriska: { accent: '#005682', text: '#005682' },
-    equius: { accent: '#000056', text: '#000056' },
-    gamzee: { accent: '#2b0057', text: '#2b0057' },
-    eridan: { accent: '#6a006a', text: '#6a006a' },
-    feferi: { accent: '#77003c', text: '#77003c' },
-    signless: { accent: '#626262', text: '#4f4f4f' },
-    dolorosa: { accent: '#008141', text: '#007239' },
-    disciple: { accent: '#416600', text: '#416600' },
-    psiioniic: { accent: '#a1a100', text: '#686800' },
-    handmaid: { accent: '#a10000', text: '#a10000' },
-    condesce: { accent: '#77003c', text: '#77003c' },
-    mindfang: { accent: '#005682', text: '#005682' },
-    dualscar: { accent: '#6a006a', text: '#6a006a' },
-    'grand-highblood': { accent: '#2b0057', text: '#2b0057' },
-    redglare: { accent: '#008282', text: '#006f6f' },
-    darkleer: { accent: '#000056', text: '#000056' },
-    summoner: { accent: '#a15000', text: '#8a4500' },
-    dad: { accent: '#555555', text: '#555555' },
-    mom: { accent: '#a64d79', text: '#893b63' },
-    bro: { accent: '#a65f26', text: '#8c4e1d' },
-    grandpa: { accent: '#82733b', text: '#6c5d2c' },
-    nannasprite: { accent: '#00a9c6', text: '#00748a' },
-    jadesprite: { accent: '#4ac925', text: '#29751b' },
-    jaspersprite: { accent: '#b078cd', text: '#805398' },
-    davesprite: { accent: '#e67e22', text: '#9c4c08' },
-    bec: { accent: '#5c963a', text: '#426e28' },
-    wv: { accent: '#806b4b', text: '#6d593c' },
-    pm: { accent: '#75858d', text: '#566770' },
-    ar: { accent: '#b58b2b', text: '#7b5c15' },
-    wq: { accent: '#a3936a', text: '#70613d' },
-    'jack-noir': { accent: '#252525', text: '#252525' },
-    dd: { accent: '#252525', text: '#252525' },
-    cd: { accent: '#252525', text: '#252525' },
-    hb: { accent: '#252525', text: '#252525' },
-    'spades-slick': { accent: '#252525', text: '#252525' },
-    'diamonds-droog': { accent: '#252525', text: '#252525' },
-    'clubs-deuce': { accent: '#252525', text: '#252525' },
-    'hearts-boxcars': { accent: '#252525', text: '#252525' },
-    snowman: { accent: '#305b40', text: '#305b40' },
-    'doc-scratch': { accent: '#7a9476', text: '#4e6b49' },
-    'lord-english': { accent: '#2f9b31', text: '#246e25' }
+    'john': '#0715cd',
+    'rose': '#b536da',
+    'dave': '#e00707',
+    'jade': '#4ac925',
+    'jane': '#00d5f2',
+    'jake': '#1f9400',
+    'lalonde': '#ff6ff2',
+    'strider': '#f2a400',
+    'uranian-umbra': '#929292',
+    'dad-crocker': '#555555',
+    'poppop': '#0715cd',
+    'grandma': '#4ac925',
+    'auto-responder': '#e00707',
+    'brobot': '#f2a400',
+    'lil-seb': '#e00707',
+    'aradia': '#a10000',
+    'tavros': '#a16000',
+    'sollux': '#a1a100',
+    'karkat': '#626262',
+    'nepeta': '#416600',
+    'kanaya': '#008141',
+    'terezi': '#008282',
+    'vriska': '#005682',
+    'equius': '#000056',
+    'gamzee': '#2b0057',
+    'eridan': '#6a006a',
+    'feferi': '#77003c',
+    'signless': '#626262',
+    'dolorosa': '#008141',
+    'disciple': '#416600',
+    'psiioniic': '#a1a100',
+    'handmaid': '#a10000',
+    'condesce': '#77003c',
+    'mindfang': '#005682',
+    'dualscar': '#6a006a',
+    'grand-highblood': '#2b0057',
+    'redglare': '#008282',
+    'darkleer': '#000056',
+    'summoner': '#a16000',
+    'dad': '#555555',
+    'mom': '#a64d79',
+    'bro': '#a65f26',
+    'grandpa': '#82733b',
+    'nannasprite': '#00d5f2',
+    'jadesprite': '#1f9400',
+    'jaspersprite': '#f141ef',
+    'davesprite': '#f2a400',
+    'bec': '#5c963a',
+    'wv': '#806b4b',
+    'pm': '#75858d',
+    'ar': '#b58b2b',
+    'wq': '#a3936a',
+    'jack-noir': '#252525',
+    'dd': '#252525',
+    'cd': '#252525',
+    'hb': '#252525',
+    'spades-slick': '#252525',
+    'diamonds-droog': '#252525',
+    'clubs-deuce': '#252525',
+    'hearts-boxcars': '#252525',
+    'snowman': '#000000',
+    'doc-scratch': '#ffffff',
+    'lord-english': '#2ed73a'
   };
 
   let currentStage = stages[0];
@@ -163,10 +162,19 @@
   }
 
   function setCharacterPalette(element, id) {
-    const palette = characterColors[id];
-    if (!palette) return;
-    element.style.setProperty('--character-color', palette.accent);
-    element.style.setProperty('--character-text-color', palette.text);
+    const color = characterColors[id];
+    if (!color) return;
+    // Preserve the character's exact color; use a dark surface for pale colors.
+    const channels = color.slice(1).match(/../g).map(hex => {
+      const value = parseInt(hex, 16) / 255;
+      return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
+    });
+    const luminance = channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
+    const dark = 1.05 / (luminance + 0.05) < 4.5;
+    element.style.setProperty('--character-color', color);
+    element.style.setProperty('--character-surface', dark ? '#000000' : '#ffffff');
+    element.style.setProperty('--character-ink', dark ? '#eeeeee' : '#000000');
+    element.style.setProperty('--character-muted-ink', dark ? '#c6c6c6' : '#535353');
   }
 
   function createPortrait(portrait, className, loading = 'lazy') {
@@ -388,8 +396,69 @@
     return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
   }
 
+  function conceptFromHash() {
+    return location.hash.match(/^#concept-([a-z0-9-]+)$/)?.[1] || null;
+  }
+
+  function showConcept(id, { updateHash = true } = {}) {
+    const concept = (data.concepts || []).find(item => item.id === id);
+    if (!concept || !reached(concept.reveal) || !resolveVariant(concept.variants)) return false;
+    const targetId = `concept-${id}`;
+    if (!document.getElementById(targetId)) {
+      conceptSearch.value = '';
+      renderConcepts();
+    }
+    const entry = document.getElementById(targetId);
+    if (!entry) return false;
+    if (updateHash && location.hash !== `#${targetId}`) history.pushState(null, '', `#${targetId}`);
+    entry.focus({ preventScroll: true });
+    entry.scrollIntoView({ block: 'start' });
+    return true;
+  }
+
+  function appendLinkedDefinition(element, text, ownId, available) {
+    const phrases = new Map();
+    for (const { id, variant } of available) {
+      if (id === ownId) continue;
+      for (const phrase of [variant.term, ...(variant.aliases || []), ...(variant.linkPhrases || [])]) {
+        const key = phrase.toLowerCase();
+        // Ambiguous labels remain plain text rather than choosing an arbitrary entry.
+        phrases.set(key, phrases.has(key) && phrases.get(key) !== id ? null : id);
+      }
+    }
+    const labels = [...phrases.keys()].filter(key => phrases.get(key))
+      .sort((a, b) => b.length - a.length)
+      .map(label => label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    if (!labels.length) {
+      element.textContent = text;
+      return;
+    }
+    // Longest phrases win; whole-word matching avoids links inside unrelated words.
+    const pattern = new RegExp(`\\b(${labels.join('|')})(s)?\\b`, 'gi');
+    const linked = new Set();
+    let cursor = 0;
+    for (const match of text.matchAll(pattern)) {
+      const id = phrases.get(match[1].toLowerCase());
+      if (linked.has(id)) continue;
+      element.append(document.createTextNode(text.slice(cursor, match.index)));
+      const link = document.createElement('a');
+      link.className = 'concept-link';
+      link.href = `#concept-${id}`;
+      link.textContent = match[0];
+      link.addEventListener('click', event => {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button > 0) return;
+        event.preventDefault();
+        showConcept(id);
+      });
+      element.append(link);
+      linked.add(id);
+      cursor = match.index + match[0].length;
+    }
+    element.append(document.createTextNode(text.slice(cursor)));
+  }
+
   function renderConcepts() {
-    if (![appendix, conceptSearch, conceptClear, conceptResults, conceptStatus, conceptEmpty, conceptCoverage].every(Boolean)) return;
+    if (![appendix, conceptSearch, conceptClear, conceptResults, conceptEmpty].every(Boolean)) return;
     const concepts = data.concepts || [];
     // Resolve first: unreached names, aliases, and definitions never enter search or the DOM.
     const available = concepts.filter(concept => reached(concept.reveal))
@@ -408,46 +477,19 @@
       const entry = document.createElement('article');
       entry.className = 'concept-entry';
       entry.id = `concept-${id}`;
+      entry.tabIndex = -1;
       const heading = document.createElement('h3');
       heading.textContent = variant.term;
       const copy = document.createElement('div');
       copy.className = 'concept-copy';
-      if (variant.aliases?.length) {
-        const aliases = document.createElement('p');
-        aliases.className = 'concept-aliases';
-        aliases.textContent = `Also: ${variant.aliases.join(', ')}`;
-        copy.append(aliases);
-      }
       const definition = document.createElement('p');
       definition.className = 'concept-definition';
-      definition.textContent = variant.definition;
+      appendLinkedDefinition(definition, variant.definition, id, available);
       copy.append(definition);
-
-      const sources = document.createElement('p');
-      sources.className = 'concept-sources';
-      const sourcePages = [variant.sourcePage, ...(variant.sourcePages || [])];
-      const label = document.createElement('span');
-      label.textContent = sourcePages.length === 1 ? 'Source: ' : 'Sources: ';
-      sources.append(label);
-      for (const page of sourcePages) {
-        const link = document.createElement('a');
-        link.href = `https://homestuck.com/story/${page}`;
-        link.textContent = `p. ${page}`;
-        link.setAttribute('aria-label', `${variant.term}: story page ${page}`);
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        sources.append(link);
-      }
-      copy.append(sources);
       entry.append(heading, copy);
       conceptResults.append(entry);
     }
 
-    const prepared = stages.find(stage => stage.key === data.conceptsPreparedThrough);
-    conceptCoverage.textContent = prepared ? `Appendix coverage: through ${prepared.label}.` : '';
-    conceptStatus.textContent = words.length
-      ? `${matches.length} of ${available.length} terms`
-      : `${available.length} ${available.length === 1 ? 'term' : 'terms'}`;
     conceptClear.disabled = !conceptSearch.value;
     conceptEmpty.hidden = matches.length > 0;
     conceptEmpty.textContent = available.length
@@ -498,6 +540,8 @@
   window.addEventListener('hashchange', () => {
     const id = characterFromHash();
     if (id) showCharacter(id, { updateHash: false });
+    const conceptId = conceptFromHash();
+    if (conceptId) showConcept(conceptId, { updateHash: false });
   });
 
   conceptSearch?.addEventListener('input', renderConcepts);
@@ -508,6 +552,8 @@
   });
 
   applyProgress(storedStage().key, { persist: false });
+  const initialConcept = conceptFromHash();
+  if (initialConcept) showConcept(initialConcept, { updateHash: false });
 })();
 
 (() => {

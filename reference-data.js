@@ -6945,7 +6945,10 @@ window.HOMESTUCK_REFERENCE = {
             142,
             183
           ],
-          "sourceKind": "composite"
+          "sourceKind": "composite",
+          "linkPhrases": [
+            "Queue"
+          ]
         }
       ]
     },
@@ -6984,7 +6987,10 @@ window.HOMESTUCK_REFERENCE = {
             15,
             142
           ],
-          "sourceKind": "composite"
+          "sourceKind": "composite",
+          "linkPhrases": [
+            "Stack"
+          ]
         }
       ]
     },
@@ -7078,7 +7084,10 @@ window.HOMESTUCK_REFERENCE = {
             226,
             236
           ],
-          "sourceKind": "composite"
+          "sourceKind": "composite",
+          "linkPhrases": [
+            "Tree"
+          ]
         }
       ]
     }
