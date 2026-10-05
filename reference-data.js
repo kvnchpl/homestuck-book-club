@@ -6631,5 +6631,456 @@ window.HOMESTUCK_REFERENCE = {
       "sourcePage": 4242,
       "sourceKind": "intro"
     }
+  ],
+  "conceptsPreparedThrough": "act-1",
+  "concepts": [
+    {
+      "id": "alchemy",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Alchemy",
+          "aliases": [],
+          "definition": "Sburb's system for making objects with punched cards and carved cruxite. A card directs the Totem Lathe to shape a dowel; the resulting totem is used on the Alchemiter to produce the object.",
+          "sourcePage": 205,
+          "sourcePages": [
+            157,
+            210,
+            240
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "alchemiter",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Alchemiter",
+          "aliases": [],
+          "definition": "The Sburb platform that creates objects from cruxite placed on its pedestal. An uncarved dowel produces Perfectly Generic Objects; a carved totem specifies a different item. Making objects can cost build grist.",
+          "sourcePage": 191,
+          "sourcePages": [
+            193,
+            240
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "atheneum",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Atheneum",
+          "aliases": [],
+          "definition": "A catalog in the Sburb interface listing objects available to create. The first listed item is a Perfectly Generic Object. Rose also uses it to check that the item specified by John's pre-punched card costs no grist.",
+          "sourcePage": 189,
+          "sourcePages": [
+            240
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "build-grist",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Build grist",
+          "aliases": [
+            "Grist"
+          ],
+          "definition": "A resource spent through Sburb to alter the house and create objects. Some starting equipment and the pre-punched card's item are free. Despite its jewel-like appearance, build grist is a game abstraction rather than something John can pick up and eat.",
+          "sourcePage": 153,
+          "sourcePages": [
+            193,
+            199,
+            240
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "captchalogue",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Captchalogue",
+          "aliases": [],
+          "definition": "To store an object on a card in a sylladex. Retrieving it depends on the current fetch modus, so putting an object away does not necessarily leave it immediately accessible.",
+          "sourcePage": 7,
+          "sourcePages": [
+            9,
+            10
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "captchalogue-card",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Captchalogue card",
+          "aliases": [],
+          "definition": "A storage card in a sylladex. Cards can hold objects, including several items together. When John adds an item to his full stack, an older card's contents are pushed out of the inventory.",
+          "sourcePage": 9,
+          "sourcePages": [
+            15,
+            17
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "client-server",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Client and server",
+          "aliases": [
+            "Host user"
+          ],
+          "definition": "The two sides of a Sburb connection. John runs the client; Rose runs the server and acts as his host. She can move objects, change his house, and deploy equipment into his surroundings through the game.",
+          "sourcePage": 135,
+          "sourcePages": [
+            153
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "cruxite",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Cruxite dowel",
+          "aliases": [
+            "Cruxite"
+          ],
+          "definition": "A cylinder of material dispensed by the Cruxtruder. It can be placed on the Alchemiter directly or carved into a totem with the Totem Lathe.",
+          "sourcePage": 179,
+          "sourcePages": [
+            191,
+            209,
+            210
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "cruxtruder",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Cruxtruder",
+          "aliases": [],
+          "definition": "A Sburb machine that dispenses cruxite dowels when its wheel is turned. John and Rose must get its lid off before they can obtain the material.",
+          "sourcePage": 172,
+          "sourcePages": [
+            178,
+            179
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "fetch-modus",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Fetch modus",
+          "aliases": [
+            "Fetch modi"
+          ],
+          "definition": "The rules a sylladex uses to organize objects and decide which can be retrieved. John begins with a Stack modus and later gains a Queue modus; Rose uses a Tree modus.",
+          "sourcePage": 10,
+          "sourcePages": [
+            142,
+            224
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "kernelsprite",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Kernelsprite",
+          "aliases": [],
+          "definition": "The entity that follows John during Sburb setup and seems to be trying to communicate. Rose identifies it from a walkthrough. Even after it is prototyped with a harlequin doll, John cannot understand its speech.",
+          "sourcePage": 184,
+          "sourcePages": [
+            186,
+            187
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "kind-abstratus",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Kind abstratus",
+          "aliases": [],
+          "definition": "The weapon category assigned to a strife specibus. John chooses hammerkind, allowing his hammer to move out of his ordinary inventory and into his strife deck.",
+          "sourcePage": 37,
+          "sourcePages": [
+            38
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "perfectly-generic-object",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Perfectly Generic Object",
+          "aliases": [],
+          "definition": "The basic object made when John puts an uncarved cruxite dowel on the Alchemiter. He creates three for six build grist. They initially seem useless and later get in his way.",
+          "sourcePage": 189,
+          "sourcePages": [
+            191,
+            193,
+            243
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "pesterchum",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Pesterchum",
+          "aliases": [],
+          "definition": "The messaging application John and his friends use to chat. A conversation is called pestering, and participants use handles such as ectoBiologist [EB] and turntechGodhead [TG].",
+          "sourcePage": 25,
+          "sourcePages": [
+            26
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "pre-punched-card",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Pre-punched card",
+          "aliases": [],
+          "definition": "A card supplied through Sburb with a pattern already punched into it. Inserting it into the Totem Lathe sets the chisels for carving a cruxite dowel. Rose believes the resulting totem will create the card's pictured item, an apple in John's case.",
+          "sourcePage": 181,
+          "sourcePages": [
+            205,
+            240
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "prototyping",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Prototyping",
+          "aliases": [],
+          "definition": "Applying an object to the Kernelsprite. Rose uses a harlequin doll for the first tier. Her walkthrough describes a second tier, but the first does not make the sprite's speech understandable to John.",
+          "sourcePage": 184,
+          "sourcePages": [
+            185,
+            186,
+            187
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "queue-modus",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Queue modus",
+          "aliases": [],
+          "definition": "A fetch modus that makes the bottom card accessible while newer objects wait behind it. John can switch between Queue and Stack to reach different ends of his inventory.",
+          "sourcePage": 118,
+          "sourcePages": [
+            142,
+            183
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "sburb",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Sburb",
+          "aliases": [
+            "Sburb beta"
+          ],
+          "definition": "The game John has been waiting to receive. Once he connects with Rose, its controls let her manipulate his actual surroundings. With a meteor approaching his house, they try to use the game's equipment to find a way out of the crisis.",
+          "sourcePage": 135,
+          "sourcePages": [
+            22,
+            153,
+            204
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "stack-modus",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Stack modus",
+          "aliases": [],
+          "definition": "John's starting fetch modus: the newest object sits on top, blocking the cards beneath it. Adding an object to a full stack pushes the oldest contents out. John later gains the option to switch between Stack and Queue.",
+          "sourcePage": 10,
+          "sourcePages": [
+            15,
+            142
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "strife-specibus",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Strife specibus",
+          "aliases": [],
+          "definition": "The weapon allocation system, separate from ordinary item storage. Assigning a kind abstratus moves a matching weapon into the strife deck and frees inventory space. John assigns hammerkind and transfers his hammer.",
+          "sourcePage": 35,
+          "sourcePages": [
+            37,
+            38
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "sylladex",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Sylladex",
+          "aliases": [
+            "Captchalogue deck"
+          ],
+          "definition": "A personal inventory that stores objects on captchalogue cards. Its fetch modus controls how the cards are organized and which objects are accessible, often making a simple retrieval surprisingly awkward.",
+          "sourcePage": 7,
+          "sourcePages": [
+            9,
+            10,
+            38
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "totem",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Totem",
+          "aliases": [],
+          "definition": "A cruxite dowel shaped by the Totem Lathe according to a punched card. The shape tells the Alchemiter which object to create, so the carved totem must be carried over to that machine.",
+          "sourcePage": 205,
+          "sourcePages": [
+            209,
+            210,
+            240
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "totem-lathe",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Totem Lathe",
+          "aliases": [],
+          "definition": "The Sburb machine that carves cruxite into a totem. A punched card goes in its slot to configure the chisels; the dowel is clamped into place and carved.",
+          "sourcePage": 205,
+          "sourcePages": [
+            209,
+            210
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "tree-modus",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Tree modus",
+          "aliases": [],
+          "definition": "Rose's fetch modus arranges items alphabetically in a branching tree of cards, with a root and leaves. Adding items can rebalance the tree. Removing an item from the root cuts off the branches and dumps the remaining objects.",
+          "sourcePage": 224,
+          "sourcePages": [
+            226,
+            236
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    }
   ]
 };

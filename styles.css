@@ -568,7 +568,7 @@ button {
   white-space: nowrap;
 }
 
-/* Reference page: staged character profiles. */
+/* Reference page: staged character profiles and concept appendix. */
 
 .reference-page {
   padding: 24px 28px 4rem;
@@ -952,6 +952,122 @@ img:is([src$="/ref-wq.webp"], [src$="/ref-doc-scratch.webp"], [src$="/ref-pm-pro
   border-top: 1px solid #aaa;
 }
 
+.concept-appendix {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #aaa;
+}
+
+.concept-appendix h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.concept-intro {
+  margin: 8px 0 4px;
+  font-size: 14px;
+}
+
+.concept-coverage,
+.concept-status,
+.concept-aliases,
+.concept-sources {
+  color: #555;
+  font: 400 12px/1.5 Verdana, Arial, sans-serif;
+}
+
+.concept-coverage {
+  margin: 0 0 20px;
+}
+
+.concept-search label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.concept-search-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.concept-search input,
+.concept-search button {
+  min-height: 44px;
+  border: 1px solid #777;
+  border-radius: 0;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 16px;
+}
+
+.concept-search input {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  color: #111;
+}
+
+.concept-search button {
+  background: #ddd;
+  color: #222;
+  cursor: pointer;
+}
+
+.concept-search button:disabled {
+  color: #666;
+  cursor: default;
+}
+
+.concept-search :focus-visible {
+  outline: 2px solid #0715cd;
+  outline-offset: 3px;
+}
+
+.concept-status {
+  margin: 10px 0;
+}
+
+.concept-entry {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) minmax(0, 2.5fr);
+  gap: 6px 20px;
+  padding: 18px 0;
+  border-top: 1px solid #ccc;
+  scroll-margin-top: 20px;
+}
+
+.concept-entry h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.concept-definition {
+  margin: 0;
+  font-size: 14px;
+}
+
+.concept-aliases {
+  margin: 0 0 6px;
+}
+
+.concept-sources {
+  margin: 8px 0 0;
+}
+
+.concept-sources a {
+  display: inline-block;
+  margin-right: 10px;
+  text-underline-offset: 2px;
+}
+
+.concept-empty {
+  border-top: 1px solid #ccc;
+  padding-top: 18px;
+  font-size: 14px;
+}
+
 @media (max-width: 440px) {
   .character-grid {
     grid-template-columns: 1fr;
@@ -972,6 +1088,10 @@ img:is([src$="/ref-wq.webp"], [src$="/ref-doc-scratch.webp"], [src$="/ref-pm-pro
 }
 
 @media screen and (max-width: 600px) {
+  .concept-entry {
+    grid-template-columns: 1fr;
+  }
+
   .reading-progress {
     padding-inline: 12px;
   }
@@ -1260,6 +1380,14 @@ img:is([src$="/ref-wq.webp"], [src$="/ref-doc-scratch.webp"], [src$="/ref-pm-pro
 
   .character-roster {
     display: none;
+  }
+
+  .concept-search {
+    display: none;
+  }
+
+  .concept-entry {
+    break-inside: avoid;
   }
 
   .character-select.is-ready {

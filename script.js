@@ -1,4 +1,4 @@
-// Spoiler-aware reference page and character roster.
+// Spoiler-aware character reference and concept appendix.
 (() => {
   'use strict';
 
@@ -12,6 +12,13 @@
   const progressScale = document.getElementById('reading-progress-scale');
   const progressOutput = document.getElementById('reading-progress-output');
   const loadingMessage = document.getElementById('reference-loading');
+  const appendix = document.getElementById('concept-appendix');
+  const conceptSearch = document.getElementById('concept-search');
+  const conceptClear = document.getElementById('concept-clear');
+  const conceptResults = document.getElementById('concept-results');
+  const conceptStatus = document.getElementById('concept-status');
+  const conceptEmpty = document.getElementById('concept-empty');
+  const conceptCoverage = document.getElementById('concept-coverage');
 
   if (!data || !select || !roster || !groupsContainer ||
     !progressScale || !progressOutput) {
@@ -377,10 +384,83 @@
     });
   }
 
+  function searchableText(value) {
+    return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  }
+
+  function renderConcepts() {
+    if (![appendix, conceptSearch, conceptClear, conceptResults, conceptStatus, conceptEmpty, conceptCoverage].every(Boolean)) return;
+    const concepts = data.concepts || [];
+    // Resolve first: unreached names, aliases, and definitions never enter search or the DOM.
+    const available = concepts.filter(concept => reached(concept.reveal))
+      .map(concept => ({ id: concept.id, variant: resolveVariant(concept.variants) }))
+      .filter(concept => concept.variant)
+      .sort((a, b) => a.variant.term.localeCompare(b.variant.term, 'en'));
+    const query = searchableText(conceptSearch.value || '');
+    const words = query ? query.split(/\s+/) : [];
+    const matches = available.filter(({ variant }) => {
+      const haystack = searchableText([variant.term, ...(variant.aliases || []), variant.definition].join(' '));
+      return words.every(word => haystack.includes(word));
+    });
+
+    conceptResults.replaceChildren();
+    for (const { id, variant } of matches) {
+      const entry = document.createElement('article');
+      entry.className = 'concept-entry';
+      entry.id = `concept-${id}`;
+      const heading = document.createElement('h3');
+      heading.textContent = variant.term;
+      const copy = document.createElement('div');
+      copy.className = 'concept-copy';
+      if (variant.aliases?.length) {
+        const aliases = document.createElement('p');
+        aliases.className = 'concept-aliases';
+        aliases.textContent = `Also: ${variant.aliases.join(', ')}`;
+        copy.append(aliases);
+      }
+      const definition = document.createElement('p');
+      definition.className = 'concept-definition';
+      definition.textContent = variant.definition;
+      copy.append(definition);
+
+      const sources = document.createElement('p');
+      sources.className = 'concept-sources';
+      const sourcePages = [variant.sourcePage, ...(variant.sourcePages || [])];
+      const label = document.createElement('span');
+      label.textContent = sourcePages.length === 1 ? 'Source: ' : 'Sources: ';
+      sources.append(label);
+      for (const page of sourcePages) {
+        const link = document.createElement('a');
+        link.href = `https://homestuck.com/story/${page}`;
+        link.textContent = `p. ${page}`;
+        link.setAttribute('aria-label', `${variant.term}: story page ${page}`);
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        sources.append(link);
+      }
+      copy.append(sources);
+      entry.append(heading, copy);
+      conceptResults.append(entry);
+    }
+
+    const prepared = stages.find(stage => stage.key === data.conceptsPreparedThrough);
+    conceptCoverage.textContent = prepared ? `Appendix coverage: through ${prepared.label}.` : '';
+    conceptStatus.textContent = words.length
+      ? `${matches.length} of ${available.length} terms`
+      : `${available.length} ${available.length === 1 ? 'term' : 'terms'}`;
+    conceptClear.disabled = !conceptSearch.value;
+    conceptEmpty.hidden = matches.length > 0;
+    conceptEmpty.textContent = available.length
+      ? 'No matching terms at this reading point. Try another word or clear the search.'
+      : 'No terms have been added for this reading point yet.';
+    appendix.hidden = false;
+  }
+
   function applyProgress(valueOrKey, { persist = true } = {}) {
     currentStage = stageFor(valueOrKey);
     updateStageUI(currentStage);
     renderCharacters();
+    renderConcepts();
     if (loadingMessage) loadingMessage.hidden = true;
     if (persist) saveStage(currentStage);
   }
@@ -418,6 +498,13 @@
   window.addEventListener('hashchange', () => {
     const id = characterFromHash();
     if (id) showCharacter(id, { updateHash: false });
+  });
+
+  conceptSearch?.addEventListener('input', renderConcepts);
+  conceptClear?.addEventListener('click', () => {
+    conceptSearch.value = '';
+    renderConcepts();
+    conceptSearch.focus();
   });
 
   applyProgress(storedStage().key, { persist: false });

@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description"
-    content="A spoiler-conscious Homestuck quick reference for the book club, with profiles prepared through Act 6 Act 1 and a club reading limit of Act 5 Act 1.">
+    content="A spoiler-conscious Homestuck quick reference for the book club, with character profiles through Act 6 Act 1, a concept appendix through Act 1, and a club reading limit of Act 5 Act 1.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Homestuck Book Club">
   <meta property="og:title" content="REFERENCE - HOMESTUCK BOOK CLUB">
-  <meta property="og:description" content="A spoiler-conscious Homestuck quick reference for the book club, with profiles prepared through Act 6 Act 1 and a club reading limit of Act 5 Act 1.">
+  <meta property="og:description" content="A spoiler-conscious Homestuck quick reference for the book club, with character profiles through Act 6 Act 1, a concept appendix through Act 1, and a club reading limit of Act 5 Act 1.">
   <meta property="og:image" content="https://kvnchpl.com/homestuck-book-club/assets/homestuck-book-club-preview.webp">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="1200">
@@ -17,13 +17,13 @@
   <meta property="og:image:alt" content="A Homestuck-style character standing in a bedroom with movie posters and a computer.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="REFERENCE - HOMESTUCK BOOK CLUB">
-  <meta name="twitter:description" content="A spoiler-conscious Homestuck quick reference for the book club, with profiles prepared through Act 6 Act 1 and a club reading limit of Act 5 Act 1.">
+  <meta name="twitter:description" content="A spoiler-conscious Homestuck quick reference for the book club, with character profiles through Act 6 Act 1, a concept appendix through Act 1, and a club reading limit of Act 5 Act 1.">
   <meta name="twitter:image" content="https://kvnchpl.com/homestuck-book-club/assets/homestuck-book-club-preview.webp">
   <meta name="twitter:image:alt" content="A Homestuck-style character standing in a bedroom with movie posters and a computer.">
   <title>REFERENCE - HOMESTUCK BOOK CLUB</title>
-  <link rel="stylesheet" href="../styles.css?v=20261005-1">
-  <script src="../reference-data.js?v=20261005-1" defer></script>
-  <script src="../script.js?v=20261005-1" defer></script>
+  <link rel="stylesheet" href="../styles.css?v=20261005-2">
+  <script src="../reference-data.js?v=20261005-2" defer></script>
+  <script src="../script.js?v=20261005-2" defer></script>
 </head>
 
 <body class="reference">
@@ -80,6 +80,23 @@
         <div class="character-roster" id="character-roster" role="tablist" aria-label="Choose a character"></div>
         <div class="character-groups" id="character-groups"></div>
       </div>
+
+      <section class="concept-appendix" id="concept-appendix" aria-labelledby="concept-heading" hidden>
+        <h2 id="concept-heading">Concepts &amp; terms</h2>
+        <p class="concept-intro">A searchable appendix using the reading point selected above.</p>
+        <p class="concept-coverage" id="concept-coverage"></p>
+        <div class="concept-search">
+          <label for="concept-search">Search the appendix</label>
+          <div class="concept-search-controls">
+            <input type="search" id="concept-search" placeholder="e.g. sylladex"
+              aria-controls="concept-results" aria-describedby="concept-status" autocomplete="off" spellcheck="false">
+            <button type="button" id="concept-clear" disabled>Clear</button>
+          </div>
+        </div>
+        <p class="concept-status" id="concept-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div class="concept-results" id="concept-results"></div>
+        <p class="concept-empty" id="concept-empty" hidden></p>
+      </section>
 
     </article>
   </main>
