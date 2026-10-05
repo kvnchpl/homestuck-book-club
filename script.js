@@ -408,8 +408,8 @@
     button.textContent = stage.shortLabel;
     const locked = stage.value > availableStage.value;
     button.disabled = locked;
-    button.title = locked ? `${stage.label} — not yet available` : stage.label;
-    button.setAttribute('aria-label', locked ? `${stage.label} — not yet available` : `Show reference through ${stage.label}`);
+    button.title = locked ? `${stage.label} - not yet available` : stage.label;
+    button.setAttribute('aria-label', locked ? `${stage.label} - not yet available` : `Show reference through ${stage.label}`);
     button.setAttribute('aria-pressed', 'false');
     if (!locked) button.addEventListener('click', () => applyProgress(stage.key));
     stageSections.get(sectionLabel).append(button);

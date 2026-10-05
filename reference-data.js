@@ -360,7 +360,7 @@ window.HOMESTUCK_REFERENCE = {
         },
         {
           "from": "act-6-act-1",
-          "value": "KIDS — ACTS 1–5",
+          "value": "KIDS - ACTS 1-5",
           "sourcePage": 4113,
           "sourceKind": "editorial"
         }
@@ -371,7 +371,7 @@ window.HOMESTUCK_REFERENCE = {
       "title": [
         {
           "from": "act-6-act-1",
-          "value": "KIDS — ACT 6",
+          "value": "KIDS - ACT 6",
           "sourcePage": 4117,
           "sourceKind": "editorial",
           "sourcePages": [
