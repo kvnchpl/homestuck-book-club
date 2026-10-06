@@ -603,6 +603,7 @@
   const panelPattern = /^(A\d+(?:\.I\d+)?|I\d+|R\d+)_(\d+)[_-]story-(\d+)\.(gif|png|jpe?g|webp)$/i;
 
   panels.forEach(img => {
+    if (img.hasAttribute('data-external-diagram')) return;
     let filename;
     try {
       filename = decodeURIComponent(new URL(img.src).pathname.split('/').pop());

@@ -6778,7 +6778,7 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     }
   ],
-  "conceptsPreparedThrough": "act-4",
+  "conceptsPreparedThrough": "act-5-act-1",
   "concepts": [
     {
       "id": "alchemy",
@@ -7269,6 +7269,20 @@ window.HOMESTUCK_REFERENCE = {
             1674,
             1988
           ]
+        },
+        {
+          "from": "act-5-act-1",
+          "term": "Prototyping",
+          "aliases": [],
+          "definition": "Combining something with a kernelsprite or sprite changes its form and knowledge; pre-entry prototyping also changes enemies, royal powers, and the Battlefield. The trolls learn that one pre-entry prototype per player is necessary for success, while extra pre-entry prototypes only strengthen their enemies. Kernelsprites tend to seek the dead or doomed, but do not strictly require a dead prototype.",
+          "sourcePage": 424,
+          "sourcePages": [
+            1657,
+            1988,
+            2088,
+            2089
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -7325,6 +7339,24 @@ window.HOMESTUCK_REFERENCE = {
             421,
             427
           ]
+        },
+        {
+          "from": "act-5-act-1",
+          "term": "Sburb",
+          "aliases": [
+            "Sgrub"
+          ],
+          "definition": "A game whose client and server programs affect the real world and provide entry to the Medium. The trolls' version is called Sgrub, adapted by Sollux from technology Aradia found in ancient ruins. Successful players can create a universe, although the trolls are prevented from entering theirs.",
+          "sourcePage": 256,
+          "sourcePages": [
+            421,
+            427,
+            2134,
+            2617,
+            2618,
+            2624
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -7878,6 +7910,19 @@ window.HOMESTUCK_REFERENCE = {
             1657,
             1667
           ]
+        },
+        {
+          "from": "act-5-act-1",
+          "term": "Sprite",
+          "aliases": [],
+          "definition": "The guide left when a kernelsprite's kernel divides upon entry, retaining traits of its prototypes and gaining knowledge of the game. A living person can join one, as Dave does to become Davesprite; the trolls mostly prototype dead lusus, gaining guides they can finally speak with.",
+          "sourcePage": 251,
+          "sourcePages": [
+            281,
+            1657,
+            2088
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -8157,6 +8202,21 @@ window.HOMESTUCK_REFERENCE = {
             1674,
             1930
           ]
+        },
+        {
+          "from": "act-5-act-1",
+          "term": "Session",
+          "aliases": [
+            "Sburb session"
+          ],
+          "definition": "A group's instance of Sburb, with its own Skaia, kingdoms, and player lands. The trolls and kids have separate sessions, but the trolls' Red Team and Blue Team share a single twelve-player session: their two connection chains eventually join into one circuit.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            2315,
+            2316,
+            2318
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -9056,6 +9116,503 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             1988
           ]
+        }
+      ]
+    },
+    {
+      "id": "alternia",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Alternia",
+          "aliases": [],
+          "definition": "The trolls' home planet, where most adults are away serving an empire that conquers other star systems. Young trolls maintain much of life on the planet, each raised by a lusus rather than biological parents.",
+          "sourcePage": 2069,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "solar-sweep",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Solar sweep",
+          "aliases": [
+            "Sweep"
+          ],
+          "definition": "An Alternian unit of time used to measure age. Six solar sweeps equal thirteen Earth years.",
+          "sourcePage": 1992,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "wriggling-day",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Wriggling day",
+          "aliases": [],
+          "definition": "The anniversary of a troll's hatching as a larva, comparable to a human birthday. Karkat is six solar sweeps old at the start of the trolls' story.",
+          "sourcePage": 1992,
+          "sourcePages": [
+            2069
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "hive",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Hive",
+          "aliases": [],
+          "definition": "A troll's home on Alternia. After surviving the trials of childhood and being chosen by a lusus, a young troll picks a site with its custodian and has carpenter droids build the hive.",
+          "sourcePage": 2069,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "recuperacoon",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Recuperacoon",
+          "aliases": [],
+          "definition": "A sleeping pod filled with sopor slime. Young trolls rest in it to soothe the violent nightmares that trouble their species.",
+          "sourcePage": 1995,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "sopor-slime",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Sopor slime",
+          "aliases": [],
+          "definition": "The soothing substance used in a recuperacoon to ease a troll's nightmares. It is not meant to be eaten, although Gamzee puts it in pies.",
+          "sourcePage": 1995,
+          "sourcePages": [
+            2017
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "lusus",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Lusus",
+          "aliases": [
+            "Lusus naturae",
+            "Custodian"
+          ],
+          "definition": "A creature that chooses and raises a young troll in place of biological parents. Most of the players prototype their dead lusus before entering the Medium, allowing them to speak with their custodians as sprites.",
+          "sourcePage": 2069,
+          "sourcePages": [
+            2088
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "mother-grub",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Mother grub",
+          "aliases": [],
+          "definition": "A creature in Alternia's underground brooding caverns that mixes genetic material collected by imperial drones and lays the eggs from which young trolls hatch. Troll children consequently do not know individual biological parents.",
+          "sourcePage": 2069,
+          "sourcePages": [
+            2396
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "imperial-drone",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Imperial drone",
+          "aliases": [],
+          "definition": "An enforcer that collects genetic material from trolls in filial pails for the mother grub. A troll unable to supply the required material is killed.",
+          "sourcePage": 2069,
+          "sourcePages": [
+            2396
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "hemospectrum",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Hemospectrum",
+          "aliases": [],
+          "definition": "The range of troll blood colors, which Alternian society uses to rank its castes. Sea dwellers occupy the ruling end of this hierarchy.",
+          "sourcePage": 2338,
+          "sourcePages": [
+            2439,
+            2448
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "sea-dweller",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Sea dweller",
+          "aliases": [
+            "Seadweller"
+          ],
+          "definition": "A branch of troll society distinguished by its aquatic habitat and physical traits. Sea dwellers belong to the ruling castes of the hemospectrum; Eridan's claims of superiority are beliefs that Feferi rejects.",
+          "sourcePage": 2439,
+          "sourcePages": [
+            2448
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "culling",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Culling",
+          "aliases": [
+            "Culled"
+          ],
+          "definition": "In Alternian society, killing those judged unfit. Feferi wants to change its meaning to caring for the vulnerable, which explains her unusual use of the word when tending sea creatures.",
+          "sourcePage": 2441,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "trollian",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Trollian",
+          "aliases": [],
+          "definition": "The trolls' chat client, used with their trolltags. Its transtimeline features let users contact one another at different times and participate in shared memos.",
+          "sourcePage": 1994,
+          "sourcePages": [
+            2543
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "memo",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Memo",
+          "aliases": [
+            "Transtimeline memo"
+          ],
+          "definition": "A discussion on Trollian's transtimeline bulletin board, accessible to participants at different points in time. Past, current, and future versions of a troll can join the same conversation, including arguments with themselves.",
+          "sourcePage": 2542,
+          "sourcePages": [
+            2543
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "tilde-ath",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "~ATH",
+          "aliases": [],
+          "definition": "A programming language whose loops can be tied to the lifespans of people or even universes. When the bound entity dies, the loop ends and subsequent code can run, making timing and termination central problems for its programmers.",
+          "sourcePage": 2025,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "mobius-virus",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Mobius Double Reacharound virus",
+          "aliases": [
+            "MOB1US DOUBL3 R34CH4ROUND virus"
+          ],
+          "definition": "Sollux's virus, which Karkat runs, curses Karkat, his friends, and everyone they will meet with misfortune. The impending deaths of the trolls' lusus are connected to this curse.",
+          "sourcePage": 2088,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "flarp",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "FLARP",
+          "aliases": [],
+          "definition": "An extreme role-playing game whose campaigns pose real physical dangers. A clouder directs monsters and challenges for an opposing player while that player's teammate does the same for the other side.",
+          "sourcePage": 2167,
+          "sourcePages": [
+            2170
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "first-guardian",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "First guardian",
+          "aliases": [],
+          "definition": "An entity meant to protect a planet destined for intelligent life and help fulfill its purpose. First guardians can take different forms, but share a genetic sequence that grants near-omnipotence and, in an intelligent host, near-omniscience.",
+          "sourcePage": 2253,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "quadrants",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Quadrants",
+          "aliases": [
+            "Troll romance"
+          ],
+          "definition": "The four categories of troll romance: matespritship, kismesissitude, moirallegiance, and auspisticism. Matespritship and moirallegiance are red romance, rooted in positive feelings; the other two are black romance, rooted in negative feelings. Matespritship and kismesissitude also serve reproduction, while the other two serve conciliatory roles.",
+          "sourcePage": 2393,
+          "sourcePages": [
+            2394,
+            2395,
+            2397,
+            2401
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "matespritship",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Matespritship",
+          "aliases": [
+            "Matesprit",
+            "Flushed quadrant"
+          ],
+          "definition": "The flushed quadrant of troll romance, involving an affectionate pair called matesprits. It is the closest troll equivalent to human romantic love and plays a part in troll reproduction.",
+          "sourcePage": 2393,
+          "sourcePages": [
+            2394
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "kismesissitude",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Kismesissitude",
+          "aliases": [
+            "Kismesis",
+            "Kismeses",
+            "Caliginous quadrant"
+          ],
+          "definition": "The caliginous quadrant of troll romance, an intense adversarial relationship between two kismeses. This romantic rivalry has a reproductive role, rather than being simply any feud or dislike.",
+          "sourcePage": 2393,
+          "sourcePages": [
+            2395,
+            2396
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "moirallegiance",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Moirallegiance",
+          "aliases": [
+            "Moirail",
+            "Pale quadrant",
+            "Moirallegience",
+            "Moirallegence"
+          ],
+          "definition": "The pale quadrant of troll romance, a close bond in which moirails balance one another emotionally and help restrain destructive impulses. Humans might understand it as a platonic soulmate relationship, but trolls distinguish it from ordinary friendship.",
+          "sourcePage": 2393,
+          "sourcePages": [
+            2401
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "auspisticism",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Auspisticism",
+          "aliases": [
+            "Auspistice",
+            "Ashen quadrant"
+          ],
+          "definition": "The ashen quadrant of troll romance, involving a mediator called an auspistice and two feuding trolls. The auspistice keeps their conflict from becoming a caliginous rivalry that could interfere with existing kismesissitude.",
+          "sourcePage": 2393,
+          "sourcePages": [
+            2397
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "encryption-modus",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Encryption modus",
+          "aliases": [],
+          "definition": "A fetch modus that locks a captchalogued item inside a card vault. Retrieving the item requires hacking its code, making it a poor fit for Karkat's programming skills.",
+          "sourcePage": 1999,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "miracle-modus",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Miracle modus",
+          "aliases": [],
+          "definition": "Gamzee's fetch modus, used to captchalogue his Faygo. He neither knows how it works nor wants an explanation.",
+          "sourcePage": 2013,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "chastity-modus",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Chastity modus",
+          "aliases": [],
+          "definition": "A fetch modus that locks an item away until its user is ready to use it. Kanaya secures the Matriorb with it, expecting to find the key only when the time is right.",
+          "sourcePage": 2337,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "scratch-and-sniff-modus",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Scratch and Sniff modus",
+          "aliases": [],
+          "definition": "Terezi's fetch modus, which lets her identify a captchalogue card by its smell. She locates her chalk by its distinctive fruity scent.",
+          "sourcePage": 2526,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "scratch",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Scratch",
+          "aliases": [],
+          "definition": "A rift in paradox space that the game provides a way to create. Aradia says its direct effects are confined to the session invoking it, but the kids' future Scratch will have consequences for the trolls by forcing their powerful enemy out of hiding.",
+          "sourcePage": 2602,
+          "sourcePages": [
+            2603,
+            2604,
+            2605
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "ultimate-reward",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Ultimate reward",
+          "aliases": [],
+          "definition": "Entry into the universe the players have created through their game. The trolls reach this reward, but an intruding enemy prevents them from claiming it.",
+          "sourcePage": 2600,
+          "sourcePages": [
+            2602,
+            2617,
+            2618,
+            2624
+          ],
+          "sourceKind": "composite"
         }
       ]
     }
