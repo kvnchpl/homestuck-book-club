@@ -784,6 +784,20 @@ button {
   margin: 0;
 }
 
+.character-stats .reference-team-blue {
+  color: #0000ff;
+}
+
+.character-stats .reference-team-red {
+  color: #cc0000;
+}
+
+.reference-team-blue,
+.reference-team-red {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
 /* The roster selects among the stage-safe cards; printing shows them all. */
 .character-select.is-ready {
   display: grid;

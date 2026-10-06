@@ -1166,6 +1166,15 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-1",
           "value": {
+            "src": "../assets/ref-aradia.webp",
+            "alt": "Aradia Megido as a ghost, with white eyes"
+          },
+          "sourcePage": 2134,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "value": {
             "src": "../assets/ref-aradiabot.webp",
             "alt": "Aradia in her robot body"
           },
@@ -1192,6 +1201,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "apocalypseArisen [AA]",
               "sourcePage": 2134,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Blue Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -1379,6 +1400,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Red Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
           "id": "title",
           "variants": [
             {
@@ -1530,6 +1563,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Blue Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
           "id": "title",
           "variants": [
             {
@@ -1674,6 +1719,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Red Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
           "id": "title",
           "variants": [
             {
@@ -1791,6 +1848,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "arsenicCatnip [AC]",
               "sourcePage": 2156,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Blue Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -1921,6 +1990,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "grimAuxiliatrix [GA]",
               "sourcePage": 2323,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Red Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -2069,6 +2150,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Red Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
           "id": "title",
           "variants": [
             {
@@ -2192,6 +2285,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "arachnidsGrip [AG]",
               "sourcePage": 2195,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Red Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -2329,6 +2434,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "centaursTesticle [CT]",
               "sourcePage": 2211,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Blue Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -2472,6 +2589,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Red Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
+            }
+          ]
+        },
+        {
           "id": "title",
           "variants": [
             {
@@ -2599,6 +2728,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "caligulasAquarium [CA]",
               "sourcePage": 2439,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Blue Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
             }
           ]
         },
@@ -2747,6 +2888,18 @@ window.HOMESTUCK_REFERENCE = {
               "value": "cuttlefishCuller [CC]",
               "sourcePage": 2441,
               "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "variants": [
+            {
+              "from": "act-5-act-1",
+              "label": "Team",
+              "value": "Blue Team",
+              "sourcePage": 2318,
+              "sourceKind": "visual"
             }
           ]
         },
