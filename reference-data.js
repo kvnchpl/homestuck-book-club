@@ -6625,7 +6625,7 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     }
   ],
-  "conceptsPreparedThrough": "act-2",
+  "conceptsPreparedThrough": "act-3",
   "concepts": [
     {
       "id": "alchemy",
@@ -6658,6 +6658,19 @@ window.HOMESTUCK_REFERENCE = {
             631,
             632,
             635
+          ]
+        },
+        {
+          "from": "act-3",
+          "term": "Alchemy",
+          "aliases": [],
+          "definition": "Sburb's system for creating objects from captcha codes, punched cards, carved totems, and grist. John now punches codes onto blank cards to preserve the original objects. Overlapping cards and double-punching cards combine their patterns differently, producing different results from the same starting items.",
+          "sourcePage": 617,
+          "sourceKind": "composite",
+          "sourcePages": [
+            623,
+            989,
+            1053
           ]
         }
       ]
@@ -6803,6 +6816,19 @@ window.HOMESTUCK_REFERENCE = {
             619,
             621
           ]
+        },
+        {
+          "from": "act-3",
+          "term": "Captchalogue card",
+          "aliases": [],
+          "definition": "An inventory card whose reverse displays a captcha code for its contents. Punching an occupied card makes that object inaccessible; copying its code onto a blank card preserves it while preparing an alchemy pattern. More blank cards can be made with the Alchemiter.",
+          "sourcePage": 523,
+          "sourceKind": "composite",
+          "sourcePages": [
+            528,
+            621,
+            989
+          ]
         }
       ]
     },
@@ -6907,6 +6933,26 @@ window.HOMESTUCK_REFERENCE = {
             142,
             224,
             319
+          ]
+        },
+        {
+          "from": "act-3",
+          "term": "Fetch modus",
+          "aliases": [
+            "Fetch modi"
+          ],
+          "definition": "The rules controlling how a sylladex stores and retrieves items. Alongside Stack, Queue, Tree, and Hash Map modi, Jade uses a matching-game Memory modus and John gains an Array modus with freely accessible slots. A Modus Control Deck can combine several modi into one inventory system.",
+          "sourcePage": 10,
+          "sourceKind": "composite",
+          "sourcePages": [
+            142,
+            224,
+            319,
+            773,
+            965,
+            967,
+            968,
+            970
           ]
         }
       ]
@@ -7273,6 +7319,18 @@ window.HOMESTUCK_REFERENCE = {
             745,
             746
           ]
+        },
+        {
+          "from": "act-3",
+          "term": "Appearifier",
+          "aliases": [],
+          "definition": "A machine that retrieves an object from a specified place and time. If moving the object would contradict known events, a safety mechanism produces a paradox ghost imprint instead. Rose encounters this when trying to retrieve Jaspers before he has told her his secret.",
+          "sourcePage": 739,
+          "sourceKind": "composite",
+          "sourcePages": [
+            931,
+            932
+          ]
         }
       ]
     },
@@ -7404,6 +7462,23 @@ window.HOMESTUCK_REFERENCE = {
             586,
             589
           ]
+        },
+        {
+          "from": "act-3",
+          "term": "Hash Map modus",
+          "aliases": [
+            "Hash Map fetch modus"
+          ],
+          "definition": "Dave's fetch modus assigns cards by scoring an item's name and taking the remainder after division by the number of cards. He switches from consonant/vowel values to Scrabble letter scores after emptying his inventory. Collision detection can block an item from displacing one already assigned to its card.",
+          "sourcePage": 319,
+          "sourceKind": "composite",
+          "sourcePages": [
+            343,
+            585,
+            589,
+            1085,
+            1086
+          ]
         }
       ]
     },
@@ -7486,6 +7561,22 @@ window.HOMESTUCK_REFERENCE = {
             531,
             617
           ]
+        },
+        {
+          "from": "act-3",
+          "term": "Punch Designix",
+          "aliases": [
+            "Designix"
+          ],
+          "definition": "A Sburb machine that punches a captchalogue card with the pattern specified by a captcha code. Punching an occupied card traps its contents, so John learns to use blank cards instead. Double-punching one card with two codes combines their holes for the Totem Lathe.",
+          "sourcePage": 525,
+          "sourceKind": "composite",
+          "sourcePages": [
+            528,
+            617,
+            989,
+            1053
+          ]
         }
       ]
     },
@@ -7500,6 +7591,19 @@ window.HOMESTUCK_REFERENCE = {
           "definition": "The place at the center of the Incipisphere, beyond the seven gates. Nannasprite describes it as a source of vast creative possibility: the forces of light defend it, while the forces of darkness seek its destruction.",
           "sourcePage": 422,
           "sourceKind": "direct"
+        },
+        {
+          "from": "act-3",
+          "term": "Skaia",
+          "aliases": [],
+          "definition": "The place at the center of the Incipisphere, defended by the forces of light and threatened by darkness. Nannasprite describes its immense creative potential. When Prospit's moon approaches it during an eclipse, Jade sees visions of the past, present, and future in its clouds.",
+          "sourcePage": 422,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1026,
+            1051,
+            1075
+          ]
         }
       ]
     },
@@ -7557,6 +7661,309 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             426,
             427
+          ]
+        }
+      ]
+    },
+    {
+      "id": "array-modus",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Array modus",
+          "aliases": [
+            "Array fetch modus"
+          ],
+          "definition": "A fetch modus that lets John store or retrieve an item from any card at any time. Used in the Modus Control Deck, it can instead organize multiple queuestacks into separate slots.",
+          "sourcePage": 967,
+          "sourceKind": "composite",
+          "sourcePages": [
+            970
+          ]
+        }
+      ]
+    },
+    {
+      "id": "memory-modus",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Memory modus",
+          "aliases": [
+            "Memory fetch modus"
+          ],
+          "definition": "Jade's matching-game fetch modus. Each item is split across a pair of cards shuffled into a grid, and retrieving it requires choosing both matching cards. Jade has an uncanny knack for picking correctly on the first try.",
+          "sourcePage": 773,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "modus-control-deck",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Modus Control Deck",
+          "aliases": [],
+          "definition": "A device that combines fetch modi by accepting their cartridges. John first combines Stack and Queue into a queuestack, then adds Array to make an array of separate queuestacks.",
+          "sourcePage": 965,
+          "sourceKind": "composite",
+          "sourcePages": [
+            968,
+            969,
+            970
+          ]
+        }
+      ]
+    },
+    {
+      "id": "queuestack",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Queuestack",
+          "aliases": [],
+          "definition": "A combined Stack and Queue inventory that allows retrieval from either the top or the bottom card. John's Modus Control Deck can arrange several of these within an Array modus.",
+          "sourcePage": 968,
+          "sourceKind": "composite",
+          "sourcePages": [
+            969,
+            970
+          ]
+        }
+      ]
+    },
+    {
+      "id": "overlapping-cards",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Overlapping cards",
+          "aliases": [
+            "Card overlapping"
+          ],
+          "definition": "An alchemy combination written as &&. Two punched cards placed together in the Totem Lathe leave only the holes shared by both patterns open. John's hammer and pogo ride produce a Pogo Hammer this way; double-punching the same codes gives a different result.",
+          "sourcePage": 631,
+          "sourceKind": "composite",
+          "sourcePages": [
+            632,
+            635,
+            1053
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double-punching",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Double-punching",
+          "aliases": [
+            "Double punching"
+          ],
+          "definition": "An alchemy combination written as ||, made by punching two codes onto the same blank card. The result includes holes from either pattern, unlike overlapping cards, which keeps only shared holes. John uses this method on the hammer and pogo ride codes to make a Hammerhead Pogo Ride.",
+          "sourcePage": 1053,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "ectobiology",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Ectobiology",
+          "aliases": [],
+          "definition": "The laboratory's cloning science. Rose watches a machine analyze sludge from Jaspers's paradox ghost imprint and use it to produce a fetal paradox clone, though the result has severe mutations.",
+          "sourcePage": 933,
+          "sourceKind": "composite",
+          "sourcePages": [
+            934
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paradox-ghost-imprint",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Paradox ghost imprint",
+          "aliases": [
+            "Paradox sludge"
+          ],
+          "definition": "A substitute produced when an appearifier cannot retrieve its target without causing a time paradox. Jaspers's imprint collapses into sludge that another machine uses for ectobiology.",
+          "sourcePage": 931,
+          "sourceKind": "composite",
+          "sourcePages": [
+            932,
+            933,
+            934
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transportalizer",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Transportalizer",
+          "aliases": [],
+          "definition": "A platform for travel between locations. Jade uses transportalizers to move between floors of her house, while Rose uses one to escape the laboratory and arrive back home.",
+          "sourcePage": 851,
+          "sourceKind": "composite",
+          "sourcePages": [
+            941,
+            984,
+            985
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skaianet",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Skaianet",
+          "aliases": [],
+          "definition": "The laboratory network whose session terminal Rose discovers. It monitors Sburb sessions and meteor impacts, with filters for location, size, and impact time.",
+          "sourcePage": 850,
+          "sourceKind": "composite",
+          "sourcePages": [
+            874,
+            875
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Session",
+          "aliases": [
+            "Sburb session"
+          ],
+          "definition": "A Sburb game instance tracked by Skaianet. Its terminal associates each detected session with an IP address, a physical location, and a meteor impact; not every meteor has a corresponding session.",
+          "sourcePage": 874,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "prospit",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Prospit",
+          "aliases": [],
+          "definition": "A golden kingdom orbiting Skaia, with a moon connected to it by a great chain. Jade explores the moon as her dreamself, and John has a sleeping counterpart in a neighboring tower.",
+          "sourcePage": 1026,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1047,
+            1048,
+            1049
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dreamself",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Dreamself",
+          "aliases": [
+            "Dream self",
+            "Dreamselves"
+          ],
+          "definition": "A counterpart in the dream world. While Jade's waking body sleeps on Earth, her dreamself can fly around Prospit's moon; John is also shown asleep in a nearby tower.",
+          "sourcePage": 993,
+          "sourceKind": "composite",
+          "sourcePages": [
+            996,
+            1026,
+            1048,
+            1049
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dreambot",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Dreambot",
+          "aliases": [],
+          "definition": "Jade's robot on Earth, which becomes active when she dreams. It mirrors her dreamself's movements, including playing music and flying around while her waking body remains asleep.",
+          "sourcePage": 993,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1026,
+            1030
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eclipse",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Eclipse",
+          "aliases": [
+            "Skaian eclipse"
+          ],
+          "definition": "When Prospit's moon approaches Skaia, Jade can see cloud visions of the past, present, and future. She uses her reminders after waking to help make sense of what she has seen.",
+          "sourcePage": 1051,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1075
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sendificator",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Sendificator",
+          "aliases": [
+            "Sendification"
+          ],
+          "definition": "A machine that sends objects away to chosen coordinates, rather than retrieving them like an appearifier. PM uses it to forward John's present to Jade; it arrives years earlier, before Jade knows him.",
+          "sourcePage": 1126,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1128,
+            1129,
+            1133,
+            1134,
+            1135,
+            1136
           ]
         }
       ]
