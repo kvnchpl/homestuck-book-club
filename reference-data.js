@@ -6625,7 +6625,7 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     }
   ],
-  "conceptsPreparedThrough": "act-1",
+  "conceptsPreparedThrough": "act-2",
   "concepts": [
     {
       "id": "alchemy",
@@ -6643,6 +6643,22 @@ window.HOMESTUCK_REFERENCE = {
             240
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Alchemy",
+          "aliases": [],
+          "definition": "Sburb's system for making objects from captcha codes, punched cards, and carved cruxite. The Punch Designix prepares cards, the Totem Lathe carves their patterns, and the Alchemiter produces the items for grist. Overlapping two punched cards can produce a combined item, as John discovers with the Pogo Hammer.",
+          "sourcePage": 523,
+          "sourceKind": "composite",
+          "sourcePages": [
+            531,
+            617,
+            623,
+            631,
+            632,
+            635
+          ]
         }
       ]
     },
@@ -6661,6 +6677,18 @@ window.HOMESTUCK_REFERENCE = {
             240
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Alchemiter",
+          "aliases": [],
+          "definition": "The Sburb platform that creates an object from a carved cruxite totem, spending the required grist. Recipes can need different types of grist: a hammer costs build grist, while a pogo ride also needs shale. It can even make blank captchalogue cards.",
+          "sourcePage": 621,
+          "sourceKind": "composite",
+          "sourcePages": [
+            623,
+            624
+          ]
         }
       ]
     },
@@ -6678,6 +6706,18 @@ window.HOMESTUCK_REFERENCE = {
             240
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Atheneum",
+          "aliases": [],
+          "definition": "The Sburb interface's catalog of objects available to create. Rose can store carved totems here and use them to make items on the Alchemiter.",
+          "sourcePage": 189,
+          "sourceKind": "composite",
+          "sourcePages": [
+            620,
+            621
+          ]
         }
       ]
     },
@@ -6699,6 +6739,21 @@ window.HOMESTUCK_REFERENCE = {
             240
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Build grist",
+          "aliases": [
+            "Grist"
+          ],
+          "definition": "A resource used through Sburb to build the house and create objects with the Alchemiter. John collects it from defeated enemies for Rose to spend; deleting some constructed objects refunds it. Build grist is one type in the grist cache, alongside materials such as shale.",
+          "sourcePage": 261,
+          "sourceKind": "composite",
+          "sourcePages": [
+            406,
+            478,
+            623
+          ]
         }
       ]
     },
@@ -6735,6 +6790,19 @@ window.HOMESTUCK_REFERENCE = {
             17
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Captchalogue card",
+          "aliases": [],
+          "definition": "A sylladex storage card whose reverse displays a captcha code for its contents. Punching a card with the Punch Designix makes its stored object inaccessible, but the punched pattern can be used for alchemy. New blank cards can themselves be manufactured on the Alchemiter.",
+          "sourcePage": 523,
+          "sourceKind": "composite",
+          "sourcePages": [
+            528,
+            619,
+            621
+          ]
         }
       ]
     },
@@ -6752,6 +6820,19 @@ window.HOMESTUCK_REFERENCE = {
             153
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Client and server",
+          "aliases": [],
+          "definition": "The two sides of a Sburb connection: the client player adventures while the server player acts as their host user, altering the surroundings and deploying equipment. The client must collect grist in person for the server to spend. The server cannot directly move the player or carry them by moving something they are touching.",
+          "sourcePage": 135,
+          "sourceKind": "composite",
+          "sourcePages": [
+            153,
+            478,
+            643
+          ]
         }
       ]
     },
@@ -6812,6 +6893,21 @@ window.HOMESTUCK_REFERENCE = {
             224
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Fetch modus",
+          "aliases": [
+            "Fetch modi"
+          ],
+          "definition": "The rules a sylladex uses to organize objects and decide which can be retrieved. John can switch between Stack modus and Queue modus, Rose uses a Tree modus, and Dave uses a Hash Map modus that assigns cards from item names.",
+          "sourcePage": 10,
+          "sourceKind": "composite",
+          "sourcePages": [
+            142,
+            224,
+            319
+          ]
         }
       ]
     },
@@ -6830,6 +6926,19 @@ window.HOMESTUCK_REFERENCE = {
             187
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Kernelsprite",
+          "aliases": [],
+          "definition": "The entity released by the Cruxtruder and changed by prototyping. When John enters the Medium, its kernel splits into a light half and a dark half that carry the earlier prototype's information to the two kingdoms. The sprite portion remains with John and can be prototyped again.",
+          "sourcePage": 177,
+          "sourceKind": "composite",
+          "sourcePages": [
+            251,
+            281,
+            424
+          ]
         }
       ]
     },
@@ -6920,6 +7029,19 @@ window.HOMESTUCK_REFERENCE = {
             187
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Prototyping",
+          "aliases": [],
+          "definition": "Combining an object with a kernelsprite or its remaining sprite, changing the entity's form. The kernel carries information from prototyping before entry to the kingdoms of light and darkness. John's second prototyping, with Nanna's ashes after entry, produces the speaking Nannasprite.",
+          "sourcePage": 184,
+          "sourceKind": "composite",
+          "sourcePages": [
+            281,
+            420,
+            424
+          ]
         }
       ]
     },
@@ -6962,6 +7084,20 @@ window.HOMESTUCK_REFERENCE = {
             204
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Sburb",
+          "aliases": [
+            "Sburb beta"
+          ],
+          "definition": "A game whose client and server programs affect the real world. John's entry transports his house into the Medium and saves him from the meteor, but Nannasprite says his larger quest is not to save Earth. The software is a gateway to the realm, not a computer simulation containing it.",
+          "sourcePage": 256,
+          "sourceKind": "composite",
+          "sourcePages": [
+            421,
+            427
+          ]
         }
       ]
     },
@@ -7001,6 +7137,18 @@ window.HOMESTUCK_REFERENCE = {
             38
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Strife specibus",
+          "aliases": [],
+          "definition": "A weapon allocation separate from ordinary sylladex storage, governed by a kind abstratus such as hammerkind or bladekind. A strife portfolio can hold multiple specibi, letting John keep both his hammers and the bunny's separate allocation.",
+          "sourcePage": 342,
+          "sourceKind": "composite",
+          "sourcePages": [
+            407,
+            408
+          ]
         }
       ]
     },
@@ -7059,6 +7207,18 @@ window.HOMESTUCK_REFERENCE = {
             210
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-2",
+          "term": "Totem Lathe",
+          "aliases": [],
+          "definition": "The Sburb machine that carves a cruxite dowel according to a punched card, making a totem for the Alchemiter. Two overlapping cards mask parts of each other's hole patterns, allowing the lathe to carve a combined pattern.",
+          "sourcePage": 617,
+          "sourceKind": "composite",
+          "sourcePages": [
+            631,
+            632
+          ]
         }
       ]
     },
@@ -7079,6 +7239,324 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "composite",
           "linkPhrases": [
             "Tree"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alchemy-excursus",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Alchemy Excursus",
+          "aliases": [],
+          "definition": "An index in Sburb documenting known punch-card alchemy combinations and their results. Rose consults it as she explores how item codes and card combinations can be used.",
+          "sourcePage": 645,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "appearifier",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Appearifier",
+          "aliases": [],
+          "definition": "A machine that retrieves an object from a specified place and time. The Wayward Vagabond adjusts its coordinates to fetch his knife and cans from another room; it does not send objects back again.",
+          "sourcePage": 739,
+          "sourceKind": "composite",
+          "sourcePages": [
+            744,
+            745,
+            746
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boondollars",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Boondollars",
+          "aliases": [],
+          "definition": "Money awarded for climbing the Echeladder, distinct from grist used for building and alchemy. John stores his first reward in his Ceramic Porkhollow.",
+          "sourcePage": 405,
+          "sourceKind": "composite",
+          "sourcePages": [
+            406
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cache-limit",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Cache limit",
+          "aliases": [],
+          "definition": "The capacity of a player's grist cache. Climbing the Echeladder can increase it, making room for more collected grist.",
+          "sourcePage": 405,
+          "sourceKind": "composite",
+          "sourcePages": [
+            406
+          ]
+        }
+      ]
+    },
+    {
+      "id": "captcha-code",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Captcha code",
+          "aliases": [
+            "Captchalogue code"
+          ],
+          "definition": "An eight-character item code displayed on the back of a captchalogue card, including cards in the strife deck. Entering a code into the Punch Designix prepares a pattern for alchemy; that code need not describe the object stored in the card being punched.",
+          "sourcePage": 523,
+          "sourceKind": "composite",
+          "sourcePages": [
+            524,
+            525,
+            529,
+            531
+          ]
+        }
+      ]
+    },
+    {
+      "id": "echeladder",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Echeladder",
+          "aliases": [],
+          "definition": "A ladder of achievement ranks climbed through successful adventuring, such as defeating enemies. Advancing awards boondollars and can increase the cache limit.",
+          "sourcePage": 405,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "gates",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Gates",
+          "aliases": [
+            "Gate",
+            "Seven Gates"
+          ],
+          "definition": "Seven gateways on the route toward Skaia. Nannasprite tells John to have his house built up to the first gate overhead; reaching later gates will become progressively harder.",
+          "sourcePage": 422,
+          "sourceKind": "composite",
+          "sourcePages": [
+            425
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grist-cache",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Grist cache",
+          "aliases": [],
+          "definition": "The supply of grist available for building and alchemy, bounded by a cache limit. It can hold different materials, including build grist and shale; different objects require different amounts and types.",
+          "sourcePage": 261,
+          "sourceKind": "composite",
+          "sourcePages": [
+            406,
+            621,
+            623,
+            624
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hash-map-modus",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Hash Map modus",
+          "aliases": [
+            "Hash Map fetch modus"
+          ],
+          "definition": "Dave's fetch modus assigns a card by calculating a number from an item's name. His current rule gives consonants two points and vowels one, then uses the remainder after division by the number of cards. Items assigned to the same card collide, ejecting the old item unless collision detection blocks the new one.",
+          "sourcePage": 319,
+          "sourceKind": "composite",
+          "sourcePages": [
+            343,
+            586,
+            589
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imps",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Imps",
+          "aliases": [
+            "Imp"
+          ],
+          "definition": "Enemies that roam John's house after he enters the Medium. They can take his belongings and wield weapons; defeating them yields grist and helps him climb the Echeladder.",
+          "sourcePage": 405,
+          "sourceKind": "composite",
+          "sourcePages": [
+            406,
+            407,
+            473,
+            657
+          ]
+        }
+      ]
+    },
+    {
+      "id": "incipisphere",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Incipisphere",
+          "aliases": [
+            "The Incipisphere"
+          ],
+          "definition": "The larger realm containing the Medium, with Skaia at its center. Nannasprite describes it as outside the flow of time in John's universe, rather than a place inside his computer.",
+          "sourcePage": 421,
+          "sourceKind": "composite",
+          "sourcePages": [
+            422
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medium",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Medium",
+          "aliases": [
+            "The Medium"
+          ],
+          "definition": "The region where John's house arrives after he enters Sburb. Nannasprite describes it as a ring of void within the Incipisphere, between light and darkness.",
+          "sourcePage": 256,
+          "sourceKind": "composite",
+          "sourcePages": [
+            421
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punch-designix",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Punch Designix",
+          "aliases": [
+            "Designix"
+          ],
+          "definition": "A Sburb machine that punches a captchalogue card with the pattern specified by an entered captcha code. The punched card can guide the Totem Lathe, but its original contents can no longer be retrieved normally.",
+          "sourcePage": 471,
+          "sourceKind": "composite",
+          "sourcePages": [
+            525,
+            528,
+            531,
+            617
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skaia",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Skaia",
+          "aliases": [],
+          "definition": "The place at the center of the Incipisphere, beyond the seven gates. Nannasprite describes it as a source of vast creative possibility: the forces of light defend it, while the forces of darkness seek its destruction.",
+          "sourcePage": 422,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "sprite",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Sprite",
+          "aliases": [],
+          "definition": "The portion of a kernelsprite left behind when its kernel divides on entry to the Medium. It can take another prototype: Nanna's ashes turn John's sprite into Nannasprite, who speaks with him and explains his quest.",
+          "sourcePage": 251,
+          "sourceKind": "composite",
+          "sourcePages": [
+            281,
+            420,
+            424,
+            425
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strife-portfolio",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Strife portfolio",
+          "aliases": [],
+          "definition": "A collection of strife specibi, allowing different weapon allocations to be kept together. John forms one when he adds the imp's bunny allocation alongside his hammerkind allocation.",
+          "sourcePage": 407,
+          "sourceKind": "composite",
+          "sourcePages": [
+            408,
+            410
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ultimate-riddle",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Ultimate Riddle",
+          "aliases": [
+            "The Ultimate Riddle"
+          ],
+          "definition": "Nannasprite's name for the larger journey John must undertake. She leaves its answer unexplained, giving him the immediate task of building toward the first gate instead; she also warns that saving Earth is not his purpose.",
+          "sourcePage": 425,
+          "sourceKind": "composite",
+          "sourcePages": [
+            426,
+            427
           ]
         }
       ]
