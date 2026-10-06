@@ -6625,7 +6625,7 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     }
   ],
-  "conceptsPreparedThrough": "act-3",
+  "conceptsPreparedThrough": "intermission",
   "concepts": [
     {
       "id": "alchemy",
@@ -7964,6 +7964,278 @@ window.HOMESTUCK_REFERENCE = {
             1134,
             1135,
             1136
+          ]
+        }
+      ]
+    },
+    {
+      "id": "midnight-crew",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Midnight Crew",
+          "aliases": [],
+          "definition": "A gang led by Spades Slick, with Clubs Deuce, Diamonds Droog, and Hearts Boxcars. They raid Lord English's mansion to rob his secret vault and take revenge on the Felt for attacking one of their casinos.",
+          "sourcePage": 1155,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "felt",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Felt",
+          "aliases": [
+            "The Felt"
+          ],
+          "definition": "Lord English's gang and the Midnight Crew's rivals. Its members wear numbered pool-ball hats, and many use time-related powers or equipment that complicate the raid on their mansion.",
+          "sourcePage": 1155,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1170,
+            1171,
+            1252
+          ]
+        }
+      ]
+    },
+    {
+      "id": "war-chest",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "War chest",
+          "aliases": [],
+          "definition": "Spades Slick's portable storage, alternately presented as a chest and a deck of cards. It can hold weapons, other belongings, and even people. The other Midnight Crew members use similar containers: Deuce's Battledrobe, Droog's Brawlsoleum, and Boxcars's Wrathtub.",
+          "sourcePage": 1161,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1163,
+            1174,
+            1182,
+            1183,
+            1199,
+            1200,
+            1219,
+            1276,
+            1279
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voodoo-doll",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Die's voodoo doll",
+          "aliases": [
+            "Voodoo doll"
+          ],
+          "definition": "An object whose pins let its user switch to an alternate timeline according to who is dead there. Inserting someone's pin selects a timeline where that person is dead; Slick removes Crowbar's pin to reach one where Crowbar is alive. This changes the timeline the user occupies, rather than directly killing the person.",
+          "sourcePage": 1211,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1236,
+            1239,
+            1263,
+            1265,
+            1280
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alternate-timeline",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Alternate timeline",
+          "aliases": [],
+          "definition": "A different version of events, distinct from an earlier or later time within the same history. Die's voodoo doll lets Slick reach a timeline where Crowbar is still alive and bring him back to the original one. People brought from another timeline can coexist with their local counterparts.",
+          "sourcePage": 1275,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1276,
+            1280,
+            1298
+          ]
+        }
+      ]
+    },
+    {
+      "id": "time-loop",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Time loop",
+          "aliases": [],
+          "definition": "A sequence of events in which time travel brings someone back into events involving an earlier or later version of themselves. Eggs and Biscuits fill the mansion with overlapping copies through repeated trips, creating mostly unstable loops. Crowbar's crowbar can break these loops.",
+          "sourcePage": 1252,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1283,
+            1285,
+            1313,
+            1314
+          ]
+        }
+      ]
+    },
+    {
+      "id": "past-trail",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Past trail",
+          "aliases": [],
+          "definition": "The path someone has already taken, which Trace can follow and interact with. His attacks reach the victim from the future, but also reveal where Trace will be later. Fin follows the opposite kind of path, a future trail.",
+          "sourcePage": 1202,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1203,
+            1204,
+            1230
+          ]
+        }
+      ]
+    },
+    {
+      "id": "future-trail",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Future trail",
+          "aliases": [],
+          "definition": "The path someone will take, which Fin can follow and interact with. He attacks the victim from the past, revealing where he has already been. Trace instead follows a past trail.",
+          "sourcePage": 1230,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1241,
+            1247,
+            1203
+          ]
+        }
+      ]
+    },
+    {
+      "id": "egg-timer",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Egg timer",
+          "aliases": [],
+          "definition": "Eggs's time-travel device. Repeated trips bring copies of Eggs, Biscuits, and the oven into the same fight, creating a tangle of time loops. Breaking the timer with Crowbar's crowbar negates its effects and clears away the extra copies.",
+          "sourcePage": 1225,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1252,
+            1312,
+            1313,
+            1314
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crowbars-crowbar",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Crowbar's crowbar",
+          "aliases": [],
+          "definition": "A tool that can break time loops and destroy temporal artifacts, undoing their effects on the timeline. Slick uses it on the egg timer to get rid of the repeated copies of Eggs and Biscuits. It cannot cancel Biscuits's oven in the same way, because the oven has no magical time properties.",
+          "sourcePage": 1252,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1313,
+            1314,
+            1318
+          ]
+        }
+      ]
+    },
+    {
+      "id": "effigy",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Effigy",
+          "aliases": [
+            "Effigies"
+          ],
+          "definition": "A likeness linked to a person's physical condition. Stitch can mend an effigy to heal its injured subject, provided they have not already died. The Midnight Crew supplies backup hats so he can make effigies of them too.",
+          "sourcePage": 1256,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1257,
+            1298
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cairo-overcoat",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Cairo Overcoat",
+          "aliases": [],
+          "definition": "Lord English's coat, whose fabric is tied to spacetime. The unstable time loops caused by Eggs and Biscuits tear it, leaving Stitch to make repairs. English keeps a backup coat and leaves one with Stitch.",
+          "sourcePage": 1253,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "englishs-vault",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "English's vault",
+          "aliases": [
+            "Secret vault"
+          ],
+          "definition": "The enormous safe the Midnight Crew wants to open in Lord English's mansion. Its combination uses clock hands, and Boxcars concludes that opening it requires altering time itself. Forcing it open releases a distortion that sends Slick to an alternate timeline where the mansion has been destroyed.",
+          "sourcePage": 1155,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1216,
+            1218,
+            1337
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biscuits-oven",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Biscuits's oven",
+          "aliases": [],
+          "definition": "An oven Biscuits hides inside until its timer rings. He treats this as a trip into the future, but he is simply waiting for ordinary time to pass. Crowbar's crowbar cannot undo its effects as it can those of the egg timer, because the oven has no magical time properties.",
+          "sourcePage": 1223,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1224,
+            1318
           ]
         }
       ]
