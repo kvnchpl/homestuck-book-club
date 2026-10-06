@@ -164,17 +164,18 @@
   function setCharacterPalette(element, id) {
     const color = characterColors[id];
     if (!color) return;
-    // Preserve the character's exact color; use a dark surface for pale colors.
+    // Keep the exact character color on a uniform light surface.
+    // Outline pale lettering rather than switching the entire panel to black.
     const channels = color.slice(1).match(/../g).map(hex => {
       const value = parseInt(hex, 16) / 255;
       return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
     });
     const luminance = channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
-    const dark = 1.05 / (luminance + 0.05) < 4.5;
+    const pale = 1.05 / (luminance + 0.05) < 4.5;
     element.style.setProperty('--character-color', color);
-    element.style.setProperty('--character-surface', dark ? '#000000' : '#ffffff');
-    element.style.setProperty('--character-ink', dark ? '#eeeeee' : '#000000');
-    element.style.setProperty('--character-muted-ink', dark ? '#c6c6c6' : '#535353');
+    element.style.setProperty('--character-name-shadow', pale
+      ? '-1px 0 #555, 1px 0 #555, 0 -1px #555, 0 1px #555'
+      : 'none');
   }
 
   function createPortrait(portrait, className, loading = 'lazy') {
