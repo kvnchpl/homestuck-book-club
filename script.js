@@ -468,10 +468,20 @@
       .sort((a, b) => a.variant.term.localeCompare(b.variant.term, 'en'));
     const query = searchableText(conceptSearch.value || '');
     const words = query ? query.split(/\s+/) : [];
-    const matches = available.filter(({ variant }) => {
-      const haystack = searchableText([variant.term, ...(variant.aliases || []), variant.definition].join(' '));
-      return words.every(word => haystack.includes(word));
-    });
+    const nameMatches = [];
+    const definitionMatches = [];
+    // Partition the alphabetical list so name matches lead without duplicates.
+    for (const concept of available) {
+      const { variant } = concept;
+      const names = [variant.term, ...(variant.aliases || [])].map(searchableText);
+      const matchesWords = text => words.every(word => text.includes(word));
+      if (names.some(matchesWords)) {
+        nameMatches.push(concept);
+      } else if (matchesWords([...names, searchableText(variant.definition)].join(' '))) {
+        definitionMatches.push(concept);
+      }
+    }
+    const matches = [...nameMatches, ...definitionMatches];
 
     conceptResults.replaceChildren();
     for (const { id, variant } of matches) {
