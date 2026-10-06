@@ -1069,13 +1069,6 @@ window.HOMESTUCK_REFERENCE = {
           "id": "land",
           "variants": [
             {
-              "from": "act-4",
-              "label": "Land",
-              "value": "Not yet revealed",
-              "sourcePage": 1674,
-              "sourceKind": "direct"
-            },
-            {
               "from": "act-5-act-2-part-1",
               "label": "Land",
               "value": "Land of Frost and Frogs (LOFAF)",
@@ -1309,7 +1302,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-1",
               "label": "Interests",
-              "value": "Archaeology · Roleplaying",
+              "value": "Formerly archaeology and roleplaying",
               "sourcePage": 2134,
               "sourceKind": "direct"
             }
@@ -3383,7 +3376,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-1",
               "label": "Components",
-              "value": "Becquerel + Jade’s dead dream self",
+              "value": "Becquerel + Jade’s dead dreamself",
               "sourcePage": 3238,
               "sourceKind": "direct",
               "sourcePages": [
@@ -3569,7 +3562,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "direct"
         },
         {
-          "from": "act-5-act-2-part-3",
+          "from": "act-5-act-2-part-1",
           "value": "PROSPITIAN MONARCH",
           "sourcePage": 3018,
           "sourceKind": "direct"
@@ -3615,10 +3608,10 @@ window.HOMESTUCK_REFERENCE = {
               "sourceKind": "direct"
             },
             {
-              "from": "act-5-act-2-part-2",
+              "from": "act-5-act-2-part-1",
               "label": "Role",
               "value": "Queen of Prospit",
-              "sourcePage": 3260,
+              "sourcePage": 3018,
               "sourceKind": "direct"
             }
           ]
@@ -5811,7 +5804,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-6-act-1",
               "label": "Strife specibus",
-              "value": "spoonkind / forkkind",
+              "value": "spoonkind · forkkind",
               "sourcePage": 4141,
               "sourceKind": "composite",
               "sourcePages": [
@@ -5950,7 +5943,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-6-act-1",
               "label": "Status",
-              "value": "Dream self deceased",
+              "value": "Dreamself deceased",
               "sourcePage": 4216,
               "sourceKind": "direct"
             }
@@ -6752,10 +6745,8 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-1",
           "term": "Client and server",
-          "aliases": [
-            "Host user"
-          ],
-          "definition": "The two sides of a Sburb connection. John runs the client; Rose runs the server and acts as his host. She can move objects, change his house, and deploy equipment into his surroundings through the game.",
+          "aliases": [],
+          "definition": "The two sides of a Sburb connection. John runs the client; Rose runs the server and acts as his host user. She can move objects, change his house, and deploy equipment into his surroundings through the game.",
           "sourcePage": 135,
           "sourcePages": [
             153
@@ -6793,9 +6784,10 @@ window.HOMESTUCK_REFERENCE = {
           "from": "act-1",
           "term": "Cruxtruder",
           "aliases": [],
-          "definition": "A Sburb machine that dispenses cruxite dowels when its wheel is turned. John and Rose must get its lid off before they can obtain the material.",
+          "definition": "A Sburb machine that dispenses cruxite dowels when its wheel is turned. Opening its lid releases a kernelsprite and starts a countdown.",
           "sourcePage": 172,
           "sourcePages": [
+            177,
             178,
             179
           ],
