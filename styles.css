@@ -832,11 +832,6 @@ button {
   color: var(--character-color, #555);
 }
 
-.character-option[aria-selected="true"] .roster-name,
-.is-ready .character-card h3 .character-intro-link {
-  text-shadow: var(--character-name-shadow, none);
-}
-
 .roster-portrait {
   display: block;
   width: 100%;
