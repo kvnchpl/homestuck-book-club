@@ -6625,7 +6625,7 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     }
   ],
-  "conceptsPreparedThrough": "intermission",
+  "conceptsPreparedThrough": "act-4",
   "concepts": [
     {
       "id": "alchemy",
@@ -6701,6 +6701,21 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             623,
             624
+          ]
+        },
+        {
+          "from": "act-4",
+          "term": "Alchemiter",
+          "aliases": [],
+          "definition": "The Sburb machine that makes objects from cruxite totems for a grist cost. The Jumper Block Extension lets Dave and Jade add functions such as card punching and holographic totems, while an enlarger upgrade changes an item's size and price.",
+          "sourcePage": 621,
+          "sourceKind": "composite",
+          "sourcePages": [
+            623,
+            1564,
+            1568,
+            1573,
+            1576
           ]
         }
       ]
@@ -7088,6 +7103,19 @@ window.HOMESTUCK_REFERENCE = {
             420,
             424
           ]
+        },
+        {
+          "from": "act-4",
+          "term": "Prototyping",
+          "aliases": [],
+          "definition": "Combining something with a kernelsprite or sprite changes its form and knowledge. Prototyping before entry also changes the enemies, royal ring and scepter powers, and Battlefield; post-entry prototyping changes the sprite without adding those effects. A living future Dave prototypes himself to become Davesprite.",
+          "sourcePage": 424,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1657,
+            1674,
+            1988
+          ]
         }
       ]
     },
@@ -7421,6 +7449,23 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             425
           ]
+        },
+        {
+          "from": "act-4",
+          "term": "Gates",
+          "aliases": [
+            "Gate",
+            "Seven Gates"
+          ],
+          "definition": "Seven gateways above each player's house form a route through the game's quests. John's first gate leads down to his own land, while his second takes him to Rose's house; the seventh leads to the denizen's palace, making it dangerous to skip ahead.",
+          "sourcePage": 1358,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1605,
+            1643,
+            1674,
+            1988
+          ]
         }
       ]
     },
@@ -7440,6 +7485,20 @@ window.HOMESTUCK_REFERENCE = {
             621,
             623,
             624
+          ]
+        },
+        {
+          "from": "act-4",
+          "term": "Grist cache",
+          "aliases": [],
+          "definition": "The supply of grist available for building and alchemy, bounded by a cache limit. It holds different materials for different recipes, and gristTorrent can transfer resources between players' caches.",
+          "sourcePage": 406,
+          "sourceKind": "composite",
+          "sourcePages": [
+            621,
+            623,
+            1520,
+            1557
           ]
         }
       ]
@@ -7520,6 +7579,20 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             422
           ]
+        },
+        {
+          "from": "act-4",
+          "term": "Incipisphere",
+          "aliases": [
+            "The Incipisphere"
+          ],
+          "definition": "The realm of a Sburb session, with Skaia at its center and the players' planets in the Medium. Prospit orbits near Skaia, while the Veil lies beyond the players' planets and Derse beyond that; separate sessions have their own versions of these places.",
+          "sourcePage": 421,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1667,
+            1674
+          ]
         }
       ]
     },
@@ -7538,6 +7611,20 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "composite",
           "sourcePages": [
             421
+          ]
+        },
+        {
+          "from": "act-4",
+          "term": "Medium",
+          "aliases": [
+            "The Medium"
+          ],
+          "definition": "The region of the Incipisphere containing the players' planets, between Prospit and the Veil. Each entering player's house arrives on a different land, where gates and local quests give them a route to explore.",
+          "sourcePage": 1358,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1667,
+            1674
           ]
         }
       ]
@@ -7624,6 +7711,20 @@ window.HOMESTUCK_REFERENCE = {
             424,
             425
           ]
+        },
+        {
+          "from": "act-4",
+          "term": "Sprite",
+          "aliases": [],
+          "definition": "The guide left when a kernelsprite's kernel divides upon entry. A sprite retains traits of its prototypes and gains knowledge of the game, although it may be cryptic or unhelpful; a living person can join one, as future Dave does to become Davesprite.",
+          "sourcePage": 251,
+          "sourceKind": "composite",
+          "sourcePages": [
+            281,
+            1626,
+            1657,
+            1667
+          ]
         }
       ]
     },
@@ -7661,6 +7762,19 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             426,
             427
+          ]
+        },
+        {
+          "from": "act-4",
+          "term": "Ultimate Riddle",
+          "aliases": [
+            "The Ultimate Riddle"
+          ],
+          "definition": "The larger mystery expressed through poems, clues, and quests in Sburb. Karkat explains that its themes include the players bringing about their own existence through the game, as John's paradox clones demonstrate; he says this is only part of its meaning.",
+          "sourcePage": 425,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1903
           ]
         }
       ]
@@ -7788,6 +7902,20 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             934
           ]
+        },
+        {
+          "from": "act-4",
+          "term": "Ectobiology",
+          "aliases": [],
+          "definition": "A cloning process that uses slime from paradox ghost imprints as genetic material. Samples can be cloned or combined: John creates baby versions of the guardians, then combines their samples in pairs to produce himself and his friends, who are sent to Earth to grow up.",
+          "sourcePage": 933,
+          "sourceKind": "composite",
+          "sourcePages": [
+            934,
+            1903,
+            1907,
+            1988
+          ]
         }
       ]
     },
@@ -7862,6 +7990,20 @@ window.HOMESTUCK_REFERENCE = {
           "definition": "A Sburb game instance tracked by Skaianet. Its terminal associates each detected session with an IP address, a physical location, and a meteor impact; not every meteor has a corresponding session.",
           "sourcePage": 874,
           "sourceKind": "direct"
+        },
+        {
+          "from": "act-4",
+          "term": "Session",
+          "aliases": [
+            "Sburb session"
+          ],
+          "definition": "A group's distinct instance of Sburb, with its own Skaia, kingdoms, player lands, and versions of the kingdoms' inhabitants. The trolls and the kids play separate sessions; their different Jack Noirs are counterparts, rather than one individual moving from game to game.",
+          "sourcePage": 1394,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1674,
+            1930
+          ]
         }
       ]
     },
@@ -7880,6 +8022,19 @@ window.HOMESTUCK_REFERENCE = {
             1047,
             1048,
             1049
+          ]
+        },
+        {
+          "from": "act-4",
+          "term": "Prospit",
+          "aliases": [],
+          "definition": "The golden kingdom near Skaia, whose moon hosts John and Jade's dreamselves and passes through Skaia's prophetic clouds. Jack devastates Prospit and cuts its moon loose, sending it crashing into the Battlefield.",
+          "sourcePage": 1049,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1051,
+            1667,
+            1988
           ]
         }
       ]
@@ -7903,6 +8058,20 @@ window.HOMESTUCK_REFERENCE = {
             1026,
             1048,
             1049
+          ]
+        },
+        {
+          "from": "act-4",
+          "term": "Dreamself",
+          "aliases": [
+            "Dream self",
+            "Dreamselves"
+          ],
+          "definition": "A player's counterpart on the moon of Prospit or Derse, active during dreams once awakened. John and Jade dream on Prospit, while Rose and Dave dream on Derse; Jade's dreamself dies saving John's even though her waking self survives.",
+          "sourcePage": 1674,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1988
           ]
         }
       ]
@@ -8067,6 +8236,19 @@ window.HOMESTUCK_REFERENCE = {
             1280,
             1298
           ]
+        },
+        {
+          "from": "act-4",
+          "term": "Alternate timeline",
+          "aliases": [],
+          "definition": "A different version of events, distinct from another date in the same history. Die's voodoo doll lets Slick switch between such versions; Dave returns from a failed future where John died and becomes Davesprite, preventing that outcome in the continuing timeline.",
+          "sourcePage": 1280,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1643,
+            1657,
+            1674
+          ]
         }
       ]
     },
@@ -8086,6 +8268,21 @@ window.HOMESTUCK_REFERENCE = {
             1285,
             1313,
             1314
+          ]
+        },
+        {
+          "from": "act-4",
+          "term": "Time loop",
+          "aliases": [],
+          "definition": "A chain of events in which time travel helps bring about its own history. A stable loop fits the events already established, as the paradox clones' journey to Earth fulfills the players' origins; attempts to change events can instead leave a failed alternate timeline, as Dave discovers.",
+          "sourcePage": 1592,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1643,
+            1657,
+            1863,
+            1903,
+            1988
           ]
         }
       ]
@@ -8236,6 +8433,475 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             1224,
             1318
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pictionary-modus",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Pictionary modus",
+          "aliases": [],
+          "definition": "Jade's drawing-based fetch modus recognizes an object sketched on her Captchalogue Scribblepad and stores it. If the object is absent or too large, it can capture a ghost image with a usable captcha code instead, letting her obtain codes for alchemy equipment.",
+          "sourcePage": 1372,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1374,
+            1375,
+            1561,
+            1562
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jenga-modus",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Jenga modus",
+          "aliases": [],
+          "definition": "A fetch modus that divides each card into three blocks and scatters them through a tower. Retrieving an item means pulling out its blocks; when Jade knocks the tower over, her inventory spills out.",
+          "sourcePage": 1369,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1370,
+            1371
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gristtorrent",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "gristTorrent",
+          "aliases": [],
+          "definition": "Software that transfers grist between players' grist caches. Dave downloads John's grist to afford equipment and construction, so the others can use resources one player has collected.",
+          "sourcePage": 1520,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1557,
+            1588
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jumper-block-extension",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Jumper Block Extension",
+          "aliases": [],
+          "definition": "An Alchemiter attachment that accepts punched cards through a Punch Card Shunt to modify the machine. Codes can add equipment functions, although some combinations make the Alchemiter useless instead of improving it.",
+          "sourcePage": 1513,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1517,
+            1558,
+            1559,
+            1560,
+            1564
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punch-card-shunt",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Punch Card Shunt",
+          "aliases": [],
+          "definition": "A card holder placed on the pins of the Jumper Block Extension to apply a punched card's code as an Alchemiter modification. An unpunched card does nothing; a later upgrade incorporates the extension into the machine and lets Dave insert upgrade cards without separate shunts.",
+          "sourcePage": 1516,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1517,
+            1558,
+            1569,
+            1570
+          ]
+        }
+      ]
+    },
+    {
+      "id": "holopad",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Holopad",
+          "aliases": [],
+          "definition": "An Alchemiter upgrade that projects an image of the item encoded by a punched card, allowing a preview without paying its grist cost. Combined with a Totem Lathe upgrade, it projects the needed totem so the Alchemiter can produce items directly from punched cards.",
+          "sourcePage": 1565,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1567,
+            1568
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lotus-time-capsule",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Lotus time capsule",
+          "aliases": [
+            "Time capsule"
+          ],
+          "definition": "A flower-shaped storage device that keeps objects in seeds and releases them when its timer finishes. Jade retrieves Dave's Sburb discs from one in the frog ruins; they were deposited in the same capsule millions of years earlier from its perspective.",
+          "sourcePage": 1366,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1368,
+            1912,
+            1927,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lowas",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Land of Wind and Shade",
+          "aliases": [
+            "LOWAS"
+          ],
+          "definition": "John's planet in the Medium, with glowing trees, oil-filled rivers, and pipes used by its salamander consorts. Its denizen has clogged the pipes and trapped fireflies beneath the clouds; John's first gate brings him to the surface below his house.",
+          "sourcePage": 1358,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1674
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lolar",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Land of Light and Rain",
+          "aliases": [
+            "LOLAR"
+          ],
+          "definition": "Rose's planet in the Medium, an ocean world with white islands and colorful light. Jaspersprite says its denizen has eaten the ocean's life and connects Rose's quest with learning to play the rain like music.",
+          "sourcePage": 1626,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1674
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lohac",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Land of Heat and Clockwork",
+          "aliases": [
+            "LOHAC"
+          ],
+          "definition": "Dave's planet in the Medium, covered in lava, steel structures, and moving gears. The future Dave who becomes Davesprite spends months adventuring there before returning to an earlier point in the game.",
+          "sourcePage": 1643,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1657,
+            1674
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consort",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Consort",
+          "aliases": [],
+          "definition": "A friendly inhabitant of a player's land who can offer information, trade, or clues for the quest. John's salamander consorts explain the Land of Wind and Shade and its troubles with the denizen.",
+          "sourcePage": 1358,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1667,
+            1674
+          ]
+        }
+      ]
+    },
+    {
+      "id": "denizen",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Denizen",
+          "aliases": [],
+          "definition": "A powerful creature sleeping beneath each player's land, tied to that world's troubles and guarding a huge grist hoard. Reaching its palace is part of the quest through the gates; John's attempt to skip ahead and fight his denizen too early ends in his death in an alternate timeline.",
+          "sourcePage": 1605,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1626,
+            1643,
+            1674
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return-node",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Return node",
+          "aliases": [],
+          "definition": "A portal on a player's land that returns them to their house. John uses one near his denizen's palace; it is distinct from the seventh gate that leads into the palace.",
+          "sourcePage": 1606,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1607
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parcel-pyxis",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Parcel Pyxis",
+          "aliases": [],
+          "definition": "A mail chute in the pipe network of the Land of Wind and Shade. The salamanders leave and collect objects carried by the Breeze, using the network to exchange supplies as well as parcels.",
+          "sourcePage": 1358,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "derse",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Derse",
+          "aliases": [],
+          "definition": "The dark kingdom beyond the Veil, opposed to Prospit in the war over Skaia. Rose and Dave have dreamselves in towers on its moon, where Rose can hear the gods of the Furthest Ring.",
+          "sourcePage": 1667,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1674,
+            1857,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veil",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Veil",
+          "aliases": [
+            "The Veil"
+          ],
+          "definition": "A belt of meteors beyond the players' planets, separating the Medium from the Furthest Ring. Some meteors contain laboratories used by the kingdoms, including facilities for ectobiology; during the Reckoning, the meteors are sent toward Skaia.",
+          "sourcePage": 1667,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1903,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "furthest-ring",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Furthest Ring",
+          "aliases": [
+            "The Furthest Ring"
+          ],
+          "definition": "The vast outer region beyond the Veil, where Derse orbits and strange gods dwell. Rose hears these beings while dreaming on Derse's moon; their guidance contrasts with the visions in Skaia's clouds available to Prospit's dreamers.",
+          "sourcePage": 1667,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1857,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battlefield",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Battlefield",
+          "aliases": [
+            "The Battlefield"
+          ],
+          "definition": "The site of the kingdoms' war at the center of Skaia. Successive entries and kernel prototypings expand it from a small chessboard into larger forms; after three players enter, it is a world with oceans, terrain, armies, and giant chess-like creatures.",
+          "sourcePage": 1667,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1800,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reckoning",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Reckoning",
+          "aliases": [
+            "The Reckoning"
+          ],
+          "definition": "The attack that sends the Veil's meteors toward Skaia, starting with smaller rocks and escalating toward larger ones. Defeating the rulers of Derse is meant to stop it before Skaia's defenses are overwhelmed; Jack takes control of the kings' conflict and starts it early in the kids' session.",
+          "sourcePage": 1667,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1929,
+            1930,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skaian-defense-portal",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Skaian defense portal",
+          "aliases": [
+            "Defense portal"
+          ],
+          "definition": "A portal Skaia opens to divert an incoming meteor during the Reckoning. The portals send meteors to different points in Earth's history, causing its bombardment while also delivering the babies who grow up to become the players and their guardians.",
+          "sourcePage": 1667,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1907,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royal-ring",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Royal ring",
+          "aliases": [],
+          "definition": "A queen's ring grants its wearer the traits and powers supplied by pre-entry prototyping. Removing it removes those changes, and Jack gains the Black Queen's powers by taking hers; Jade's dreamself tries the White Queen's ring, but it does not transform a human.",
+          "sourcePage": 1674,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royal-scepter",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Royal scepter",
+          "aliases": [],
+          "definition": "A king's staff that, when active, makes him enormous and gives him the traits supplied by prototyping. The White King can deactivate his before handing it over; Jack later obtains it and uses it to begin the Reckoning.",
+          "sourcePage": 1988,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "exile",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Exile",
+          "aliases": [],
+          "definition": "Someone displaced from a Sburb session to the players' world after its destruction. Command stations let exiles observe and send instructions to players earlier in their adventures, which the players can hear as an inner voice.",
+          "sourcePage": 1523,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1674,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paradox-clone",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Paradox clone",
+          "aliases": [],
+          "definition": "A clone whose journey into the past makes it the very person from whom it was created, completing a time loop. John's ectobiology produces the babies who become his group and their guardians; they are their younger selves, not replacement copies.",
+          "sourcePage": 1903,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1907,
+            1988
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meow",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "MEOW",
+          "aliases": [
+            "MEOW code"
+          ],
+          "definition": "The genetic sequence hidden in Jaspers's message to Rose, which she records in her journal. A stolen copy is combined with a dog's genetic material through ectobiology to create Becquerel, despite Rose burning her own copy at the urging of the gods of the Furthest Ring.",
+          "sourcePage": 1857,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1988
           ]
         }
       ]
