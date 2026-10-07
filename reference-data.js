@@ -693,6 +693,18 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "Wind control",
+              "sourcePage": 3238,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
           "id": "form",
           "variants": [
             {
@@ -828,6 +840,21 @@ window.HOMESTUCK_REFERENCE = {
               "value": "needlekind",
               "sourcePage": 299,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "Dark magic",
+              "sourcePage": 2728,
+              "sourcePages": [
+                3238
+              ],
+              "sourceKind": "composite"
             }
           ]
         },
@@ -969,6 +996,21 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "Time travel through stable loops",
+              "sourcePage": 2737,
+              "sourcePages": [
+                3029
+              ],
+              "sourceKind": "composite"
+            }
+          ]
+        },
+        {
           "id": "form",
           "variants": [
             {
@@ -1098,6 +1140,21 @@ window.HOMESTUCK_REFERENCE = {
               "value": "riflekind",
               "sourcePage": 1077,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "inventory",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Inventory",
+              "value": "Junior Compu-Sooth Spectagoggles",
+              "sourcePage": 3196,
+              "sourcePages": [
+                3158
+              ],
+              "sourceKind": "composite"
             }
           ]
         },
@@ -1432,6 +1489,21 @@ window.HOMESTUCK_REFERENCE = {
               "value": "lancekind",
               "sourcePage": 2115,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "Communion with animals, including Becquerel",
+              "sourcePage": 3053,
+              "sourcePages": [
+                3057
+              ],
+              "sourceKind": "composite"
             }
           ]
         },
@@ -2259,6 +2331,15 @@ window.HOMESTUCK_REFERENCE = {
         {
           "from": "act-5-act-2-part-1",
           "value": {
+            "src": "../assets/ref-vriska.webp",
+            "alt": "Vriska Serket in her usual Scorpio shirt and glasses, with her arm and eye restored"
+          },
+          "sourcePage": 2635,
+          "sourceKind": "visual"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "value": {
             "src": "../assets/ref-vriska-god-tier.webp",
             "alt": "Vriska Serket in her god-tier Thief of Light outfit"
           },
@@ -2321,6 +2402,21 @@ window.HOMESTUCK_REFERENCE = {
               "value": "dicekind",
               "sourcePage": 2199,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "Psychic suggestion; can put humans to sleep or wake them",
+              "sourcePage": 2974,
+              "sourcePages": [
+                3238
+              ],
+              "sourceKind": "composite"
             }
           ]
         },
@@ -2869,7 +2965,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-1",
+          "from": "act-5-act-2-part-2",
           "value": {
             "src": "../assets/ref-feferi-ghost.webp",
             "alt": "Feferi Peixes appearing as a ghost in a dream bubble, with blank white eyes"
@@ -3517,7 +3613,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-1",
               "label": "Powers",
-              "value": "First Guardian powers",
+              "value": "First Guardian powers, drawn from the Green Sun",
               "sourcePage": 3238,
               "sourceKind": "direct"
             }
@@ -3778,6 +3874,17 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Parcel Mistress",
               "sourcePage": 1674,
               "sourceKind": "direct"
+            },
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Formerly",
+              "value": "Parcel Mistress · Peregrine Mendicant",
+              "sourcePage": 3018,
+              "sourcePages": [
+                892,
+                1674
+              ],
+              "sourceKind": "composite"
             }
           ]
         },
@@ -4798,6 +4905,18 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Affiliation",
               "value": "Officer of Lord English",
               "sourcePage": 2253,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-1",
+              "label": "Powers",
+              "value": "Near-omnipotence · Omniscience",
+              "sourcePage": 3238,
               "sourceKind": "direct"
             }
           ]
@@ -6778,7 +6897,7 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     }
   ],
-  "conceptsPreparedThrough": "act-5-act-1",
+  "conceptsPreparedThrough": "act-5-act-2-part-1",
   "concepts": [
     {
       "id": "alchemy",
@@ -7561,6 +7680,20 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             406
           ]
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Boondollars",
+          "aliases": [],
+          "definition": "Game money awarded for climbing the Echeladder, distinct from grist used for building and alchemy. Players can transfer it through the Virtual Porkhollow and spend it on purchases such as fraymotifs; Dave multiplies his funds on the LOHAC Stock Exchange.",
+          "sourcePage": 405,
+          "sourcePages": [
+            406,
+            2737,
+            3096,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -7614,6 +7747,18 @@ window.HOMESTUCK_REFERENCE = {
           "definition": "A ladder of achievement ranks climbed through successful adventuring, such as defeating enemies. Advancing awards boondollars and can increase the cache limit.",
           "sourcePage": 405,
           "sourceKind": "direct"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Echeladder",
+          "aliases": [],
+          "definition": "A ladder of achievement ranks climbed through successful adventuring, awarding boondollars and increases to the cache limit. Reaching its top is distinct from attaining god tier: the trolls complete their game with only Vriska having made that further ascent.",
+          "sourcePage": 405,
+          "sourcePages": [
+            3096,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -7921,6 +8066,18 @@ window.HOMESTUCK_REFERENCE = {
             281,
             1657,
             2088
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Sprite",
+          "aliases": [],
+          "definition": "A prototyped guide that gains knowledge of the game and retains traits of its prototypes, which can include living people or dead lusus. Useful conversation is not guaranteed: Becsprite cannot explain things to Jade, who adds her dead dreamself in a second prototyping to create Jadesprite.",
+          "sourcePage": 2088,
+          "sourcePages": [
+            1657,
+            3238
           ],
           "sourceKind": "composite"
         }
@@ -8286,6 +8443,22 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             1988
           ]
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Dreamself",
+          "aliases": [
+            "Dream self",
+            "Dreamselves"
+          ],
+          "definition": "A player's dream counterpart, originally housed on Prospit or Derse's moon, which can replace a dead or dying waking self through revival by a kiss or ascent to god tier. When the dreamself dies instead, the surviving waking player can encounter the Furthest Ring and its dream bubbles while asleep.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            1988,
+            3091,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -8304,6 +8477,18 @@ window.HOMESTUCK_REFERENCE = {
             1026,
             1030
           ]
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Dreambot",
+          "aliases": [],
+          "definition": "Jade's robot on Earth, which mirrors her dreamself's activity while her waking body sleeps. It explodes when her dreamself dies in the destruction of Prospit's moon, wrecking her bedroom even though waking Jade survives.",
+          "sourcePage": 993,
+          "sourcePages": [
+            1030,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -8462,6 +8647,20 @@ window.HOMESTUCK_REFERENCE = {
             1657,
             1674
           ]
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Alternate timeline",
+          "aliases": [],
+          "definition": "A different version of events, distinct from another date in the same history. The trolls describe offshoots that break from the alpha timeline as doomed timelines; Davesprite comes from one, while Dave's stable time loops can produce multiple simultaneous selves without branching.",
+          "sourcePage": 1280,
+          "sourcePages": [
+            1657,
+            2728,
+            2737,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -8497,6 +8696,19 @@ window.HOMESTUCK_REFERENCE = {
             1903,
             1988
           ]
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Time loop",
+          "aliases": [],
+          "definition": "A chain of events in which time travel helps bring about its own history. Dave uses stable loops to revisit the same stretch of time, so several Daves can be present while remaining successive parts of one person's life; this is different from a copy arriving from a doomed timeline.",
+          "sourcePage": 2737,
+          "sourcePages": [
+            3029,
+            3091,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -8969,6 +9181,21 @@ window.HOMESTUCK_REFERENCE = {
             1857,
             1988
           ]
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Furthest Ring",
+          "aliases": [
+            "The Furthest Ring"
+          ],
+          "definition": "The vast region beyond a session's Veil and between separate sessions, outside created universes. It contains the horrorterrors, dream bubbles, and the Green Sun; space and time behave unreliably there, making a journey more complicated than flying in a straight line.",
+          "sourcePage": 1667,
+          "sourcePages": [
+            2991,
+            3041,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -8989,6 +9216,21 @@ window.HOMESTUCK_REFERENCE = {
             1800,
             1988
           ]
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Battlefield",
+          "aliases": [
+            "The Battlefield"
+          ],
+          "definition": "The site of the kingdoms' war at the center of Skaia, expanded by successive entries with prototyped kernels. Only the complete prototyping chain allows it to reach the final form needed to grow a universe; in the kids' session, that form also contains the Tumor Rose wants John to retrieve.",
+          "sourcePage": 1667,
+          "sourcePages": [
+            2663,
+            3042,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -9047,6 +9289,19 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePages": [
             1988
           ]
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Royal ring",
+          "aliases": [],
+          "definition": "A queen's ring grants its wearer the traits and powers supplied by pre-entry prototyping; removing it removes those changes. Jade's entry adds Bec's first guardian powers to Jack's stolen ring, making him the enemy who later attacks the trolls' session. The ring still does not transform a human who wears it.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            1988,
+            3041,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -9412,6 +9667,18 @@ window.HOMESTUCK_REFERENCE = {
           "definition": "An entity meant to protect a planet destined for intelligent life and help fulfill its purpose. First guardians can take different forms, but share a genetic sequence that grants near-omnipotence and, in an intelligent host, near-omniscience.",
           "sourcePage": 2253,
           "sourceKind": "direct"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "First guardian",
+          "aliases": [],
+          "definition": "A guardian meant to protect a planet and help fulfill its purpose, with powers fueled by the Green Sun. A shared genetic sequence grants near-omnipotence and, in an intelligent host, near-omniscience; Becquerel is Earth's guardian, and his pre-entry prototyping passes his powers to Jack through a royal ring.",
+          "sourcePage": 2253,
+          "sourcePages": [
+            3041,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -9593,6 +9860,21 @@ window.HOMESTUCK_REFERENCE = {
             2605
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Scratch",
+          "aliases": [],
+          "definition": "A game-supported rift in paradox space whose direct effects are confined to the session invoking it. The kids are preparing one as part of a plan involving the trolls; it is also what will force their session's Jack Noir into the trolls' session and prevent the trolls from claiming their reward.",
+          "sourcePage": 2602,
+          "sourcePages": [
+            2603,
+            2604,
+            2605,
+            2628,
+            3238
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -9611,6 +9893,286 @@ window.HOMESTUCK_REFERENCE = {
             2617,
             2618,
             2624
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "alpha-timeline",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Alpha timeline",
+          "aliases": [
+            "Alpha reality"
+          ],
+          "definition": "The continuing history whose events fit together, including the stable time loops that help bring them about. Dave's many time-traveling selves can all belong to this one history; a doomed timeline is a separate branch.",
+          "sourcePage": 2728,
+          "sourcePages": [
+            2737,
+            3029,
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "doomed-timeline",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Doomed timeline",
+          "aliases": [
+            "Doomed reality"
+          ],
+          "definition": "An offshoot from the alpha timeline whose events do not fit the continuing history. Its inhabitants are fated to die, even if they travel back into the alpha timeline, though their actions there can still be important.",
+          "sourcePage": 2728,
+          "sourcePages": [
+            2975,
+            3091,
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "horrorterrors",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Horrorterrors",
+          "aliases": [
+            "Gods of the Furthest Ring"
+          ],
+          "definition": "The strange gods dwelling in the Furthest Ring, heard by Derse dreamers and encountered in sleep after dreamself death. They guide Rose's investigations and create dream bubbles at Feferi's request; their frightening presence does not settle whether their guidance should be trusted.",
+          "sourcePage": 2728,
+          "sourcePages": [
+            2851,
+            2991,
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "dream-bubble",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Dream bubble",
+          "aliases": [],
+          "definition": "A shared dream environment made by the horrorterrors in the Furthest Ring at Feferi's request. After losing her dreamself, Jade meets Feferi in one that uses a remembered conversation as its setting, then realizes they are interacting rather than merely replaying the past.",
+          "sourcePage": 2991,
+          "sourcePages": [
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "green-sun",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Green Sun",
+          "aliases": [],
+          "definition": "An immense star in the Furthest Ring, described as nearly twice the mass of the kids' universe. It supplies the power of first guardians and, through Bec's prototyping, Jack Noir; Rose plans to destroy it to take those powers away.",
+          "sourcePage": 3041,
+          "sourcePages": [
+            3043,
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "tumor",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Tumor",
+          "aliases": [
+            "The Tumor"
+          ],
+          "definition": "A bomb growing at the center of the fully developed Battlefield, set to detonate when the Reckoning ends. Rose plans for John to retrieve it and deliver it to her dreamself so she can destroy the Green Sun, but she does not know why the bomb exists in their session.",
+          "sourcePage": 3042,
+          "sourcePages": [
+            3043,
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "god-tier",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "God tier",
+          "aliases": [
+            "God-tier"
+          ],
+          "definition": "A level of power beyond ordinary Echeladder advancement. John and Vriska reach it after dying on their quest beds, with their dreamselves taking over as healed, fully realized heroes on the Battlefield; reaching this level is not required to win the game.",
+          "sourcePage": 3091,
+          "sourcePages": [
+            3096,
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "quest-bed",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Quest bed",
+          "aliases": [
+            "Quest cocoon"
+          ],
+          "definition": "A sacrificial resting place involved in reaching god tier, called a quest cocoon in Vriska's case. John and Vriska die on theirs while they still have living dreamselves, which then become their new waking selves; simply sleeping on the bed is not the whole process.",
+          "sourcePage": 3081,
+          "sourcePages": [
+            3091,
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "lofaf",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Land of Frost and Frogs",
+          "aliases": [
+            "LOFAF"
+          ],
+          "definition": "Jade's snow-covered planet in the Medium. After arriving, she must replace the alchemy equipment destroyed during entry before she can make warmer clothes and new gear.",
+          "sourcePage": 3024,
+          "sourcePages": [
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "lohacse",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "LOHAC Stock Exchange",
+          "aliases": [
+            "LOHACSE",
+            "Land of Heat and Clockwork Stock Exchange"
+          ],
+          "definition": "The stock market on Dave's planet. With Terezi's guidance, Dave uses time travel to make an enormous fortune, funding his purchases and the transfer that first alerts the trolls to the kids.",
+          "sourcePage": 2737,
+          "sourcePages": [
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "virtual-porkhollow",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Virtual Porkhollow",
+          "aliases": [
+            "virtualporkhollow.exe"
+          ],
+          "definition": "An application for transferring game money between players' accounts. Dave sends it to John so he can borrow John's boonbuck for the LOHAC Stock Exchange.",
+          "sourcePage": 2737,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "fraymotif",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Fraymotif",
+          "aliases": [],
+          "definition": "A powerful battle technique purchased from consorts. Dave buys them as part of his preparation, and Terezi explains that mastering fraymotifs helped the trolls win without everyone reaching god tier.",
+          "sourcePage": 3096,
+          "sourcePages": [
+            3238
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "forge",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Forge",
+          "aliases": [],
+          "definition": "The volcano on Jade's island, needed by Hephaestus, Dave's denizen, to complete his work. Davesprite explains that it never arrived in the Medium in his original timeline.",
+          "sourcePage": 2836,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "sprite-pendant",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Sprite pendant",
+          "aliases": [],
+          "definition": "A pendant used to summon a player's sprite. Nannasprite gives one to John so he can call on her while adventuring.",
+          "sourcePage": 3238,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "compu-sooth-spectagoggles",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Junior Compu-Sooth Spectagoggles",
+          "aliases": [
+            "Compu-sooth spectagoggles",
+            "Spectagoggles"
+          ],
+          "definition": "Jade's wearable computer, alchemized from her lunchtop and Sooth Specs, which incorporate Rose's crystal ball. They let her view events throughout the Incipisphere at the present moment, including the many time-displaced Daves.",
+          "sourcePage": 3157,
+          "sourcePages": [
+            3158,
+            3196,
+            3200
           ],
           "sourceKind": "composite"
         }
