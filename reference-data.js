@@ -764,7 +764,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-2",
+          "from": "act-5-act-2-part-3",
           "value": {
             "src": "../assets/ref-rose-grimdark.webp",
             "alt": "Rose Lalonde in her grimdark form"
@@ -773,7 +773,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-3",
+          "from": "intermission-2",
           "value": {
             "src": "../assets/ref-rose-god-tier.webp",
             "alt": "Rose Lalonde in her god-tier Seer of Light outfit"
@@ -855,6 +855,16 @@ window.HOMESTUCK_REFERENCE = {
                 3238
               ],
               "sourceKind": "composite"
+            },
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Powers",
+              "value": "Dark magic granted by the horrorterrors",
+              "sourcePage": 3632,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3638
+              ]
             }
           ]
         },
@@ -925,7 +935,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-3",
+          "from": "intermission-2",
           "value": {
             "src": "../assets/ref-dave-god-tier.webp",
             "alt": "Dave Strider in his god-tier Knight of Time outfit"
@@ -991,6 +1001,18 @@ window.HOMESTUCK_REFERENCE = {
               "label": "Strife specibus",
               "value": "bladekind",
               "sourcePage": 342,
+              "sourceKind": "direct"
+            }
+          ]
+        },
+        {
+          "id": "quest",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Quest",
+              "value": "Helps Jade breed the Genesis Frog",
+              "sourcePage": 3869,
               "sourceKind": "direct"
             }
           ]
@@ -1070,7 +1092,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-3",
+          "from": "intermission-2",
           "value": {
             "src": "../assets/ref-jade-god-tier.webp",
             "alt": "Jade Harley in her god-tier Witch of Space outfit with dog ears"
@@ -1155,6 +1177,22 @@ window.HOMESTUCK_REFERENCE = {
                 3158
               ],
               "sourceKind": "composite"
+            }
+          ]
+        },
+        {
+          "id": "quest",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Quest",
+              "value": "Breed the Genesis Frog",
+              "sourcePage": 3305,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3318,
+                3319
+              ]
             }
           ]
         },
@@ -1434,7 +1472,7 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
-          "from": "act-5-act-2-part-2",
+          "from": "act-5-act-2-part-3",
           "value": {
             "src": "../assets/ref-tavros-ghost.webp",
             "alt": "Tavros Nitram as a ghost with blank white eyes"
@@ -1612,7 +1650,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-3",
+          "from": "intermission-2",
           "value": {
             "src": "../assets/ref-sollux-half-ghost.webp",
             "alt": "Sollux with one dark eye and one white ghost eye"
@@ -1823,6 +1861,22 @@ window.HOMESTUCK_REFERENCE = {
               "value": "sicklekind",
               "sourcePage": 1994,
               "sourceKind": "editorial"
+            }
+          ]
+        },
+        {
+          "id": "quest",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Quest",
+              "value": "Helped Kanaya breed the trolls' Genesis Frog",
+              "sourcePage": 3869,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3977,
+                4005
+              ]
             }
           ]
         },
@@ -2043,7 +2097,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-2",
+          "from": "act-5-act-2-part-3",
           "value": {
             "src": "../assets/ref-kanaya-glowing.webp",
             "alt": "Kanaya Maryam with glowing white skin"
@@ -2110,6 +2164,22 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Lipstick that transforms into a chainsaw",
               "sourcePage": 2324,
               "sourceKind": "visual"
+            }
+          ]
+        },
+        {
+          "id": "quest",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Quest",
+              "value": "Frog breeding for the trolls' session",
+              "sourcePage": 3305,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3319,
+                3320
+              ]
             }
           ]
         },
@@ -2258,6 +2328,22 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "powers",
+          "variants": [
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Powers",
+              "value": "Sees the consequences of decisions",
+              "sourcePage": 3832,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3833,
+                3835
+              ]
+            }
+          ]
+        },
+        {
           "id": "blood",
           "variants": [
             {
@@ -2347,7 +2433,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-3",
+          "from": "intermission-2",
           "value": {
             "src": "../assets/ref-vriska-ghost.webp",
             "alt": "Vriska Serket as a ghost with blank eyes"
@@ -2417,6 +2503,18 @@ window.HOMESTUCK_REFERENCE = {
                 3238
               ],
               "sourceKind": "composite"
+            },
+            {
+              "from": "act-5-act-2-part-3",
+              "label": "Powers",
+              "value": "Psychic suggestion (sleep/wake humans) · Steals luck",
+              "sourcePage": 3771,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3775,
+                2974,
+                3238
+              ]
             }
           ]
         },
@@ -3836,7 +3934,7 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "visual"
         },
         {
-          "from": "act-5-act-2-part-3",
+          "from": "intermission-2",
           "value": {
             "src": "../assets/ref-pm-prototyped.webp",
             "alt": "PM transformed by the White Queen’s ring"
@@ -4918,6 +5016,17 @@ window.HOMESTUCK_REFERENCE = {
               "value": "Near-omnipotence · Omniscience",
               "sourcePage": 3238,
               "sourceKind": "direct"
+            },
+            {
+              "from": "act-5-act-2-part-2",
+              "label": "Powers",
+              "value": "Near-omnipotence · Omniscience with blind spots",
+              "sourcePage": 3238,
+              "sourceKind": "composite",
+              "sourcePages": [
+                3627,
+                3757
+              ]
             }
           ]
         },
@@ -6897,7 +7006,7 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     }
   ],
-  "conceptsPreparedThrough": "act-5-act-2-part-1",
+  "conceptsPreparedThrough": "act-5-act-2-part-3",
   "concepts": [
     {
       "id": "alchemy",
@@ -8271,6 +8380,20 @@ window.HOMESTUCK_REFERENCE = {
             1907,
             1988
           ]
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Ectobiology",
+          "aliases": [],
+          "definition": "A cloning process using slime from paradox ghost imprints as genetic material. Samples can be copied, mixed, or deliberately mutated; the same basic machinery produces the players and their guardians and supports frog breeding to create a new universe.",
+          "sourcePage": 3315,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3318,
+            3319,
+            1903,
+            1988
+          ]
         }
       ]
     },
@@ -9091,6 +9214,19 @@ window.HOMESTUCK_REFERENCE = {
             1643,
             1674
           ]
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Denizen",
+          "aliases": [],
+          "definition": "A powerful creature tied to a player's land and quest, with more knowledge than its monstrous appearance suggests. A denizen can offer The Choice and help fulfill a bargain; confronting one does not necessarily require killing it.",
+          "sourcePage": 3944,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3945,
+            3979,
+            3985
+          ]
         }
       ]
     },
@@ -9352,6 +9488,18 @@ window.HOMESTUCK_REFERENCE = {
             1907,
             1988
           ]
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Paradox clone",
+          "aliases": [],
+          "definition": "An exact genetic duplicate destined to travel into the past and become its own original, completing a time loop. A genetically altered clone is instead a mutant, a distinction that matters when selectively breeding frogs through ectobiology.",
+          "sourcePage": 3318,
+          "sourceKind": "composite",
+          "sourcePages": [
+            1903,
+            1907
+          ]
         }
       ]
     },
@@ -9587,6 +9735,19 @@ window.HOMESTUCK_REFERENCE = {
             2543
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Trollian",
+          "aliases": [],
+          "definition": "The trolls' chat client, with transtimeline conversations and shared memos. Jade imposes a password system on her conversations with Kanaya: each chat supplies the password required for the next, keeping their exchanges in order from both perspectives.",
+          "sourcePage": 1994,
+          "sourceKind": "composite",
+          "sourcePages": [
+            2543,
+            3303,
+            3320
+          ]
         }
       ]
     },
@@ -9875,6 +10036,32 @@ window.HOMESTUCK_REFERENCE = {
             3238
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Scratch",
+          "aliases": [],
+          "definition": "A hard reset of a failed session that changes conditions in its originating universe long before the players began the game. It is triggered through a special construct on the Time player's planet; anyone remaining in the session faces erasure, and the new lives do not retain their memories. Scratch clarifies that the reset itself does not open the rift the kids expected.",
+          "sourcePage": 3629,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3628,
+            3630
+          ]
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Scratch",
+          "aliases": [],
+          "definition": "A hard reset of a failed session that changes its universe's initial conditions. The trolls' earlier Scratch exchanged the players' and ancestors' roles and enabled their first guardian to shape a more violent Alternia; memories were normally lost, though the Signless recalled fragments. Anyone remaining in a scratched session faces erasure unless they find a way to escape.",
+          "sourcePage": 4053,
+          "sourceKind": "composite",
+          "sourcePages": [
+            4054,
+            3628,
+            3629,
+            3630
+          ]
         }
       ]
     },
@@ -9895,6 +10082,22 @@ window.HOMESTUCK_REFERENCE = {
             2624
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Ultimate reward",
+          "aliases": [],
+          "definition": "Entry into the universe the players have created, embodied by their Genesis Frog. The trolls bred the universe containing the kids, but Jack's intrusion prevented them from claiming their reward.",
+          "sourcePage": 3319,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3320,
+            2600,
+            2617,
+            2618,
+            2624,
+            3238
+          ]
         }
       ]
     },
@@ -9975,6 +10178,19 @@ window.HOMESTUCK_REFERENCE = {
             3238
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Dream bubble",
+          "aliases": [],
+          "definition": "A shared environment in the Furthest Ring made by the horrorterrors at Feferi's request, often shaped by memories. Dream bubbles serve as an afterlife for dead characters and can also be visited by living sleepers, so meeting someone there does not prove they are dead.",
+          "sourcePage": 3591,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3592,
+            2991,
+            3238
+          ]
         }
       ]
     },
@@ -9993,6 +10209,18 @@ window.HOMESTUCK_REFERENCE = {
             3238
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Green Sun",
+          "aliases": [],
+          "definition": "The immense star in the Furthest Ring that supplies the power of first guardians. Rose and Dave's mission to destroy it instead brings about its creation: the Tumor detonates using the deaths of the human and troll universes.",
+          "sourcePage": 4109,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3041,
+            3043
+          ]
         }
       ]
     },
@@ -10013,6 +10241,21 @@ window.HOMESTUCK_REFERENCE = {
             3238
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Tumor",
+          "aliases": [
+            "The Tumor"
+          ],
+          "definition": "A bomb retrieved from the Battlefield whose two halves are linked to the deaths of the human and troll universes. Rose and Dave take it to the core of Derse's moon; its detonation creates the Green Sun they had intended to destroy.",
+          "sourcePage": 4109,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3896,
+            3042,
+            3043
+          ]
         }
       ]
     },
@@ -10033,6 +10276,35 @@ window.HOMESTUCK_REFERENCE = {
             3238
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "God tier",
+          "aliases": [
+            "God-tier"
+          ],
+          "definition": "A level of power beyond ordinary Echeladder advancement, reached through death and ascension at a quest bed. God-tier players gain conditional immortality: they can live indefinitely, but a death judged heroic or just can be permanent, depending on the individual circumstances.",
+          "sourcePage": 3630,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3091,
+            3238
+          ]
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "God tier",
+          "aliases": [
+            "God-tier"
+          ],
+          "definition": "A level of power beyond ordinary Echeladder advancement, reached through death and ascension at a quest bed. It grants conditional immortality: John revives after Jack kills him again because the death is neither heroic nor just, but those kinds of death can still be permanent.",
+          "sourcePage": 3630,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3788,
+            3851,
+            3871
+          ]
         }
       ]
     },
@@ -10053,6 +10325,37 @@ window.HOMESTUCK_REFERENCE = {
             3238
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Quest bed",
+          "aliases": [
+            "Quest cocoon"
+          ],
+          "definition": "A sacrificial resting place involved in reaching god tier, called a quest cocoon in Vriska's case. John and Vriska ascend after dying on theirs while their dreamselves are alive; Scratch also confirms a second quest bed provides another route to ascension.",
+          "sourcePage": 3630,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3081,
+            3091,
+            3238
+          ]
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Quest bed",
+          "aliases": [
+            "Quest cocoon"
+          ],
+          "definition": "A sacrificial resting place used to reach god tier, called a quest cocoon in Vriska's case. John, Vriska, and Jade ascend after dying on beds on their lands; Rose and Dave use the alternate beds in the core of Derse's moon when the Tumor detonates.",
+          "sourcePage": 4109,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3630,
+            3081,
+            3091,
+            3238
+          ]
         }
       ]
     },
@@ -10072,6 +10375,21 @@ window.HOMESTUCK_REFERENCE = {
             3238
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Land of Frost and Frogs",
+          "aliases": [
+            "LOFAF"
+          ],
+          "definition": "Jade's snow-covered planet in the Medium, where frogs are trapped in ice. Her quest involves frog breeding to create the Genesis Frog, with the Forge needed to thaw their habitats.",
+          "sourcePage": 3314,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3318,
+            3319,
+            3024
+          ]
         }
       ]
     },
@@ -10139,6 +10457,30 @@ window.HOMESTUCK_REFERENCE = {
           "definition": "The volcano on Jade's island, needed by Hephaestus, Dave's denizen, to complete his work. Davesprite explains that it never arrived in the Medium in his original timeline.",
           "sourcePage": 2836,
           "sourceKind": "direct"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Forge",
+          "aliases": [],
+          "definition": "A volcano tied to the Space player's quest, whose activation causes major changes to its planet. Kanaya expects Jade's Forge to thaw the frogs on the Land of Frost and Frogs; Hephaestus also needs it for his work.",
+          "sourcePage": 3314,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3305,
+            2836
+          ]
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Forge",
+          "aliases": [],
+          "definition": "A volcano tied to the Space player's quest, whose activation transforms the surrounding land. Jade lights hers and wakes Echidna; a truce between denizens lets Hephaestus use its lava to repair the broken sword.",
+          "sourcePage": 3871,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3945,
+            3314
+          ]
         }
       ]
     },
@@ -10175,6 +10517,342 @@ window.HOMESTUCK_REFERENCE = {
             3200
           ],
           "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "genesis-frog",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "term": "Genesis Frog",
+          "aliases": [
+            "Speaker of the Vast Croak",
+            "Bilious Slick",
+            "Speaker of the Vast Joke"
+          ],
+          "from": "act-5-act-2-part-2",
+          "definition": "The frog bred through a session whose body is the new universe the players create. Consorts and Prospit worship him as the Speaker of the Vast Croak, while Derse forbids frogs and mocks him with names such as Bilious Slick.",
+          "sourcePage": 3318,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3319,
+            3320
+          ]
+        },
+        {
+          "term": "Genesis Frog",
+          "aliases": [
+            "Speaker of the Vast Croak",
+            "Bilious Slick",
+            "Speaker of the Vast Joke"
+          ],
+          "from": "act-5-act-2-part-3",
+          "definition": "The frog whose body is the universe created by a successful session, also called the Speaker of the Vast Croak or Bilious Slick. The trolls bred the kids' universe; Karkat believes omitting a crucial final gene sequence gave their frog, and that universe, cancer.",
+          "sourcePage": 3319,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3320,
+            4005,
+            4009,
+            4011,
+            4016,
+            4017
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frog-breeding",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "term": "Frog breeding",
+          "aliases": [],
+          "from": "act-5-act-2-part-2",
+          "definition": "The ectobiological quest assigned to the Space player to produce the Genesis Frog. It combines frog samples and carefully controlled mutations; planning to catch a frog later can prevent its appearification now, yielding the paradox ghost imprint needed for cloning.",
+          "sourcePage": 3305,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3315,
+            3316,
+            3318
+          ]
+        },
+        {
+          "term": "Frog breeding",
+          "aliases": [],
+          "from": "act-5-act-2-part-3",
+          "definition": "The Space player's ectobiological quest to breed the Genesis Frog by combining frog samples and carefully controlled mutations. Jade and Dave accelerate the work with time travel; completing the genetic sequence requires an elusive final frog whose absence Karkat believes made the universe the trolls created sick.",
+          "sourcePage": 3869,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3977,
+            3985,
+            4005,
+            4009,
+            4011,
+            4016,
+            4017,
+            3315,
+            3318
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matriorb",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "term": "Matriorb",
+          "aliases": [],
+          "from": "act-5-act-2-part-2",
+          "definition": "An egg that can hatch a new mother grub, making it essential to the trolls' plan to repopulate. Kanaya is entrusted with keeping it.",
+          "sourcePage": 3306,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "ancestor",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "term": "Ancestor",
+          "aliases": [],
+          "from": "act-5-act-2-part-2",
+          "definition": "A legendary adult troll said to be a younger troll's closest genetic counterpart. Troll lore connects their destinies, and a descendant may choose to follow an ancestor's legacy; this is different from a parent raising a child.",
+          "sourcePage": 3473,
+          "sourceKind": "direct"
+        },
+        {
+          "term": "Ancestor",
+          "aliases": [],
+          "from": "act-5-act-2-part-3",
+          "definition": "One of the ancient troll counterparts whose lives and genetic origins are entwined with the younger players. The trolls' ancestors were themselves the players of a peaceful earlier Alternia; its Scratch exchanged the generations' roles, and the Signless later recovered fragments of his former life.",
+          "sourcePage": 4053,
+          "sourceKind": "composite",
+          "sourcePages": [
+            4054,
+            3473
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beat-mesa",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "term": "Beat Mesa",
+          "aliases": [],
+          "from": "act-5-act-2-part-2",
+          "definition": "The record-shaped plateau on the Land of Heat and Clockwork used to initiate the Scratch. Its full diameter must be scratched with a sufficiently powerful needle to release the temporal energy for the reset.",
+          "sourcePage": 3628,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3629
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magic-cue-ball",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "term": "Magic cue ball",
+          "aliases": [
+            "Cue ball"
+          ],
+          "from": "act-5-act-2-part-2",
+          "definition": "An oracle that answers questions accurately, but hides its replies inside an opaque shell. Rose can read one using her abilities as a Seer; receiving a true answer does not guarantee understanding its consequences.",
+          "sourcePage": 3631,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3632,
+            3638,
+            3757
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grimdark",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "term": "Grimdark",
+          "aliases": [],
+          "from": "act-5-act-2-part-2",
+          "definition": "The name given to Rose's transformation as her involvement with the horrorterrors deepens. It goes beyond her earlier use of dark magic; Scratch warns that the powers she believed came from her wands were granted by those beings.",
+          "sourcePage": 3643,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3632,
+            3638
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legislacerator",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "term": "Legislacerator",
+          "aliases": [],
+          "from": "act-5-act-2-part-2",
+          "definition": "A member of the trolls' legal system who investigates suspects and brings them to justice. Redglare is the novice legislacerator sent after Mindfang.",
+          "sourcePage": 3517,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3518
+          ]
+        }
+      ]
+    },
+    {
+      "id": "choice",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "term": "The Choice",
+          "aliases": [
+            "Denizen's Choice"
+          ],
+          "from": "act-5-act-2-part-3",
+          "definition": "A personal dilemma offered by a denizen, often involving mortality or a difficult bargain rather than a compulsory fight. The terms depend on the encounter: Hephaestus offers Davesprite one repair, while Echidna makes Jade promise to bring the lands and their inhabitants with her when she leaves.",
+          "sourcePage": 3944,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3945,
+            3985
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seer",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "term": "Seer",
+          "aliases": [],
+          "from": "act-5-act-2-part-3",
+          "definition": "A player class whose role is to guide allies through knowledge of possible outcomes. A Seer of Mind specializes in the consequences of decisions; the role involves finding a path to victory rather than rushing into battle.",
+          "sourcePage": 3832,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3833,
+            3834,
+            3835
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rainbow-drinker",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "term": "Rainbow drinker",
+          "aliases": [],
+          "from": "act-5-act-2-part-3",
+          "definition": "The trolls' counterpart to a vampire, associated with drinking blood. Kanaya's revival gives her fangs and glowing skin, leading Jade to identify her as one.",
+          "sourcePage": 3978,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3523
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subjugglator",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "term": "Subjugglator",
+          "aliases": [
+            "Subjuggl8or"
+          ],
+          "from": "act-5-act-2-part-3",
+          "definition": "One of the brutal highblood enforcers who help maintain the Condesce's rule over land dwellers. They delegate authority to powerful castes beneath them, extending imperial control down the hemospectrum.",
+          "sourcePage": 4063,
+          "sourceKind": "direct"
+        }
+      ]
+    },
+    {
+      "id": "helmsman",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "term": "Helmsman",
+          "aliases": [],
+          "from": "act-5-act-2-part-3",
+          "definition": "A psychic forced to power an imperial spaceship for interstellar travel. The Psiioniic becomes the Condesce's Helmsman, and she extends his life to keep him in service.",
+          "sourcePage": 4060,
+          "sourceKind": "composite",
+          "sourcePages": [
+            4064
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vast-glub",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "term": "Vast Glub",
+          "aliases": [],
+          "from": "act-5-act-2-part-3",
+          "definition": "Gl'bgolyb's galaxy-wide psychic shriek, which kills trolls below the highest blood caste. It wipes out the Condesce's off-world empire, including the Psiioniic; the Condesce herself survives.",
+          "sourcePage": 4064,
+          "sourceKind": "composite",
+          "sourcePages": [
+            2441,
+            2464
+          ]
+        }
+      ]
+    },
+    {
+      "id": "red-miles",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "term": "Red Miles",
+          "aliases": [],
+          "from": "act-5-act-2-part-3",
+          "definition": "An attack that sends branching red tendrils outward from a royal ring. Jack uses it to tear through the Genesis Frog, devastating the universe inside it.",
+          "sourcePage": 4109,
+          "sourceKind": "composite",
+          "sourcePages": [
+            2555
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fourth-wall",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "term": "Fourth wall",
+          "aliases": [
+            "4th wall"
+          ],
+          "from": "act-5-act-2-part-3",
+          "definition": "A window-like device that can serve as a passage out of the kids' session. Jade enlarges it and steers a ship carrying John and the miniaturized lands and Battlefield through it to escape the Scratch.",
+          "sourcePage": 4109,
+          "sourceKind": "composite",
+          "sourcePages": [
+            3254
+          ]
         }
       ]
     }
