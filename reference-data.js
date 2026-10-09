@@ -10879,6 +10879,24 @@ window.HOMESTUCK_REFERENCE = {
           "sourceKind": "composite"
         },
         {
+          "from": "act-2",
+          "term": "John Egbert",
+          "aliases": [
+            "John",
+            "ectoBiologist"
+          ],
+          "definition": "The first of his friends to enter the Medium through Sburb, escaping the meteor along with his house. Rose supports him as his server player, while Nannasprite explains his larger quest and reveals that his father has been kidnapped.",
+          "sourcePage": 256,
+          "sourcePages": [
+            135,
+            421,
+            425,
+            26,
+            3
+          ],
+          "sourceKind": "composite"
+        },
+        {
           "from": "act-4",
           "term": "John Egbert",
           "aliases": [
