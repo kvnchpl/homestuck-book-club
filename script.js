@@ -407,10 +407,11 @@
 
   function showConcept(id, { updateHash = true } = {}) {
     const concept = (data.concepts || []).find(item => item.id === id);
-    if (!concept || !reached(concept.reveal) || !resolveVariant(concept.variants)) return false;
+    const variant = concept && reached(concept.reveal) && resolveVariant(concept.variants);
+    if (!variant) return false;
     const targetId = `concept-${id}`;
     if (!document.getElementById(targetId)) {
-      conceptSearch.value = '';
+      conceptSearch.value = variant.term;
       renderConcepts();
     }
     const entry = document.getElementById(targetId);
@@ -475,7 +476,7 @@
     const nameMatches = [];
     const definitionMatches = [];
     // Partition the alphabetical list so name matches lead without duplicates.
-    for (const concept of available) {
+    for (const concept of words.length ? available : []) {
       const { variant } = concept;
       const names = [variant.term, ...(variant.aliases || [])].map(searchableText);
       const matchesWords = text => words.every(word => text.includes(word));
@@ -506,8 +507,8 @@
     }
 
     conceptClear.disabled = !conceptSearch.value;
-    conceptEmpty.hidden = matches.length > 0;
-    conceptEmpty.textContent = available.length
+    conceptEmpty.hidden = !words.length || matches.length > 0;
+    conceptEmpty.textContent = !words.length ? '' : available.length
       ? 'No matching terms at this reading point. Try another word or clear the search.'
       : 'No terms have been added for this reading point yet.';
     appendix.hidden = false;

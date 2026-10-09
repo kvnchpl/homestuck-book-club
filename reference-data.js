@@ -10855,6 +10855,2009 @@ window.HOMESTUCK_REFERENCE = {
           ]
         }
       ]
+    },
+    {
+      "id": "person-john",
+      "characterId": "john",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "John Egbert",
+          "aliases": [
+            "John",
+            "ectoBiologist"
+          ],
+          "definition": "A boy who loves terrible movies, amateur magic, and video games. His online name is ectoBiologist. Rose helps him play Sburb, whose machinery turns his birthday into a struggle to escape an approaching meteor.",
+          "sourcePage": 4,
+          "sourcePages": [
+            26,
+            135,
+            204,
+            3
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "John Egbert",
+          "aliases": [
+            "John",
+            "ectoBiologist"
+          ],
+          "definition": "The Heir of Breath in the kids' Sburb session, exploring the Land of Wind and Shade. His dreamself belongs to Prospit. Rose is his server player, and Nannasprite is his guide to the game's strange rules.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            425,
+            4,
+            26
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "John Egbert",
+          "aliases": [
+            "John",
+            "ectoBiologist"
+          ],
+          "definition": "The Heir of Breath, now at god tier with power over wind. He ascends after dying on his quest bed, while his living dreamself becomes his continuing self. His land is the Land of Wind and Shade.",
+          "sourcePage": 3238,
+          "sourcePages": [
+            4,
+            26
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-rose",
+      "characterId": "rose",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Rose Lalonde",
+          "aliases": [
+            "Rose",
+            "tentacleTherapist"
+          ],
+          "definition": "John's friend and server player in Sburb, using the handle tentacleTherapist. She enjoys obscure literature, writing, knitting, and psychoanalysis. Through the game's interface, she rearranges John's home and helps him work out the equipment needed to enter.",
+          "sourcePage": 135,
+          "sourcePages": [
+            217,
+            153,
+            184,
+            216
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Rose Lalonde",
+          "aliases": [
+            "Rose",
+            "tentacleTherapist"
+          ],
+          "definition": "The Seer of Light in the kids' Sburb session, with a dreamself on Derse and a home in the Land of Light and Rain. John's server player, she also investigates the game's workings and records what she learns.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            217,
+            135
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Rose Lalonde",
+          "aliases": [
+            "Rose",
+            "tentacleTherapist"
+          ],
+          "definition": "The Seer of Light, investigating a way out of the kids' doomed session. She uses dark magic and plans to take the Tumor into the Furthest Ring to destroy the Green Sun, the source of Jack Noir's power.",
+          "sourcePage": 2728,
+          "sourcePages": [
+            3041,
+            3043,
+            3238,
+            217,
+            135
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Rose Lalonde",
+          "aliases": [
+            "Rose",
+            "tentacleTherapist"
+          ],
+          "definition": "The Seer of Light, drawing dark magic from the horrorterrors. After consulting Doc Scratch's magic cue ball, she enters a grimdark state. Her plan to destroy the Green Sun with the Tumor remains a dangerous attempt to defeat Jack Noir.",
+          "sourcePage": 3631,
+          "sourcePages": [
+            3632,
+            3643,
+            3041,
+            217,
+            135
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Rose Lalonde",
+          "aliases": [
+            "Rose",
+            "tentacleTherapist"
+          ],
+          "definition": "The Seer of Light, who takes the Tumor into the Furthest Ring with Dave. Their mission creates the Green Sun instead of destroying it. They ascend to god tier using the alternate quest beds inside Derse's moon.",
+          "sourcePage": 4109,
+          "sourcePages": [
+            1674,
+            217,
+            135
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-dave",
+      "characterId": "dave",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Dave Strider",
+          "aliases": [
+            "Dave",
+            "turntechGodhead"
+          ],
+          "definition": "John and Rose's friend, known online as turntechGodhead. He cultivates an ironic cool persona, mixes music, collects preserved animals, and practices with swords. His older brother's puppets are beginning to unsettle him.",
+          "sourcePage": 312,
+          "sourcePages": [
+            342,
+            382,
+            419
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Dave Strider",
+          "aliases": [
+            "Dave",
+            "turntechGodhead"
+          ],
+          "definition": "The Knight of Time, whose land is the Land of Heat and Clockwork and whose dreamself belongs to Derse. Davesprite is a version of him who returned from a doomed future and became his sprite guide.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            312,
+            382
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Dave Strider",
+          "aliases": [
+            "Dave",
+            "turntechGodhead"
+          ],
+          "definition": "The Knight of Time, using stable time loops to work with multiple points in his own life. Davesprite remains a separate, doomed-timeline counterpart. Dave's land is the Land of Heat and Clockwork, and his dreamself belongs to Derse.",
+          "sourcePage": 2737,
+          "sourcePages": [
+            1674,
+            312,
+            382
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Dave Strider",
+          "aliases": [
+            "Dave",
+            "turntechGodhead"
+          ],
+          "definition": "The Knight of Time, who helps Jade breed frogs and accompanies Rose on the Tumor mission. The bomb creates the Green Sun, and both travelers ascend to god tier on the alternate quest beds inside Derse's moon.",
+          "sourcePage": 3869,
+          "sourcePages": [
+            4109,
+            1674,
+            312,
+            382
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-jade",
+      "characterId": "jade",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Jade Harley",
+          "aliases": [
+            "Jade",
+            "gardenGnostic"
+          ],
+          "definition": "A girl with a love of gardening, nuclear physics, and advanced gadgets. Known online as gardenGnostic, she dreams on Prospit and receives glimpses of events through Skaia's clouds. Becquerel is her dog and guardian.",
+          "sourcePage": 789,
+          "sourcePages": [
+            1026,
+            1075,
+            768,
+            382
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Jade Harley",
+          "aliases": [
+            "Jade",
+            "gardenGnostic"
+          ],
+          "definition": "The Witch of Space in the kids' session, whose dreams on Prospit have helped her prepare for events before they happen. She lives with Becquerel and uses elaborate gadgets to stay in contact with her friends.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            789,
+            1075,
+            768,
+            382
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Jade Harley",
+          "aliases": [
+            "Jade",
+            "gardenGnostic"
+          ],
+          "definition": "The Witch of Space, now in the Land of Frost and Frogs. Her sprite guide, Jadesprite, combines Becquerel with Jade's dead dreamself, bringing the first guardian's powers into the session's final prototyping.",
+          "sourcePage": 2988,
+          "sourcePages": [
+            3238,
+            768,
+            382
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Jade Harley",
+          "aliases": [
+            "Jade",
+            "gardenGnostic"
+          ],
+          "definition": "The Witch of Space, responsible for breeding the Genesis Frog in the Land of Frost and Frogs. Kanaya helps explain the task. Her sprite guide is Jadesprite, made from Becquerel and Jade's dead dreamself.",
+          "sourcePage": 3305,
+          "sourcePages": [
+            3319,
+            3238,
+            768,
+            382
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Jade Harley",
+          "aliases": [
+            "Jade",
+            "gardenGnostic"
+          ],
+          "definition": "The Witch of Space, who reaches god tier and merges with Jadesprite, gaining first guardian powers. She shrinks the kids' lands and the Battlefield, then carries them with John through the fourth wall to escape the Scratch.",
+          "sourcePage": 4109,
+          "sourcePages": [
+            3985,
+            768,
+            382
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-dad",
+      "characterId": "dad",
+      "reveal": "act-1",
+      "variants": [
+        {
+          "from": "act-1",
+          "term": "Dad",
+          "aliases": [],
+          "definition": "John's father, whose enthusiastic baking fills their house with birthday cakes. His presence complicates John's attempts to retrieve the mail and get on with his plans, turning ordinary household errands into elaborate maneuvers.",
+          "sourcePage": 4,
+          "sourcePages": [
+            70
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Dad",
+          "aliases": [],
+          "definition": "John's father, an enthusiastic baker caught up in the kids' Sburb adventure. He and Rose's mother are found dead together, making the dangers of the session painfully personal for their children.",
+          "sourcePage": 70,
+          "sourcePages": [
+            3696
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-mom",
+      "characterId": "mom",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Mom",
+          "aliases": [],
+          "definition": "Rose's mother, associated with the liquor bottles around their home. Their household becomes part of Rose's urgent effort to enter Sburb while a forest fire threatens the residence and cuts her off from safety.",
+          "sourcePage": 365,
+          "sourcePages": [
+            419
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Mom",
+          "aliases": [],
+          "definition": "Rose's mother, who enters the worlds of the kids' Sburb session. She and John's father are found dead together; her death becomes part of Rose's confrontation with the session's unfolding disaster.",
+          "sourcePage": 3696,
+          "sourcePages": [
+            1674,
+            365
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-bro",
+      "characterId": "bro",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Bro",
+          "aliases": [],
+          "definition": "Dave's older brother, whose puppet collection and websites embody an extreme version of the irony Dave tries to imitate. Dave seeks his copy of Sburb to help Rose, while privately admitting that the puppets frighten him.",
+          "sourcePage": 419,
+          "sourcePages": [],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Bro",
+          "aliases": [],
+          "definition": "Dave's older brother and guardian, a formidable swordsman with an unsettling devotion to puppets. He thoroughly defeats Dave in their rooftop duel, then gives him the game discs needed to help Rose enter Sburb.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            419
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Bro",
+          "aliases": [],
+          "definition": "Dave's older brother and guardian, whose swordsmanship and puppet-centered brand of irony shaped Dave's upbringing. He is killed during the conflict with Jack Noir, leaving Dave to confront the loss of his guardian.",
+          "sourcePage": 3202,
+          "sourcePages": [
+            3238,
+            1674,
+            419
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-grandpa",
+      "characterId": "grandpa",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Grandpa",
+          "aliases": [],
+          "definition": "Jade's deceased grandfather, whose preserved body remains in her home. She still finds him difficult to deal with, even after his death, amid the unusual household she shares with her dog Becquerel.",
+          "sourcePage": 790,
+          "sourcePages": [
+            919,
+            920,
+            1075
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-nannasprite",
+      "characterId": "nannasprite",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Nannasprite",
+          "aliases": [],
+          "definition": "John's sprite guide, created by combining Harlequinsprite with his grandmother's ashes. She explains Skaia, the gates, and the journey ahead, although her answers often preserve the game's mysteries rather than resolving them outright.",
+          "sourcePage": 281,
+          "sourcePages": [
+            419,
+            425,
+            420
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-jaspersprite",
+      "characterId": "jaspersprite",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Jaspersprite",
+          "aliases": [],
+          "definition": "Rose's sprite guide, combining her dead cat Jaspers with an eldritch princess doll. Like the other sprites, he is both a familiar presence from his player's life and a source of guidance within Sburb.",
+          "sourcePage": 1626,
+          "sourcePages": [
+            1674
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-davesprite",
+      "characterId": "davesprite",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Davesprite",
+          "aliases": [],
+          "definition": "A Dave from a doomed future who travels back and prototypes himself into Crowsprite. He becomes the surviving Dave's sprite guide, retaining his own experiences rather than simply being another point along that Dave's timeline.",
+          "sourcePage": 1651,
+          "sourcePages": [
+            1674
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Davesprite",
+          "aliases": [],
+          "definition": "The doomed-timeline Dave who became Crowsprite's second prototype and Dave's guide. Injured and missing a wing, he meets Hephaestus and learns about the Choice, helping arrange a truce and the repair of a sword.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            3889,
+            3944,
+            3945,
+            1651
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-jadesprite",
+      "characterId": "jadesprite",
+      "reveal": "act-5-act-2-part-1",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Jadesprite",
+          "aliases": [],
+          "definition": "Jade's sprite guide, created by prototyping her dead dreamself into Becsprite. She combines Jade's memories with Becquerel's first guardian powers, but her distress makes her far from the straightforward helper Jade hoped to summon.",
+          "sourcePage": 3213,
+          "sourcePages": [
+            3238
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Jadesprite",
+          "aliases": [],
+          "definition": "The sprite made from Becquerel and Jade's dead dreamself. At Jade's god-tier ascension, Jadesprite merges with her, joining the first guardian's powers to the Witch of Space instead of continuing as a separate guide.",
+          "sourcePage": 3238,
+          "sourcePages": [
+            4109,
+            3213
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-bec",
+      "characterId": "bec",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Becquerel",
+          "aliases": [
+            "Bec"
+          ],
+          "definition": "Jade's dog, guardian, and best friend. He even appears in her dreams on Prospit, where she learns that his birthday falls on the same day as John's and realizes his cake would need a great many candles.",
+          "sourcePage": 1075,
+          "sourcePages": [
+            942
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Becquerel",
+          "aliases": [
+            "Bec"
+          ],
+          "definition": "Earth's first guardian and Jade's dog. His prototyping creates Becsprite and passes his Green Sun powers to the royal rings and enemies. Jade later adds her dead dreamself, turning Becsprite into Jadesprite.",
+          "sourcePage": 2927,
+          "sourcePages": [
+            3238,
+            942
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-wv",
+      "characterId": "wv",
+      "reveal": "act-2",
+      "variants": [
+        {
+          "from": "act-2",
+          "term": "Wayward Vagabond",
+          "aliases": [
+            "WV"
+          ],
+          "definition": "A wanderer who declares himself mayor of Can Town, building an orderly little society from empty cans. He fashions a mayoral sash from cables and places a book of manners atop his improvised city hall.",
+          "sourcePage": 685,
+          "sourcePages": [
+            666
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Wayward Vagabond",
+          "aliases": [
+            "Warweary Villein",
+            "WV"
+          ],
+          "definition": "The former Warweary Villein, a pawn who rebelled against the kings during the Battlefield's war. As an exile, he becomes the founder and mayor of Can Town, imagining a gentler form of government among his cans.",
+          "sourcePage": 1988,
+          "sourcePages": [
+            685,
+            666
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Wayward Vagabond",
+          "aliases": [
+            "Warweary Villein",
+            "WV"
+          ],
+          "definition": "The former Warweary Villein and self-appointed mayor of Can Town. This exiled rebel against the kings is severely wounded by Jack Noir during the final events surrounding the kids' session.",
+          "sourcePage": 1988,
+          "sourcePages": [
+            685,
+            4109,
+            666
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-pm",
+      "characterId": "pm",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Peregrine Mendicant",
+          "aliases": [
+            "PM"
+          ],
+          "definition": "A wandering mail carrier who treats delivery as a sacred obligation. Even in the wasteland, she refuses to open someone else's envelope and remains determined to find its intended recipient.",
+          "sourcePage": 892,
+          "sourcePages": [
+            894
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Peregrine Mendicant",
+          "aliases": [
+            "Parcel Mistress",
+            "PM"
+          ],
+          "definition": "The former Parcel Mistress, a Prospitian mail carrier whose determination to deliver a package draws her into the conflict between kingdoms. In exile she is the Peregrine Mendicant, still devoted to the mail.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            892,
+            894
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Prospitian Monarch",
+          "aliases": [
+            "Parcel Mistress",
+            "Peregrine Mendicant",
+            "PM"
+          ],
+          "definition": "The former Parcel Mistress and Peregrine Mendicant, now entrusted with Prospit's crown. Her journey from mail carrier to monarch grows out of her determination to complete a delivery despite the war between the kingdoms.",
+          "sourcePage": 3018,
+          "sourcePages": [
+            1674,
+            894
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Prospitian Monarch",
+          "aliases": [
+            "Parcel Mistress",
+            "Peregrine Mendicant",
+            "PM"
+          ],
+          "definition": "The former mail carrier who becomes Prospit's queen. By wearing the royal ring after Becquerel's prototyping, she gains first guardian powers, becoming a counterpart to the transformed Jack Noir.",
+          "sourcePage": 3018,
+          "sourcePages": [
+            3238,
+            4109
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-ar",
+      "characterId": "ar",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Aimless Renegade",
+          "aliases": [
+            "AR"
+          ],
+          "definition": "A wasteland inhabitant who appoints himself a defender of the law. He treats other wanderers as intruders in his jurisdiction and responds with gunfire, even when his usually reliable marksmanship lets him down.",
+          "sourcePage": 1100,
+          "sourcePages": [
+            1103
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Aimless Renegade",
+          "aliases": [
+            "Authority Regulator",
+            "AR"
+          ],
+          "definition": "The former Authority Regulator, now a self-appointed law enforcer in the wasteland. His earlier duties in the game and his later insistence on jurisdiction connect his exile identity with his old occupation.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            1100
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Aimless Renegade",
+          "aliases": [
+            "Authority Regulator",
+            "AR"
+          ],
+          "definition": "The former Authority Regulator, an exile who continues to act as a wasteland law enforcer. Jack Noir kills him during the closing events of the kids' session, ending his improvised defense of its ruins.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            1100,
+            4109
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-wq",
+      "characterId": "wq",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Windswept Questant",
+          "aliases": [
+            "White Queen",
+            "WQ"
+          ],
+          "definition": "The former White Queen of Prospit, encountered in exile as the Windswept Questant. Her royal past connects the wasteland travelers with the war inside the kids' session and the struggle over its crowns.",
+          "sourcePage": 1543,
+          "sourcePages": [
+            1674
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Windswept Questant",
+          "aliases": [
+            "White Queen",
+            "WQ"
+          ],
+          "definition": "The former White Queen of Prospit, known in exile as the Windswept Questant. She is killed by Jack Noir during the final events surrounding the kids' session, after her crown has passed to PM.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            3018,
+            4109,
+            1543
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-jack-noir",
+      "characterId": "jack-noir",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Jack Noir",
+          "aliases": [],
+          "definition": "The archagent of the Dark Kingdom, overseeing its affairs through window-like walls in his office. He is preoccupied with a troublesome prisoner and resents the theft of the fourth wall needed to complete his workspace.",
+          "sourcePage": 955,
+          "sourcePages": [],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Jack Noir",
+          "aliases": [],
+          "definition": "The kids' session's archagent, who overthrows the Black Queen and takes her ring. Its prototypings transform him into a far greater threat. Spades Slick is his counterpart in the trolls' session, not the same individual.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            1988,
+            955
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Jack Noir",
+          "aliases": [
+            "Bec Noir"
+          ],
+          "definition": "The kids' session's rogue archagent, also called Bec Noir. Becquerel's prototyping grants his stolen ring first guardian powers drawn from the Green Sun. He devastates the session and is the intruder who ruins the trolls' victory.",
+          "sourcePage": 3238,
+          "sourcePages": [
+            955
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-dd",
+      "characterId": "dd",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Draconian Dignitary",
+          "aliases": [
+            "DD"
+          ],
+          "definition": "One of Jack Noir's agents in the kids' session. He is the counterpart of Diamonds Droog, but belongs to this session's royal bureaucracy rather than being the Midnight Crew member himself.",
+          "sourcePage": 1988,
+          "sourcePages": [
+            1674
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-cd",
+      "characterId": "cd",
+      "reveal": "act-4",
+      "variants": [
+        {
+          "from": "act-4",
+          "term": "Courtyard Droll",
+          "aliases": [
+            "CD"
+          ],
+          "definition": "One of Jack Noir's lackeys in the kids' session. He is the counterpart of Clubs Deuce, sharing a recognizable counterpart relationship without being the same person or a member of the same gang.",
+          "sourcePage": 1784,
+          "sourcePages": [
+            1988,
+            1674
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Courtyard Droll",
+          "aliases": [
+            "CD"
+          ],
+          "definition": "Jack Noir's lackey and the kids' session's counterpart of Clubs Deuce. His involvement in the events around Jade's quest bed ends with Jack killing him during Cascade.",
+          "sourcePage": 1988,
+          "sourcePages": [
+            1674,
+            4109,
+            1784
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-hb",
+      "characterId": "hb",
+      "reveal": "act-3",
+      "variants": [
+        {
+          "from": "act-3",
+          "term": "Hegemonic Brute",
+          "aliases": [
+            "HB"
+          ],
+          "definition": "An agent serving Jack Noir in the Dark Kingdom. He belongs to the group carrying out the archagent's business while Jack deals with a troublesome prisoner and the frustrations of his office.",
+          "sourcePage": 955,
+          "sourcePages": [
+            957
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Hegemonic Brute",
+          "aliases": [
+            "HB"
+          ],
+          "definition": "Jack Noir's muscle in the kids' session, and the counterpart of Hearts Boxcars. He is killed during the upheaval around Jack's seizure of power; the Midnight Crew's Boxcars remains a separate character.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            1988,
+            957
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-spades-slick",
+      "characterId": "spades-slick",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Spades Slick",
+          "aliases": [],
+          "definition": "Leader of the Midnight Crew, raiding the Felt's mansion after their attack on his casino. He directs the gang's revenge mission and seeks Lord English's secret vault, contending with opponents whose time powers complicate the assault.",
+          "sourcePage": 1155,
+          "sourcePages": [
+            1172
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Spades Slick",
+          "aliases": [],
+          "definition": "Leader of the Midnight Crew and the trolls' session's counterpart of Jack Noir. His campaign against the Felt belongs to a different session from the kids' struggle against their own increasingly dangerous archagent.",
+          "sourcePage": 1155,
+          "sourcePages": [
+            1674
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Spades Slick",
+          "aliases": [],
+          "definition": "The Midnight Crew's leader and the trolls' counterpart of Jack Noir. At the climax of Act 5, he shoots Snowman, whose life is tied to the trolls' universe, helping bring about that universe's destruction.",
+          "sourcePage": 1155,
+          "sourcePages": [
+            1674,
+            1268,
+            4109
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-diamonds-droog",
+      "characterId": "diamonds-droog",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Diamonds Droog",
+          "aliases": [],
+          "definition": "A member of the Midnight Crew dispatched through the Felt's mansion on Spades Slick's revenge mission. He values finely tailored suits, stores his equipment in a Brawlsoleum, and fights with an Ultra-Violence Cuestick.",
+          "sourcePage": 1155,
+          "sourcePages": [
+            1199,
+            1200,
+            1231
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Diamonds Droog",
+          "aliases": [],
+          "definition": "A suit-loving member of the Midnight Crew, armed with an Ultra-Violence Cuestick. His counterpart in the kids' session is the Draconian Dignitary, one of Jack Noir's agents; the two retain separate identities.",
+          "sourcePage": 1200,
+          "sourcePages": [
+            1231,
+            1674,
+            1988,
+            1155
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-clubs-deuce",
+      "characterId": "clubs-deuce",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Clubs Deuce",
+          "aliases": [],
+          "definition": "A member of the Midnight Crew taking part in the raid on the Felt's mansion. His equipment includes the Crook of Felony, and he keeps an assortment of weapons and objects in his Battledrobe.",
+          "sourcePage": 1155,
+          "sourcePages": [
+            1178,
+            1192
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Clubs Deuce",
+          "aliases": [],
+          "definition": "A Midnight Crew member equipped with the Crook of Felony and a Battledrobe. His counterpart in the kids' session is the Courtyard Droll, one of Jack Noir's lackeys, rather than another identity for Deuce himself.",
+          "sourcePage": 1178,
+          "sourcePages": [
+            1192,
+            1674,
+            1988,
+            1155
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-hearts-boxcars",
+      "characterId": "hearts-boxcars",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Hearts Boxcars",
+          "aliases": [],
+          "definition": "The Midnight Crew's heavy muscle and expert safecracker. During the raid on the Felt's mansion, Spades Slick sends him toward Lord English's vault while the others work to neutralize the rival gang.",
+          "sourcePage": 1155,
+          "sourcePages": [
+            1172
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Hearts Boxcars",
+          "aliases": [],
+          "definition": "The Midnight Crew's muscle and safecracker, responsible for cracking the Felt's vault during the raid. His counterpart in the kids' session is the Hegemonic Brute; their similar appearances do not make them the same person.",
+          "sourcePage": 1172,
+          "sourcePages": [
+            1674,
+            1988,
+            1155
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-snowman",
+      "characterId": "snowman",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Snowman",
+          "aliases": [],
+          "definition": "A woman whose presence brings the mansion's gunfights to a halt. Killing her would destroy the universe, giving everyone a powerful reason to avoid treating her like the other targets in the Midnight Crew's raid.",
+          "sourcePage": 1268,
+          "sourcePages": [],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-4",
+          "term": "Snowman",
+          "aliases": [],
+          "definition": "The former Black Queen of the trolls' session, now associated with the Felt. Her life is bound to the universe: killing her destroys it. That rule makes her a uniquely dangerous opponent for Spades Slick.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            1268
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Snowman",
+          "aliases": [],
+          "definition": "The trolls' former Black Queen and a member of the Felt, whose life is tied to their universe. Spades Slick shoots her during Cascade, bringing her death and that universe's destruction into the Tumor's final countdown.",
+          "sourcePage": 1674,
+          "sourcePages": [
+            1268,
+            4109
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-doc-scratch",
+      "characterId": "doc-scratch",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Doc Scratch",
+          "aliases": [],
+          "definition": "Alternia's first guardian and an officer of Lord English. He has spent centuries preparing for his master's arrival at the end of the universe, combining enormous power with a carefully controlled presentation of what he knows.",
+          "sourcePage": 2253,
+          "sourcePages": [],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Doc Scratch",
+          "aliases": [],
+          "definition": "Alternia's first guardian, preparing the universe for Lord English. His claims of omniscience coexist with specific blind spots. Even when his answers are true, their wording and omissions can guide others toward conclusions that serve his plans.",
+          "sourcePage": 2253,
+          "sourcePages": [
+            3238,
+            3627,
+            3757
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-lord-english",
+      "characterId": "lord-english",
+      "reveal": "intermission",
+      "variants": [
+        {
+          "from": "intermission",
+          "term": "Lord English",
+          "aliases": [],
+          "definition": "The boss of the Felt and owner of the mansion targeted by the Midnight Crew. His secret vault is the raid's objective, while his subordinates' time-bending abilities make getting to it a complicated business.",
+          "sourcePage": 1155,
+          "sourcePages": [],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-1",
+          "term": "Lord English",
+          "aliases": [],
+          "definition": "An indestructible demon whom Doc Scratch serves. Alternia's first guardian prepares for his arrival, which is tied to the termination of the universe. He is also the mysterious boss whose mansion houses the Felt.",
+          "sourcePage": 2253,
+          "sourcePages": [
+            1155
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-aradia",
+      "characterId": "aradia",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Aradia Megido",
+          "aliases": [
+            "Aradia",
+            "apocalypseArisen"
+          ],
+          "definition": "The trolls' Maid of Time, once interested in archaeology and roleplaying. Voices of the dead lead her to the ruins behind Sgrub's discovery. Introduced as a ghost, she later inhabits a robot body during the trolls' game.",
+          "sourcePage": 2134,
+          "sourcePages": [
+            2540,
+            2287
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Aradia Megido",
+          "aliases": [
+            "Aradia",
+            "apocalypseArisen"
+          ],
+          "definition": "The trolls' Maid of Time, whose path has led from ghost to robot. Her robot body explodes while the trolls hide on the meteor, complicating the fate of a player already associated with death and alternate timelines.",
+          "sourcePage": 2134,
+          "sourcePages": [
+            2540,
+            3186
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Aradia Megido",
+          "aliases": [
+            "Aradia",
+            "apocalypseArisen"
+          ],
+          "definition": "The trolls' Maid of Time, now alive at god tier after the destruction of her robot body. She can hold others in time-freezing spells and appears among the dream bubbles, distinct from the dead alternate versions of herself.",
+          "sourcePage": 3297,
+          "sourcePages": [
+            3565,
+            3591,
+            3592,
+            2134
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-tavros",
+      "characterId": "tavros",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Tavros Nitram",
+          "aliases": [
+            "Tavros",
+            "adiosToreador"
+          ],
+          "definition": "The trolls' Page of Breath, a gentle fantasy enthusiast who can commune with animals. He loves creature-training games, roleplaying, and stories of flight, while his history with the other players makes confidence difficult.",
+          "sourcePage": 2101,
+          "sourcePages": [
+            2348
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Tavros Nitram",
+          "aliases": [
+            "Tavros",
+            "adiosToreador"
+          ],
+          "definition": "The trolls' Page of Breath, now fitted with robotic legs. His animal communion extends even to Becquerel, giving him an unexpected connection to events on Earth despite his often hesitant dealings with the other players.",
+          "sourcePage": 2348,
+          "sourcePages": [
+            3053,
+            3055,
+            2101
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Tavros Nitram",
+          "aliases": [
+            "Tavros",
+            "adiosToreador"
+          ],
+          "definition": "The trolls' Page of Breath, known for animal communion and his longing to fly. He is dead following his confrontation with Vriska, ending the waking life in which he had recently received robotic legs.",
+          "sourcePage": 2348,
+          "sourcePages": [
+            3053,
+            3055,
+            3299,
+            2101
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-sollux",
+      "characterId": "sollux",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Sollux Captor",
+          "aliases": [
+            "Sollux",
+            "twinArmageddons"
+          ],
+          "definition": "The trolls' Mage of Doom, a gifted hacker who adapts the ruins' code into Sgrub. He hears the psychic cries of people about to die and distributes the game believing it offers a way to save his species.",
+          "sourcePage": 2076,
+          "sourcePages": [
+            2514
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Sollux Captor",
+          "aliases": [
+            "Sollux",
+            "twinArmageddons"
+          ],
+          "definition": "The trolls' Mage of Doom and the hacker who adapted Sgrub's code. Now blind, he remains caught among the survivors on the meteor, with his psychic abilities and visions of death central to his role.",
+          "sourcePage": 2076,
+          "sourcePages": [
+            2514,
+            3476
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Sollux Captor",
+          "aliases": [
+            "Sollux",
+            "twinArmageddons"
+          ],
+          "definition": "The trolls' Mage of Doom, whose divided relationship with death leaves him partly a ghost. After losing his ordinary sight, he can see the Green Sun in two dimensions, continuing the doubled patterns that mark his life.",
+          "sourcePage": 2514,
+          "sourcePages": [
+            3998,
+            4000,
+            2076
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-karkat",
+      "characterId": "karkat",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Karkat Vantas",
+          "aliases": [
+            "Karkat",
+            "carcinoGeneticist"
+          ],
+          "definition": "The trolls' Knight of Blood, a combative friend whose constant shouting conceals a fondness for romantic comedies. He practices with a sickle, writes destructive computer programs, and takes part in Sgrub on the Red Team.",
+          "sourcePage": 1994,
+          "sourcePages": [
+            2059,
+            2318
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Karkat Vantas",
+          "aliases": [
+            "Karkat",
+            "carcinoGeneticist"
+          ],
+          "definition": "The trolls' Knight of Blood, who helped Kanaya breed their Genesis Frog. He believes their rushed work gave the kids' universe cancer. He is also the Signless's descendant and becomes Gamzee's moirail amid the meteor's crisis.",
+          "sourcePage": 2059,
+          "sourcePages": [
+            3869,
+            4005,
+            4016,
+            4085,
+            4096,
+            1994
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-nepeta",
+      "characterId": "nepeta",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Nepeta Leijon",
+          "aliases": [
+            "Nepeta",
+            "arsenicCatnip"
+          ],
+          "definition": "The trolls' Rogue of Heart, a hunter who lives in a cave and paints stories on its walls. She enjoys friendly roleplaying but avoids the dangerous games that injured her friends, balancing fierce hunting skills with playful affection.",
+          "sourcePage": 2156,
+          "sourcePages": [
+            2532
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Nepeta Leijon",
+          "aliases": [
+            "Nepeta",
+            "arsenicCatnip"
+          ],
+          "definition": "The trolls' Rogue of Heart, a cave-dwelling hunter and enthusiastic roleplayer. She is among the dead after violence overtakes the trolls' meteor hideout, bringing her playful stories and close friendships into the group's losses.",
+          "sourcePage": 2156,
+          "sourcePages": [
+            2532,
+            3711
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-kanaya",
+      "characterId": "kanaya",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Kanaya Maryam",
+          "aliases": [
+            "Kanaya",
+            "grimAuxiliatrix"
+          ],
+          "definition": "The trolls' Sylph of Space, drawn to fashion, landscaping, and supernatural romance. She enjoys sunlight and uses a lipstick tube that transforms into a chainsaw, combining her aesthetic interests with a formidable weapon.",
+          "sourcePage": 2323,
+          "sourcePages": [
+            2324,
+            2565
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Kanaya Maryam",
+          "aliases": [
+            "Kanaya",
+            "grimAuxiliatrix"
+          ],
+          "definition": "The trolls' Sylph of Space and their session's frog breeder, helping Jade understand the same responsibility. After being killed, she revives with glowing skin and continues fighting with her chainsaw.",
+          "sourcePage": 2565,
+          "sourcePages": [
+            3305,
+            3319,
+            3347,
+            3521,
+            3523,
+            2323
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Kanaya Maryam",
+          "aliases": [
+            "Kanaya",
+            "grimAuxiliatrix"
+          ],
+          "definition": "The trolls' Sylph of Space and frog breeder, now identified as a rainbow drinker after her revival. She helps Jade with the Genesis Frog task and is the descendant of the Dolorosa, who raised the Signless.",
+          "sourcePage": 2565,
+          "sourcePages": [
+            3305,
+            3978,
+            4057,
+            2323
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-terezi",
+      "characterId": "terezi",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Terezi Pyrope",
+          "aliases": [
+            "Terezi",
+            "gallowsCalibrator"
+          ],
+          "definition": "The trolls' Seer of Mind, fascinated by dragons and Alternian justice. Blind, she reads through smell and taste and stages trials with her scalemates, pursuing the role of legislacerator through a mix of play and brutal legal study.",
+          "sourcePage": 2031,
+          "sourcePages": [
+            2523
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Terezi Pyrope",
+          "aliases": [
+            "Terezi",
+            "gallowsCalibrator"
+          ],
+          "definition": "The trolls' Seer of Mind, able to perceive the consequences of decisions and possible paths ahead. Her judgment of Vriska becomes a deadly choice about the group's future, rather than a simple contest of luck.",
+          "sourcePage": 2523,
+          "sourcePages": [
+            3832,
+            3833,
+            3835,
+            3863,
+            2031
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-vriska",
+      "characterId": "vriska",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Vriska Serket",
+          "aliases": [
+            "Vriska",
+            "arachnidsGrip"
+          ],
+          "definition": "A troll devoted to extreme roleplaying, games of chance, and doomsday devices. Her hungry spider lusus makes those games lethal for other young trolls, while her reliance on fortune-telling reflects an obsessive struggle with luck.",
+          "sourcePage": 2195,
+          "sourcePages": [],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Vriska Serket",
+          "aliases": [
+            "Vriska",
+            "arachnidsGrip"
+          ],
+          "definition": "The trolls' Thief of Light, who reaches god tier and involves herself in the kids' adventure. Her psychic influence over humans is limited to putting them to sleep or waking them, unlike her more direct control over trolls.",
+          "sourcePage": 2974,
+          "sourcePages": [
+            3238,
+            2195
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Vriska Serket",
+          "aliases": [
+            "Vriska",
+            "arachnidsGrip"
+          ],
+          "definition": "The trolls' god-tier Thief of Light, able to steal luck and influence humans' sleep. After Terezi kills her, she appears in dream bubbles, where her story continues apart from the survivors' waking lives.",
+          "sourcePage": 3238,
+          "sourcePages": [
+            3771,
+            3775,
+            3863,
+            3882,
+            3905,
+            2195
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-equius",
+      "characterId": "equius",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Equius Zahhak",
+          "aliases": [
+            "Equius",
+            "centaursTesticle"
+          ],
+          "definition": "The trolls' Heir of Void, a robotics enthusiast with extraordinary strength. He longs to excel at archery but repeatedly breaks his bows, and his admiration for aristocratic status sits alongside an intense fascination with physical power.",
+          "sourcePage": 2211,
+          "sourcePages": [
+            2540
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Equius Zahhak",
+          "aliases": [
+            "Equius",
+            "centaursTesticle"
+          ],
+          "definition": "The trolls' Heir of Void, a powerful robotics enthusiast whose fixation on hierarchy shapes his dealings with others. He is killed during the violence on the meteor, despite the enormous physical strength that once defined him.",
+          "sourcePage": 2211,
+          "sourcePages": [
+            2540,
+            3448
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-gamzee",
+      "characterId": "gamzee",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Gamzee Makara",
+          "aliases": [
+            "Gamzee",
+            "terminallyCapricious"
+          ],
+          "definition": "A troll devoted to an obscure clown-centered religion, with a love of Faygo, baking, and horns. He considers Karkat his best friend and plays Sgrub on the Red Team, initially presenting a relaxed, whimsical manner.",
+          "sourcePage": 2012,
+          "sourcePages": [
+            2013,
+            2318
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Gamzee Makara",
+          "aliases": [
+            "Gamzee",
+            "terminallyCapricious"
+          ],
+          "definition": "The trolls' Bard of Rage, whose clown-centered faith takes a violent turn during the meteor crisis. His cheerful manner gives way to threats and killings, making him a danger to the friends who survived their session with him.",
+          "sourcePage": 3360,
+          "sourcePages": [
+            3448,
+            3711,
+            2012
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Gamzee Makara",
+          "aliases": [
+            "Gamzee",
+            "terminallyCapricious"
+          ],
+          "definition": "The trolls' Bard of Rage, responsible for deadly violence on the meteor. Karkat reaches him through a calming embrace, establishing a moirallegiance that changes their relationship and interrupts the immediate danger to the group.",
+          "sourcePage": 3360,
+          "sourcePages": [
+            3448,
+            3711,
+            4096,
+            2012
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-eridan",
+      "characterId": "eridan",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Eridan Ampora",
+          "aliases": [
+            "Eridan",
+            "caligulasAquarium"
+          ],
+          "definition": "A sea-dwelling troll obsessed with military history, grandiose conquest, and the destruction of land dwellers. He searches for a working doomsday device and enjoys the image of magic despite insisting it is not real.",
+          "sourcePage": 2439,
+          "sourcePages": [
+            2408
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Eridan Ampora",
+          "aliases": [
+            "Eridan",
+            "caligulasAquarium"
+          ],
+          "definition": "The trolls' Prince of Hope, a sea dweller with ambitions of conquest and a theatrical interest in magic. He acquires a wand, adding a new weapon to the rifle he used during the trolls' game.",
+          "sourcePage": 2439,
+          "sourcePages": [
+            2456,
+            3046,
+            3047,
+            2408
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Eridan Ampora",
+          "aliases": [
+            "Eridan",
+            "caligulasAquarium"
+          ],
+          "definition": "The trolls' Prince of Hope, whose wand becomes a weapon against his fellow survivors. His violence on the meteor ends when the revived Kanaya kills him, bringing his grandiose ambitions to an abrupt end.",
+          "sourcePage": 3046,
+          "sourcePages": [
+            3352,
+            3347,
+            3535,
+            2408,
+            2439
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-feferi",
+      "characterId": "feferi",
+      "reveal": "act-5-act-1",
+      "variants": [
+        {
+          "from": "act-5-act-1",
+          "term": "Feferi Peixes",
+          "aliases": [
+            "Feferi",
+            "cuttlefishCuller"
+          ],
+          "definition": "The trolls' Witch of Life, a sea dweller who cares for marine creatures and imagines a kinder version of troll society. Her vast lusus Gl'bgolyb protects her while whispering troubling prophecies about their species' future.",
+          "sourcePage": 2441,
+          "sourcePages": [
+            2466,
+            2422
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-1",
+          "term": "Feferi Peixes",
+          "aliases": [
+            "Feferi",
+            "cuttlefishCuller"
+          ],
+          "definition": "The trolls' Witch of Life, who asks the horrorterrors to create dream bubbles where the dead can gather. She appears as a ghost in one of these spaces, introducing their role beyond ordinary dreams.",
+          "sourcePage": 2466,
+          "sourcePages": [
+            2991,
+            2992,
+            2994,
+            2422,
+            2441
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Feferi Peixes",
+          "aliases": [
+            "Feferi",
+            "cuttlefishCuller"
+          ],
+          "definition": "The trolls' Witch of Life, killed during Eridan's attack on the meteor. Her request to the horrorterrors helped create dream bubbles, and her ghost appears there, continuing her connection to the others after death.",
+          "sourcePage": 2466,
+          "sourcePages": [
+            2991,
+            2994,
+            3352,
+            2422,
+            2441
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-handmaid",
+      "characterId": "handmaid",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "The Handmaid",
+          "aliases": [],
+          "definition": "Aradia's ancestor and a time-traveling servant of Lord English. Doc Scratch prepares her for a life spent carrying out her master's work across Alternian history, tying her apparent freedom to another form of service.",
+          "sourcePage": 4068,
+          "sourcePages": [
+            4069
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-summoner",
+      "characterId": "summoner",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "The Summoner",
+          "aliases": [],
+          "definition": "Tavros's ancestor, described in a prophecy as a winged rebel with the power to commune with animals. The account forecasts his future role rather than showing the rebellion itself at this point.",
+          "sourcePage": 3757,
+          "sourcePages": [
+            3758
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "The Summoner",
+          "aliases": [],
+          "definition": "Tavros's winged ancestor, who leads a rebellion against the Condesce. Its aftermath changes Alternian society: adult trolls are sent off-world, leaving the young to grow up on the planet under the care of lusii.",
+          "sourcePage": 3758,
+          "sourcePages": [
+            4063,
+            3757
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-psiioniic",
+      "characterId": "psiioniic",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "The Psiioniic",
+          "aliases": [
+            "Psiioniic"
+          ],
+          "definition": "Sollux's ancestor, a powerful telekinetic and follower of the Signless. The Condesce forces him to serve as her battleship's helmsman, extending his life until the Vast Glub kills him along with the off-world empire.",
+          "sourcePage": 4058,
+          "sourcePages": [
+            4060,
+            4064
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-signless",
+      "characterId": "signless",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "The Signless",
+          "aliases": [
+            "The Sufferer",
+            "Sufferer",
+            "Signless"
+          ],
+          "definition": "Karkat's ancestor, also known as the Sufferer. Memories of a gentler world inspire him to preach compassion and equality between bloodlines. His execution turns his suffering and restraints into symbols for the followers who preserve his message.",
+          "sourcePage": 4054,
+          "sourcePages": [
+            4055,
+            4056,
+            4085
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-disciple",
+      "characterId": "disciple",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "The Disciple",
+          "aliases": [
+            "Disciple"
+          ],
+          "definition": "Nepeta's ancestor and a devoted follower of the Signless. She records his teachings and survives the suppression of his movement when Darkleer spares her, preserving the message after its preacher is executed.",
+          "sourcePage": 4058,
+          "sourcePages": [
+            4059
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-dolorosa",
+      "characterId": "dolorosa",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "The Dolorosa",
+          "aliases": [
+            "Dolorosa"
+          ],
+          "definition": "Kanaya's ancestor, formerly an attendant to the Mother Grub in the brooding caverns. She abandons that role to raise the Signless, becoming both his caregiver and the first follower of his teachings.",
+          "sourcePage": 4057,
+          "sourcePages": [],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-redglare",
+      "characterId": "redglare",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Neophyte Redglare",
+          "aliases": [
+            "Redglare"
+          ],
+          "definition": "Terezi's ancestor, a legislacerator sent to apprehend Mindfang. Accompanied by her dragon lusus Pyralspite, she pursues the pirate through a confrontation that ultimately ends in her own death.",
+          "sourcePage": 3517,
+          "sourcePages": [
+            3518,
+            3742,
+            3750,
+            3751
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Neophyte Redglare",
+          "aliases": [
+            "Redglare"
+          ],
+          "definition": "Terezi's ancestor, the legislacerator sent after Mindfang. A secret follower of the Signless, she wears a symbol of his suffering even while working within Alternia's legal system. Her pursuit of Mindfang ends in her death.",
+          "sourcePage": 3518,
+          "sourcePages": [
+            3751,
+            4056
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-mindfang",
+      "characterId": "mindfang",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Mindfang",
+          "aliases": [],
+          "definition": "Vriska's ancestor, a pirate fleet commander whose journal preserves her exploits and rivalries. She uses mind control and later receives a robotic arm from Darkleer, linking her story with several other trolls' ancestors.",
+          "sourcePage": 3475,
+          "sourcePages": [
+            3506,
+            3748,
+            3749,
+            3756
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-darkleer",
+      "characterId": "darkleer",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Darkleer",
+          "aliases": [],
+          "definition": "Equius's ancestor, an expatriate and skilled machinist who makes Mindfang a robotic arm. His presence conceals nearby objects from Doc Scratch's awareness, making his refuge useful for more than repairs.",
+          "sourcePage": 3754,
+          "sourcePages": [
+            3756,
+            3757
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "Darkleer",
+          "aliases": [],
+          "definition": "Equius's ancestor, formerly an imperial executioner. He spares the Disciple and goes into exile, later helping Mindfang as a machinist. Objects near him can escape Doc Scratch's awareness.",
+          "sourcePage": 4059,
+          "sourcePages": [
+            3756,
+            3757
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-grand-highblood",
+      "characterId": "grand-highblood",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Grand Highblood",
+          "aliases": [],
+          "definition": "Gamzee's ancestor, associated with the subjugglators. Dualscar approaches him with intelligence on Mindfang, but the meeting ends in Dualscar's death, showing the danger of seeking favor among the powerful figures of Alternian history.",
+          "sourcePage": 3514,
+          "sourcePages": [],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-dualscar",
+      "characterId": "dualscar",
+      "reveal": "act-5-act-2-part-2",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-2",
+          "term": "Orphaner Dualscar",
+          "aliases": [
+            "Dualscar"
+          ],
+          "definition": "Eridan's ancestor, a maritime overlord and rival of Mindfang. Their antagonism belongs to the violent history recorded in her journal, and his attempt to involve the Grand Highblood ends in his death.",
+          "sourcePage": 3507,
+          "sourcePages": [
+            3508,
+            3514
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "person-condesce",
+      "characterId": "condesce",
+      "reveal": "act-5-act-2-part-3",
+      "variants": [
+        {
+          "from": "act-5-act-2-part-3",
+          "term": "The Condesce",
+          "aliases": [
+            "Condesce",
+            "Her Imperious Condescension"
+          ],
+          "definition": "Feferi's ancestor and the empress of Alternia, commanding an empire from her battleship. She exploits the Psiioniic as its helmsman and survives the Vast Glub that destroys her off-world subjects. Doc Scratch foretells her service to Lord English.",
+          "sourcePage": 4060,
+          "sourcePages": [
+            4062,
+            4063,
+            4064,
+            4070
+          ],
+          "sourceKind": "composite"
+        }
+      ]
     }
   ]
 };
