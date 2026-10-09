@@ -5107,6 +5107,21 @@ window.HOMESTUCK_REFERENCE = {
           ]
         },
         {
+          "id": "inventory",
+          "variants": [
+            {
+              "from": "intermission-2",
+              "label": "Inventory",
+              "value": "Cairo Overcoat · Sarcophagus",
+              "sourcePage": 4111,
+              "sourcePages": [
+                1253
+              ],
+              "sourceKind": "composite"
+            }
+          ]
+        },
+        {
           "id": "travel",
           "variants": [
             {
@@ -7006,7 +7021,7 @@ window.HOMESTUCK_REFERENCE = {
       "sourceKind": "intro"
     }
   ],
-  "conceptsPreparedThrough": "act-5-act-2-part-3",
+  "conceptsPreparedThrough": "intermission-2",
   "concepts": [
     {
       "id": "alchemy",
@@ -8943,6 +8958,17 @@ window.HOMESTUCK_REFERENCE = {
           "definition": "Lord English's coat, whose fabric is tied to spacetime. The unstable time loops caused by Eggs and Biscuits tear it, leaving Stitch to make repairs. English keeps a backup coat and leaves one with Stitch.",
           "sourcePage": 1253,
           "sourceKind": "direct"
+        },
+        {
+          "from": "intermission-2",
+          "term": "Cairo Overcoat",
+          "aliases": [],
+          "definition": "Lord English's green coat, whose fabric is tied to spacetime. When he emerges from Doc Scratch, it disappears from a fourth wall just before the kids' ship passes through, then appears on his new body.",
+          "sourcePage": 4111,
+          "sourcePages": [
+            1253
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -9781,6 +9807,19 @@ window.HOMESTUCK_REFERENCE = {
           "definition": "A programming language whose loops can be tied to the lifespans of people or even universes. When the bound entity dies, the loop ends and subsequent code can run, making timing and termination central problems for its programmers.",
           "sourcePage": 2025,
           "sourceKind": "direct"
+        },
+        {
+          "from": "intermission-2",
+          "term": "~ATH",
+          "aliases": [],
+          "definition": "A programming language whose loops are tied to lifespans. A remote server runs a program bound to the trolls' universe; its death triggers the subprogram that summons Lord English. Sollux's deletion of his local copy cannot stop the program running elsewhere.",
+          "sourcePage": 2091,
+          "sourcePages": [
+            2092,
+            4111,
+            2025
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -11974,6 +12013,17 @@ window.HOMESTUCK_REFERENCE = {
             3757
           ],
           "sourceKind": "composite"
+        },
+        {
+          "from": "intermission-2",
+          "term": "Doc Scratch",
+          "aliases": [],
+          "definition": "Alternia's first guardian and Lord English's servant, now dead. At the end of the trolls' universe, his corpse becomes the vessel from which English physically emerges, completing the arrival Scratch spent centuries preparing.",
+          "sourcePage": 4111,
+          "sourcePages": [
+            2253
+          ],
+          "sourceKind": "composite"
         }
       ]
     },
@@ -11999,6 +12049,19 @@ window.HOMESTUCK_REFERENCE = {
           "sourcePage": 2253,
           "sourcePages": [
             1155
+          ],
+          "sourceKind": "composite"
+        },
+        {
+          "from": "intermission-2",
+          "term": "Lord English",
+          "aliases": [],
+          "definition": "The indestructible demon physically revealed when he tears out of Doc Scratch's corpse after the trolls' universe dies. He retrieves the Cairo Overcoat and enters a sarcophagus that carries him through time and space. His reveal ends with the Vast Honk.",
+          "sourcePage": 4111,
+          "sourcePages": [
+            2253,
+            2092,
+            3514
           ],
           "sourceKind": "composite"
         }
@@ -12872,6 +12935,41 @@ window.HOMESTUCK_REFERENCE = {
             4063,
             4064,
             4070
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "sarcophagus",
+      "reveal": "intermission-2",
+      "variants": [
+        {
+          "from": "intermission-2",
+          "term": "Sarcophagus",
+          "aliases": [],
+          "definition": "The coffin-like vehicle that encloses Lord English and carries him through time and space. His ability to revisit a universe's history means that being summoned after its death does not prevent him from influencing events long before that ending.",
+          "sourcePage": 4111,
+          "sourcePages": [
+            2092
+          ],
+          "sourceKind": "composite"
+        }
+      ]
+    },
+    {
+      "id": "vast-honk",
+      "reveal": "intermission-2",
+      "variants": [
+        {
+          "from": "intermission-2",
+          "term": "Vast Honk",
+          "aliases": [],
+          "definition": "The immense honking foretold by the subjugglators. Lord English's physical reveal ends with two monstrous honks, connecting their prophecy to the demon's arrival. It is distinct from the Vast Glub, Gl'bgolyb's lethal psychic cry.",
+          "sourcePage": 3514,
+          "sourcePages": [
+            4111,
+            4064
           ],
           "sourceKind": "composite"
         }
