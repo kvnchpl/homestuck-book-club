@@ -1368,7 +1368,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-2-part-1",
-              "label": "Form",
+              "label": "Condition",
               "value": "Robot body destroyed",
               "sourcePage": 3186,
               "sourceKind": "visual"
@@ -1536,7 +1536,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-1",
               "label": "Powers",
-              "value": "Communion with animals, including Becquerel",
+              "value": "Animal communion",
               "sourcePage": 3053,
               "sourcePages": [
                 3057
@@ -1721,25 +1721,6 @@ window.HOMESTUCK_REFERENCE = {
                 3999,
                 4001
               ]
-            }
-          ]
-        },
-        {
-          "id": "sight",
-          "variants": [
-            {
-              "from": "act-5-act-2-part-2",
-              "label": "Condition",
-              "value": "Blind",
-              "sourcePage": 3476,
-              "sourceKind": "direct"
-            },
-            {
-              "from": "act-5-act-2-part-3",
-              "label": "Condition",
-              "value": "Can see the Green Sun in two dimensions",
-              "sourcePage": 4000,
-              "sourceKind": "direct"
             }
           ]
         },
@@ -4560,7 +4541,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "intermission",
-              "label": "Weapon of choice",
+              "label": "Weapon",
               "value": "Cast Iron Horse Hitcher",
               "sourcePage": 1213,
               "sourceKind": "direct"
@@ -4648,7 +4629,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "intermission",
-              "label": "Weapon of choice",
+              "label": "Weapon",
               "value": "Ultra-Violence Cuestick",
               "sourcePage": 1231,
               "sourceKind": "visual"
@@ -4751,7 +4732,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "intermission",
-              "label": "Weapon of choice",
+              "label": "Weapon",
               "value": "Crook of Felony",
               "sourcePage": 1178,
               "sourceKind": "direct"
@@ -4854,7 +4835,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "intermission",
-              "label": "Weapon of choice",
+              "label": "Weapon",
               "value": "TV antenna",
               "sourcePage": 1216,
               "sourceKind": "visual"
@@ -4939,7 +4920,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "intermission",
-              "label": "Condition",
+              "label": "Powers",
               "value": "Killing her destroys the universe",
               "sourcePage": 1268,
               "sourceKind": "direct"
@@ -5572,7 +5553,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Former role",
+              "label": "Formerly",
               "value": "Mother Grub’s attendant in the brooding caverns",
               "sourcePage": 4057,
               "sourceKind": "direct"
@@ -5779,7 +5760,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-5-act-2-part-2",
               "label": "Condition",
-              "value": "Robotic arm made by Darkleer",
+              "value": "Robotic arm",
               "sourcePage": 3756,
               "sourceKind": "direct"
             }
@@ -5849,7 +5830,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-5-act-2-part-3",
-              "label": "Former role",
+              "label": "Formerly",
               "value": "Imperial executioner",
               "sourcePage": 4059,
               "sourceKind": "composite",
@@ -6314,7 +6295,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-6-act-1",
-              "label": "Weapon of choice",
+              "label": "Weapon",
               "value": "Twin M9 Berettas",
               "sourcePage": 4164,
               "sourceKind": "direct"
@@ -6629,7 +6610,7 @@ window.HOMESTUCK_REFERENCE = {
           "variants": [
             {
               "from": "act-6-act-1",
-              "label": "Former role",
+              "label": "Formerly",
               "value": "Private investigator",
               "sourcePage": 4198,
               "sourceKind": "direct"
@@ -6707,7 +6688,7 @@ window.HOMESTUCK_REFERENCE = {
             {
               "from": "act-6-act-1",
               "label": "Status",
-              "value": "Deceased at age 86",
+              "value": "Deceased",
               "sourcePage": 4145,
               "sourceKind": "direct"
             }

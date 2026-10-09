@@ -784,6 +784,13 @@ button {
   margin: 0;
 }
 
+.character-stats .character-handle {
+  color: var(--character-color, #000);
+  text-shadow: var(--character-name-shadow, none);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
 .character-stats .reference-team-blue {
   color: #0000ff;
 }

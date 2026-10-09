@@ -267,6 +267,7 @@
       const dd = document.createElement('dd');
       dt.textContent = variant.label;
       dd.textContent = variant.value;
+      if (stat.id === 'handle') dd.className = 'character-handle';
       if (stat.id === 'team') {
         if (variant.value === 'Blue Team') dd.className = 'reference-team-blue';
         if (variant.value === 'Red Team') dd.className = 'reference-team-red';
